@@ -53,7 +53,7 @@ The *CsTeamsCallingPolicy* cmdlets enable administrators to control whether call
 4.	Look for the pre-canned option where all calling policies are disabled:<br>
 ![Screenshot of meetings option with all meeting policies disabled.](media/virtual-environment-image2.png)
 5.	Apply the “DisallowCalling” pre-canned policy option to all users who will be using Teams in a virtualized environment:<br>
-\>> *Grant-CsTeamsMeetingPolicy -PolicyName AllOff -Identity “user email id”*
+\>> *Grant-CsTeamsCallingPolicy -PolicyName DisallowCalling -Identity “user email id”*
 
 ## Meetings
 
