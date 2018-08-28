@@ -39,15 +39,24 @@ The *CsTeamsCallingPolicy* cmdlets enable administrators to control whether call
 ### PowerShell instructions
 
 1.	Launch PowerShell as an Administrator.
-2.	Connect to Skype Online Connector:<br>
-\>> *# Set Office 365 User Name and Password*<br>
+2.	Connect to Skype Online Connector via one of two methods below:<br>
+a. 	For Basic Authentication
+\>> *# Load Skype Online Powershell module*<br>
+\>> *Import-Module SkypeOnlineConnector*<br>
+\>> *# For Basic Auth Set Office 365 User Name and Password*<br>
 \>> *$username = “admin email address”*<br>
 \>> *$password = ConvertTo-SecureString "password" -AsPlainText -Force*<br>
 \>> *$LiveCred = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $password*<br><br>
-\>> *# Connect to Skype Online*<br>
-\>> *Import-Module SkypeOnlineConnector*<br>
 \>> *$sfboSession = New-CsOnlineSession -Credential $LiveCred*<br>
 \>> *Import-PSSession $sfboSession*<br>
+
+b. 	For Modern/OAuth Authentication
+\>> *# Load Skype Online Powershell module*<br>
+\>> *Import-Module SkypeOnlineConnector*<br>
+\>> *# For Modern Auth enter Office 365 password in Pop-Up screen*<br>
+\>> *$sfboSession = New-CsOnlineSession -username "admin user id"*<br>
+\>> *Import-PSSession $sfboSession*<br>
+
 3.	View list of Calling Policy Options:<br>
 \>> *Get-CsTeamsCallingPolicy*
 4.	Look for the pre-canned option where all calling policies are disabled:<br>
