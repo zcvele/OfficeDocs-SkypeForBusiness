@@ -74,7 +74,7 @@ The following table shows the average bandwidth for IM and presence, given the u
 
 |**Average bandwidth per user**|**Bandwidth requirements per Front End Server with 6,660 users**|
 |:-----|:-----|
-|1.3 Kpbs  <br/> |13 Mbps  <br/> |
+|1.3 Kpbs  <br/> |8.5 Mbps  <br/> |
 
 > [!NOTE]
 > To improve the media performance of the co-located A/V Conferencing and Mediation Server functionality on your Front End Servers, you should enable receive-side scaling (RSS) on the network adapters on your Front End Servers. RSS enables incoming packets to be handled in parallel by multiple processors on the server. For details, see [Receive Side Scaling (RSS) in the Windows Server 2012 documentation](https://go.microsoft.com/fwlink/p/?LinkId=620365). For details about how to enable RSS, you'll need to refer to your network adapter documentation.
