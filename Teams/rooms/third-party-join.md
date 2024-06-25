@@ -35,7 +35,7 @@ Supported devices and services:
     > Microsoft releases new features for Teams Rooms on Android on a regular basis. However, there can be a delay between when features are released and when they become available on a device. If a feature isn't available on your device, check with your device's manufacturer for information on when it might become available.
 
 > [!NOTE]
-> To join a Cisco Webex meeting from a Teams Rooms device, the Cisco meeting needs to be hosted in Webex Meetings Pro using Cisco Webex web application version WBS 40.7 or later.
+> To join a Cisco Webex meeting from a Teams Rooms device, the Cisco meeting needs to be hosted in Webex Meetings Pro using Cisco Webex web application version WBS 40.7 or later. However, you can't join Cisco Webinars from a Teams Rooms console.
 
 > [!NOTE]
 > Joining a Zoom meeting from a Teams Rooms console is supported. However, you can't join Zoom Webinars and Zoom Events from a Teams Rooms console. Those aren't supported at this time.
