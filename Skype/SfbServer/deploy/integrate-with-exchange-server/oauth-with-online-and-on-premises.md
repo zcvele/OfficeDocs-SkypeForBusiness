@@ -191,10 +191,10 @@ Install-Module -Name Microsoft.Graph.Applications
 1. In the PowerShell connected to Microsoft Graph session, run the following
 
    ```powershell
-   Get-MgServicePrincipal -Filter "AppId eq '00000004-0000-0ff1-ce00-000000000000'" -Select "keyCredentials"
+   Get-MgServicePrincipal -Filter "AppId eq '00000004-0000-0ff1-ce00-000000000000'" -Select "keyCredentials" | Format-List *
    ```
 
-2. Confirm you see a key listed with start date and end data that matches your Exchange Oauth certificate start and end dates
+2. Confirm you see a key listed with start date and end data that matches your Exchange OAuth certificate start and end dates
 
 ### Verify your success
 
