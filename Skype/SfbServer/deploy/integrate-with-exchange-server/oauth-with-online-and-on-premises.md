@@ -44,21 +44,21 @@ Perform the steps in the following article:
 
 ### Step 2: Create a new Mail User account for the Skype for Business Online Partner Application
 
-This step is done on the Exchange server. It will create a mail user and assign it the appropriate management role rights. This account will then be used in the next step.
+This step is done on the Exchange server. It creates a mail user and assign it the appropriate management role rights. This account is then be used in the next step.
 
-Specify a verified domain for your Exchange organization. This domain should be the same domain used as the primary SMTP domain used for the on-premises Exchange accounts. This domain is referred as `<your Verified Domain>` in the following procedure. Also, the `<DomainControllerFQDN>` should be the FQDN of a domain controller.
+Specify a verified domain for your Exchange organization. This domain should be the same domain used as the primary Simple Mail Transfer Protocol (SMTP) domain used for the on-premises Exchange accounts. This domain is referred as `<your Verified Domain>` in the following procedure. Also, the `<DomainControllerFQDN>` should be the fully qualified domain name (FQDN) of a domain controller.
 
 ```powershell
 $user = New-MailUser -Name SfBOnline-ApplicationAccount -ExternalEmailAddress SfBOnline-ApplicationAccount@<your Verified Domain> -DomainController <DomainControllerFQDN>
 ```
 
-This command will hide the new mail user from address lists.
+This command hides the new mail user from address lists.
 
 ```powershell
 Set-MailUser -Identity $user.Identity -HiddenFromAddressListsEnabled $True -DomainController <DomainControllerFQDN>
 ```
 
-These next two commands will assign the UserApplication and ArchiveApplication management role to this new account.
+These next two commands assign the `UserApplication` and `ArchiveApplication` management role to this new account.
 
 ```powershell
 New-ManagementRoleAssignment -Role UserApplication -User $user.Identity -DomainController <DomainControllerFQDN>
@@ -70,7 +70,7 @@ New-ManagementRoleAssignment -Role ArchiveApplication -User $user.Identity -Doma
 
 ### Step 3: Create and enable a Partner Application for Skype for Business Online 
 
-Create a new partner application and will use the account you just created. Run the following command in the Exchange PowerShell in your on-premises Exchange organization.
+Create a new partner application and use the account you created. Run the following command in the Exchange PowerShell in your on-premises Exchange organization.
 
 ```powershell
 New-PartnerApplication -Name SfBOnline -ApplicationIdentifier 00000004-0000-0ff1-ce00-000000000000 -Enabled $True -LinkedAccount $user.Identity
@@ -96,7 +96,7 @@ $CertFile = "$env:SYSTEMDRIVE\OAuthConfig\OAuthCert.cer"
 [System.IO.File]::WriteAllBytes($CertFile, $certBytes)
 ```
 
-In Exchange PowerShell in your on-premises Exchange organization, run the PowerShell script that you just created. For example: `.\ExportAuthCert.ps1`
+In Exchange PowerShell in your on-premises Exchange organization, run the PowerShell script that you created. For example: `.\ExportAuthCert.ps1`
 
 <a name='step-5-upload-the-on-premises-authorization-certificate-to-azure-active-directory-acs'></a>
 
@@ -108,7 +108,7 @@ Next, use the Microsoft Graph PowerShell to upload the on-premises authorization
 Install-Module -Name Microsoft.Graph.Applications
 ```
 
-1. Open a Windows PowerShell workspace that has the Microsoft Graph cmdlets installed. All commands in this step will be run using the Windows PowerShell connected to Microsoft Graph console.
+1. Open a Windows PowerShell workspace that has the Microsoft Graph cmdlets installed. All commands in this step must run using the Windows PowerShell connected to Microsoft Graph console.
 
 2. Save the following text to a PowerShell script file named, for example,  `UploadAuthCert.ps1`.
 
@@ -185,9 +185,9 @@ Install-Module -Name Microsoft.Graph.Applications
 
 3. Run the PowerShell script that you created in the previous step. For example:  `.\UploadAuthCert.ps1`
 
-4. After you start the script, a credentials dialog box is displayed. Enter the credentials for the tenant administrator account in your Microsoft Online Microsoft Entra organization. After running the script, leave the Windows PowerShell connected to Microsoft Graph session open. You will use this to run a PowerShell script in the next step.
+4. After you start the script, a credentials dialog box is displayed. Enter the credentials for the tenant administrator account in your Microsoft Online Microsoft Entra organization. After running the script, leave the Windows PowerShell connected to Microsoft Graph session open. You will use the session to run a PowerShell script in the next step.
 
-### Step 6: Verify that the Certificate has Uploaded to the Skype for Business Service Principal
+### Step 6: Verify that the Certificate was uploaded to the Skype for Business Service Principal
 1. In the PowerShell connected to Microsoft Graph session, run the following
 
    ```powershell
@@ -206,7 +206,7 @@ Verify that the configuration is correct by verifying some of the features are w
 
 3. Confirm that archived chat messages are deposited in the user's on-premises mailbox in the Purges folder using [EWSEditor](/archive/blogs/webdav_101/where-to-get-ewseditor).
 
-Alternately, look at your traffic. The traffic in an OAuth handshake is really distinctive (and doesn't look like Basic authentication), particularly around realms, where you’ll begin to see issuer traffic that looks like this: `00000004-0000-0ff1-ce00-000000000000@` (sometimes with a / before the `@` sign), in the tokens that are being passed. You won’t see a username or password, which is the point of OAuth. But you will see  the `Office` issuer – in this case `4` is `Skype for Business – and the realm of your subscription`.
+Alternately, look at your traffic. The traffic in an OAuth handshake is distinctive (and doesn't look like Basic authentication), particularly around realms, where you begin to see issuer traffic that looks like this: `00000004-0000-0ff1-ce00-000000000000@` (sometimes with a / before the `@` sign), in the tokens that are being passed. There isn't a username or password, which is the point of OAuth. But you will see  the `Office` issuer – in this case `4` is `Skype for Business – and the realm of your subscription`.
 
 If you want to be sure you’re successfully using OAuth, make certain you know what to expect and know what the traffic should look like. So [here's what to expect](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#page-34).
 
