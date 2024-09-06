@@ -206,7 +206,7 @@ Verify that the configuration is correct by verifying some of the features are w
 
 3. Confirm that archived chat messages are deposited in the user's on-premises mailbox in the Purges folder using [EWSEditor](/archive/blogs/webdav_101/where-to-get-ewseditor).
 
-Alternately, look at your traffic. The traffic in an OAuth handshake is distinctive (and doesn't look like Basic authentication), particularly around realms, where you begin to see issuer traffic that looks like this: `00000004-0000-0ff1-ce00-000000000000@` (sometimes with a / before the `@` sign), in the tokens that are being passed. There isn't a username or password, which is the point of OAuth. But you will see  the `Office` issuer – in this case `4` is `Skype for Business – and the realm of your subscription`.
+Alternately, look at your traffic. The traffic in an OAuth handshake is distinctive (and doesn't look like Basic authentication), particularly around realms, where you begin to see issuer traffic that looks like this: `00000004-0000-0ff1-ce00-000000000000@` (sometimes with a `/` before the `@` sign), in the tokens that are being passed. There isn't a username or password, which is the point of OAuth. But you will see  the `Office` issuer – in this case `4` is `Skype for Business – and the realm of your subscription`.
 
 If you want to be sure you’re successfully using OAuth, make certain you know what to expect and know what the traffic should look like. So [here's what to expect](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#page-34).
 
