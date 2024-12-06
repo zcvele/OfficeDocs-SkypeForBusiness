@@ -1,7 +1,7 @@
 ---
 title: PowerShell script to test Direct Routing Session Border Controller connections
-author: CarolynRowe
-ms.author: crowe
+author: sfrancis206
+ms.author: scottfrancis
 manager: pamgreen
 ms.topic: article
 ms.reviewer: filippse
@@ -22,6 +22,9 @@ appliesto:
 ---
 
 # PowerShell script to test Direct Routing Session Border Controller connections
+
+ > [!NOTE]
+ > The SIP Tester client script will be deprecated on November 30, 2024.
 
 SIP Tester client is a sample PowerShell script that you can use to test Direct Routing Session Border Controller (SBC) connections in Microsoft Teams. This script tests basic functionality of a customer-paired Session Initiation Protocol (SIP) trunk with Direct Routing.
 

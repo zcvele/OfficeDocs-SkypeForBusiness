@@ -1,7 +1,7 @@
 ---
 title: Manage caller ID for users
-ms.author: crowe
-author: CarolynRowe
+ms.author: scottfrancis
+author: sfrancis206
 manager: pamgreen
 ms.reviewer: roykuntz
 ms.date: 03/26/2024
@@ -105,7 +105,7 @@ By default, the following caller ID settings are **turned off**.
 |Override the caller ID policy|Off|This setting allows users to override the settings in the policy that decide whether or not they display their number to the callee. By turning on this setting, users can choose whether to display their caller ID.</br></br>Your end users can set their caller ID to Anonymous by going to **Settings** > **Calls**, and then under **Caller ID**, select **Hide my phone number and profile information for all calls**. It takes a few minutes for this setting change to reflect on new calls.</br>|
 |Calling Party Name|(empty)|This setting sends a CNAM on outbound PSTN calls.|
 |Replace the caller ID with Users's number|User's number|This setting replaces a user's caller ID with another phone number. For example, you can change the user's caller ID from their phone number to a main phone number for your business or to a main phone number for the legal department. You can set the calling ID number to any Calling Plan, Operator Connect, or Direct Routing phone number assigned to a resource account used by an Auto attendant or a Call queue.|
-|Replace the caller ID with Anonymous|(empty)|This setting lets you block the outgoing caller ID from being sent on a user's outgoing PSTN calls. Turning on this setting blocks the outgoing caller's phone number from being displayed on the phone of a person being called and that call is displayed as coming from Anonymous. If the outbound caller ID is set to **Anonymous**, **Override the caller ID policy** will have no effect, and the caller ID will still show as Anonymous.|
+|Replace the caller ID with Anonymous|(empty)|This setting lets you block the outgoing caller ID from being sent on a user's outgoing PSTN calls. Turning on this setting blocks the outgoing caller's phone number from being displayed on the phone of a person being called and that call is displayed as coming from Anonymous. If Override the caller ID is On, then the user can toggle off the option to hide their caller ID in the Teams client.  |
 |Replace the caller ID with Resource account|(empty)|This setting lets you choose a resource account which is used to replace the caller ID of users.|
 
 You can configure caller ID policies by using the [Teams admin center](#use-the-teams-admin-center) or by using [PowerShell](#use-powershell).
@@ -136,7 +136,7 @@ For more information on each policy, see [configure caller ID policies](#configu
 
       - **Resource account:** Set a resource account associated with an Auto Attendant or Call Queue.
 
-    If you choose **Resource account**, you're prompted to specify a resource account for the next field, called **Replace the caller ID with this resource account**. Only resource accounts with an assigned phone number will be displayed. If you just assigned a phone number to the resource account, it might take a few minutes before the resource account is available for selection.
+        If you choose **Resource account**, you're prompted to specify a resource account for the next field, called **Replace the caller ID with this resource account**. Only resource accounts with an assigned phone number will be displayed. If you just assigned a phone number to the resource account, it might take a few minutes before the resource account is available for selection.
 
 7. Select **Save**.
 

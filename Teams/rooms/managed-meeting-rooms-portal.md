@@ -3,7 +3,7 @@ title: Microsoft Teams Rooms Pro Management Portal
 author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
-ms.reviewer: kimmatlock
+ms.reviewer: srpall
 ms.date: 03/26/2024
 ms.topic: article
 audience: Admin
@@ -25,7 +25,7 @@ f1keywords:
 
 ## Overview
 
-The Teams Rooms Pro Management portal provides a view of the health of your meeting rooms and helps to facilitate your existing monitoring tools and practices. This feature is only available in public or commercial cloud. It's not available in GCC, GCC-H, or DoD government clouds.
+The Teams Rooms Pro Management portal provides a view of the health of your meeting rooms and helps to facilitate your existing monitoring tools and practices. This feature is only available in the commercial & GCC clouds. It's not available in GCC-H or DoD clouds.
 
 The scope of the monitoring is:
 

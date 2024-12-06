@@ -49,9 +49,7 @@ Before proceeding with the uninstallation, you should try to identify how classi
 ## Uninstalling classic Teams
 
 > [!IMPORTANT]
-> A rare issue with the uninstall of classic Teams has been detected and to be cautious Microsoft has paused the automatic uninstallation of classic Teams for customers who haven't already completed this step. This issue could result in the Teams Meeting Addin in Outlook failing to schedule or join Teams meetings. We are actively investigating this issue and will update once it's resolved. If your users are experiencing this issue, a workaround is to use Teams to schedule or join meetings.
->
-> For customers who are experiencing this issue or who wish to perform the uninstall of classic Teams themselves and experience this issue, there are troubleshooting steps available here: [Teams meeting add-in missing from Outlook and new Teams](/microsoftteams/troubleshoot/meetings/teams-meeting-add-in-missing).
+> For customers who uninstall classic Teams themselves and experience a Teams meeting add-on issue, there are troubleshooting steps available here: [Teams meeting add-in missing from Outlook and new Teams](/microsoftteams/troubleshoot/meetings/teams-meeting-add-in-missing).
 
 ### For User-Deployed or Per-user Admin Deployments
 
@@ -80,7 +78,8 @@ To uninstall an application across all devices using Intune on Windows, you can 
 6. In the **Detection rules** section, select the **Add** button and select **File**.
 7. In the **File** section, enter the path and file name of the uninstaller for the application you want to uninstall.
 8. In the **Uninstall command** section, enter the command to run the uninstaller silently. For example, if the uninstaller is "uninstall.exe" and the silent switch is "/quiet", the command would be:
-   - "MsiExec.exe -x {731F6BAA-A986-45A4-8936-7C3AAAAA760B} /quiet"
+   - 64-bit: "MsiExec.exe -x {731F6BAA-A986-45A4-8936-7C3AAAAA760B} /quiet"
+   - 32-bit: "MsiExec.exe -x {39AF0813-FA7B-4860-ADBE-93B9B214B914} /quiet"
 
 You can learn more at [Uninstall an app with Intune for Windows](/mem/intune/apps/apps-add).
 

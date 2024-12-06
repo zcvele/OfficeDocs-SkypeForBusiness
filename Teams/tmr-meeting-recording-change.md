@@ -23,7 +23,10 @@ appliesto:
 
 # Teams meeting recording storage and permissions in OneDrive and SharePoint
 
-When users in your org record Teams meetings, the recording is stored in either OneDrive and SharePoint. Depending on where your users access the file, the recording plays on the video player in OneDrive or SharePoint. This article helps you, as an admin, understand recording storage and permissions for OneDrive and Sharepoint.
+> [!NOTE]
+> When organizers turn off Microsoft 365 Copilot in Teams meetings and events, recording and transcription are also turned off. To learn more about Copilot, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
+
+When users in your organization record Teams meetings, the recording is stored in either OneDrive and SharePoint. Depending on where your users access the file, the recording plays on the video player in OneDrive or SharePoint. This article helps you, as an admin, understand recording storage and permissions for OneDrive and SharePoint.
 
 To learn about your recording policies, see [Teams meeting recording](meeting-recording.md). To learn how to block the download of Teams meeting recording files from SharePoint or OneDrive, see [Block the download of Teams meeting recording files from SharePoint or OneDrive](block-download-meeting-recording.md).
 
@@ -31,7 +34,7 @@ To learn about your recording policies, see [Teams meeting recording](meeting-re
 
 ### Meetings and events
 
-For **meetings, webinars, and town halls**, use the per-organizer **`-MeetingRecordingOwnership`** parameter within the PowerShell [**CsTeamsRecordingRolloutPolicy**](/powershell/module/teams/set-csteamsrecordingrolloutpolicy) cmdlet to decide if the recording is saved to the organizer's or recording initiator's OneDrive. This policy applies to the following meeting and event types:
+For **meetings and events**, you can use the per-organizer **`-MeetingRecordingOwnership`** parameter within the PowerShell [**CsTeamsRecordingRolloutPolicy**](/powershell/module/teams/set-csteamsrecordingrolloutpolicy) cmdlet to decide if the recording is saved to the organizer's or recording initiator's OneDrive. This policy applies to the following meeting and event types:
 
 - Automatically recorded meetings
 - Delegate-created meetings
@@ -43,7 +46,7 @@ For **meetings, webinars, and town halls**, use the per-organizer **`-MeetingRec
 - Town halls
 - Webinars
 
-If **`-MeetingRecordingOwnership`** is set to **`MeetingOrganizer`**, which is the **default value**, the recording saves to organizer's OneDrive, even if the organizer didn't attend the meeting or event. All recording files are saved to the organizer's OneDrive **Recordings** folder. Co-organizers have the same editing permissions as organizers for recording files. To understand what happens if an organizer doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
+If **`-MeetingRecordingOwnership`** is set to **`MeetingOrganizer`**, which is the **default value**, the recording saves to the organizer's OneDrive, even if the organizer didn't attend the meeting or event. All recording files are saved to the organizer's OneDrive **Recordings** folder. Co-organizers have the same editing permissions as organizers for recording files. To understand what happens if an organizer doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
 
 If **`-MeetingRecordingOwnership`** is set to **`RecordingInitiator`**, the recording saves to the OneDrive of the user who starts the recording. If the recording initiator doesn't have a OneDrive, the recording is temporarily saved to async media storage.
 
@@ -59,11 +62,14 @@ For 1-1 call and group calls, recording files go to the OneDrive account of the 
 
 For **Channel meetings**, the recording is stored in the SharePoint Teams site documentation library in a folder named **Recordings**. For example: *Teams name - Channel name*/**Documents**/**Recordings**.
 
-### Shared account scheduled meetings
+### Shared mailbox scheduled meetings
 
-For **shared accounts scheduled meetings**, if the shared account has a OneDrive, the recording is uploaded there. However, since shared accounts typically don’t have a OneDrive, the recordings are uploaded to the co-organizer’s or recording initiator's OneDrive instead. To understand what happens if an organizer doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
+For **meetings scheduled using a shared mailbox**, the shared mailbox is considered the organizer. If the shared account has a OneDrive, the recording is uploaded there. However, since shared mailboxes typically don’t have a OneDrive, the recordings are uploaded to the co-organizer’s or recording initiator's OneDrive instead. To understand what happens if an organizer doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
 
-For details on shared accounts, see [About shared mailboxes - Microsoft 365 admin](/microsoft-365/admin/email/about-shared-mailboxes).
+For details on shared mailboxes, see [About shared mailboxes - Microsoft 365 admin](/microsoft-365/admin/email/about-shared-mailboxes).
+
+> [!NOTE]
+> When shared mailboxes don't have a Teams license, they follow the global identity's meeting policy. If a shared mailbox without a Teams license organizes a meeting and you set **`-allowCloudRecording`** to false in the global policy, your users can't record. If you want to set a custom meeting policy for a shared mailbox, you must assign a Teams license first.
 
 ### Microsoft Teams Rooms meetings
 
@@ -108,7 +114,13 @@ The size of a one-hour recording is 400 MB. Make sure you understand the capacit
 
 ## Viewing permissions
 
-For **non-Channel meetings**, all meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must explicitly add external participants to the shared list.
+For **non-Channel meetings**: 
+
+- All meeting invitees, except for external participants, automatically get a personally shared link. The meeting organizer must add external participants to the shared list.
+- If the meeting is forwarded, only participants who are automatically added to the meeting chat thread receive the recording link.
+- For optimal performance, the total number of users in a chat shouldn't exceed 1,000.
+- If a meeting is forwarded to a group, only some users are added to the chat. If forwarded to an individual user, they're added to the meeting chat unless there are more than 1,000 users in the chat. 
+- For **large meetings**, if a meeting has more than 250 participants, some participants don't automatically have file permissions. Excluded participants should ask the recording owner to add them to the shared list.
 
 For **Channel meetings**, permissions are inherited from the owners and members list in the channel.
 
@@ -141,7 +153,7 @@ Closed captions are supported for Teams meeting recordings for 60 days from when
 |Adhoc/Scheduled meeting                    |Other meeting member   |Organizer’s OneDrive account                                  |Organizer has full permissions to the recording. Co-organizers and organizer have edit permissions and can share. <br /> <br />  All other members of the meeting from the same tenant as the organizer have read access.|
 |Adhoc/Scheduled meeting with external participants|Organizer              |Organizer’s OneDrive account                     |Organizer has full permissions to the recording. Co-organizers and organizer have edit permissions and can share. <br /> <br />  All other members of the meeting from the same tenant as the organizer have read access. <br /><br /> All other external participants have no access, and the Organizer must share it to them.|
 |Adhoc/Scheduled meeting with external participants|Other meeting member   |Organizer’s OneDrive account                                  |Organizer has full permissions to the recording. Co-organizers and organizer have edit permissions and can share. <br /><br /> All other members of the meeting from the same tenant as the organizer have read access. <br /><br />All other external participants have no access, and the Organizer must share it to them.|
-|Channel meeting                            |Channel Member         |Teams SharePoint location for that channel. **Note**: Channel meeting recording upload to SharePoint isn't supported for IP-based restrictions. We recommend using [Azure conditional access](/azure/active-directory/conditional-access/overview). |Member who selected on Record has edit permissions to the recording. <br /> <br />Every other member’s permissions are based on the Channel SharePoint permissions.|
+|Channel meeting                            |Channel Member         |Teams SharePoint location for that channel. Note that channel meeting recording upload to SharePoint isn't supported for IP-based restrictions. We recommend using [Azure conditional access](/azure/active-directory/conditional-access/overview). |Member who selected on Record has edit permissions to the recording. <br /> <br />Every other member’s permissions are based on the Channel SharePoint permissions.|
 
 ## Related topics
 

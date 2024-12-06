@@ -6,12 +6,12 @@ manager: jtremper
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: jewilcze
-ms.date: 10/26/2023
+ms.date: 11/11/2024
 search.appverid: MET150
 searchScope:
   - Microsoft Teams
 audience: admin
-description: Learn how to manage the Virtual appointment meeting template for Teams to provide a default meeting configuration for your organization.
+description: Learn how to manage the Virtual appointment meeting template in Teams for your organization. Your users can use this template to schedule virtual appointments with external guests, such as customers, clients, and other people outside your organization.
 ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
@@ -24,7 +24,7 @@ appliesto:
 
 # Manage the Virtual appointment meeting template in Microsoft Teams
 
-**APPLIES TO:** ✔️Meetings ✖️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Meetings ![Image of a x for no](/office/media/icons/cancel-teams.png)Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
 
 ![Information icon](media/info.png) **Some features described in this article require [Teams Premium](teams-add-on-licensing/licensing-enhance-teams.md)**.
 
@@ -51,9 +51,9 @@ To learn more, see [Manage meeting templates in Teams](manage-meeting-templates.
 ![Information icon](media/info.png) **This is a [Teams Premium](teams-add-on-licensing/licensing-enhance-teams.md) feature. Meeting organizers must have a Teams Premium license to use this feature.**.
 
 > [!NOTE]
-> This feature is currently only available in the United States. Your users can only send SMS text notifications to people who have a valid United States phone number (+1 country code). SMS text notifications are sent in English.
+> This feature is currently available in Canada, the Netherlands, New Zealand, Norway, the United Kingdom, and the United States. Your users can send SMS text notifications to people who have a valid Canada (+1 country code), Netherlands (+31 country code), New Zealand (+64 country code), Norway (+47 country code), United Kingdom (+44 country code), or United States phone number (+1 country code). The text notifications are sent in the language of the meeting organizer.
 
-You can control whether your users can choose to send SMS text notifications to external guests in appointments that they schedule using the template. When this feature is enabled for a user, they'll see  the SMS notifications option in the template.
+You can control whether your users can choose to send SMS text notifications to external guests in appointments that they schedule using the template. When this feature is enabled for a user, they see the SMS notifications option in the template.
 
 - If the user chooses **Send text notifications** (the default setting), external guests will receive appointment confirmation, update, and reminder text messages that include the Teams meeting join link and appointment details.
 - If the user chooses **Don't send text notifications**, external guests won't receive text messages about their appointment.
@@ -94,6 +94,8 @@ You can assign the policy directly to users, either individually or at scale thr
 
 - If a user who has access to this feature chose **Send text notifications** when they scheduled an appointment, and then their access is turned off, no additional text messages are sent to the external guest.
 
+- For the Netherlands, the **Phone number** field on the form might require an 11-digit number to successfully send SMS notifications. If you experience issues, add zeros (0) to the beginning of the phone number to reach an 11-digit value.
+
 ### SMS notifications usage report
 
 To get an overview of SMS notifications usage across your organization, view the [SMS notifications usage report](/microsoft-365/frontline/sms-notifications-usage-report) in the Teams admin center.
@@ -102,7 +104,7 @@ To get an overview of SMS notifications usage across your organization, view the
 
 When users in your organization use the template to schedule a virtual appointment, external guests get a tailored meeting invitation that includes a **Join appointment as a guest** button and other appointment details. They can use this button to easily join from any device without having to download and install Teams.
 
-Keep in mind that some Teams meeting options may not apply to external guests or to any person who joins using the **Join appointment as a guest** button. The following meeting options are supported for guests to join:
+Keep in mind that some Teams meeting options might not apply to external guests or to any person who joins using the **Join appointment as a guest** button. The following meeting options are supported for guests to join:
 
 - **Who can bypass the lobby**: The **Everyone** setting allows external guests to bypass the lobby.
 - **Choose co-organizers**

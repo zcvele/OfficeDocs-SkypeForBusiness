@@ -28,7 +28,7 @@ description: Learn how to plan for webinars in Microsoft Teams.
 
 # Plan for Teams webinars
 
-**APPLIES TO:** ✖️Meetings ✔️Webinars ✖️Town halls
+**APPLIES TO:** ![Image of a x for no](/office/media/icons/cancel-teams.png)Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
 
 A webinar is a two-way interactive virtual event where the presenters deliver information to attendees. This format provides extra control for an organizer over the conversation and participants. Common scenarios for webinars might include trainings, product demos, sales lead generation, customer events, company announcements, and showcasing products. Webinars can accommodate up to 1,000 attendees and allow organizers to gather registration data from attendees before the event.
 
@@ -52,17 +52,17 @@ There are a few key differences between in-org and public webinars. When managin
 
 |Capability|In-org webinar|Public webinar|
 |:----|:-----:|:-------:|
-|Includes guests|✖️|✔️|
-|Accessible to members of the organization that created the webinar|✔️|✔️|
-|Accessible to anyone with a registration link|✖️|✔️|
-|Anonymous users can register|✖️|✔️|
-|Attendees type their name on the registration form when registering|✖️|✔️|
-|Attendees must reenter their information after selecting the join link|✖️|✔️|
-|Attendees have unique join links|✔️|✔️|
-|Organizers can decide if attendees with a registration link can bypass the lobby|✔️|✔️|
-|Organizers can decide if anyone who can't bypass the lobby is automatically rejected|✔️|✔️|
-|Attendees can dial in to join|✖️|✖️|
-|Includes external presenters|✔️|✔️|
+|Includes guests|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Accessible to members of the organization that created the webinar|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Accessible to anyone with a registration link|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Anonymous users can register|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Attendees type their name on the registration form when registering|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Attendees must reenter their information after selecting the join link|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Attendees have unique join links|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Organizers can decide if attendees with a registration link can bypass the lobby|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Organizers can decide if anyone who can't bypass the lobby is automatically rejected|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Attendees can dial in to join|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Includes external presenters|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
 
 ## Webinar attendee interaction
 
@@ -79,13 +79,26 @@ As an admin, you can manage the following features attendees use for interaction
 
 A Teams Premium subscription includes the following features for webinars:
 
-- Create a webinar wait list.
-- Limit the day and time when people can register.
-- Manage attendees’ view.
-- Manually approve registrants.
-- Use RTMP-in.
-- Send reminder emails to registrants.
-- Set up a green room for webinar presenters.
+|Feature name | Webinar features | Teams Premium webinar features |
+|-------------------------------------------------------|:---------------------:|:-------------------------:|
+|Allow registered users to bypass the lobby         |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                      |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
+|Assign a co-organizer                              |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                      |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
+|Limit the number of people who can register        |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                      |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+|Require attendees to register|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Set up a green room for webinar presenters |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+|Turn on Q&A for webinars with up to 1,000 attendees |![Image of a checkmark for yes](/office/media/icons/success-teams.png) |![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|View attendance reports|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|External presenters|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Create a webinar wait list                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
+|Limit the day and time when people can register    |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+|Manage attendees’ view                             |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
+|Manually approve registrants                       |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
+|Send reminder emails to registrants                |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                          |
+|Use RTMP-In for webinars                           |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+|Hide attendee names                          |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+|Manage what attendees see                          |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+|Custom meeting templates                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
+|Admin created custom meeting backgrounds                         |                       |![Image of a checkmark for yes](/office/media/icons/success-teams.png)                         |
 
 ## Webinar control comparison
 
@@ -98,15 +111,16 @@ Teams admins and organizers have different policies and settings to control the 
 |[Chat](manage-meeting-chat.md)|Can manage whether organizers, presenters, and co-organizers, and attendees can read and write chat messages.|Can manage whether chat is available for their webinars.|
 |[Collaboration features](meeting-policies-content-sharing.md)|Can control the availability of PowerPoint Live, whiteboard, and shared notes.|No control.|
 |[Content sharing](meeting-who-present-request-control.md)|Can control sharing mode and who can request control and can set a default for who can present.|Can control who can present.|
-|[Copilot](copilot-teams-transcription.md)|Can control the default value for Copilot in organizers’ meeting options.|Can control whether Copilot can be used with or without transcription during their webinars. Attendees can use Copilot during webinars if they have a Copilot license.|
 |[Email communications (Teams Premium)](manage-email-communications.md)|Can control if event organizers and co-organizers can edit email templates for their webinars.|Can edit email templates  before they're sent out.|
 |[External presenters](https://support.microsoft.com/office/schedule-a-webinar-in-microsoft-teams-0719a9bd-07a0-47fd-8415-6c576860f36a)|No control.|Can invite presenters from outside  of your organization. External presenters have a unique join link to join the webinar without waiting in the lobby.|
 |[Green room](https://support.microsoft.com/office/green-room-for-teams-meetings-5b744652-789f-42da-ad56-78a68e8460d5)|No control.|Can choose if green room is used for a webinar.|
 |[Hide attendee names (Teams Premium)](hide-attendee-names.md) |Can control whether organizers with a Premium license can hide the names and photos of attendees from other attendees in the stage, roster, and chat. | Can hide attendee names during webinars to protect identities and privacy. |
+|[Join verification check](join-verification-check.md) | Can require human verification checks for anonymous users to join webinars in your org.|No control|
 |[Limit presenter role permissions](presenter-role-reduction.md) |Can limit presenter role permissions for the tenant. |No control.|
 |[Live translated transcription (Teams Premium)](meeting-transcription-captions.md) |Can control whether organizers with a Premium license can have live translated transcription for their webinars. |Can enable live translated transcription for themselves; attendees can always turn on live translated transcription. |
 |[Manage what attendees see (Teams Premium)](https://support.microsoft.com/office/manage-what-attendees-see-in-teams-meetings-19bfd690-8122-49f4-bc04-c2c5f69b4e16)|No control|Can decide whose avatars or video feeds to spotlight during a Teams meeting. Others are hidden from view.|
 |[Manage who can schedule webinars](set-up-webinars.md)|Can disable webinars for users and groups, control which organizers can schedule webinars,  and decide whether organizers can schedule public webinars.|Can schedule webinars if allowed by admin.|
+|[Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md)|Can control the default values and enforce specific values for Microsoft 365 Copilot in Teams meetings and events in organizers’ meeting options.|Can control whether Microsoft 365 Copilot in Teams meetings and events is used **Only during the meeting**, **During and after the meeting**, or **Off** during their webinars. Attendees can use Copilot if they have a Copilot Microsoft 365 Copilot license.|
 |[Q&A](manage-qna-for-teams.md)|Can manage if organizers can use Q&A in webinars.|Can decide if Q&A is available for their webinars if allowed by admins. Webinar organizers and co-organizers can export the event's questions and answers to a CSV file.|
 |[Reactions](manage-reactions-meetings.md)| Manage whether organizers with this policy can use reactions in their webinars. |Can control whether reactions can be used in their webinars. |
 |[Recording](meeting-recording.md)| Can allow or prevent webinar recording. |If the admin enables recording, organizers can set who can record and automatic recording. |

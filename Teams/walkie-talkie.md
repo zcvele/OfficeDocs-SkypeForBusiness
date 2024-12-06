@@ -6,7 +6,7 @@ manager: jtremper
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-ms.reviewer: prkoduku
+ms.reviewer: yinchang
 description: How to manage the Walkie Talkie app in Microsoft Teams, which provides push-to-talk communication for teams on Android and iOS devices.
 ms.localizationpriority: medium
 search.appverid: MET150
@@ -19,7 +19,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/27/2024
+ms.date: 10/09/2024
 ---
 
 # Manage the Walkie Talkie app in Microsoft Teams
@@ -84,11 +84,17 @@ Pin Walkie Talkie to Teams for easy access. This step depends on which license y
 
 #### E license: Use an app setup policy to pin Walkie Talkie to Teams
 
+> [!NOTE]
+> If your users have an E licence and [Public preview is enabled in Teams](public-preview-doc-updates.md), Walkie Talkie is pre-pinned to the app bar.
+
 App setup policies let you customize Teams to pin apps that are most important for your users in your users.
 
 To pin the Walkie Talkie app for your users, you can edit the global (Org-wide default) policy or create and assign a custom policy in app setup policy. To learn more, see [Use app setup policies to pin and auto-install apps for users](teams-app-setup-policies.md).
 
 :::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Screenshot showing adding Walkie Talkie to the pinned apps list in the Add pinned apps pane." lightbox="media/deploy-walkie-talkie-2.png":::
+
+> [!NOTE]
+> If you're pinning more than 10 apps, Walkie Talkie must be added to one of the first 10 slots in the list.
 
 #### F license: Use the Tailored frontline app experience to pin Walkie Talkie and other apps to Teams
 

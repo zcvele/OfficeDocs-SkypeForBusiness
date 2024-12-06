@@ -1,7 +1,7 @@
 ---
 title: Overview of meetings, webinars, and town halls
 ms.reviewer: 
-ms.date: 10/13/2023
+ms.date: 9/18/2024
 ms.topic: article
 ms.author: wlibebe
 author: wlibebe
@@ -28,7 +28,7 @@ description: A guide for administrators to roll out and configure meetings, webi
 
 # Overview of meetings, webinars, and town halls
 
-**APPLIES TO:** ✔️Meetings ✔️Webinars ✔️Town halls
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls
 
 There are multiple ways to meet in Microsoft Teams:
 
@@ -44,21 +44,21 @@ The following table shows the main features that are different between meetings,
 
 |Feature|Meetings|Webinars|Town halls|
 |:------|:-------|:-------|:---------|
-|Lobby|✔️|✔️|✖️|
-|Attendee mic and camera|✔️|✔️|✖️|
-|End-to-end encryption|Premium|✖️|✖️|
-|Watermarks|Premium|✖️|✖️|
-|Theme|Premium|✔️|✔️|
-|Registration|✖️|✔️|✖️|
-|Breakout rooms|✔️|✖️<sup>2</sup>|✖️|
-|Content sharing and interaction|✔️|✔️|Q&A only|
-|Interactive participants|1,000 (Enterprise plans)<br>300 (Business plans)|1,000|Town halls: 10,000<br> Premium town halls: 20,000|
-|View-only participants|10,000<sup>1</sup> (Enterprise plans only)|✖️|✖️|
-|Maximum total participants|11,000<sup>1</sup> (Enterprise plans only)|1,000|Town halls: 10,000<br> Premium town halls: 20,000|
+|Lobby|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Attendee mic and camera|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|End-to-end encryption|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Watermarks|Premium|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Theme|Premium|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|
+|Registration|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Breakout rooms|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)<sup>1</sup>|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Content sharing and interaction|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|![Image of a checkmark for yes](/office/media/icons/success-teams.png)|Q&A only|
+|Interactive participants|1,000 (Enterprise plans)<br>300 (Business plans)<br>900 (View-only mode)|1,000|Town halls: 10,000<br> Premium town halls: 20,000|
+|View-only participants|10,000<sup>2</sup> (Enterprise plans only)|![Image of a x for no](/office/media/icons/cancel-teams.png)|![Image of a x for no](/office/media/icons/cancel-teams.png)|
+|Maximum total participants|10,900<sup>2</sup> (Enterprise plans only)|1,000|Town halls: 10,000<br> Premium town halls: 20,000|
 
-<sup>1</sup>The usual 10,000 is increased to 20,000 through June 30, 2024. The maximum total participants for meetings is the sum of the interactive participants plus streaming participants.<br>
+<sup>1</sup> Breakout rooms can be used if a webinar has fewer than 300 participants. However, if the number of participants increases to above 300, breakout rooms aren't supported.<br>
 
-<sup>2</sup> Breakout rooms can be used if a webinar has fewer than 300 participants. However, if the number of participants increases to above 300, breakout rooms aren't supported.
+<sup>2</sup>The usual maximum is increased to 20,000 through June 30, 2024. The maximum total participants for meetings is the sum of the interactive participants plus view-only participants.
 
 For more information on limits and specifications for Teams webinars, meetings, and town halls, see [Limits and specifications for Microsoft Teams.](limits-specifications-teams.md)
 
@@ -74,15 +74,15 @@ For details, see:
 
 ## Meetings
 
-Meetings in Teams include audio, video, and screen sharing for up to 1,000 people and a view-only streaming experience for participants over 1,000. Participants don't need to be a member of an organization (or have a Teams account) to join a Teams meeting. They can join directly from the calendar invitation via the Join meeting link or call in via audio if available.
+Meetings are generally best for situations where participants need to interact with each other via voice, video, or chat and where multiple people may be presenting. Meetings in Teams include audio, video, and screen sharing for up to 1,000 people and a view-only experience for participants over 900. Participants don't need to be a member of an organization (or have a Teams account) to join a Teams meeting. They can join directly from the calendar invitation via the Join meeting link or call in via audio if available.
 
 In addition to regularly scheduled meetings, your users can create channel meetings. With channel meetings, everybody in a team can see there's a meeting, join the meeting, and use the meeting chat.
 
-Meetings are generally best for situations where participants need to interact with each other via voice or chat and where multiple people may be presenting.
+Teams Premium offers additional meetings functionality through the Teams Premium subscription. For a list of Teams Premium features for meetings, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md).
 
 For detailed information on how to plan for Teams meetings in your organization, see [Plan for Teams meetings](plan-meetings.md).
 
-#### Key training for end users
+### Key meetings training for your users
 
 The following table lists meetings training available to the end users in your organization:
 
@@ -94,32 +94,13 @@ The following table lists meetings training available to the end users in your o
 
 ## Webinars
 
-Webinars are structured meetings where presenters and participants have clear roles. A key difference between webinars and Teams meetings is that webinars support robust registration management, a customizable event and registration site, and event-oriented default meeting options.
+Webinars are structured events where presenters and participants have clear roles. A key difference between webinars and Teams meetings is that webinars support robust registration management, a customizable event and registration site, and event-oriented default meeting options.
 
-Teams Premium offers additional webinar functionality through the Teams Premium subscription. The breakdown of features is  highlighted in the following table:
-
-|Feature name | Webinar features | Premium webinar features |
-|-------------------------------------------------------|:---------------------:|:-------------------------:|
-|Allow registered users to bypass the lobby         |✔️                      |✔️                          |
-|Assign a co-organizer                              |✔️                      |✔️                          |
-|Limit the number of people who can register        |✔️                      |✔️                         |
-|Require attendees to register|✔️|✔️|
-|Set up a green room for webinar presenters |✔️|✔️ |
-|Turn on Q&A for webinars with up to 1,000 attendees |✔️ |✔️|
-|View attendance reports|✔️|✔️|
-|External presenters|✔️|✔️|
-|Create a webinar wait list                         |                       |✔️                          |
-|Limit the day and time when people can register    |                       |✔️                         |
-|Manage attendees’ view                             |                       |✔️                          |
-|Manually approve registrants                       |                       |✔️                          |
-|Send reminder emails to registrants                |                       |✔️                          |
-|Use RTMP-In for webinars                           |                       |✔️                         |
-
-To learn more about advanced webinar features, see [Microsoft Teams Premium licensing.](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams#webinars)
+Teams Premium offers additional meetings functionality through the Teams Premium subscription. For a list of Teams Premium features for webinars, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#webinars) and [Microsoft Teams Premium licensing.](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams#webinars).
 
 For detailed information on how to plan for Teams webinars in your organization, see [Plan for Teams webinars](plan-webinars.md).
 
-#### Key training for end users
+### Key webinars training for your users
 
 The following table lists webinars training available to the end users in your organization:
 
@@ -132,32 +113,15 @@ The following table lists webinars training available to the end users in your o
 
 Town halls are generally best for situations where a limited number of presenters are presenting to a large group of attendees and direct interaction via chat or voice conversation isn't needed. For these event formats, attendees don't use their cameras and mics, but instead use Q&A to engage with presenters and organizers.
 
+For a list of Teams Premium features for town halls, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md#webinars) and [Microsoft Teams Premium licensing.](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams#webinars).
+
+To understand key differences between live events and town halls, see [Plan for town halls](plan-town-halls.md#live-events-and-premium-town-halls).
+
 For detailed information on how to plan for Teams town halls, see [Plan for Teams town halls](plan-town-halls.md).
 
-Teams Premium offers additional town hall functionality through the Teams Premium subscription. The breakdown of features is  highlighted in the following table:
+## Teams Premium
 
-|Capability|Town halls|Premium town halls|
-|:------|:-----|:---------|
-|Broadcast capacity|10k|20k|
-|Attendee reporting|✔️|✔️|
-|eCDN|3rd and 1st party|1st party|
-|Duration|30 hours|30 hours|
-|RTMP-in|✔️|✔️|
-|Producer UX|Manage what attendees see |Manage what attendees see |
-|Default audio and video off|✔️|✔️|
-|Layouts|Focused curated view|Focused curated view|
-|Green room|✔️|✔️|
-|External presenters|✔️|✔️|
-|External presenters capacity|20|20|
-|Presenter capacity (including external presenters)|100|100|
-|Co-organizer capacity|10|10|
-|Manage what attendees see|✔️|✔️|
-|AI generated captions|✔️|✔️|
-|Q&A capacity|10k|20k|
-|VOD|✔️|✔️|
-|Organizer level real time monitoring|✖️|✔️|
-|Essential emails|✔️|✔️|
-|Email editing|✖️|✔️|
+With a Teams Premium add-on license, you have access to enhanced administrative and telemetry support, as well as enhanced experiences, security, and protection for your users' meetings and events. To learn more, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md).
 
 ## Best practices for large meetings and events
 
@@ -174,8 +138,6 @@ To run a successful event, follow the practices outlined below:
 
 ## Related topics
 
-[Meetings and conferencing in Teams](deploy-meetings-microsoft-teams-landing-page.md)
-
-[Use NDI® technology in Microsoft Teams](use-ndi-in-meetings.md)
-
-[Teams settings and policies reference](settings-policies-reference.md)
+- [Meetings and conferencing in Teams](deploy-meetings-microsoft-teams-landing-page.md)
+- [Use NDI® technology in Microsoft Teams](use-ndi-in-meetings.md)
+- [Teams settings and policies reference](settings-policies-reference.md)
