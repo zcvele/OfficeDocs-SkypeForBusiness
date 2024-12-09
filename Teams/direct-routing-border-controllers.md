@@ -55,7 +55,6 @@ Note that we're not accepting new nominations for certification until further no
 
 |Vendor|Product|Non-media bypass|Media bypass|Software version|911 Service Provider Capable*|ELIN capable|
 |---|---|---|---|---|---|---|
-|[Microsoft](https://azure.microsoft.com/products/communications-gateway/)|Azure Communications Gateway |&#10004;|&#10004;|2023-01-31|&#10004;|&#10004;|
 |[AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams)|Mediant 500 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
 ||Mediant 500 Li SBC|&#10004;|&#10004;|Supported 7.2x.xxx (Recommended 7.40A.400)|&#10004;|&#10004;|
 ||Mediant 800 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
