@@ -32,7 +32,7 @@ Certification programs are designed to ensure all certified devices run an Andro
 
 Microsoft is committed to certifying devices on the latest Android versions available for Teams devices as long as OEM partners and SoC manufacturers are able to meet all certification requirements in effect at the time device enters certification.
 
-Microsoft and its Original Equipment Manufacturers (OEM) partners continually develop products to meet the needs of the market and elevate the Teams devices experience. During the product lifecycle, some products may receive an OS upgrade before their certification expires and will undergo re-certification, while others might not get re-certified and will ultimately be discontinued by the OEM.
+Microsoft and its Original Equipment Manufacturers (OEM) partners continually develop products to meet the needs of the market and elevate the Teams devices experience. During the product lifecycle, some products may receive an OS upgrade before their certification expires and will undergo recertification, while others might not get re-certified and will ultimately be discontinued by the OEM.
 
 We recognize that device certification expiration can impact your business. Our OEM partners have detailed End-of-Life policies to assist and direct you towards adopting newer technologies. For the most current information on Teams certified devices referenced here, please consult our OEM partners' websites.
 
@@ -77,6 +77,7 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | EPOS EXPAND Control Touch Console | `1.2.22250.08` | September 3, 2025 | Compatible with EPOS Expand 5T Collaboration Bar. | 10 |
 | Jabra PanaCast 50 VBS | `1.1.0-1` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10 |
 | Jabra PanaCast 50 Touch Console | `1.1.0-1` | September 3, 2025 | Compatible with Jabra PanaCast 50 VBS | 10 |
+| Logitech Rally Board 65 (VR0039)  | `0.901.13` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
 | Logitech Rally Bar Huddle (VR0034)  | `0.903.73` | September 3, 2025 | Focus room(3 m x 3 m) | 11 |
 | Logitech Tap IP (VR0029) | `1.6.565` | September 3, 2025 | Compatible with Logitech RoomMate, Rally Bar, and Rally Bar Mini | 10 |
 | Logitech Roommate (VR0030) | `1.4.71` | September 3, 2025 | Large meeting room (4.5 m x 8.5 m) | 10 |
@@ -122,36 +123,50 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 #### Audiocodes
 
-| Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
-|:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
-| Audiocodes RXV81 | `2.6.280` | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`|  `1.0.0.202407050618.product` | October 18, 2024|
-| Audiocodes RX-Pad | `2.6.280` | N/A | `1449/1.0.96.2024080804` | `5.0.6152.0`| `1.0.0.202407050618.product` | October 18, 2024|
-| Audiocodes RXV200 | `2.6.280` | N/A | `1449/1.0.96.2024080804` | `5.0.6152.0`| `1.0.0.202407050618.product` | October 18, 2024|
-| Audiocodes RXV81 | `2.6.228` | N/A| `1449/1.0.96.2024061103` | `5.0.6152.0`|  `1.0.0.202402202353.product` | September 4, 2024|
-| Audiocodes RX-Pad | `2.6.228` | N/A | `1449/1.0.96.2024061103` | `5.0.6152.0`| `1.0.0.202402202353.product` | September 4, 2024|
-| Audiocodes RXV200 | `2.6.228` | N/A | `1449/1.0.96.2024061103` | `5.0.6152.0`| `1.0.0.202402202353.product` | September 4, 2024|
-| Audiocodes RXV81 | `2.4.121` | N/A| `1449/1.0.96.2024042606` | `5.0.6152.0`|  `1.0.0.202402202353.product` | July 11, 2024|
-| Audiocodes RX-Pad | `2.4.121` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | July 11, 2024|
-| Audiocodes RXV200 | `2.4.121` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | July 11, 2024|
-| Audiocodes RXV81 | `2.4.55` | N/A| `1449/1.0.96.2024032804` | `5.0.5484.0`|  `1.0.0.202402202353.product` | May 20, 2024|
-| Audiocodes RX-Pad | `2.4.55` | N/A | `1449/1.0.96.2024032804` | `5.0.5484.0`| `1.0.0.202402202353.product` | May 20, 2024|
-| Audiocodes RXV200 | `2.4.55` | N/A | `1449/1.0.96.2024032804` | `5.0.5484.0`| `1.0.0.202402202353.product` | May 20, 2024|
-| Audiocodes RXV81 | `2.2.808` | N/A| `1449/1.0.97.2023062301` | `5.0.5484.0`|  `1.0.0.202310260109.product` | March 1, 2024|
-| Audiocodes RX-Pad | `2.2.808` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202310260109.product` | March 1, 2024|
-| Audiocodes RXV200 | `2.2.808` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202310260109.product` | March 1, 2024|
-| Audiocodes RXV81 | `2.2.335` | N/A| `1449/1.0.97.2023062301` | `5.0.5484.0`|  `1.0.0.202306202019.product` | November 9, 2023|
-| Audiocodes RX-Pad | `2.2.335` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202306202019.product` | November 9, 2023|
-| Audiocodes RXV200 | `2.2.335` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202306202019.product` | November 9, 2023|
-| Audiocodes RXV81 | `2.2.311` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202306202019.product` | October 17, 2023|
-| Audiocodes RX-Pad | `2.2.311` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202306202019.product` | October 17, 2023|
-| Audiocodes RXV81 | `2.0.369` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202305022347.product` | July 24, 2023|
-| Audiocodes RX-Pad | `2.0.369` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`| `1.0.0.202305022347.product` | July 24, 2023|
-| Audiocodes RXV81 | `2.0.268` | N/A |`1449/1.0.96.2023041207`| `5.0.5484.0`| `1.0.0.202301162118.product` | May 30, 2023 |
+| Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
+|:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
+| Audiocodes RXV81 | `2.6.293 (AOSP)` | N/A| `1449/1.0.96.2024091202` | `N/A`| `24.09.1` | `6.2410.7268` |  `1.0.0.202407050618.product` | December 19, 2024|
+| Audiocodes RX-Pad | `2.6.293 (AOSP)` | N/A | `1449/1.0.96.2024091202` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product` | December 19, 2024|
+| Audiocodes RXV200 | `2.6.293 (AOSP)` | N/A | `1449/1.0.96.2024091202` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product` | December 19, 2024|
+| Audiocodes RXV81 | `2.6.280` | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`|`N/A`|`N/A`|  `1.0.0.202407050618.product` | October 18, 2024|
+| Audiocodes RX-Pad | `2.6.280` | N/A | `1449/1.0.96.2024080804` | `5.0.6152.0`|`N/A`|`N/A`| `1.0.0.202407050618.product` | October 18, 2024|
+| Audiocodes RXV200 | `2.6.280` | N/A | `1449/1.0.96.2024080804` | `5.0.6152.0`|`N/A`|`N/A`| `1.0.0.202407050618.product` | October 18, 2024|
+| Audiocodes RXV81 | `2.6.228` | N/A| `1449/1.0.96.2024061103` | `5.0.6152.0`|`N/A`|`N/A`|  `1.0.0.202402202353.product` | September 4, 2024|
+| Audiocodes RX-Pad | `2.6.228` | N/A | `1449/1.0.96.2024061103` | `5.0.6152.0`|`N/A`|`N/A`| `1.0.0.202402202353.product` | September 4, 2024|
+| Audiocodes RXV200 | `2.6.228` | N/A | `1449/1.0.96.2024061103` | `5.0.6152.0`|`N/A`|`N/A`| `1.0.0.202402202353.product` | September 4, 2024|
+| Audiocodes RXV81 | `2.4.121` | N/A| `1449/1.0.96.2024042606` | `5.0.6152.0`|`N/A`|`N/A`|  `1.0.0.202402202353.product` | July 11, 2024|
+| Audiocodes RX-Pad | `2.4.121` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`|`N/A`|`N/A`| `1.0.0.202402202353.product` | July 11, 2024|
+| Audiocodes RXV200 | `2.4.121` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`|`N/A`|`N/A`| `1.0.0.202402202353.product` | July 11, 2024|
+| Audiocodes RXV81 | `2.4.55` | N/A| `1449/1.0.96.2024032804` | `5.0.5484.0`|`N/A`|`N/A`|  `1.0.0.202402202353.product` | May 20, 2024|
+| Audiocodes RX-Pad | `2.4.55` | N/A | `1449/1.0.96.2024032804` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202402202353.product` | May 20, 2024|
+| Audiocodes RXV200 | `2.4.55` | N/A | `1449/1.0.96.2024032804` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202402202353.product` | May 20, 2024|
+| Audiocodes RXV81 | `2.2.808` | N/A| `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`|  `1.0.0.202310260109.product` | March 1, 2024|
+| Audiocodes RX-Pad | `2.2.808` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202310260109.product` | March 1, 2024|
+| Audiocodes RXV200 | `2.2.808` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202310260109.product` | March 1, 2024|
+| Audiocodes RXV81 | `2.2.335` | N/A| `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`|  `1.0.0.202306202019.product` | November 9, 2023|
+| Audiocodes RX-Pad | `2.2.335` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202306202019.product` | November 9, 2023|
+| Audiocodes RXV200 | `2.2.335` | N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202306202019.product` | November 9, 2023|
+| Audiocodes RXV81 | `2.2.311` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202306202019.product` | October 17, 2023|
+| Audiocodes RX-Pad | `2.2.311` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202306202019.product` | October 17, 2023|
+| Audiocodes RXV81 | `2.0.369` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202305022347.product` | July 24, 2023|
+| Audiocodes RX-Pad | `2.0.369` |  N/A | `1449/1.0.97.2023062301` | `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202305022347.product` | July 24, 2023|
+| Audiocodes RXV81 | `2.0.268` | N/A |`1449/1.0.96.2023041207`| `5.0.5484.0`|`N/A`|`N/A`| `1.0.0.202301162118.product` | May 30, 2023 |
 
 #### Cisco
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Cisco Board Pro 55 | `ce11.22.1.12` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
+| Cisco Board Pro 75 | `ce11.22.1.12` |  N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` |  December 16, 2024|
+| Cisco Room Bar | `ce11.22.1.12` |  N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` |  December 16, 2024|
+| Cisco Room Kit Pro | `ce11.22.1.12` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product`| December 16, 2024|
+| Cisco Desk Pro | `ce11.22.1.12` |  N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
+| Cisco Room Bar Pro | `ce11.22.1.12` |  N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
+| Cisco Room Kit EQ | `ce11.22.1.12` |  N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
+| Cisco Navigator | `ce11.22.1.12` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
+| Cisco Room Kit EQX | `ce11.22.1.12` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
+| Cisco Board Pro G2 55 | `ce11.22.1.12` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
+| Cisco Board Pro G2 75 | `ce11.22.1.12` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 16, 2024|
 | Cisco Board Pro 55 | `ce11.21.1.8` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | November 4, 2024|
 | Cisco Board Pro 75 | `ce11.21.1.8` |  N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` |  November 4, 2024|
 | Cisco Room Bar | `ce11.21.1.8` |  N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` |  November 4, 2024|
@@ -310,6 +325,11 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Logi Rallybar (VR0019) | `1.13.199` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0`| `1.0.0.202402202353.product` | December 12, 2024|
+| Logi Rallybar Mini (VR0020) | `1.13.199` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0`| `1.0.0.202402202353.product` | December 12, 2024|
+| Logi RoomMate (VR0030) | `1.13.194`   | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0`| `1.0.0.202402202353.product` | December 12, 2024|
+| Logi Rallybar Huddle (VR0034) | `1.13.154`   | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0`| `1.0.0.202402202353.product` | December 12, 2024|
+| Logi TAP IP (VR0029) | `1.13.145`| N/A | `1449/1.0.96.2024101004` | `5.0.6152.0`| `1.0.0.202402202353.product` | December 12, 2024|
 | Logi Rallybar (VR0019) | `1.13.127` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | October 3, 2024|
 | Logi Rallybar Mini (VR0020) | `1.13.127` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | October 3, 2024|
 | Logi RoomMate (VR0030) | `1.13.124`   | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | October 3, 2024|
@@ -365,6 +385,13 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Neat Pad touch console | `NFA1.20241113.0515`  | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| January 13, 2025|
+| Neat Bar | `NFB1.20241113.0013` | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| January 13, 2025|
+| Neat Board | `NFC1.20241113.0013` |  N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| January 13, 2025|
+| Neat Bar Pro| `NFD1.20241113.0013` | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| January 13, 2025|
+| Neat Bar Gen2 | `NFE1.20241113.0013` | N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| January 13, 2025|
+| Neat Board 50 | `NFH1.20241113.0013` |  N/A | `1449/1.0.96.2024101004`| `5.0.6152.0` | `1.0.0.202407050618.product`| January 13, 2025|
+| Neat Board Pro 65 | `NFK1.20241113.0013` | N/A | `1449/1.0.96.2024101004` | `5.0.6152.0` | `1.0.0.202407050618.product`| January 13, 2025|
 | Neat Bar Gen2 | `NFE1.20240924.0005 ` | N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
 | Neat Bar | `NFB1.20240924.0005` | N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
 | Neat Bar Pro| `NFD1.20240924.0007` | N/A | `1449/1.0.96.2024091202`| `5.0.6152.0` | `1.0.0.202402202353.product`| November 13, 2024|
@@ -419,6 +446,15 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Poly Studio X30 | `4.4.0-416273` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
+| Poly Studio X50 | `4.4.0-416273` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
+| Poly Studio X52 | `4.4.0-416273` |`N/A` |`1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
+| Poly Studio X70 | `4.4.0-416273` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
+| Poly Studio X72 | `4.4.0-416273` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| November 11, 2024|
+| Poly Studio G7500 | `4.4.0-416273` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
+| Poly Studio G62 | `4.4.0-416273` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
+| Poly TC8 | `6.4.0-7000547` | N/A | `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
+| Poly TC10 | `6.4.0-7000547` | N/A | `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 12, 2024|
 | Poly Studio X30 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| October 10, 2024|
 | Poly Studio X50 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| October 10, 2024|
 | Poly Studio X52 | `4.3.2.422023` |`N/A` |`1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| October 10, 2024|
@@ -491,6 +527,8 @@ For information about the latest Teams app releases, see [What's new in Microsof
 #### Yealink
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|
+| Yealink MeetingBar A40 | `289.320.0.43` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.productt` | December 6, 2024 |
+| Yealink CTP25 | `311.320.0.34` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | December 6, 2024 |
 | Yealink MeetingBar A10 | `278.320.0.48` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |
 | Yealink MeetingBar A20 | `133.320.0.46` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |
 | Yealink MeetingBar A30 | `133.320.0.46` | N/A | `1449/1.0.96.2024080804`| `5.0.6152.0` | `1.0.0.202402202353.product` | September 17, 2024 |
@@ -524,6 +562,17 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date | Cloud |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:----------------------------------|
+| Cisco Board Pro 55 | `ce11.21.1.8` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Board Pro 75 | `ce11.21.1.8` |  N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Room Bar | `ce11.21.1.8` |  N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` |  December 13, 2024| GCCH|
+| Cisco Room Kit Pro | `ce11.21.1.8` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product`| December 13, 2024| GCCH|
+| Cisco Desk Pro | `ce11.21.1.8` |  N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Room Bar Pro | `ce11.21.1.8` |  N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Room Kit EQ | `ce11.21.1.8` |  N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Navigator | `ce11.21.1.8` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Room Kit EQX | `ce11.21.1.8` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Board Pro G2 55 | `ce11.21.1.8` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
+| Cisco Board Pro G2 75 | `ce11.21.1.8` | N/A | `1449/1.0.96.2024091202` | `5.0.6152.0` | `1.0.0.202407050618.product` | December 13, 2024| GCCH|
 | Cisco Board Pro 55 | `11.18.1.8` | N/A | `1449/1.0.96.2024061103` | `5.0.6061.0` | `1.0.0.202402202353.product` | September 27, 2024| GCCH|
 | Cisco Board Pro 75 | `11.18.1.8` |  N/A | `1449/1.0.96.2024061103` | `5.0.6061.0` | `1.0.0.202402202353.product` |  September 27, 2024| GCCH|
 | Cisco Room Bar | `11.18.1.8` |  N/A | `1449/1.0.96.2024061103` | `5.0.6061.0` | `1.0.0.202402202353.product` |  September 27, 2024| GCCH|
@@ -570,6 +619,11 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date | Cloud |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:-----------------|
+| Logi Rallybar (VR0019) | `1.13.127` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi Rallybar Mini (VR0020) | `1.13.127` | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi RoomMate (VR0030) | `1.13.124`   | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi Rallybar Huddle (VR0034) | `1.13.121`   | N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
+| Logi TAP IP (VR0029) | `1.13.124`| N/A | `1449/1.0.96.2024042606` | `5.0.6152.0`| `1.0.0.202402202353.product` | January 23, 2025| GCCH|
 | Logi Rallybar (VR0019) | `1.12.268` | N/A | `1449/1.0.96.2024042606` | `5.0.5484.0`| `1.0.0.202402202353.product` | October 7, 2024| GCCH|
 | Logi Rallybar Mini (VR0020) | `1.12.268` | N/A | `1449/1.0.96.2024042606` | `5.0.5484.0`| `1.0.0.202402202353.product` | October 7, 2024| GCCH|
 | Logi Rallybar (VR0019) | `1.12.264` | N/A | `1449/1.0.96.2024042606` | `5.0.5484.0`| `1.0.0.202402202353.product` | August 23, 2024| GCCH|
@@ -609,6 +663,15 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Admin Agent | Release date | Cloud |
 |:-------------------|:----------------------------|:---------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:---------------------------------|
+| Poly Studio X30 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly Studio X50 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly Studio X52 | `4.3.2.422023` |`N/A` |`1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly Studio X70 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly Studio X72 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly Studio G7500 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly Studio G62 | `4.3.2.422023` | `N/A`| `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly TC8 | `6.3.2.211744` | N/A | `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
+| Poly TC10 | `6.3.2.211744` | N/A | `1449/1.0.96.2024080804`| `5.0.6061.0` | `1.0.0.202402202353.product`| December 13, 2024|GCCH |
 | Poly Studio X30 | `4.2.0-396113` | `4.1.0_00.180034`| `1449/1.0.96.2024020802`| `5.0.6061.0` | `1.0.0.202310260109.product`| May 7, 2024| GCCH |
 | Poly Studio X50 | `4.2.0-396113` | `4.1.0_00.180034`| `1449/1.0.96.2024020802`| `5.0.6061.0` | `1.0.0.202310260109.product`| May 7, 2024| GCCH |
 | Poly Studio X52 | `4.2.0-396113` |`4.1.0.382189` |`1449/1.0.96.2024020802`| `5.0.6061.0` | `1.0.0.202310260109.product`| May 7, 2024| GCCH |

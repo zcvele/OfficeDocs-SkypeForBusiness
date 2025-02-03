@@ -192,7 +192,7 @@ The following tables compare key features between Teams and Teams Premium. Becau
 | Add watermarks to meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | End-to-end encryption for meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Control who can record |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
-| Prevent copy/paste in meeting chats |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
+| Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcripts |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Assign Microsoft Purview Information Protection sensitivity labels for meetings\* |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Custom user policy packages |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
 | Prevent users from sharing content in external Teams meetings |  | ![Image of a checkmark for yes](/office/media/icons/success-teams.png) |
@@ -291,7 +291,6 @@ The Queues app is a Teams-native solution designed to empower organizations to m
 
 For a complete list of features available in the Queues app, see [Manage voice applications policies](/microsoftteams/manage-voice-applications-policies).
 
-
 ### Immersive Mesh Experiences
 
 With Immersive spaces in Teams, your users can join a 3D immersive meeting experience for up-to 16 people right from any Teams meeting.</br>
@@ -318,7 +317,7 @@ With the general release of Teams Premium on February 1, 2023, the following Tea
 
 ## What are the requirements to purchase Teams Premium?
 
-Teams Premium is available to purchase worldwide through all Microsoft purchasing channels, including EA, EAS, CSP, Web Direct, NCE - Customer led, and NCE - Partner led.
+Teams Premium is available to purchase worldwide through all Microsoft purchasing channels, including EA, EAS, CSP, Web Direct, MCA - Customer led, and MCA - Partner led.
 
 Before you can purchase Teams Premium licenses for your users, ensure your tenant and users meet the requirements.
 
@@ -427,7 +426,7 @@ The following list indicates Teams Premium features that require admin configura
 - Using end-to-end encryption on meetings up to 200 participants.
 - Adding watermarks to meetings.
 - Adding sensitivity labels.
-- Preventing copy and paste in meeting chats.
+- Allowing organizers to restrict participants from copying or forwarding meeting chat messages, live captions, and transcripts
 - Using organization customized backgrounds.
 - Using organization customized Together mode scenes.
   - Admin must create the custom Together mode scene.

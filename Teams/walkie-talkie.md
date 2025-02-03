@@ -146,8 +146,8 @@ Walkie Talkie is integrated with a range of specialized headsets and devices tha
 
 |Manufacturer  |Model  |Wired or wireless|Platform|
 |---------|---------|---------|---------|
-|[BlueParrott](https://www.blueparrott.com/microsoft-teams-walkie-talkie)|<ul><li>[B450-XT](https://www.blueparrott.ca/on-the-road-headsets/blueparrott-b450-xt), firmware version 1.07</li><li>[C300-XT](https://www.blueparrott.ca/on-the-road-headsets/blueparrott-c300-xt), firmware version 1.30</li></ul>|Wireless|Android, iOS|
-|Jabra    |<ul><li>[Perform 45](https://www.jabra.ca/bluetooth-headsets/jabra-perform-45)</li></ul>|Wireless|Android, iOS|
+|[BlueParrott](https://www.blueparrott.com/microsoft-teams-walkie-talkie)|<ul><li>[B450-XT](https://www.blueparrott.ca/on-the-road-headsets/blueparrott-b450-xt), firmware version 1.09</li><li>[C300-XT](https://www.blueparrott.ca/on-the-road-headsets/blueparrott-c300-xt), firmware version 1.30</li></ul>|Wireless|Android, iOS|
+|Jabra    |<ul><li>[Perform 45](https://www.jabra.ca/bluetooth-headsets/jabra-perform-45), firmware version 1.09</li></ul>|Wireless|Android, iOS|
 |[Klein Electronics](https://www.kleinelectronics.com/poc-accessories/mtwt/)   |<ul><li>3.5 mm</li><li>USB-C</li></ul>|Wired|Android|
 
 **Rugged Android phones**
@@ -184,6 +184,12 @@ All other tenants have their Walkie Talkie customer data stored in data centers 
 ### How can I determine customer data location?
 
 See [Microsoft Entra ID and data residency](/azure/active-directory/fundamentals/data-residency).
+
+## Troubleshoot Walkie Talkie
+
+The [Walkie Talkie troubleshooting guide](walkie-talkie-troubleshoot.md) provides troubleshooting guidance for common issues that users might encounter when using Walkie Talkie.
+
+Use this information to identify and address issues to help with more effective troubleshooting for a smooth communication experience.
 
 ## Give feedback or report an issue
 

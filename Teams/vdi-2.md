@@ -4,7 +4,7 @@ author: MicrosoftHeidi
 ms.author: heidip
 manager: jtremper
 ms.topic: article
-ms.date: 11/25/2024
+ms.date: 12/06/2024
 ms.service: msteams
 audience: admin
 ms.collection: 
@@ -25,7 +25,7 @@ ms.localizationpriority: high
 New VDI solution for Teams is a new architecture for optimizing the delivery of multimedia workloads in virtual desktops.
 
 > [!IMPORTANT]
-> The rollout to General Availability is now complete for Azure Virtual Desktops and Windows 365. For Citrix customers, in order to participate on the public preview, administrators must move users to the public preview channel as described [in this article](public-preview-doc-updates.md).
+> Microsoft has completed the General Availability rollout for Citrix customers. The new optimization requires Microsoft Teams version 24295.605.3225.8804, and client version 24110115722, as seen in **Settings** > **About Teams**.
 
 ## Components
 
@@ -49,7 +49,7 @@ New VDI solution for Teams is a new architecture for optimizing the delivery of 
 
 ### Step 1: Confirm prerequisites
 
-1. Make sure you have the new Microsoft Teams version 24193.1805.3040.8975 or higher (for Azure Virtual Desktop/Windows 365), and 24165.1410.2974.6689 or higher for Citrix.
+1. Make sure you have the new Microsoft Teams version 24193.1805.3040.8975 or higher (for Azure Virtual Desktop/Windows 365), and 24295.605.3225.8804 or higher for Citrix.
 1. [Enable the new Teams policy](#microsoft-teams-powershell-policy-for-optimization) **if necessary** for a specific user group (it's enabled by default at a Global org-wide level).
 1. For Citrix, you must configure the **Virtual channel allow list** as described in the [Citrix Virtual channel allow list](#citrix-virtual-channel-allow-list) section of this article.
 
@@ -91,6 +91,11 @@ The plugin MSI automatically detects the CWA installation folder and places MsTe
 - Plugins can't be downgraded, only upgraded or reinstalled (repaired).
 - Per-user installation of CWA isn't supported.
 - If no CWA is found on the endpoint, installation is stopped.
+
+|Release note version |Details  |
+|---------------------|---------|
+|2024.41.1.1          |October 2024</br>-When using SlimCore in multimonitor set ups, a Citrix user is unable to share entire screen or individual monitors.</br>-Attempts a [Reset-AppxPackage](/powershell/module/appx/reset-appxpackage) if SlimCoreVdi MSIX package registrations fail after the virtual channel is established. |
+|2024.32.X.X          |August 2024</br>-Plugin now attempts a Reset-AppxPackage for SlimCoreVdi MSIX package, in case AppExecution alias is missing. |
 
 ### Step 3: SlimCore MSIX staging and registration on the endpoint
 
@@ -154,7 +159,7 @@ PowerShellCopy
 Get-AppxPackage Microsoft.Teams.SlimCore*
 ```
 
-A sample of the results that can be returned from running this Powershell is:
+A sample of the results that can be returned from running this PowerShell is:
 
 ```powershell
 Name              : Microsoft.Teams.SlimCoreVdi.win-x64.2024.32
@@ -236,13 +241,13 @@ IP blocks for signaling, media, background effects, and other options are descri
 
 1. Teams media flows connectivity is implemented using standard IETF Interactive Connectivity Establishment (ICE) for STUN and TURN procedures.
 1. Real-time media. Data encapsulated within Real-time Transport Protocol (RTP) that supports audio, video, and screen sharing workloads. In general, media traffic is highly latency sensitive. This traffic must take the most direct path possible and use UDP versus TCP as the transport layer protocol, which is the best transport for interactive real-time media from a quality perspective.
-  - As a last resort, media can use TCP/IP and also be tunneled within the HTTP protocol, but it's not recommended due to bad quality implications.
-  - RTP flow is secured using SRTP, in which only the payload is encrypted.
+    - As a last resort, media can use TCP/IP and also be tunneled within the HTTP protocol, but it's not recommended due to bad quality implications.
+    - RTP flow is secured using SRTP, in which only the payload is encrypted.
 1. Signaling. The communication link between the endpoint and Teams servers, or other clients, used to control activities (for example, when a call is initiated). Most signaling traffic uses UDP 3478 with fallback to HTTPS, though in some scenarios (for example, the connection between Microsoft 365 and a Session Border Controller) it uses SIP protocol. It's important to understand that this traffic is much less sensitive to latency but may cause service outages or call timeouts if latency between the endpoints exceeds several seconds.
 
 ### Bandwidth consumption
 
-Teams is designed to give the best audio, video, and content sharing experience regardless of your network conditions. When bandwidth is insufficient, Teams prioritizes audio quality over video quality. Where bandwidth isn't limited, Teams optimizes media quality, including high-fidelity audio, up to 1080p video resolution, and up to 30 fps (frames per second) for video and content. To learn more, read [Bandwidth requirements](prepare-network.md#bandwidth-requirements)
+Teams is designed to give the best audio, video, and content sharing experience regardless of your network conditions. When bandwidth is insufficient, Teams prioritizes audio quality over video quality. Where bandwidth isn't limited, Teams optimizes media quality, including high-fidelity audio, up to 1080p video resolution, and up to 30 fps (frames per second) for video and content. To learn more, read [Bandwidth requirements](prepare-network.md#bandwidth-requirements).
 
 ### Quality of services (QoS)
 
@@ -304,6 +309,7 @@ This policy is now expanded with an additional argument as the only configuratio
 |Gallery View 3x3 and 7x7          |Yes                                                             |No                            |
 |Quality of Service                |Yes                                                             |No                            |
 |Noise suppression                 |Yes                                                             |Yes (AVD)                     |
+|Voice isolation                   |Yes                                                             |No                            |
 |HID                               |Yes                                                             |Yes (AVD and Omnissa)         |
 |Presenter mode                    |Yes                                                             |No                            |
 |Teams Premium                     |Yes</br>(Pending: Watermark, Townhalls, Decorate my Background) |No                            |
@@ -320,6 +326,7 @@ This policy is now expanded with an additional argument as the only configuratio
 |Share system audio                |Yes                                                             |Yes                           |
 |Secondary ringer                  |Yes                                                             |Yes                           |
 |Background blurring               |Yes                                                             |Yes                           |
+|Annotations                       |Only as presenter                                               |No                            |
 
 ## SlimCore user profile on the endpoint
 
@@ -377,6 +384,16 @@ By default, the MsTeamsPlugin automatically downloads and installs the right Sli
 - Screen Capture Protection (SCP) causes the presenter's screen to show as a black screen with only the mouse cursor on top it (as seen by the receiving side).
 - Calls drop on Teams running on the local machine that has an HID peripheral connected if a user launches a virtual desktop from that same local machine and logs into Teams.
 - Camera self preview isn't supported at this time (either under Settings/Devices, or while on a call when selecting the down arrow on the camera icon).
+- In the Control Panel/Apps/Installed apps of the endpoint, users will see multiple "Microsoft Teams VDI" entries (one for every Slimcore package installed).
+- When doing full monitor screen sharing, the call monitor window is visible for the other participants (without any video content inside).
+- In Citrix, app sharing sessions might freeze for the other participants if the presenter is on both VDA version 2402 and CWA for Windows 2309.1 (or higher versions).
+  - The issue happens when a video element is destroyed.
+       - For example, a participant turns off their camera in the middle of the app sharing session.
+       - If someone turns their camera **on** only, there's no issue because the video element is created, not destroyed.
+       - If the presenter maximizes the call monitor (which destroys the self preview of what the presenter is sharing).
+  - Stopping and resharing the window should resolve the issue.
+  - This issue has been resolved in new Teams 24335.206.X.X or higher versions.
+- If you're on a video call and you open the Start menu on the virtual machine, a blank screen shows in the Teams meeting window instead of the video feed.
 
 #### Citrix virtual channel allow list
 
@@ -397,6 +414,12 @@ The new Teams client requires three custom virtual channels to function: MSTEAMS
 2. The VDA machines must be rebooted for the policy to take effect.
 
 #### Screen sharing
+
+Both outgoing screensharing and appsharing behave differently in optimized VDI when compared to the non-optimized Teams desktop client.
+As such, these activities require encoding that leverages the user's device resources (for example CPU, GPU, RAM, network, and so on).
+From a network perspective, sharing is done directly between the user's device and the other peer or conference server.
+
+When doing a full monitor screenshare, the Teams call monitor is captured and visible to the other participants (although the video elements inside aren't visible and instead are seen as blank squares). When doing app sharing, only the application being shared is visible to the other participants and the call monitor isn't captured.
 
 ##### Citrix App Protection and Microsoft Teams compatibility
 
@@ -476,7 +499,7 @@ Teams logs can be collected by selecting Ctrl+Alt+Shift+1 while running Teams on
 - **vdiVersionInfo** provides useful information for the Teams client and the endpoint.
   - **bridgeVersion** is tied to the version of the Teams desktop client running on the VM.
   - **remoteSlimcroreVersion** is the version of the SlimCore VDI that's available on the endpoint.
-  - **nodeId** is a unique id tied to the endpoint.
+  - **nodeId** is a unique ID tied to the endpoint.
   - **clientOsVersion** is the OS version for the endpoint.
   - **rdClientVersion** is the version of the remote desktop client running on the endpoint, which is used to connect to the VM.
   - **rdClientProductName** is the name of the remote desktop client running on the endpoint.

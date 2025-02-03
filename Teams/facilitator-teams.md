@@ -11,6 +11,7 @@ ms.service: msteams
 audience: Admin
 ms.collection: 
   - M365-collaboration
+  - magic-ai-copilot
 ms.custom:
   - admindeeplinkTEAMS
 f1.keywords:
@@ -38,7 +39,7 @@ Use Facilitator in peer-to-peer:
 
 Unlike an individual user's queries to Copilot in Teams, Facilitator displays Copilot's notes within the group's conversation. Users can focus on the conversation and let Facilitator take care of the note-taking for everyone.
 
-Facilitator also continuously updates as the conversation progresses. For example, the AI-generated notes display the options being considered by the team and then replaces those options with a single choice once the group decides. Now, that's intelligent collaboration right in Teams.
+Facilitator also continuously updates as the conversation progresses. For example, the AI-generated notes display the options being considered by the team and then replace those options with a single choice once the group decides. Now, that's intelligent collaboration right in Teams.
 
 > [!IMPORTANT]
 > Facilitator's notes are communally shared between collaborators.
@@ -49,7 +50,7 @@ Facilitator also continuously updates as the conversation progresses. For exampl
 
 For more information about how users can integrate AI-generated notes into their Teams chats, see [Keep track of chats with AI notes in Microsoft Teams](https://support.microsoft.com/office/keep-track-of-chats-with-AI-notes-in-Microsoft-Teams-0b7efbd0-fd3e-48e7-9a4b-4ea22cdc12c0).
 
-For more information about how users can integrate AI-generated notes into their Teams meetings, see [Automate notetaking in Microsoft Teams meetings](https://support.microsoft.com/office/automate-notetaking-in-Microsoft-Teams-meetings-37657f91-39b5-40eb-9421-45141e3ce9f6).
+For more information about how users can integrate AI-generated notes into their Teams meetings, see [Automate note-taking in Microsoft Teams meetings](https://support.microsoft.com/office/automate-notetaking-in-Microsoft-Teams-meetings-37657f91-39b5-40eb-9421-45141e3ce9f6).
 
 ## Security, Compliance, and Privacy
 
@@ -57,7 +58,7 @@ Facilitator, Copilot, and Microsoft 365 are built on Microsoft's comprehensive a
 
 When you use Microsoft Purview for your security and compliance management, AI-generated notes are supported by new [auditing events](/purview/audit-log-activities#microsoft-teams-activities) that surface in [Data Security Posture Management for AI](/purview/ai-microsoft-purview#data-security-posture-management-for-ai-provides-insights-policies-and-controls-for-ai-apps) and can be used by [eDiscovery with a KQL query](/purview/edisc-keyword-query-language).
 
-To automatically retain or delete the notes, use a Microsoft Purview Data Lifecycle Management retention policy with the **Teams chat** location for AI-generated notes in chat, and a retention policy for **OneDrive accounts** for AI-generated notes in meetings.
+To [automatically retain or delete](/purview/retention) AI-generated notes in chat, use a Microsoft Purview Data Lifecycle Management retention policy with the **Teams chat** location. Because AI-generated notes in meetings are [stored in OneDrive](#facilitator-note-storage), these notes can be automatically retained or deleted  with a retention policy or retention labels with the **OneDrive accounts** location.
 
 Other Microsoft Purview solutions either aren't applicable for AI-generated notes or aren't yet supported.
 
@@ -72,24 +73,34 @@ For more information about security and privacy in Microsoft 365 Copilot, see th
 #### General Facilitator limitations
 
 - Currently, AI-generated notes aren't supported in [external chats and meetings](trusted-organizations-external-meetings-chat.md).
-- Retention labels aren't currently supported for AI-generated notes, which includes applying retention labels for cloud attachments.
+- Retention labels aren't supported for cloud attachments in AI-generated notes.
 
 #### AI-generated notes for meetings limitations
 
 - AI-generated notes for meetings aren't automatically collected as cloud attachments in [Microsoft Preview eDiscovery](/purview/ediscovery-cloud-attachments) because it isn't currently supported.
-- Meeting settings like [Prevent copy and paste](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-of-chat) and [Watermarks](watermark-meeting-content-video.md) aren't applied to AI-generated notes in meetings.
+- Meeting settings like [Prevent copy and paste](manage-chat-sensitive-meetings.md#prevent-copying-or-forwarding-chat-captions-and-transcripts) and [Watermarks](watermark-meeting-content-video.md) aren't applied to AI-generated notes in meetings.
 - AI-generated notes for meetings don't inherit the meeting's sensitivity label; however, a sensitivity label can be applied to the notes' Loop component in the [Loop app or OneDrive](/purview/sensitivity-labels-loop).
 
 ## Prerequisites and licensing
 
-The following list contains the prerequisites for users to be able to access Facilitator features in Teams chats and meetings:
+The following list contains the prerequisites for users to be able to access Facilitator features in Teams chats and meetings. Users must meet all of the following requirements:
 
 - An eligible *Microsoft 365* base license.
   - For the list of eligible base licenses, see [Understand licensing requirements for Microsoft 365 Copilot](/copilot/microsoft-365/microsoft-365-copilot-licensing).
+- An eligible *Microsoft Teams* license.
+  - Teams licenses may be included in your *Microsoft 365* subscription, or you may need to purchase a separate Teams license if you have *Microsoft 365 (no Teams)* licenses.
 - A *Microsoft 365 Copilot* license.
-  - For information on how to acquire *Microsoft 365 Copilot* licenses, see [Where can I get Microsoft Copilot?](https://support.microsoft.com/topic/where-can-i-get-microsoft-copilot-40a622db-6d25-4266-b008-4bbcb55cf52f).
+  - For information on how to acquire *Microsoft 365 Copilot* licenses, see [Where can I get Microsoft Copilot?](https://support.microsoft.com/topic/where-can-i-get-microsoft-copilot-40a622db-6d25-4266-b008-4bbcb55cf52f)
 - Be a Microsoft Teams Public preview participant.
   - For information on how to access Teams Public preview features, see [Microsoft Teams Public preview](/microsoftteams/public-preview-doc-updates).
+- [Have Loop experiences in Teams for AI-generated notes in meetings turned on](#3-turn-on-loop-experiences-in-teams-for-ai-generated-notes-in-meetings).
+- Transcription is auto-enabled and must stay on to use AI-generated notes in meetings.
+
+## Facilitator note storage
+
+AI-generated notes for meetings created by Facilitator are stored as a `.loop` file in a OneDrive folder titled **Meetings** of the user who initiated Facilitator in Teams. This data is treated as meeting transcript data.
+
+AI-generated notes for chats created by Facilitator are stored as messaging data in each users' Exchange mailbox. This data is treated like all other Teams chat data.
 
 ## Turn on Facilitator for chats and meetings
 

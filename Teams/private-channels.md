@@ -1,10 +1,10 @@
 ---
 title: IT Admins - Private channels in Microsoft Teams
-author: DaniESmith
+author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 ms.reviewer: jasonlewis
-ms.date: 11/04/2024
+ms.date: 12/03/2024
 ms.topic: article
 ms.service: msteams
 audience: Admin
@@ -34,19 +34,19 @@ For example, a private channel is useful in these scenarios:
 
 A lock icon indicates a private channel. Only members of private channels can see and participate in private channels that they're added to.
 
-When a private channel is created, it's linked to the parent team and can't be moved to a different team. Additionally, private channels can't be converted to standard channels and vice versa.
+When a private channel is created, it links to the parent team and can't be moved to a different team. Additionally, private channels can't be converted to standard channels and vice versa.
 
 [Compare private channels with other types of channels](/microsoftteams/teams-channels-overview#channel-feature-comparison).
 
 ## Private channel creation
 
-By default, any team owner or team member can create a private channel. Guests can't create them. The ability to create private channels can be managed at the team level and at the organization level. Use [policies](teams-policies.md) to control which users in your organization are allowed to create private channels. Once you've set the policies, team owners can turn off or turn on the ability for members to create private channels in the **Settings** tab for a team.
+By default, any team owner or team member can create a private channel. Guests can't create them. The ability to create private channels can be managed at the team level and at the organization level. Use [policies](teams-policies.md) to control which users in your organization are allowed to create private channels. Once you set the policies, team owners can turn off or turn on the ability for members to create private channels in the **Settings** tab for a team.
 
 The person who creates a private channel is the private channel owner and only the private channel owner can directly add or remove people from it. A private channel owner can add any team member to a private channel they created, including guests. Members of a private channel have a secure conversation space, and when new members are added, they can see all conversations (even old conversations) in that private channel.
 
-Team owners who aren't a member of a private channel can see the channel under **Manage team** but not in the channel list in the left pane. A private channel owner or team owner (whether or not they are a member of the private channel) can delete the private channel. A deleted private channel can be restored within 30 days after it's deleted.
+Team owners who aren't a member of a private channel can see the channel under **Manage team** but not in the channels and teams list. A private channel owner or team owner (whether or not they're a member of the private channel) can delete the private channel. A deleted private channel can be restored within 30 days after its deletion.
 
-Team members can only see private channels that they've been added to.
+Team members can only see private channels that they're added to.
 
 ## Adding and removing owners and members
 
@@ -82,7 +82,7 @@ The following table outlines what actions owners, members, and guests can do in 
 Each private channel has its own SharePoint site. The separate site is to ensure access to private channel files is restricted to only members of the private channel. These sites are created with a document library by default, and can be easily enhanced to a full-featured site through the [site management interface](https://support.microsoft.com/office/a2f2a5c2-093d-4897-8b7f-37f86d83df04). Each site is created in the same geographic region as the site for the parent team. These lightweight sites have a custom template ID, "TEAMCHANNEL#0" or "TEAMCHANNEL#1", for easier management through PowerShell and Graph API.
 
 > [!NOTE]
-> Only people with owner or member permissions in the channel will have access to the channel site. People in the parent team and admins won't have access unless they are also channel members.
+> Only people with owner or member permissions in the channel have access to the channel site. People in the parent team and admins don't have access unless they're also channel members.
 
 A private channel site syncs data classification and inherits guest access permissions from the site of the parent team. Membership to the site owner and member groups are kept in sync with the membership of the private channel within Teams. Site permissions for a private channel site can't be managed independently through SharePoint.
 

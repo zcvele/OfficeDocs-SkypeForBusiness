@@ -4,7 +4,7 @@ author: mkbond007
 ms.author: mabond
 manager: pamgreen
 ms.reviewer: colongma
-ms.date: 11/22/2024
+ms.date: 1/27/2025
 ms.topic: article
 ms.assetid: 67ccda94-1210-43fb-a25b-7b9785f8a061
 ms.tgt.pltfrm: cloud
@@ -39,13 +39,16 @@ Call queues provide:
 - Call routing - in *First In, First Out* (FIFO) order - to agents.
 - Handling options for queue overflow and timeout.
 
-Before you follow the procedures in this article, be sure you've read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md) and followed the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
+Before following the procedures in this article, make sure you read [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md) and complete the [getting started steps](plan-auto-attendant-call-queue.md#getting-started).
 
 ## What's new for Call queues in the past six months
 
+- December 11
+  - [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues) no longer require a resource account and associated licensing are now supported in the Teams admin center.
+     
 - November 22
-  - [Callback](#step-5-callback-1) functionality is now available through Teams admin center.
-    
+  - [Callback](#step-5-callback-1) functionality is now available through the Teams admin center.
+
 - November 5
   - [Nested Auto attendants and Call queues](#nested-auto-attendants-and-call-queues) no longer require a resource account and associated licensing.
 
@@ -87,7 +90,7 @@ Before you can create and manage resource accounts, you must do the following ac
 
 All Call queues that directly answer calls must have an associated resource account. All resource accounts must be assigned a [Microsoft Teams Phone Resource Account license](teams-add-on-licensing/virtual-user.md). If you wish, you can assign several resource accounts to a Call queue.
 
-Nested Auto attendants and Call queues that receive calls from an auto attendant or call queue that has already answered the call don't require a resource account.
+Nested Auto attendants and Call queues that receive calls from an auto attendant or call queue that already answered the call don't require a resource account. For more information, see [Nested Auto attendants and Call queues](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues).
 
 For details on how to create resource accounts and ready them for use with auto attendants or call queues, see [Manage Teams resource accounts](manage-resource-accounts.md).
 
@@ -119,16 +122,12 @@ After you create this new resource account for calling ID, you still need to:
 
 ### Set the Service level threshold
 
-_This feature is in private preview._
-
 Service level measures the efficiency and responsiveness to incoming customer requests within a specific Service level threshold.
 
 You can set the threshold target to any value from 0 to 40 minutes (2,400 seconds). The value must be less than the value set for [Call timeout](#call-timeout-set-how-to-handle-call-timeouts). Setting the value to blank (empty) disables the service level metric calculation for the call queue.
 
 >[!NOTE]
-> Service level metrics are not currently available in Queues app.
-> 
-> Service level metrics are not currently available in historical reporting.
+> Service level metrics aren't currently available in historical reporting.
 
 ### Set the Call queue language
 
@@ -157,8 +156,8 @@ Teams provides default music to callers while they're *on hold in a queue*.
 - The default music supplied in Teams Call queues is free of any royalties payable by your organization.
 - If you want to play a specific audio file, choose **Play an audio file** and upload an MP3, WAV, or WMA file. See [Supported audio file formats](plan-auto-attendant-call-queue.md#supported-audio-file-formats).
 
-> [!NOTE]
-> You are responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service, which may include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which may include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations and any other parties who own, control or license the music copyrights, sound effects, audio and other intellectual property rights.
+> [!IMPORTANT]
+> You're responsible for independently clearing and securing all necessary rights and permissions to use any music or audio file with your Microsoft Teams service, which may include intellectual property and other rights in any music, sound effects, audio, brands, names, and other content in the audio file from all relevant rights holders, which may include artists, actors, performers, musicians, songwriters, composers, record labels, music publishers, unions, guilds, rights societies, collective management organizations, and any other parties who own, control, or license the music copyrights, sound effects, audio, and other intellectual property rights.
 
 After you select a greeting and on-hold music, select the **Next** button at the bottom of the **Add a Call queue** page.
 
@@ -211,9 +210,14 @@ To **add a group** to the queue:
 > If there are more than 200 members in the group, only the first 200 members, in alphabetical order, are added as agents to the Call queue.
 
 > [!IMPORTANT]
-> Known issue: Assigning private channels to Call queues
+> Only standard channels are fully supported.
 >
-> When using a private channel, calls are be distributed to all members of the team even if the private channel only has a subset of team members. You may experience this problem when trying to assign a private channel to a Call queue. This problem may occur even if the Call queue previously had a private channel assigned or if the private channel was previously assigned to a Call queue. If you already have private channels assigned to Call queues, they will continue to work. This problem only affects new assignments. Support continues to work on identifying the root cause of this problem.
+> Known issues:
+> 1. Assigning private channels to Call queues
+>     - When using a private channel, calls are distributed to all members of the team even if the private channel only has a subset of team members.
+>     - Assigning a private channel to a call queue may fail, even if the call queue previously had a private channel assigned or if the private channel was previously assigned to a Call queue.
+>
+> 2. Only the global administrator role can fully manage a call queue with a Teams channel assigned.
 
 ### Conference mode
 
@@ -228,9 +232,9 @@ Once you select your call answering options, select the **Next** button at the b
 
 Keep the following in mind:
 
-- Conference mode isn't supported for calls that are routed to the queue from a Direct Routing gateway that's enabled for Location Based Routing.
+- Conference mode isn't supported for calls routed to the queue from a Direct Routing gateway enabled for Location Based Routing.
 - Conference mode is required if Teams users need to consult/transfer calls with Call queues.
-- Agents may hear the configured music on hold in queue for up to 2 seconds when first joining the call.
+- Agents may hear the configured music on hold in queue for up to two seconds when first joining the call.
 
 > [!IMPORTANT]
 > Transfer mode (when conference mode is disabled) is now in legacy mode. Support for transfer mode is scheduled to be removed by the end of June 2025.
@@ -239,12 +243,8 @@ Keep the following in mind:
 
 ## Step 4: Select your agent routing options
 
-> [!NOTE]
-> When using **Longest idle** and when there are fewer calls in the queue than available agents, only the first two longest idle agents are presented with calls from the queue.
->
-> When using **Longest idle**, there may be times when an agent receives a call from the queue shortly after becoming unavailable, or a short delay in receiving a call from the queue after becoming available.
->
-> Call Queue call presentation to agents may conflict with Location Based Routing restrictions. In this case, the agent receives a call toast but can't answer the call. This condition continues until another agent is available to answer the call, the caller hangs up, or the Call queue timeout condition occurs.
+> [!IMPORTANT]
+> Call presentation to agents may conflict with Location-Based Routing restrictions. In this case, the agent receives a call toast but can't answer the call. This condition continues until another agent is available to answer the call, the caller hangs up, or the Call queue timeout condition occurs. For more information on Location-Based Routing, see [Plan Location-Based Routing for Direct Routing](./location-based-routing-plan.md).  
 
 **Routing method** determines the order in which agents receive calls from the queue.
 
@@ -256,7 +256,7 @@ Choose from these options:
 
 - **Round robin** balances the routing of incoming calls so that each call agent gets the same number of calls from the queue.
 
-- **Longest idle** routes each call to the agent who's been idle the longest. An agent is considered idle if their presence state is *Available*. Agents who aren't available don't receive calls until they change their presence to *Available*.
+- **Longest idle** routes calls to the agent who is idle the longest. An agent is considered idle if their presence state is *Available*. Agents who aren't available don't receive calls until they change their presence to *Available*.
 
 > [!TIP]
 > Setting the **Routing Method** to **Round robin** or **Longest idle** is the recommended setting.
@@ -272,12 +272,14 @@ You can enable **presence-based call routing** with any of the routing methods.
 If an agent opts out of getting calls, they can't receive calls regardless of their availability status.
 
 > [!TIP]
-> Setting the **Presence-based routing** to **on** is the recommended setting.
+> Setting the **Presence-based routing** to **On** is the recommended setting.
 
 > [!NOTE]
-> When **Longest idle** is selected as the routing method, presence-based routing is required and automatically enabled even though the Presence-based routing toggle is **Off** and grayed out.
+> When **Longest idle** is selected as the routing method:
+> - Presence-based routing is required and automatically enabled even though the Presence-based routing toggle is **Off** and grayed out.
+> - When there are fewer calls in the queue than available agents, only the first two longest idle agents are presented with calls from the queue.
 >
-> If presence-based routing isn't enabled and there are multiple calls in the queue, the system presents these calls simultaneously to the agents regardless of their presence status. This action results in multiple call notifications to agents, particularly if some agents don’t answer the initial call presented to them.
+> If **Presence-based routing** isn't enabled and there are multiple calls in the queue, the system presents these calls simultaneously to the agents, regardless of their presence status. This action results in multiple call notifications to agents, particularly if some agents don't answer the initial call presented to them. For more information, see [Configure Busy Options](./inbound-call-routing.md) for Busy on Busy alternatives to presence-based routing.
 >
 > When using **Presence-based routing**, there may be times when an agent receives a call from the queue shortly after becoming unavailable or a short delay in receiving a call from the queue after becoming available.
 >
@@ -298,7 +300,6 @@ We recommend turning on **Call agents can opt out of taking calls**.
 
 Once you select your agent call routing options, select the **Next** button at the bottom of the **Add a Call queue** page.
 
-
 ## [Step 5: Callback](#tab/callback)
 
 ## Step 5: Callback
@@ -313,7 +314,7 @@ A caller becomes eligible for callback based on any one of the following configu
 
 - **Calls to agent ratio** - Once the number of callers waiting in queue exceeds the ratio, new callers arriving in the queue become eligible for callback. This option applies to callers arriving in the queue.
 
-Additionally, for a call to become eligble for callback, it must have a valid inbound phone number in E.164 format and it must not be presenting to an agent.
+Additionally, for a call to become eligible for callback, its inbound phone number must be a publicly dialable, non-premium phone number in E.164 format, and it must not be presenting to an agent.
 
 After the music on hold finishes playing, eligible callers receive an option to request callback.
 
@@ -329,11 +330,11 @@ Consider the following call queue configuration:
 - Call Queue Timeout: 120 seconds
 - Call Queue Music: Default
 
-After waiting in the queue for 60 seconds, the caller becomes eligible for callback. However, as the default music is two minutes long, the call queue timeout will occur first and the caller won't be offered callback.
+After waiting in the queue for 60 seconds, the caller becomes eligible for callback. However, as the default music is two minutes long, the call queue timeout occurs first and callback isn't offered.
 
-Once a caller has successfully requested a callback, the callback request is also subject to the call queue timout configuration. If a callback request times out, the information about the caller is sent to the configured email notification address.
+Once a caller successfully requests a callback, the callback request is also subject to the call queue timeout configuration. If a callback request times out, the information about the caller is sent to the configured email notification address.
 
-In order for a callback to be successful, the call queue timeout value must be high enough to allow for the call to become eligible, for the music to stop playing, for a caller to successfully request a callback, and for the callback to be queued until an agent becomes available and answers the call.
+For a callback to be successful, the call queue timeout value must be high enough to allow for the call to become eligible, for the music to stop playing, for a caller to successfully request a callback, and for the callback to be queued until an agent becomes available and answers the call.
 
 > [!NOTE]
 > For callers within the North American Numbering Plan, in addition to the eligibility requirements already listed and in order to become eligible for callback, the inbound phone number must not start with any of the following digits:
@@ -356,6 +357,10 @@ Once you select your callback options, select the **Next** button at the bottom 
 
 ### Callback via PowerShell
 
+<!-- markdownlint-disable MD033 -->
+<details>
+<summary>Expand to see PowerShell options and examples</summary>
+
 |New-CsCallQueue (For new call queues)   |Set-CsCallQueue (For existing call queues) |
 |:---------------------------------------|:------------------------------------------|
 | [-IsCallbackEnabled](/powershell/module/teams/new-cscallqueue#-IsCallbackEnabled) | [-IsCallbackEnabled](/powershell/module/teams/set-cscallqueue#-IsCallbackEnabled) |
@@ -372,11 +377,13 @@ Once you select your callback options, select the **Next** button at the bottom 
 ##### Calls become eligible after waiting 60 seconds
 
 To create a new call queue, use the New-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 New-CsCallQueue -Name "Callback Eligible After 60 seconds" -UseDefaultMusicOnHold $true -LanguageID en-US -IsCallbackEnabled $true -CallbackRequestDtmf "Tone1" -WaitTimeBeforeOfferingCallbackInSecond 60 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
 To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRequestDtmf "Tone1" -WaitTimeBeforeOfferingCallbackInSecond 60 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
@@ -384,24 +391,28 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
 ##### Calls become eligible for callback when there are more than 50 calls in queue
 
 To create a new call queue, use the New-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 New-CsCallQueue -Name "Callback Eligible After 50 calls" -UseDefaultMusicOnHold $true -LanguageID en-US -IsCallbackEnabled $true -CallbackRequestDtmf "Tone1" -NumberOfCallsInQueueBeforeOfferingCallback 50 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
 To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRequestDtmf
  "Tone1" -NumberOfCallsInQueueBeforeOfferingCallback 50 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
-##### Calls become eligible for callback when there are 2 times more calls than agents
+##### Calls become eligible for callback when there are two times more calls than agents
 
 To create a new call queue, use the New-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 New-CsCallQueue -Name "Callback Eligible After 2x calls to agents" -UseDefaultMusicOnHold $true -LanguageID en-US -IsCallbackEnabled $true -CallbackRequestDtmf "Tone1" -CallToAgentRatioThresholdBeforeOfferingCallback 2 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
 To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRequestDtmf
  "Tone1" -CallToAgentRatioThresholdBeforeOfferingCallback 2 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
@@ -410,15 +421,19 @@ Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRe
 ##### Calls become eligible for callback after waiting 60 seconds or when there are more than 50 calls in queue
 
 To create a new call queue, use the New-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 New-CsCallQueue -Name "Callback Eligible After 60s or 50 calls" -UseDefaultMusicOnHold $true -LanguageID en-US -IsCallbackEnabled $true -CallbackRequestDtmf "Tone1" -WaitTimeBeforeOfferingCallbackInSecond 60 -NumberOfCallsInQueueBeforeOfferingCallback 50 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
 To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in the following example:
+
 ````PowerShell
 Set-CsCallQueue -Identity <Call Queue GUID> -IsCallbackEnabled $true -CallbackRequestDtmf "Tone1" -WaitTimeBeforeOfferingCallbackInSecond 60 -NumberOfCallsInQueueBeforeOfferingCallback 50 -CallbackOfferTextToSpeechPrompt "If you would like to have a callback when an agent becomes available, press 1" -CallbackEmailNotificationTarget <Team or DL GUID>
 ````
 
+</details>
+<!-- markdownlint-enable MD033 -->
 
 ## [Step 6: Exception Handling](#tab/call-exception-handling)
 
@@ -432,10 +447,6 @@ For example, when **Overflow** occurs, you might send calls to a backup Call que
 
 > [!NOTE]
 > For external transfers, see [Prerequisites](./plan-auto-attendant-call-queue.md#prerequisites) and the [external phone number transfers - technical details](./create-a-phone-system-auto-attendant.md?tabs=general-info#external-phone-number-transfers---technical-details) for number formatting.
->
-> Don't include any special characters in the greeting message when redirecting to **Voicemail (shared)**.
->
-> The Overflow, Call timeout and No Agents exception redirect options for **Person in organization** and **Voicemail personal** support additional prompting. For more information, see [Additional messaging](#additional-messaging)
 
 ### Overflow: Set how to handle call overflow
 
@@ -473,7 +484,85 @@ This call exception handling option handles calls when no agents are opted into 
 >
 > If agents are logged in or opted in, then calls are queued.
 
+>[!IMPORTANT]
+> Known Issues:
+> 1. When **Longest idle** is selected as the routing method, the **No Agents** treatment doesn't work when ***New Calls Only*** is selected and new calls are queued. The ***All Calls*** option works as expected. Support is investigating.
+> 1. Don't include any special characters in the greeting message when redirecting to **Voicemail (shared)** as these aren't spoken by the system.
+
+### Nested Auto attendants and Call queues
+
+**Nested Auto attendants and Call queues**, or auto attendants and call queues that don't directly answer phone calls, no longer require a Resource Account and associated licensing.
+
+Existing configurations that use Resource Accounts continue to function and remain fully supported. A combination of both methods can be used at the same time.
+
+When call queue [Exception handling](#step-6-exception-handling-1) occurs, the `Voice app` destination for Overflow, Timeout, and No Agents can refer to an auto attendant or call queue directly instead of the Resource Account for that auto attendant or call queue.
+
+For more information, see [Nested Auto attendant and Call Queue](./plan-auto-attendant-call-queue.md#nested-auto-attendants-and-call-queues)
+
 Once you select your call overflow, call timeout, and no agents handling options, select the **Next** button at the bottom of the **Add a Call queue** page.
+
+#### Nested auto attendants and call queues via PowerShell
+<!-- markdownlint-disable MD033 -->
+<details>
+<summary>Expand to see PowerShell options and examples</summary>
+
+|New-CsCallQueue (For new call queues)   |Set-CsCallQueue (For existing call queues) |
+|:---------------------------------------|:------------------------------------------|
+| [-OverflowActionTarget](/powershell/module/teams/new-cscallqueue#-overflowactiontarget) | [-OverflowActionTarget](/powershell/module/teams/set-cscallqueue#-overflowactiontarget) |
+| [-TimeOutActionTarget](/powershell/module/teams/new-cscallqueue#-timeoutactiontarget) | [-TimeOutActionTarget](/powershell/module/teams/set-cscallqueue#-timeoutactiontarget) |
+| [-NoAgentActionTarget](/powershell/module/teams/new-cscallqueue#-noagentactiontarget) | [-NoAgentActionTarget](/powershell/module/teams/set-cscallqueue#-noagentactiontarget) |
+
+##### Overflow to another Auto attendant or Call queue
+
+To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in the following examples:
+
+Overflow
+````PowerShell
+Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -OverflowActionTarget <Auto Attendant or Call Queue GUID>
+````
+
+Timeout
+````PowerShell
+Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -TimeOutActionTarget <Auto Attendant or Call Queue GUID>
+````
+
+No Agents
+````PowerShell
+Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -NoAgentActionTarget <Auto Attendant or Call Queue GUID>
+````
+
+</details>
+<!-- markdownlint-enable MD033 -->
+
+### Additional messaging
+
+The Overflow, Call timeout, and No Agents exception redirect options for **Person in organization** and **Voicemail personal** support additional prompting just like the other redirect options. 
+
+#### Additional messaging via PowerShell
+<!-- markdownlint-disable MD033 -->
+<details>
+<summary>Expand to see PowerShell options</summary>
+
+> [!CAUTION]
+> These configuration options are currently only available through PowerShell cmdlets and they don't appear in Teams admin center. If these options are configured through PowerShell, any changes to the Call queue through Teams admin center erases these settings.
+
+|New-CsCallQueue (For new call queues)   |Set-CsCallQueue (For existing call queues) |
+|:---------------------------------------|:------------------------------------------|
+| [-OverflowRedirectPersonTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectPersonTextToSpeechPrompt)        | [-OverflowRedirectPersonTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectPersonTextToSpeechPrompt)        |
+| [-OverflowRedirectPersonAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectPersonAudioFilePrompt)              | [-OverflowRedirectPersonAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectPersonAudioFilePrompt)              |
+| [-OverflowRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectVoicemailTextToSpeechPrompt)  | [-OverflowRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectVoicemailTextToSpeechPrompt)  |
+| [-OverflowRedirectVoicemailAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectVoicemailAudioFilePrompt)        | [-OverflowRedirectVoicemailAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectVoicemailAudioFilePrompt)        |
+| [-TimeoutRedirectPersonTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectPersonTextToSpeechPrompt)          | [-TimeoutRedirectPersonTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectPersonTextToSpeechPrompt)          |
+| [-TimeoutRedirectPersonAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectPersonAudioFilePrompt)                | [-TimeoutRedirectPersonAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectPersonAudioFilePrompt)                |
+| [-TimeoutRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectVoicemailTextToSpeechPrompt)    | [-TimeoutRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectVoicemailTextToSpeechPrompt)    |
+| [-TimeoutRedirectVoicemailAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectVoicemailAudioFilePrompt)          | [-TimeoutRedirectVoicemailAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectVoicemailAudioFilePrompt)          |
+| [-NoAgentRedirectPersonTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectPersonTextToSpeechPrompt)          | [-NoAgentRedirectPersonTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectPersonTextToSpeechPrompt)          |
+| [-NotAgentRedirectPersonAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectPersonAudioFilePrompt)               | [-NotAgentRedirectPersonAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectPersonAudioFilePrompt)               |
+| [-NoAgentRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectVoicemailTextToSpeechPrompt)    | [-NoAgentRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectVoicemailTextToSpeechPrompt)    |
+| [-NoAgentRedirectVoicemailAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectVoicemailAudioFilePrompt)          | [-NoAgentRedirectVoicemailAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectVoicemailAudioFilePrompt)          |
+
+</details>
+<!-- markdownlint-enable MD033 -->
 
 ## [Step 7: Authorized users](#tab/authorized-users)
 
@@ -500,6 +589,27 @@ For more information, see [Set up authorized users](./aa-cq-authorized-users.md)
 
 Once you select your authorized users, select the **Submit** button at the bottom of the **Add a Call queue** page.
 
+#### Hiding authorized users via PowerShell
+<!-- markdownlint-disable MD033 -->
+<details>
+<summary>Expand to see PowerShell options</summary>
+
+> [!CAUTION]
+> These configuration options are currently only available through PowerShell cmdlets and they don't appear in Teams admin center. If these options are configured through PowerShell, any changes to the Call queue through Teams admin center erases these settings.
+
+### Hiding authorized users
+
+Hidden authorized users are authorized users who shouldn't appear on the list of supervisors for the agents who are members of a particular call queue.
+
+Hidden authorized users aren't visible to Queues app users.
+
+|New-CsCallQueue (For new call queues)   |Set-CsCallQueue (For existing call queues) |
+|:---------------------------------------|:------------------------------------------|
+| [-HideAuthorizedUsers](/powershell/module/teams/new-cscallqueue#-hideauthorizedusers) | [-HideAuthorizedUsers](/powershell/module/teams/set-cscallqueue#-hideauthorizedusers) |
+
+</details>
+<!-- markdownlint-enable MD033 -->
+
 ---
 
 ## Summary of recommended Call queue settings
@@ -511,82 +621,6 @@ The following settings are recommended:
 - **Routing method** to **Round robin** or **Longest idle**
 - **Presence-based routing** to **On**
 - **Agent alert time:** to a minimum of **20 seconds**
-
-## Extra functionality available through PowerShell cmdlets
-
-> [!CAUTION]
-> These configuration options are currently only available through PowerShell cmdlets and they don't appear in Teams admin center. If these options are configured through PowerShell, any changes to the Call queue through Teams admin center erases these settings.
-
-### Additional messaging
-
-The Overflow, Call timeout, and No Agents exception redirect options for **Person in organization** and **Voicemail personal** support additional prompting just like the other redirect options. 
-
-For more information, see:
-
-|New-CsCallQueue (For new call queues)   |Set-CsCallQueue (For existing call queues) |
-|:---------------------------------------|:------------------------------------------|
-| [-OverflowRedirectPersonTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectPersonTextToSpeechPrompt)        | [-OverflowRedirectPersonTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectPersonTextToSpeechPrompt)        |
-| [-OverflowRedirectPersonAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectPersonAudioFilePrompt)              | [-OverflowRedirectPersonAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectPersonAudioFilePrompt)              |
-| [-OverflowRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectVoicemailTextToSpeechPrompt)  | [-OverflowRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectVoicemailTextToSpeechPrompt)  |
-| [-OverflowRedirectVoicemailAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-OverflowRedirectVoicemailAudioFilePrompt)        | [-OverflowRedirectVoicemailAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-OverflowRedirectVoicemailAudioFilePrompt)        |
-| [-TimeoutRedirectPersonTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectPersonTextToSpeechPrompt)          | [-TimeoutRedirectPersonTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectPersonTextToSpeechPrompt)          |
-| [-TimeoutRedirectPersonAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectPersonAudioFilePrompt)                | [-TimeoutRedirectPersonAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectPersonAudioFilePrompt)                |
-| [-TimeoutRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectVoicemailTextToSpeechPrompt)    | [-TimeoutRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectVoicemailTextToSpeechPrompt)    |
-| [-TimeoutRedirectVoicemailAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-TimeoutRedirectVoicemailAudioFilePrompt)          | [-TimeoutRedirectVoicemailAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-TimeoutRedirectVoicemailAudioFilePrompt)          |
-| [-NoAgentRedirectPersonTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectPersonTextToSpeechPrompt)          | [-NoAgentRedirectPersonTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectPersonTextToSpeechPrompt)          |
-| [-NotAgentRedirectPersonAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectPersonAudioFilePrompt)               | [-NotAgentRedirectPersonAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectPersonAudioFilePrompt)               |
-| [-NoAgentRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectVoicemailTextToSpeechPrompt)    | [-NoAgentRedirectVoicemailTextToSpeechPrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectVoicemailTextToSpeechPrompt)    |
-| [-NoAgentRedirectVoicemailAudioFilePrompt](/powershell/module/teams/new-cscallqueue#-NoAgentRedirectVoicemailAudioFilePrompt)          | [-NoAgentRedirectVoicemailAudioFilePrompt](/powershell/module/teams/set-cscallqueue#-NoAgentRedirectVoicemailAudioFilePrompt)          |
-
-### Hiding authorized users
-
-Hidden authorized users are authorized users who shouldn't appear on the list of supervisors for the agents who are members of a particular call queue.
-
-Hidden authorized users aren't visible to Queues app users.
-
-For more information, see:
-
-|New-CsCallQueue (For new call queues)   |Set-CsCallQueue (For existing call queues) |
-|:---------------------------------------|:------------------------------------------|
-| [-HideAuthorizedUsers](/powershell/module/teams/new-cscallqueue#-hideauthorizedusers) | [-HideAuthorizedUsers](/powershell/module/teams/set-cscallqueue#-hideauthorizedusers) |
-
-### Nested Auto attendants and Call queues
-
-**Nested Auto attendants and Call queues**, or auto attendants and call queues that don't directly answer phone calls, no longer require a Resource Account and associated licensing.
-
-Existing configurations that use Resource Accounts will continue to function and remain fully supported. A combination of both methods can be used at the same time.
-
-When call queue [Exception handling](#step-6-exception-handling-1) occurs, the `Voice app` destination for Overflow, Timeout, and No Agents can refer to an auto attendant or call queue directly instead of the Resource Account for that auto attendant or call queue.
-
-For more information, see the following documentation:
-
-|New-CsCallQueue (For new call queues)   |Set-CsCallQueue (For existing call queues) |
-|:---------------------------------------|:------------------------------------------|
-| [-OverflowActionTarget](/powershell/module/teams/new-cscallqueue#-overflowactiontarget) | [-OverflowActionTarget](/powershell/module/teams/set-cscallqueue#-overflowactiontarget) |
-| [-TimeOutActionTarget](/powershell/module/teams/new-cscallqueue#-timeoutactiontarget) | [-TimeOutActionTarget](/powershell/module/teams/set-cscallqueue#-timeoutactiontarget) |
-| [-NoAgentActionTarget](/powershell/module/teams/new-cscallqueue#-noagentactiontarget) | [-NoAgentActionTarget](/powershell/module/teams/set-cscallqueue#-noagentactiontarget) |
-
-
-#### PowerShell example
-
-##### Overflow to another Auto attendant or Call queue
-
-To modify an existing call queue, use the Set-CsCallQueue cmdlet, as shown in the following examples:
-
-Overflow
-````PowerShell
-Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -OverflowActionTarget <Auto Attendant or Call Queue GUID>
-````
-
-Timeout
-````PowerShell
-Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -TimeOutActionTarget <Auto Attendant or Call Queue GUID>
-````
-
-No Agents
-````PowerShell
-Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -NoAgentActionTarget <Auto Attendant or Call Queue GUID>
-````
 
 ## Resources for complex scenarios
 
@@ -627,7 +661,7 @@ Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -NoAgentActio
 3. Teams Phone Mobile Cellular Phone Dialer.
 4. Selecting *Longest Idle* for the agent routing method automatically enables Presence based routing.
 5. It's not possible to set the order the agents are presented with calls when using a group or channel for membership.
-6. Conference mode isn't supported if phone calls are routed to the queue from a Direct Routing gateway that's enabled for Location-Based Routing.
+6. Conference mode isn't supported if phone calls are routed to the queue from a Direct Routing gateway enabled for Location-Based Routing.
     - Location based routing isn't supported with Call queues. For more information, see [Voice apps (Auto Attendant or Call Queue)](location-based-routing-plan.md#inbound-calls-through-auto-attendants).
 7. Microsoft Teams Phone only.
 8. Through the User Settings Portal page at [https://aka.ms/vmsettings](https://aka.ms/vmsettings).
@@ -636,7 +670,7 @@ Set-CsCallQueue -Identity <CallQueue GUID> -OverflowAction Forward -NoAgentActio
 9. Only standard channels are supported.
 10. Transferring calls between PSTN connectivity methods isn't supported.
 11. Performed through Team Phone Mobile app or see #8.
-12. Call queues that are assigned a direct routing number don't support Skype for Business clients, Lync clients, or Skype for Business IP Phones as agents. The Teams client is only supported with a [co-existence mode of Teams Only](setting-your-coexistence-and-upgrade-settings.md).
+12. Call queues that are assigned a Direct Routing number don't support Skype for Business clients, Lync clients, or Skype for Business IP Phones as agents. The Teams client is only supported with a [co-existence mode of Teams Only](setting-your-coexistence-and-upgrade-settings.md).
 
 ### Supported clients
 

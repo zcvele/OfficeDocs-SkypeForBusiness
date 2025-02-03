@@ -69,7 +69,7 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
 
 - **Manage what attendees see** - Meeting organizers can decide whose avatars or video feeds to spotlight during a Teams meeting while others are hidden from view.
 
-- **Prevent users from sharing content in external Teams meetings** - Control whether users in your org with a Teams Premium license can share content when attending external Teams meetings.
+- **Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcript** - Control whether organizers can restrict participants from copying or forwarding meeting chat messages, live captions, transcripts, and AI-generated insights in the meeting recaps. This setting also restricts forwarding and sharing messages to Outlook.
 
 - **Screen sharing quality alerts** - Set up alerts for in-progress meeting screen sharing issues and get notified immediately when your specified users experience issues.
 
@@ -77,11 +77,15 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
 
 - **Real time telemetry and retention** - Real-time telemetry is gathered automatically for all users who have a Teams Premium license and retained for seven days.
 
+- **Priority account chat controls​** - Allows an IT Admin to assign a policy to specific users, granting them the ability to block incoming 1:1 chats from people within the organization. 
+
 - **Teams Premium feature usage report** - View aggregated usage of Teams Premium features by users in your org.
 
 - **Video quality alerts** - Set up alerts for in-progress meeting video issues and get notified immediately when your specified users experience issues.
 
 - **Watermarking** - Enforced through a sensitivity label, watermarks display the email address of a meeting or webinar participant. Watermarks are useful for protecting confidential information shared in meetings and webinars.
+
+- **Who can record and transcribe** - Organizers can control who can record and transcribe their meetings through their meeting options. You can also use a sensitivity label to manage this feature.
 
   | Feature/Task  | Can admins turn this feature on/off? | Documentation for admins | Documentation for your end users |
   | --------- | -----------| ----------- | ------------ |
@@ -93,16 +97,17 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
   | Manage what attendees see | No, contact support for assistance.| No admin control | [Manage what attendees see in Teams meetings](https://support.microsoft.com/office/manage-what-attendees-see-in-teams-meetings-19bfd690-8122-49f4-bc04-c2c5f69b4e16)|
   | Manage which eCDN provider view-only meetings use |Yes |[Enterprise content delivery networks for streaming Microsoft Teams events](streaming-ecdn-enterprise-content-delivery-network.md#manage-the-ecdn-solution-for-premium-town-halls-and-view-only-meetings)|No end user control |
   | Microsoft eCDN |Yes |[How to enable Microsoft eCDN](/ecdn/how-to/enable-microsoft-ecdn-for-your-tenant)|No end user control |
-  | Prevent copying chat content to clipboard |Yes, use the Teams admin center to add or delete chat content copying restrictions in your meeting templates. Use the Microsoft Purview compliance portal to turn labels with chat content copying restrictions on or off.| [Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md) | No end-user control |
+  | Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcript |Yes, use the Teams admin center to manage content copying restrictions in your meeting templates or policies. Use the Microsoft Purview portal to turn labels with chat content copying restrictions on or off.| [Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md) | No end-user control |
   | Prevent users from sharing content in external meetings|Yes| [Prevent users from sharing content in external meetings](block-external-content-share.md) | No end-user control |
+  | Priority account chat controls|Yes| [Allow users to block Microsoft Teams chat messages](block-incoming-chats.md) | No end-user documentation |
   | Real-time telemetry and retention|No, contact support for assistance.| [Use real-time telemetry to troubleshoot poor meeting quality](use-real-time-telemetry-to-troubleshoot-poor-meeting-quality.md#where-to-find-per-user-real-time-troubleshooting-telemetry) | No end-user control |
-  | Restrict who can record | Yes, use the Teams admin center to add or delete recording restrictions in your meeting templates. Use the Microsoft Purview compliance portal to turn labels with recording restrictions on or off.|[Manage recordings for sensitive meetings](manage-meeting-recording-options.md) | [Record a meeting](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24?storagetype=stage#bkmk_whocanstartorstoparecording) |
   | Screen sharing quality alerts|Yes, you can add or remove users.| [Alerts for in-progress meeting screen sharing issues](/MicrosoftTeams/alerts/alerts-in-progress-meeting-screen-sharing) | No end-user control |
-  | Sensitivity labels | Yes, use the Microsoft Purview compliance portal to turn labels on or off.|[Use sensitivity labels to protect calendar items, Teams meetings and chat](/purview/sensitivity-labels-meetings) | [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-2b244d1d-72d0-471e-8e58-c41079e190fb)|
+  | Sensitivity labels | Yes, use the Microsoft Purview portal to turn labels on or off.|[Use sensitivity labels to protect calendar items, Teams meetings and chat](/purview/sensitivity-labels-meetings) | [Sensitivity labels for Teams meetings](https://support.microsoft.com/office/sensitivity-labels-for-teams-meetings-2b244d1d-72d0-471e-8e58-c41079e190fb)|
   | Teams Premium feature usage report|No, contact support for assistance.| [Teams Premium feature usage report](/microsoftteams/teams-analytics-and-reports/teams-premium-usage-report) | No end-user control |
-  | Templates, labels, and policies |Yes, use the Teams admin center to add or delete meeting templates. Use the Microsoft Purview compliance portal to turn labels on or off.| [Templates, sensitivity labels, and policies](meeting-templates-sensitivity-labels-policies.md)  | [Use custom templates](https://support.microsoft.com/office/use-custom-templates-for-teams-meetings-78279be9-3283-4999-b24e-96fb0da2fb4f) |
+  | Templates, labels, and policies |Yes, use the Teams admin center to add or delete meeting templates. Use the Microsoft Purview portal to turn labels on or off.| [Templates, sensitivity labels, and policies](meeting-templates-sensitivity-labels-policies.md)  | [Use custom templates](https://support.microsoft.com/office/use-custom-templates-for-teams-meetings-78279be9-3283-4999-b24e-96fb0da2fb4f) |
   | Video quality alerts|Yes, you can add or remove users.| [Alerts for in-progress meeting video quality issues](/MicrosoftTeams/alerts/alerts-in-progress-meeting-video) | No end-user control |
   | Watermarks | Yes | [Require a watermark for meetings](watermark-meeting-content-video.md) | [Watermarks for meetings](https://support.microsoft.com/office/watermark-for-teams-meetings-a9166432-f429-4a19-9a72-c9e8fdf4f589)|
+  | Who can record and transcribe | Yes, use the Teams admin center to add or delete recording restrictions in your meeting templates. Use the Microsoft Purview portal to turn labels with recording restrictions on or off.|[Manage recordings for sensitive meetings](manage-meeting-recording-options.md) | [Record a meeting](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24?storagetype=stage#bkmk_whocanstartorstoparecording) |
 
 ## Personalized meetings
 
@@ -110,7 +115,7 @@ Teams Premium provides more ways to personalize your Teams meeting experiences w
 
 - **Custom meeting backgrounds for organizations** - Create and define custom meeting backgrounds that your users can use during meetings and events.
 
-- **Custom together mode scenes for organizations** -Customize, create, or accept together mode scenes to digitally combine participants into a single virtual scene.
+- **Custom together mode scenes for organizations** - Customize, create, or accept together mode scenes to digitally combine participants into a single virtual scene.
 
 - **Meeting templates** - Control meeting settings that the meeting organizer normally controls. With templates, you can create consistent meeting experiences in your organization and help enforce compliance requirements and business rules.
 
@@ -214,11 +219,11 @@ Teams Premium provides the following key AI-powered meetings features:
   | Feature/Task  | Can admins turn this feature on/off? | Documentation for admins | Documentation for your end users |
   | -------------------- | -----------| ----------- | ------------ |
   | Decorate my background | No, contact support for assistance. | No admin control | [Decorate your background](https://adoption.microsoft.com/microsoft-teams-premium/decorate-your-background/)|
-  | Intelligent meeting recap| No, contact support for assistance.<sup>1</sup>|[Data, privacy, and security for intelligent recap in Teams Premium](/microsoftteams/privacy/intelligent-recap) | [Meeting recap in Microsoft Teams](https://support.microsoft.com/office/meeting-recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef#bkmk_intelligent_meeting_recap) |
+  | Intelligent meeting recap| No, contact support for assistance.<sup>1</sup>|[Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings.md) | [Meeting recap in Microsoft Teams](https://support.microsoft.com/office/meeting-recap-in-microsoft-teams-c2e3a0fe-504f-4b2c-bf85-504938f110ef#bkmk_intelligent_meeting_recap) |
   | Live translated captions | Yes | [Configure transcription and captions for Teams meetings](meeting-transcription-captions.md)|[Use live captions in Microsoft Teams meetings](https://support.microsoft.com/office/use-live-captions-in-microsoft-teams-meetings-4be2d304-f675-4b57-8347-cbd000a21260) |
   | Live translated transcription | Yes |  [Configure transcription and captions for Teams meetings](meeting-transcription-captions.md) | [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b)|
 
-<sup>1</sup>If you toggle the **Transcription** and **Recording** settings to **Off** in your **Meeting policies**, intelligent meeting recap isn't available for users with this policy.
+<sup>1</sup>If you toggle the **Transcription** setting to **Off** in your **Meeting policies**, intelligent meeting recap isn't available for users with this policy.
 
 ## Custom 3D Immersive Mesh Experiences
 
@@ -268,6 +273,12 @@ Teams Premium provides the following advanced capabilities in Places:
 
 - To use this feature for PSTN calls, you must assign a Teams Phone license and either Teams Premium license or a Microsoft 365 Copilot license to users. For more information on Teams Phone licensing, see [Microsoft Teams add-on licenses](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 - To use this feature with 1:1 Teams calls, you must assign a Teams Premium license or Microsoft 365 Copilot license to users.
+
+| Feature/Task  | Can admins turn this feature on/off? | Documentation for admins |Documentation for end users |
+  | -------------------- | ----------- | ----------- |----------- |
+  | Intelligent call recap| No, contact support for assistance.<sup>1</sup>|[Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings.md) | No end user documentation |
+
+<sup>1</sup>If you turn off **Transcription**, intelligent call recap isn't available for users with this policy.
 
 ### Queues app
 
