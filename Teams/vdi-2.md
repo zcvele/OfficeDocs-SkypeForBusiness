@@ -4,7 +4,7 @@ author: MicrosoftHeidi
 ms.author: heidip
 manager: jtremper
 ms.topic: article
-ms.date: 12/06/2024
+ms.date: 02/12/2025
 ms.service: msteams
 audience: admin
 ms.collection: 
@@ -380,7 +380,16 @@ By default, the MsTeamsPlugin automatically downloads and installs the right Sli
    > [!NOTE]
    > If the Plugin can't find a SlimCore MSIX package in the local or network storage, it automatically attempts to download it from the Microsoft public CDN as a fallback.
 
-#### Known issues
+#### Unified Write Filters (UWF)
+
+Customers with Thin Clients that have [Unified Write Filters](/windows/configuration/unified-write-filter/) applied should create the following exclusions in order to allow SlimCore MSIX packages to be provisioned:
+
+- uwfmgr.exe file Add-Exclusion "C:\Program Files\WindowsApps"
+- uwfmgr.exe file Add-Exclusion "C:\Users\User\AppData\Local\Packages"
+- uwfmgr.exe file Add-Exclusion "C:\Users\User\AppData\Local\Microsoft\WindowsApps"
+- uwfmgr.exe file Add-Exclusion "C:\Users\User\AppData\Local\Microsoft\TeamsVDI"
+
+### Known issues
 
 - AVD RemoteApps and Citrix Published Apps aren't supported at this time.
 - Screen Capture Protection (SCP) causes the presenter's screen to show as a black screen with only the mouse cursor on top it (as seen by the receiving side).
@@ -397,7 +406,7 @@ By default, the MsTeamsPlugin automatically downloads and installs the right Sli
   - This issue has been resolved in new Teams 24335.206.X.X or higher versions.
 - If you're on a video call and you open the Start menu on the virtual machine, a blank screen shows in the Teams meeting window instead of the video feed.
 
-#### Citrix virtual channel allow list
+## Citrix virtual channel allow list
 
 The [Virtual channel allow list](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/secure/virtual-channel-security#adding-virtual-channels-to-the-allow-list) policy setting in CVAD enables the use of an allow list that specifies which virtual channels can be opened in an ICA session. When enabled, all processes except the Citrix built-in virtual channels must be stated. As a result, more entries are required for the new Teams client to be able to connect to the client-side plugin (MsTeamsPluginCitrix.dll).
 
@@ -415,7 +424,7 @@ The new Teams client requires three custom virtual channels to function: MSTEAMS
 
 2. The VDA machines must be rebooted for the policy to take effect.
 
-#### Screen sharing
+### Screen sharing
 
 Both outgoing screensharing and appsharing behave differently in optimized VDI when compared to the non-optimized Teams desktop client.
 As such, these activities require encoding that leverages the user's device resources (for example CPU, GPU, RAM, network, and so on).
@@ -423,15 +432,15 @@ From a network perspective, sharing is done directly between the user's device a
 
 When doing a full monitor screenshare, the Teams call monitor is captured and visible to the other participants (although the video elements inside aren't visible and instead are seen as blank squares). When doing app sharing, only the application being shared is visible to the other participants and the call monitor isn't captured.
 
-##### Citrix App Protection and Microsoft Teams compatibility
+#### Citrix App Protection and Microsoft Teams compatibility
 
 Users who have App Protection enabled can still share their screen and apps while using the new optimization. Sharing requires VDA version 2402 or higher, and CWA for Windows 2309.1 or higher. Users on lower versions end up sharing a black screen instead when the App Protection module is installed and enabled.
 
-##### AVD Screen Capture Protection and Microsoft Teams compatibility
+#### AVD Screen Capture Protection and Microsoft Teams compatibility
 
 Users who have [Screen Capture Protection](/azure/virtual-desktop/screen-capture-protection?tabs=intune) (SCP) enabled can't share their screens or apps. Other people on the call can only see a black screen. If you want to allow users to share their screen even with SCP enabled, you need to disable SlimCore optimization in the Teams Admin Center policy (so the user is optimized with WebRTC), and set the SCP policy to **Block screen capture on client**.
 
-#### Call Quality Dashboard in VDI
+### Call Quality Dashboard in VDI
 
 Call Quality Dashboard (CQD) allows IT Pros to use aggregate data to identify problems creating media quality issues by comparing statistics for groups of users to identify trends and patterns. CQD isn't focused on solving individual call issues, but on identifying problems and solutions that apply to many users.
 
@@ -440,7 +449,7 @@ VDI user information is now exposed through numerous dimensions and filters. Che
 > [!NOTE]
 > The new Quality of Experience (QER) template is available in the Power BI query templates for CQD download. Version 8 now includes templates for reviewing VDI client-focused metrics.
 
-##### Query fundamentals
+#### Query fundamentals
 
 A well-formed CQD query/report contains all three of these parameters:
 
@@ -455,11 +464,11 @@ Some examples of a well-formed query would be:
 
 You can use many Dimension and Measurement values as filters too. You can use filters in your query to eliminate information in the same way you'd select a Dimension or Measurement to add or include information in the query.
 
-##### What UNION does
+#### What UNION does
 
 By default, Filters allow you to filter conditions with the AND operator. But there are scenarios where you might want to combine multiple Filter conditions together to achieve a result similar to an OR operation. For example: To get all streams from VDI Users, UNION provides a distinct view of the merged dataset. To use the UNION, insert common text into the UNION field on the two filter conditions you want to UNION.
 
-##### Caller and Callee location
+#### Caller and Callee location
 
 CQD doesn't use Caller or Callee fields, instead it uses **First** and **Second** because there are intervening steps between the caller and callee.
 
@@ -468,7 +477,7 @@ CQD doesn't use Caller or Callee fields, instead it uses **First** and **Second*
 
 If both endpoints are the same type (for example a person-to-person call), first versus second is set based on the internal ordering of the user agent category to make sure the ordering is consistent.
 
-#### Troubleshooting
+## Troubleshooting
 
 - Not optimized with SlimCore and instead you see:</br>"Azure Virtual Desktop Media Optimized"</br>"Citrix HDX Optimized"
   - Error Codes 2000 ("No Plugin") and 2001 ("Virtual Channel not available") are the most likely causes.
@@ -485,11 +494,11 @@ If both endpoints are the same type (for example a person-to-person call), first
 - Not optimized with SlimCore and instead you see: "Azure Virtual Desktop SlimCore Media Not Connected" or "Citrix SlimCore Media Not Connected".
   - Check the [Troubleshooting SlimCoreVdi MSIX deployment errors](#troubleshooting-slimcorevdi-msix-deployment-errors) section. MSIX or AppX-related errors are the most likely reasons for this error.
 
-## New Teams logs for VDI
+### New Teams logs for VDI
 
 Teams logs can be collected by selecting Ctrl+Alt+Shift+1 while running Teams on a VM. This action produces a ZIP folder in the Downloads folder. Inside the PROD-WebLogs-*.zip file, look for the Core folder.
 
-### Vdi_debug.txt is the main file for VDI related information
+### Vdi_debug.txt (main file for VDI-related information)
 
 |Azure Virtual Desktop/W365 |Citrix   |
 |---------------------------|---------|

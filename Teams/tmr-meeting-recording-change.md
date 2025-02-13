@@ -73,6 +73,26 @@ For details on shared mailboxes, see [About shared mailboxes - Microsoft 365 a
 > [!NOTE]
 > When shared mailboxes don't have a Teams license, they follow the global identity's meeting policy. If a shared mailbox without a Teams license organizes a meeting and you set **`-allowCloudRecording`** to false in the global policy, your users can't record. If you want to set a custom meeting policy for a shared mailbox, you must assign a Teams license first.
 
+### Video on Demand (VOD)
+
+When organizers record webinars and town halls, the recordings are stored in OneDrive. Once an organizer uses VOD to publish event recordings, the recordings are stored in Sharepoint Embedded File Storage Containers. Only the event organizers can manage the recordings of past town halls in their calendar.
+
+> [!NOTE]
+> As an admin, although you can find the event recording in the Sharepoint Embedded Container, you can only delete the recording in the Teams admin center.
+
+To learn more about Sharepoint Embedded File Storage Containers, see [Overview of SharePoint Embedded](/sharepoint/dev/embedded/overview).
+
+#### Delete a VOD event recording
+
+1. Open the Teams admin center.
+2. Expand **Analytics and reports** from the navigation pane.
+3. Under **Analytics and reports**, select **Usage reports**.
+4. On the **View reports** tab, under Report, either select **Town hall usage reports** or **Webinar usage reports**.
+5. In the table, find the event that you want to delete the recording for and select the row. The names of recordings follow this pattern of *'Teams Virtual Event VOD Container evt_{EventId}_rec_{RecordingId}'*.
+6. Select **Delete event data**.
+
+To learn more about VOD, see [Manage VOD publishing for webinars and town halls](manage-vod-publishing.md).
+
 ### Microsoft Teams Rooms meetings
 
 For **Microsoft Teams Rooms meetings**, when a user creates a meeting using the **Meet now** button in a Teams Room, the Teams Room itself becomes the meeting organizer, and by default, the recording is stored in the Teams Room's OneDrive account, if available. However, none of the meeting participants have full permissions to the file. If you want meeting participants to have full permissions to the recording file, avoid assigning a OneDrive license to your Teams Room's resource account.
