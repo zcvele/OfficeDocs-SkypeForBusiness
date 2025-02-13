@@ -26,6 +26,9 @@ Microsoft supports customer choice, including enabling the export of data at no 
 
 In addition to the APIs, Teams now offers a brand-new data export tool for small to medium-sized customers to export data when switching. This tool allows for unlimited exports during a 90-day period with just a single action in the Teams admin center. For more information about how to use the tool, refer to [Steps to access the Teams data export tool](#steps-to-access-the-teams-data-export-tool).
 
+> [!NOTE]
+> These export options are specifically for switching from Microsoft Teams to another provider. For other scenarios, such as Microsoft tenant migration or backup, refer to [Export content with the Microsoft Teams Export APIs](export-teams-content.md).
+
 ## Steps to access the Teams data export tool
 
 1. To export your data from Microsoft Teams for switching and access the tool at no charge, select [this link](https://aka.ms/AccessTeamsDataExportTool) to contact support through the Teams admin center.
