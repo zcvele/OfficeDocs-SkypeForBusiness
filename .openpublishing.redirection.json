@@ -5411,7 +5411,7 @@
     "redirect_document_id": false
   },
   {
-"source_path": "Teams/delete-exchange-online-transcripts.md",
+    "source_path": "Teams/delete-exchange-online-transcripts.md",
     "redirect_url": "/microsoftteams/tmr-meeting-recording-change",
     "redirect_document_id": true
   },
