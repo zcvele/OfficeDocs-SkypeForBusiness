@@ -1,5 +1,5 @@
 ---
-title: Health and usage reports
+title: Teams Management Pro portal health reports
 author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
@@ -17,13 +17,12 @@ ms.collection:
   - Tier1
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Reporting node data for health and usage of reports
-f1keywords: 
+description: This article will help you in monitoring the health of your devices in the Micrososft Teams Management Pro portal. 
 ---
 
-# Health and usage reports
+# Health reports in the Teams Management Pro portal
 
-The reporting node contains data for the health and usage of your Microsoft Teams Rooms in the Pro Management portal. The **Overview** tab surfaces tenant-wide health trends of your rooms. The **Health** tab displays a list of rooms with their corresponding health data. Room usage based on calendar information and call quality data is visible under the **Usage** tab.
+There are reports for health and usage that are available in the **Reporting** node in the Teams Rooms Pro Management portal. The **Reporting** node contains data for the health and usage of your Microsoft Teams Rooms in the Pro Management portal. The **Overview** tab surfaces tenant-wide health trends of your rooms. The **Health** tab displays a list of rooms with their corresponding health data. Room usage based on calendar information and call quality data is visible under the **Usage** tab.
 
 ## Export tickets
 
@@ -200,4 +199,3 @@ The Detail pane allows you to input a custom hourly rate and corresponding curre
 ## User experience
 
 This section provides the average call rating by end-users on a scale of 1 to 5 (5 being the best).
-
