@@ -17,7 +17,7 @@ ms.collection:
   - Tier1
 ms.localizationpriority: medium
 search.appverid: MET150
-description: This article will help you in monitoring the usage of your devices in the Micrososft Teams Management Pro portal. 
+description: This article helps you in monitoring the usage of your devices in the Microsoft Teams Management Pro portal. 
 ---
 
 # Usage reports in the Teams Management Pro portal
@@ -30,7 +30,7 @@ The ticket export feature lets you export all active and closed ticket history i
 
 Under the **Overview** report, the **Export tickets** button provides ticket history details that include the following fields: creation date, device name, incident type, ticket state, ticket, last update, history, last resolved date, message/notes conversations, closure summary, closed by, and last closed date. 
 
-The data is generated in a JSON file that you can download and import into Power BI. The download starts after you select **Export tickets**. If you leave the portal before the download starts, you'll have to request the file again. 
+The data is generated in a JSON file that you can download and import into Power BI. The download starts after you select **Export tickets**. If you leave the portal before the download starts, you have to request the file again. 
 
 |Column |Description   |
 |----------|-----------|
@@ -51,11 +51,11 @@ The data is generated in a JSON file that you can download and import into Power
 
 <!--![A screenshot of active tickets bar graph](../media/health-and-usage-002new.png)-->
 
-The overview section provides graphical representations of important aspects of meeting room management. The charts will change depending on the time span selected or group selected. To change the time span, click the drop-down menu.
+The overview section provides graphical representations of important aspects of meeting room management. The charts change depending on the time span selected or group selected. To change the time span, select the drop-down menu.
 
 <!--!![A screenshot of a menu to choose a day](../media/health-and-usage-004.png)-->
 
-To change the group, click the group selection drop-down menu in the banner.
+To change the group, select the group selection drop-down menu in the banner.
 
 <!--!![A screenshot of the banner menu auto-generated](../media/health-and-usage-005.png)-->
 ### Tickets by category
@@ -72,9 +72,9 @@ In the flyout, it's possible to filter the list of tickets by the subcategory by
 
 <!--!![A screenshot tickets by subcategory automatically generated](../media/health-and-usage-008.png)-->
 
-To navigate back, either click on the donut or click on the breadcrumb at the top left.
+To navigate back, either select on the donut or select on the breadcrumb at the top left.
 
-To navigate to a specific ticket in this list view, click on the link under the **Support ticket column**.
+To navigate to a specific ticket in this list view, select on the link under the **Support ticket column**.
 
 <!--### Ticket history
 
@@ -105,19 +105,19 @@ To navigate to the Health report for all rooms, select Reports, then select  **H
 
 <!--!![A screenshot of a Reports health percentage](../media/health-and-usage-001.png)-->
 
-The health score is a metric designed to surface rooms that are most likely to cause end-user frustration. A room can either be healthy or unhealthy for a given day. It is considered unhealthy if a ticket or many tickets impacted the room for more than 20 total minutes during non-maintenance hours (5AM -9PM machine local time). For example, if a ticket is opened at 5:00 AM but closed at 5:15 AM, the room is still considered healthy. But, if a second ticket occurred from 09:00AM to 9:10AM, the room would be considered unhealthy for the day. Similarly, if a ticket occurred from 5:00 AM to 5:21 AM, it is considered unhealthy for the day.
+The health score is a metric designed to surface rooms that are most likely to cause end-user frustration. A room can either be healthy or unhealthy for a given day. It's considered unhealthy if a ticket or many tickets impacted the room for more than 20 total minutes during nonmaintenance hours (5AM -9PM machine local time). For example, if a ticket is opened at 5:00 AM but closed at 5:15 AM, the room is still considered healthy. But, if a second ticket occurred from 09:00AM to 9:10AM, the room would be considered unhealthy for the day. Similarly, if a ticket occurred from 5:00 AM to 5:21 AM, it's considered unhealthy for the day.
 
 > [!NOTE]
 > Health for the day is aggregated once a day at 12:00 AM UTC time. For customers near the international date line, health aggregation may occur near the middle of the workday.
 
 > [!NOTE]
-> Rooms that are onboarding are hidden for the list of rooms in the Health tab and do not count towards the average health of the tenant.
+> Rooms that are onboarding are hidden for the list of rooms in the Health tab and don't count towards the average health of the tenant.
 
 Clicking on a room listed in this view displays more details.
 
-The bar graph displays the number of tickets on each day. Tickets opened on that respective day appear in blue. Tickets opened prior to the respective day appear in orange. Clicking on a day on the graph filters the pie chart and table to the relevant tickets. To reverse the filter, navigate with the breadcrumbs or click on the graph.
+The bar graph displays the number of tickets on each day. Tickets opened on that respective day appear in blue. Tickets opened prior to the respective day appear in orange. Clicking on a day on the graph filters the pie chart and table to the relevant tickets. To reverse the filter, navigate with the breadcrumbs or select on the graph.
 
-Categorization of tickets is represented in the donut chart. Interacting with this filters the timeline graph and table. To reverse the filter, navigate with the breadcrumbs or click on the graph.
+Categorization of tickets is represented in the donut chart. Interacting with this filters the timeline graph and table. To reverse the filter, navigate with the breadcrumbs or select on the graph.
 
 <!--!![A screenshot of a Reports health bar graph](../media/health-and-usage-014.png)-->
 
@@ -125,7 +125,7 @@ The meeting impact view shows scheduled meetings during which a ticket with a se
 
 <!--![A screenshot of a Reports meeting impact](../media/health-and-usage-015.png)-->
 
-The Settings tab displays the metadata of the room such as the hardware information, device settings, BIOS information, app settings and location.
+The Settings tab displays the metadata of the room such as the hardware information, device settings, BIOS information, app settings, and location.
 
 ## Usage
 
@@ -136,7 +136,7 @@ To view the Usage report for all rooms, select **Reports->Usage**.
 The headlines provide a few insights:
 
 - Total rooms in your tenant
-- How many do not have any booked meetings, either offline or online
+- How many don't have any booked meetings, either offline or online
 - Percentage of utilization of rooms across the tenant
 - Total number of booked meetings through exchange
 - Percentage of booked meetings that included a Skype or Teams link
@@ -147,7 +147,7 @@ Below the headline **Metrics** is a table of rooms with corresponding metrics. S
 
 |Column|Description|
 |---|---|
-|Utilization|Percentage of time the room was booked during business hours (Max of 8hours/ per day) in the selected period.  Utilization= (total hours)/ (number of selected days set in the report * 8).   Ex: Time period set to 7 days in the report. The room was booked for 5 days during that period and the total hours= (8 * *5) =* 40 hours*. **In this case, utilization = (8 **** **5)/ (7 * 8) = 40/56= 71%**      |
+|Utilization|Percentage of time the room was booked during business hours (Max of 8hours/ per day) in the selected period.  Utilization= (total hours)/ (number of selected days set in the report * 8).   Ex: Time period set to seven days in the report. The room was booked for five days during that period and the total hours= (8 * *5) =* 40 hours*. **In this case, utilization = (8 **** **5)/ (7 * 8) = 40/56= 71%**      |
 |Booked online|Of the booked meetings, the percentage of which were enabled with Teams. Ex. 10 meetings were booked. Of that, 8 had a Teams link. Booked Online = 80%|
 |Scheduled meetings|Absolute number of meetings scheduled in the room.|
 |Total calls|Absolute number of calls with the room as a participant.|
@@ -171,7 +171,7 @@ The **Calls** table shows meetings in which the room participated in a Teams cal
 
 <!--!![A screenshot of room audio quality](../media/health-and-usage-016.png)-->
 
-To view stream details for the room, click the Session Start Time.
+To view stream details for the room, select the Session Start Time.
 
 ## Insight report
 
@@ -181,7 +181,7 @@ To view the Insight report for all rooms, select **Report** > **Insight Report (
 
 ## Actions
 
- The Actions section of the report shows a timeline view and aggregate count of all actions completed each day by the service. Action types include detection, remediation, and updates. Details on the actions can be viewed by selecting **See details**. Once you have selected **See details**, a new panel will appear with two sections; Tickets and Updates. The Tickets section shows a list of tickets with corresponding hours saved. Select the Tickets section to show an expanded view of each action taken on the respective ticket and the hours saved. the Updates section shows a list of each update applied and the corresponding tally of devices that successfully completed the update.  
+ The Actions section of the report shows a timeline view and aggregate count of all actions completed each day by the service. Action types include detection, remediation, and updates. Details on the actions can be viewed by selecting **See details**. Once you have selected **See details**, a new panel appears with two sections; Tickets and Updates. The Tickets section shows a list of tickets with corresponding hours saved. Select the Tickets section to show an expanded view of each action taken on the respective ticket and the hours saved. The Updates section shows a list of each update applied and the corresponding tally of devices that successfully completed the update.  
  
 ## Detection, investigation, and remediation
 
