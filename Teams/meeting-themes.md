@@ -33,7 +33,7 @@ description: Using approved corporate branding assets like images and logos to c
 
 Meeting themes include your organization’s brand colors, a custom image, and logo. As an admin, applying a custom theme allows you to customize the visual appearance of the meeting invite, pre-join screen, and lobby for your users' meetings. With the support of your brand management and corporate communications teams, you can easily set up and create meeting themes for various business units and departments within your organization. Meeting themes don't apply to webinars; instead, the webinar registration page is used to configure the webinar's branding for registration and emails.
 
-Only organizers with a Teams Premium license can create meetings that include meeting themes. Anyone who joins these meetings can see the themes, including unlicensed internal users, guests, and anonymous users.
+Only organizers with a Teams Premium license can create meetings that include meeting themes. Anyone who joins these meetings can see the themes, including users in your organization without a Teams Premium license, guests, and anonymous users.
 
 You can set up or manage meeting themes for Teams meetings with the Teams admin center or PowerShell.
 
@@ -43,7 +43,7 @@ You can set up or manage meeting themes for Teams meetings with the Teams admin 
 > Microsoft doesn't validate the ownership of brand logos or images associated with meeting themes. When your users join meetings with other organizations, they should always verify the authenticity of the organization they're meeting with.
 
 > [!NOTE]
-> Uploaded images and their associated image URL are visible to all meeting participants; including external users, guests, unauthenticated users, and anyone with a link to join the meeting. To stop displaying your images, you must delete the images from your meeting theme. To remove images from a meeting theme, navigate to the **Meeting customization policy** in the Teams admin center, select the chosen meeting theme, and select **Edit meeting theme**.
+> All meeting participants can see uploaded images and their associated image URL; including external users, guests, unverified users, and anyone with a link to join the meeting. To stop displaying your images, you must delete the images from your meeting theme. To remove images from a meeting theme, navigate to the **Meeting customization policy** in the Teams admin center, select the chosen meeting theme, and select **Delete theme**.
 
 ## Prerequisites
 
@@ -101,9 +101,9 @@ To create or manage meeting themes, follow these steps:
 6. If you're creating a new policy, select the **Add a theme** button to upload your logo, image, and select a custom color. If you're managing an existing policy, select the **Edit meeting themes** button if you'd like to make changes to your theme.
 7. In the **Meeting themes** pane, upload your images and create your custom color:
 
-      - **Logo**: Select the **Upload logo** buttons to upload a light and dark versions of your logo. These square logos appear on key surfaces during your meeting, including the lobby screen.
-      - **Images**: Select the **Upload image** buttons to upload a light and dark versions of your custom image. Your organization's images are shown on the meetings screen and provide a colorful backdrop.
-      - **Color**: Enter the hex code value of your organization's color, which displays on key surfaces of the meeting experience. The final color might differ from the color you enter to meet accessibility standards.
+      - **Logo**: Select the **Upload logo** buttons to upload a light and dark version of your logo. These square logos appear on key surfaces during your meeting, including the lobby screen.
+      - **Images**: Select the **Upload image** buttons to upload a light and dark version of your custom image. Your organization's images are shown on the meetings screen and provide a colorful backdrop.
+      - **Color**: Enter the hex code value of your organization's color, which displays on key surfaces of the meeting experience. To meet accessibility standards, the final color might differ from the color you enter.
 8. Select the **Preview** button to see how your theme looks on desktop.
 9. Select **Apply**.
 10. In the **Custom meeting visuals** table, on your theme's row, toggle the **Currently Active** setting to **Yes**.
@@ -115,7 +115,7 @@ To create or manage meeting themes, follow these steps:
 
 ## Add multiple meeting themes to a policy (Public Preview)
 
-Adding multiple themes for each policy gives your organizers more options, allowing them to select the appropriate branding for different meetings.
+Adding multiple themes to each policy gives your organizers more options, allowing them to select the appropriate branding for different meetings.
 
 To add multiple meeting themes to a policy, follow these steps:
 
@@ -127,9 +127,9 @@ To add multiple meeting themes to a policy, follow these steps:
 6. Select the **Add new meeting theme theme** button to create extra themes. You should give each theme a descriptive name.
 7. In the **Meeting themes** pane, upload your images and create your custom color. You can also select logos and images you previously uploaded.
 
-      - **Logo**: Select the **Upload logo** buttons to upload a light and dark versions of your logo. These square logos appear on key surfaces during your meeting, including the lobby screen.
-      - **Images**: Select the **Upload image** buttons to upload a light and dark versions of your custom image. Your organization's images are shown on the meetings screen and provide a colorful backdrop.
-      - **Color**: Enter the hex code value of your organization's color, which displays on key surfaces of the meeting experience. The final color might differ from the color you enter to meet accessibility standards.
+      - **Logo**: Select the **Upload logo** buttons to upload a light and dark version of your logo. These square logos appear on key surfaces during your meeting, including the lobby screen.
+      - **Images**: Select the **Upload image** buttons to upload a light and dark version of your custom image. Your organization's images are shown on the meetings screen and provide a colorful backdrop.
+      - **Color**: Enter the hex code value of your organization's color, which displays on key surfaces of the meeting experience. To meet accessibility standards, the final color might differ from the color you enter.
 8. Select the **Preview** button to see how your theme looks on desktop.
 9. Select **Apply**.
 10. In the **Custom meeting visuals** table, on your theme's row, toggle the **Currently Active** setting to **Yes**.
@@ -138,7 +138,7 @@ To add multiple meeting themes to a policy, follow these steps:
 
 ## Assign a default theme to a meeting template (Public Preview)
 
-If you added multiple themes to each customization policy, you can use meeting templates to assign a default meeting theme to each template. When organizers select a meeting template while creating meetings, your chosen default theme automatically appears in the meeting invite, pre-join screen, and lobby. If you chose to lock the theme, organizers must use the default when they select the meeting template. If you leave the theme unlocked, organizers can select any available theme instead of the default one. To learn more about meeting templates, see [Overview of custom meeting templates in Microsoft Teams](custom-meeting-templates-overview.md).
+If you added multiple themes to each customization policy, you can use meeting templates to assign a default meeting theme to each template. When organizers select a meeting template while creating meetings, your chosen default theme automatically appears on the meeting invite, pre-join screen, and lobby. If you chose to lock the theme, organizers must use the default when they select the meeting template. If you leave the theme unlocked, organizers can select any available theme instead of the default one. To learn more about meeting templates, see [Overview of custom meeting templates in Microsoft Teams](custom-meeting-templates-overview.md).
 
 To assign a default meeting theme to your meeting templates, follow these steps:
 
