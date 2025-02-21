@@ -8,7 +8,7 @@ ms.date: 2/21/2025
 ms.topic: article
 audience: Admin
 ms.service: msteams
-ms.subservice: itpro-devices + itpro-rooms
+ms.subservice: itpro-rooms
 appliesto: 
   - Microsoft Teams
 ms.collection: 
@@ -23,7 +23,7 @@ description: This article provides guidance on how to manage your Teams Rooms on
 
 # Managing Microsoft Teams Rooms on Windows Devices Using Teams Rooms Pro Management Portal
 
-In the Teams Rooms Pro management portal, you can configure application settings for individual Teams Rooms on Windows devices, provided you have the necessary role-based access control permissions for Rooms Management. For more information, see [role-based access control in the Microsoft Teams Rooms Pro Management portal](/microsoftteams/rooms/rooms-pro-management-portal-role-based-access-control).
+In the Teams Rooms Pro management portal, you can configure application settings for individual Teams Rooms on Windows devices, provided you have the necessary role-based access control permissions for Rooms Management. For more information, see [role-based access control in the Microsoft Teams Rooms Pro Management portal](/microsoftteams/rooms/rooms-pro-rbac).
 
 ## How It Works
 
