@@ -23,7 +23,7 @@ description: This article provides guidance on how to manage your Teams Rooms on
 
 # Managing Microsoft Teams Rooms on Windows Devices Using Teams Rooms Pro Management Portal
 
-In the Teams Rooms Pro management portal, you can configure application settings for individual Teams Rooms on Windows devices, provided you have the necessary role-based access control permissions for Rooms Management. For more information, see [role-based access control in the Microsoft Teams Rooms Pro Management portal](https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-pro-management-portal-role-based-access-control).
+In the Teams Rooms Pro management portal, you can configure application settings for individual Teams Rooms on Windows devices, provided you have the necessary role-based access control permissions for Rooms Management. For more information, see [role-based access control in the Microsoft Teams Rooms Pro Management portal](/microsoftteams/rooms/rooms-pro-management-portal-role-based-access-control).
 
 ## How It Works
 
@@ -149,7 +149,7 @@ Set the default content layout for single display mode. Meeting participants can
 </tr>
 <tr class="even">
 <td>Front Row Experience</td>
-<td>Enabled by default. If false, Front row is disabled. For more information, see <a href="https://learn.microsoft.com/en-us/microsoftteams/rooms/front-row">Set front row as the default layout</a>.</td>
+<td>Enabled by default. If false, Front row is disabled. For more information, see <a href="/microsoftteams/rooms/manage-front-row">Set front row as the default layout</a>.</td>
 </tr>
 <tr class="odd">
 <td>Default Layout Experience</td>
