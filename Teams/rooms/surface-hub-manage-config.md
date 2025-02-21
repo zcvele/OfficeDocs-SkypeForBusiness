@@ -6,7 +6,7 @@ manager: pamgreen
 ms.reviewer: kramachandra
 ms.date: 04/29/2024
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: msteams
 ms.subservice: itpro-rooms
 ms.collection: 

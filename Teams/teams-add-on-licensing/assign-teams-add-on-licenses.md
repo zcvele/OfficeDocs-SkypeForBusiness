@@ -4,7 +4,7 @@ author: DaniEASmith
 ms.author: danismith
 manager: pamgreen
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: msteams
 ms.custom:
   - has-azure-ad-ps-ref

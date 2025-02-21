@@ -5,7 +5,7 @@ ms.author: danismith
 manager: jtremper
 ms.reviewer: solomon.alex, grace.culver
 ms.date: 11/27/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
