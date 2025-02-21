@@ -1641,7 +1641,7 @@ items:
                       href: rooms/multi-tenant-management-partner.md
                     - name: Multi-tenant management for customers
                       href: rooms/multi-tenant-management-customer.md
-                    - name: Settings in the Teams Pro Management portal
+                    - name: Teams Rooms on Windows settings
                       href: rooms/pro-portal-settings.md
                 - name: Monitoring
                   items:
