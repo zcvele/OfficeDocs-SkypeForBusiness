@@ -85,6 +85,7 @@ See [Microsoft Teams panels](../devices/overview-teams-panels.md) for features s
 #### <b> Cisco </b>
 | Device model | Latest firmware version | Minimum firmware version | Included Microsoft applications | Release date |
 |:----------------|:-------------------|:----------------------------|:-------------------------------------------------------------------|:---------------------------|
+| Cisco Room Navigator | `11.24.1.8 (AOSP) ` | N/A| Teams client: `1449/1.0.972024081207` <br> Microsoft Intune: `24.09.1` <br> Authenticator: `6.2410.7268` <br> Admin Agent: `1.0.0.202412110504.product`| February 19, 2025|
 | Cisco Room Navigator | `11.22.1.12` | N/A | Teams client: `1449/1.0.97.2024081207` <br> Company Portal: `5.0.6152.0` <br> Admin Agent: `1.0.0.202402202353.product`| December 20, 2024|
 
 #### <b> Crestron </b>

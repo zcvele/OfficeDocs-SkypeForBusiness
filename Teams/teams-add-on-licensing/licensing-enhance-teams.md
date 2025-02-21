@@ -5,7 +5,7 @@ author: DaniEASmith
 manager: pamgreen
 ms.reviewer: margidesai, spraveen
 ms.date: 03/26/2024
-ms.topic: conceptual
+ms.topic: article
 ms.service: msteams
 ms.subservice: teams-premium
 search.appverid: MET150
