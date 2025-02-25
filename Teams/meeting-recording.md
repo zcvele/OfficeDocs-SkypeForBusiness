@@ -74,11 +74,30 @@ To allow or prevent meeting recordings:
 
 1. In the Microsoft [Teams admin center](https://admin.teams.microsoft.com/), expand **Meetings**.
 1. Select **Meeting policies**.
-1. Select the policy that you want to edit.
-1. Turn **Meeting recording** On or Off.
+1. Select the policy that you want to edit or create a new one. To apply changes to all users in your organization, update the **Global policy**. To exclude specific users, assign them a custom meeting policy.
+1. Toggle **Meeting recording** **On** or **Off**.
 1. Select **Save**.
+1. To assign the policy:
+    - **To specific users**- Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
+    - **To groups**: Select **Group policy assignment** > select **Add** > enter the group's name and enter the policy's name > select **Apply**.
 
-With PowerShell, you configure the **`-AllowCloudRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy).
+### Powershell
+
+With PowerShell, you configure the **`-AllowCloudRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the PowerShell section in this article.
+
+Start by connecting to PowerShell with the following command:
+
+```powershell
+Connect-MicrosoftTeams
+```
+
+To allow everyone in your organization to record, except users with an assigned custom meeting policy, run the following command:
+
+```powershell
+Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
+```
+
+To allow specific users in your organization to record, run the following commands:
 
 ## Require participant agreement for recording and transcription
 
@@ -247,6 +266,47 @@ Teams meeting recordings are stored in the organizer's OneDrive and SharePoint s
 
 To learn about why users can't record meeting, see [I can't record a meeting in Microsoft Teams](https://support.microsoft.com/office/i-can-t-record-a-meeting-in-microsoft-teams-f35329c2-57b1-487f-b5e3-70a7efb0945b).</br>
 To learn how to use diagnostic tools, see [Issues that affect meeting recordings](/microsoftteams/troubleshoot/meetings/troubleshoot-meeting-recording-issues).
+
+## PowerShell
+
+For details on assigning policies to users and groups using PowerShell, see [Assign policies to users and groups](assign-policies-users-and-groups.md).
+
+### Allow whether users in your organization can record
+
+To allow everyone in your organization to record, except users with an assigned custom meeting policy, run the following command:
+
+```powershell
+Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
+```
+
+To allow specific users in your organization to record, run the following commands:
+
+1. Create a new policy
+
+    ```powershell
+    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
+    ```
+
+2. Assign specific users the policy
+
+    ```powershell
+    Grant-CsTeamsMeetingPolicy -Identity "user@contoso.onmicrosoft.com" -PolicyName "Your Policy Name"
+    ```
+
+To allow specific groups in your organization to record, run the following commands:
+
+1. Create a new policy
+
+    ```powershell
+    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
+    ```
+
+2. Assign specific groups the policy
+
+    ```powershell
+    Grant-CsTeamsMeetingPolicy -Group "Group ID" -PolicyName "Your Policy Name"
+    ```
+
 
 ## Related topics
 
