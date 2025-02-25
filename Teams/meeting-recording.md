@@ -271,7 +271,7 @@ To learn how to use diagnostic tools, see [Issues that affect meeting recordings
 
 For details on assigning policies to users and groups using PowerShell, see [Assign policies to users and groups](assign-policies-users-and-groups.md).
 
-### Allow whether users in your organization can record
+### Manage recording
 
 To allow everyone in your organization to record, except users with an assigned custom meeting policy, run the following command:
 
@@ -306,7 +306,6 @@ To allow specific groups in your organization to record, run the following comma
     ```powershell
     Grant-CsTeamsMeetingPolicy -Group "Group ID" -PolicyName "Your Policy Name"
     ```
-
 
 ## Related topics
 
