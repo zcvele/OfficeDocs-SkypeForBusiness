@@ -139,12 +139,51 @@ To run the diagnostic tool for transcripts, follow these steps:
 1. Select the Run Tests button to populate the diagnostic in the Microsoft 365 admin center:
 
    > [!div class="nextstepaction"]
-   > [Run Tests](https://aka.ms/MeetingTranscribeDiag)
 
 2. In the Username or Email field, enter the email address of the affected user.
 3. In the Teams Meeting URL field, enter the meeting URL.
 4. Select **Run Tests**.
 5. After the diagnostic runs, select the provided links to resolve the issues that were found.
+
+## PowerShell
+
+For details on assigning policies to users and groups using PowerShell, see [Assign policies to users and groups](assign-policies-users-and-groups.md).
+
+### Manage transcription
+
+To allow everyone in your organization to transcribe meetings, events, and group calls, except users with an assigned custom meeting policy, run the following command:
+
+```powershell
+Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
+```
+
+To allow specific users in your organization to record, run the following commands:
+
+1. Create a new policy
+
+    ```powershell
+    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
+    ```
+
+2. Assign specific users the policy
+
+    ```powershell
+    Grant-CsTeamsMeetingPolicy -Identity "user@contoso.onmicrosoft.com" -PolicyName "Your Policy Name"
+    ```
+
+To allow specific groups in your organization to record, run the following commands:
+
+1. Create a new policy
+
+    ```powershell
+    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
+    ```
+
+2. Assign specific groups the policy
+
+    ```powershell
+    Grant-CsTeamsMeetingPolicy -Group "Group ID" -PolicyName "Your Policy Name"
+    ```
 
 ## Related topics
 
