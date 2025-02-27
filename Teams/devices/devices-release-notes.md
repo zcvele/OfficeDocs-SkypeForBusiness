@@ -205,7 +205,15 @@ To add a mobile system OS scanner:
 
 
 
-### February 11, 2025
+## February 25, 2025
+
+**Applies to:** *Teams app version: 1449/1.0.94.2025021303 (Poly, Yealink, AudioCodes)*
+
+
+
+Back-end telemetry fixes and improvements  
+
+## February 11, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025020301 (Poly, Yealink, AudioCodes)*
 
@@ -213,6 +221,8 @@ To add a mobile system OS scanner:
 > Starting June 2025, Teams applications older than 5 months will no longer work. Please refer to the Message Center Post, MC969451 for more details.
 
 Bug fixes including improvements in font rendering on side cars among others   
+
+Contacts on Teams app and sidecar will now be sorted alphabetically
 
 ### January 8, 2025
 

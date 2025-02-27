@@ -67,7 +67,7 @@ This article is for IT admins who wish to understand Teams Premium licensing and
   - [How do I purchase Teams Premium licenses?](#how-do-i-purchase-teams-premium-licenses)
   - [Is admin configuration required after assigning users licenses?](#is-admin-configuration-required-after-assigning-users-licenses)
 
-To learn how to set up and configure Teams Premium features, see [Microsoft Teams Premium - Overview for administrators](/microsoftteams/enhanced-teams-experience), which also includes links to end-user documentation.
+To learn how to set up and configure Teams Premium features, see [Microsoft Teams Premium - Overview for administrators](/microsoftteams/enhanced-teams-experience), which also includes links to end-user documentation. To learn how to manage licenses and features in one place, see [Manage Teams Premium for your organization](/microsoftteams/teams-premium-dashboard).
 
 > [!IMPORTANT]
 > For admins to be able to manage Teams Premium features, their tenant needs at least one user with an active Teams Premium license.

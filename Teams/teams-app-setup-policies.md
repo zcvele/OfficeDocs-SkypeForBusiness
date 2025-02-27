@@ -3,7 +3,7 @@ title: Manage app setup policies in Microsoft Teams
 author: surbhigupta12
 ms.author: surbhigupta
 manager: prkosh
-ms.topic: article
+ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.subservice: teams-apps
 ms.service: msteams
