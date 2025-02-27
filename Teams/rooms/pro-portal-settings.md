@@ -53,6 +53,7 @@ Since setting changes from the Teams Rooms Pro management portal to the Teams Ro
 To provide visibility to the Teams Rooms Pro management technician, there's a **Settings Job History** activity under the **Activity** tab on the Rooms detail panel. This indicates the stage of settings change.
 
 An entry is made for every setting change initiated by a user or by the Teams Rooms Pro management service.
+
 |**Field name**|**Description**|
 |:------|:------|
 |Status|Indicates the stat of the settings job.|
@@ -86,7 +87,7 @@ Use this table to understand the **Settings Job** reasons.
 |Canceled |CANCELLED  | User canceled the Job |  |
  Completed With Errors| APP RESTART FAILED|XML with new settings has been written to the correct location, but an issue occurred in the app restart process. To complete the process, the device was rebooted. | Reapply the settings. |
 |Completed With Errors | VERIFICATION FAILED | XML with new settings has been written, and the app was successfully restarted, but the settings weren't applied correctly. | The settings change couldn't be verified. Check that the settings changed. A retry will be scheduled by the Managed room service for the nightly maintenance window. |
-|Failed |EXISTING XML FOUND| An existing XML was found on the device and the agent was unable to create a new XML due to conflicts.|Restart the device to apply the existing SkypeSettings.XML on the device or remove it. See [Remotely manage Microsoft Teams Rooms device settings](/microsoftteams/rooms/remotely-manage-teams-rooms-device-settings). |
+|Failed |EXISTING XML FOUND| An existing XML was found on the device and the agent was unable to create a new XML due to conflicts.|Restart the device to apply the existing SkypeSettings.XML on the device or remove it. See [Manage a Microsoft Teams Rooms console settings remotely with an XML configuration file](/microsoftteams/rooms/xml-config-file). |
 |Failed|FAILED TO WRITE XML|The agent failed to write an XML to the correct location.| Reapply the settings change.|
 |Failed|FAILED|General failures outside of the specified error codes.|Reapply the settings change.|
 |Failed|SETTINGS FETCH FAILED|Unable to fetch the new settings from the service.| Reapply the settings change.|
@@ -129,7 +130,7 @@ Teams Rooms devices have settings that can either be applied on the device and s
 |Default content layout in single display mode|Radio buttons|Focus on Content and People OR Focus on Content only|Set the default content layout for single display mode. Meeting participants can change the default content layout during meetings.|
 |Show Meeting Chat|Toggle| Enabled by default. |If disabled, meeting chat functionality (including chat bubbles and chat selection) isn't available in any meeting layout on the Teams Rooms device.|
 |Open Chat by Default|Checkbox| Enabled by default. |Checkbox won't be visible if Show Meeting Chat is disabled. If disabled, chat panel won't show by default in meetings using Gallery view.|
-|Front Row Experience|Toggle|Enabled by default. |If false, Front row is disabled. For more information, see [Set front row as the default layout](/microsoftteams/rooms/set-front-row-as-default-layout).|
+|Front Row Experience|Toggle|Enabled by default. |If false, Front row is disabled. For more information, see [Remotely configure Front Row on Teams Rooms](/microsoftteams/rooms/manage-front-row).|
 |Default Layout Experience|Radio button|Front row default|Select the default meeting join layout as Gallery or Front Row.|
 |Front Row Video Size|Dropdown|Medium (default), Small, Large|Sets the size of Front row to provide more or less space for remote participant video and shared content.|
 |Right front row panel|Dropdown|Show raised hand list, Show meeting chat, Hide the panel|Configure the position of the raised hand and chat components in the meeting panels to the left and right of meeting content on front-of-room displays.|
@@ -155,20 +156,20 @@ Teams Rooms devices have settings that can either be applied on the device and s
 |:------|:------|:------|:------|
 |Dual Monitor mode|Toggle|Disabled by default. |Dual screen mode is enabled. Otherwise, the device uses single screen mode.|
 |Allow content duplication|Checkbox|Disabled by default.|When checkbox is selected, content is shown on both screens in dual screen mode, when out of meeting.|
-|Enable Resolution and Scaling:|Toggle|Disabled by default. |If true, the display resolution and scale setting will be applied. This setting affects both the main front-of-room display and extended front-of-room display once this setting is enabled. For more information, see [Remotely configure layout, scale, and resolution on Teams Rooms displays](/microsoftteams/rooms/remotely-configure-layout-scale-resolution).|
+|Enable Resolution and Scaling:|Toggle|Disabled by default. |If true, the display resolution and scale setting will be applied. This setting affects both the main front-of-room display and extended front-of-room display once this setting is enabled. For more information, see [Remotely configure layout, scale, and resolution on Teams Rooms displays](/microsoftteams/rooms/manage-front-room-scale-res).|
 |Main Front of Room Display Resolution (Width)|Number| Enter a value. |The width entered could be unsupported. Valid resolutions (width x height) are: 1920x1080, 2560x1080, 3840x2160, 3840x2560, 5120x2160. **Note**: *Any changes are applied to the device. However, in the Settings Job History, it results in a Completed with Errors message.*|
 |Main Front of Room Display (Height)|Number|Enter a value.|The height entered could be unsupported. Valid resolutions (width x height) are: 1920x1080, 2560x1080, 3840x2160, 3840x2560, 5120x2160. **Note**: *Any changes are applied to the device. However, in the Settings Job History, it results in a Completed with Errors message.*|
-|Main Front of Room scaling|Slider|Input numeric value of scaling.|Valid values are 100 (recommended), 125, 150, 175, 200, 225, 250, and 300. If you input greater than 300 and your front-of-room display only supports up to 300, it's set to 300. For more information, see [Remotely configure layout, scale, and resolution on Teams Rooms displays](/microsoftteams/rooms/remotely-configure-layout-scale-resolution).|
+|Main Front of Room scaling|Slider|Input numeric value of scaling.|Valid values are 100 (recommended), 125, 150, 175, 200, 225, 250, and 300. If you input greater than 300 and your front-of-room display only supports up to 300, it's set to 300. For more information, see [Remotely configure layout, scale, and resolution on Teams Rooms displays](/microsoftteams/rooms/manage-front-room-scale-res).|
 |Extended Front of Room Display Resolution (width)|Number|Enter a value.|The width entered could be unsupported. Valid resolutions (width x height) are: 1920x1080, 2560x1080, 3840x2160, 3840x2560, 5120x2160. Note: Any changes are applied to the device. However, in the Settings Job History, it results in a Completed with Errors message.|
 |Extended Front of Room Display Resolution (height)|Number|Enter a value.|The height entered could be unsupported. Valid resolutions (width x height) are: 1920x1080, 2560x1080, 3840x2160, 3840x2560, 5120x2160. **Note**: *Any changes are applied to the device. However, in the Settings Job History, it results in a Completed with Errors message.*|
-Extended Front of Room scaling|Slider|Input numeric value of scaling.|Valid values are 100 (recommended), 125, 150, 175, 200, 225, 250, and 300. If you input greater than 300 and your front-of-room display only supports up to 300, it's set to 300. For more information, see [Remotely configure layout, scale, and resolution on Teams Rooms displays](/microsoftteams/rooms/remotely-configure-layout-scale-resolution). **Note**: *Any changes are applied to the device. However, in the Settings Job History, it results in a Completed with Errors message.*|
+Extended Front of Room scaling|Slider|Input numeric value of scaling.|Valid values are 100 (recommended), 125, 150, 175, 200, 225, 250, and 300. If you input greater than 300 and your front-of-room display only supports up to 300, it's set to 300. For more information, see [Remotely configure layout, scale, and resolution on Teams Rooms displays](/microsoftteams/rooms/manage-front-room-scale-res). **Note**: *Any changes are applied to the device. However, in the Settings Job History, it results in a Completed with Errors message.*|
 |Disable Split video gallery|Toggle| Default is false. |This setting is only applicable to dual-display rooms. Specify true to disable splitting video gallery across both screens. This will also disable Front row layout, and any settings associated with Front row layout.|
 |Remove Front of room calendar|Toggle|Disabled by default.|Remove the calendar on front-of-room displays.|
 |Allow Bluetooth beaconing|Toggle|Enabled by default.|When checked, proximity-based meeting invitations using Bluetooth are automatically accepted.|
 |Remote control from personal devices|Checkbox|Enabled by default.|When checked, room remote connections are allowed. Room Remote won't work if only ultrasound is turned on.|
 |Enable Ultrasound beacon|Toggle|Enabled by default.|Enables Ultrasound signaling beacons from compatible consoles. For more information [Proximity Join using Bluetooth and ultrasound](/microsoftteams/rooms/proximity-join?tabs=portal)|
 |Automatically accept proximity-based meeting invites|Checkbox|Enabled by default.|When checked, proximity-based meeting invitations using Bluetooth are automatically accepted.|
-|Show Room QR Code|Toggle|Enabled by default.|When toggled on, Proximity-based meeting invitations via QR code are automatically accepted. For more information, see [Join meetings with QR codes](microsoftteams/rooms/teams-rooms-qr-codes)|
+|Show Room QR Code|Toggle|Enabled by default.|When toggled on, Proximity-based meeting invitations via QR code are automatically accepted. For more information, see [Join meetings with QR codes](/microsoftteams/rooms/teams-rooms-qr-codes).
 |Send feedback to the Teams Rooms Pro Management portal|Toggle|Enabled by default.|Allows logs to be sent with feedback submitted using Report a problem. To ensure logs and feedback with larger sizes are delivered, adjust the message size restriction for your mailboxes on the Exchange admin center.|
 
 ### Coordinated meetings
@@ -196,7 +197,7 @@ Extended Front of Room scaling|Slider|Input numeric value of scaling.|Valid valu
 |Ultrasound Speaker|Toggle||This field won't appear unless there is a supported ultrasonic device discovered.|
 |Default Camera|Dropdown||Set the default camera.|
 |Enable Cloud intelliframe|Toggle|Disabled by default.|Allows Teams Rooms to break up the single video feed of the room into a composite view made up of focused and framed video tiles that feature in-room attendees.|
-|Multiple Camera view|Toggle|Disabled by default.|Enable to setup multiple cameras. See[Learn more on Multi Camera](microsoftteams/rooms/multicamera-view).|
+|Multiple Camera view|Toggle|Disabled by default.|Enable to setup multiple cameras. See[Learn more on Multi Camera](/microsoftteams/rooms/multicamera-view).|
 |Additional Camera(s)|Dropdown||Add up to three cameras.|
 |Content camera|Dropdown||Select the camera configured in room to share analog whiteboard content in a meeting.|
 |Allow content enhancement|Checkbox||When set to true (the default), the content camera image is digitally enhanced: the whiteboard edge is detected and an appropriate zoom is selected, ink lines are enhanced, and the person writing on the whiteboard is made transparent. Set to false if you intend to send a raw video feed to meeting participants for spaces where a whiteboard isn't drawn on with a pen and instead the camera is used to show sticky notes, posters, or other media.|
@@ -205,8 +206,8 @@ Extended Front of Room scaling|Slider|Input numeric value of scaling.|Valid valu
 
 ### Theming
 
-|**Field**|**Input**|**Description**|**Note**|
-|:------|:------|:------|:------|
+|**Field**|**Input**|**Description**|
+|:------|:------|:------|
 
 |Theming|Dropdown||Select a default background.|
 
@@ -215,7 +216,7 @@ Extended Front of Room scaling|Slider|Input numeric value of scaling.|Valid valu
 
 ### Digital Signage
 
-The ability to change specific digital settings is permission based.  If you don't have access to change these settings, please check with your Teams Rooms Pro manager administrator.  Learn more by seeing [Digital Signage](/rooms/digital-signage).
+The ability to change specific digital settings is permission based.  If you don't have access to change these settings, please check with your Teams Rooms Pro manager administrator.  Learn more by seeing [Digital Signage](/microsoftteams/rooms/digital-signage).
 
 |**Field**|**Input**|**Description**|
 |:------|:------|:------|
@@ -223,12 +224,13 @@ The ability to change specific digital settings is permission based.  If you don
 |Digital Signage|Toggle|Whether the toggle is enabled or editable will be determined by the Digital Signage tenant level settings. When enabled, it will determine whether digital signage will be displayed in the room.|
 |Reset Digital Signage|Checkbox|Resetting digital signage will revert the digital signage settings of this room to system defaults, including disabling digital signage and unregistering the room from trusted third-party signage sources where the room is enrolled in, if applicable. This action is irreversible.|
 |Show Teams Rooms banner|Toggle|Enable to display date, time, room name, and calendar preview while digital signage is active. Disable to hide room information.|
-|Display Period|Header| |
-|Activate signage when device has been idle for X minutes|Number|Set the activation time in range of 1 to 100 minutes.
+|Display Period|Header||
+|Activate signage when device has been idle for X minutes|Number|Set the activation time in range of 1 to 100 minutes.|
 |Deactivate signage with meeting is starting in X minutes|Number|Set the deactivation time in range of 1 to 100 minutes.|
 |Allow screen timeout when device is idle|Toggle|Enable to respect OS screen timeout settings. Disable to keep signage active on idle devices.|
 |Signage source|Selection|Reflects the trusted third-party signage sources where the room is enrolled in.|
 
 ## Related articles
-- 
-- 
+- [Manage a Microsoft Teams Rooms console settings remotely with an XML configuration file](/microsoftteams/rooms/xml-config-file)
+- [Set up Remote Access in Microsoft Teams Rooms Pro Management portal](/microsoftteams/rooms/remotely-access-teams-rooms)
+- [Accessing the Pro Management portal](/microsoftteams/rooms/enrolling-mtrp-managed-service)
