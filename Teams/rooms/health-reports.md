@@ -3,7 +3,7 @@ title: Teams Management Pro portal health reports
 author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
-ms.date: 1/17/2025
+ms.date: 2/28/2025
 ms.reviewer: obahidika
 ms.topic: article
 audience: Admin
@@ -101,11 +101,13 @@ Provides a historical view of rooms enrolled in the service and provides a compa
 
 ## Health
 
+The  reporting node contains data for the health and usage of your Microsoft Teams Rooms in the Pro Management portal. The Overview tab surfaces tenant-wide health trends of your rooms. The Health tab displays a list of rooms with their corresponding health data.
+
 To navigate to the Health report for all rooms, select Reports, then select  **Health**.
 
 <!--!![A screenshot of a Reports health percentage](../media/health-and-usage-001.png)-->
 
-The health score is a metric designed to surface rooms that are most likely to cause end-user frustration. A room can either be healthy or unhealthy for a given day. It's considered unhealthy if a ticket or many tickets impacted the room for more than 20 total minutes during nonmaintenance hours (5AM -9PM machine local time). For example, if a ticket is opened at 5:00 AM but closed at 5:15 AM, the room is still considered healthy. But, if a second ticket occurred from 09:00AM to 9:10AM, the room would be considered unhealthy for the day. Similarly, if a ticket occurred from 5:00 AM to 5:21 AM, it's considered unhealthy for the day.
+A room can either be healthy or unhealthy for a given day. It's considered unhealthy if a ticket or many tickets with a severity of critical or important impacted the room for more than 20 total minutes during nonmaintenance hours (5AM -9PM machine local time). For example, if a ticket is opened at 5:00 AM but closed at 5:15 AM, the room is still considered healthy. But, if a second ticket occurred from 09:00AM to 9:10AM, the room would be considered unhealthy for the day. Similarly, if a ticket occurs from 5:00 AM to 5:21 AM, it's considered unhealthy for the day.
 
 > [!NOTE]
 > Health for the day is aggregated once a day at 12:00 AM UTC time. For customers near the international date line, health aggregation may occur near the middle of the workday.
@@ -126,76 +128,3 @@ The meeting impact view shows scheduled meetings during which a ticket with a se
 <!--![A screenshot of a Reports meeting impact](../media/health-and-usage-015.png)-->
 
 The Settings tab displays the metadata of the room such as the hardware information, device settings, BIOS information, app settings, and location.
-
-## Usage
-
-To view the Usage report for all rooms, select **Reports->Usage**.
-
-<!--!![A screenshot of all rooms' usage by health](../media/health-and-usage-011.png)-->
-
-The headlines provide a few insights:
-
-- Total rooms in your tenant
-- How many don't have any booked meetings, either offline or online
-- Percentage of utilization of rooms across the tenant
-- Total number of booked meetings through exchange
-- Percentage of booked meetings that included a Skype or Teams link
-- Total calls with room participation
-- Aggregate call performance score from all calls classified with "Good" quality to all calls. 
-
-Below the headline **Metrics** is a table of rooms with corresponding metrics. Select a room to view more usage details. The metrics in the table are described in the following table.
-
-|Column|Description|
-|---|---|
-|Utilization|Percentage of time the room was booked during business hours (Max of 8hours/ per day) in the selected period.  Utilization= (total hours)/ (number of selected days set in the report * 8).   Ex: Time period set to seven days in the report. The room was booked for five days during that period and the total hours= (8 * *5) =* 40 hours*. **In this case, utilization = (8 **** **5)/ (7 * 8) = 40/56= 71%**      |
-|Booked online|Of the booked meetings, the percentage of which were enabled with Teams. Ex. 10 meetings were booked. Of that, 8 had a Teams link. Booked Online = 80%|
-|Scheduled meetings|Absolute number of meetings scheduled in the room.|
-|Total calls|Absolute number of calls with the room as a participant.|
-|Call performance|Percentage of calls with a "Good" rating. Each call is evaluated and receives a Good, Poor, Unknown rating. This metric is calculated from Good calls/Total calls.|
-|Video Utilization|Percentage of time the video was on during the meeting. |
-|Capacity|Maximum number of seats that the room can accommodate. |
-|Average people count.|Average number of individuals present in the room during the meeting.  This data is coming from OEM camera witch support people count such as:  Poly Studio E70 Video, Jabra PanaCast 50, Polycom Studio Video, AVer VC520 Pro2, AVer CAM550, Yealink UVC84 Camera, Poly Studio P15 Video, Poly Studio R30 Video, Yealink UVC86 Camera, Jabra PanaCast 50 Composite, Bose Videobar VB1, Poly Studio V52 Video, AVer VB342 Pro|
-
-Usage is calculated at the end of each day at midnight (00:00) local time of the meeting room device. Utilization is calculated based on the total booked meeting time for that day divided by 8 hours.
-
-> [!NOTE]
-> The metrics for Panels that aren't sharing an account with Microsoft Teams Rooms aren't showing yet in the usage report.  
-
-## Usage details of a room
-
-Clicking on a room in the list view prompts a flyout with more in-depth information. Under the Utilization tab of the flyout is a graph showing hours of usage of the last five business days. For each day there are two bars: blue represents booked meeting time; purple represents scheduled time of Teams/Skype enabled meetings. At the bottom, the average meeting bookings and duration for the past five business days are calculated.
-
-<!--![A screenshot of utilization by hours per day](../media/health-and-usage-012.png)-->
-
-The **Calls** table shows meetings in which the room participated in a Teams call. The Room Audio Quality is evaluated for only the room, not all participants. To view call quality for all participants of a specific call, select a call by clicking on the Start Time.
-
-<!--!![A screenshot of room audio quality](../media/health-and-usage-016.png)-->
-
-To view stream details for the room, select the Session Start Time.
-
-## Insight report
-
-The Insight report is located under the Report section of the pro-management portal. It provides a detailed overview of all the activities completed by our services during a specific time range, including the types of actions performed, such as detection, remediation, and updates. This report highlights the value we provide through actions to resolve rooms issues and how much time and money we help you save by doing that. 
-
-To view the Insight report for all rooms, select **Report** > **Insight Report (Preview)**.
-
-## Actions
-
- The Actions section of the report shows a timeline view and aggregate count of all actions completed each day by the service. Action types include detection, remediation, and updates. Details on the actions can be viewed by selecting **See details**. Once you have selected **See details**, a new panel appears with two sections; Tickets and Updates. The Tickets section shows a list of tickets with corresponding hours saved. Select the Tickets section to show an expanded view of each action taken on the respective ticket and the hours saved. The Updates section shows a list of each update applied and the corresponding tally of devices that successfully completed the update.  
- 
-## Detection, investigation, and remediation
-
-The Detection, investigation, and remediation section displays two counts respective of the specified time range: Meeting issues prevented and Incidents remediated.
-
-## Updates
- 
-The Updates section provides a count of total updates either scheduled, in progress, or completed across the devices enrolled in the service.
-
-## Estimated savings
- 
-The estimated hours saved from the actions completed are converted to a monetary amount based on a default rate of $50 USD/hour for IT professionals. To customize the rate, select _See details_ in this section.
-The Detail pane allows you to input a custom hourly rate and corresponding currency to get a better monetary estimate.  
-
-## User experience
-
-This section provides the average call rating by end-users on a scale of 1 to 5 (5 being the best).

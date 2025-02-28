@@ -3,7 +3,7 @@ title: Teams Management Pro portal usage reports
 author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
-ms.date: 2/13/2025
+ms.date: 2/28/2025
 ms.reviewer: obahidika
 ms.topic: article
 audience: Admin
@@ -99,35 +99,9 @@ Two tables show the most reliable and least reliable rooms based on health. For 
 
 Provides a historical view of rooms enrolled in the service and provides a comparative view of rooms that were healthy or unmonitored in the same time period.
 
-## Health
-
-To navigate to the Health report for all rooms, select Reports, then select  **Health**.
-
-<!--!![A screenshot of a Reports health percentage](../media/health-and-usage-001.png)-->
-
-The health score is a metric designed to surface rooms that are most likely to cause end-user frustration. A room can either be healthy or unhealthy for a given day. It's considered unhealthy if a ticket or many tickets impacted the room for more than 20 total minutes during nonmaintenance hours (5AM -9PM machine local time). For example, if a ticket is opened at 5:00 AM but closed at 5:15 AM, the room is still considered healthy. But, if a second ticket occurred from 09:00AM to 9:10AM, the room would be considered unhealthy for the day. Similarly, if a ticket occurred from 5:00 AM to 5:21 AM, it's considered unhealthy for the day.
-
-> [!NOTE]
-> Health for the day is aggregated once a day at 12:00 AM UTC time. For customers near the international date line, health aggregation may occur near the middle of the workday.
-
-> [!NOTE]
-> Rooms that are onboarding are hidden for the list of rooms in the Health tab and don't count towards the average health of the tenant.
-
-Clicking on a room listed in this view displays more details.
-
-The bar graph displays the number of tickets on each day. Tickets opened on that respective day appear in blue. Tickets opened prior to the respective day appear in orange. Clicking on a day on the graph filters the pie chart and table to the relevant tickets. To reverse the filter, navigate with the breadcrumbs or select on the graph.
-
-Categorization of tickets is represented in the donut chart. Interacting with this filters the timeline graph and table. To reverse the filter, navigate with the breadcrumbs or select on the graph.
-
-<!--!![A screenshot of a Reports health bar graph](../media/health-and-usage-014.png)-->
-
-The meeting impact view shows scheduled meetings during which a ticket with a severity of "Important" or "Critical" was open. The purpose of this view is to provide an approximation of meetings where participants could have experienced issues.
-
-<!--![A screenshot of a Reports meeting impact](../media/health-and-usage-015.png)-->
-
-The Settings tab displays the metadata of the room such as the hardware information, device settings, BIOS information, app settings, and location.
-
 ## Usage
+
+The reporting node contains data for the health and usage of your Microsoft Teams Rooms in the Pro Management portal. The Usage tab contains Room usage based on calendar information and call quality data.
 
 To view the Usage report for all rooms, select **Reports->Usage**.
 
@@ -167,7 +141,7 @@ Clicking on a room in the list view prompts a flyout with more in-depth informat
 
 <!--![A screenshot of utilization by hours per day](../media/health-and-usage-012.png)-->
 
-The **Calls** table shows meetings in which the room participated in a Teams call. The Room Audio Quality is evaluated for only the room, not all participants. To view call quality for all participants of a specific call, select a call by clicking on the Start Time.
+The **Calls** table shows meetings in which the room participated in a Teams call. The Room Audio Quality is evaluated for only the room, not all participants. To view call quality for all participants of a specific call, select a call by selecting the Start Time.
 
 <!--!![A screenshot of room audio quality](../media/health-and-usage-016.png)-->
 
