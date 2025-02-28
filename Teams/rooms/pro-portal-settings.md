@@ -208,8 +208,7 @@ Extended Front of Room scaling|Slider|Input numeric value of scaling.|Valid valu
 
 |**Field**|**Input**|**Description**|
 |:------|:------|:------|
-
-|Theming|Dropdown||Select a default background.|
+|Theming|Dropdown|Select a default background.|
 
 > [!Note]
 > Currently, managing custom backgrounds from Teams rooms on windows isn't supported in the Teams Rooms Pro management portal.
@@ -220,7 +219,6 @@ The ability to change specific digital settings is permission based.  If you don
 
 |**Field**|**Input**|**Description**|
 |:------|:------|:------|
-
 |Digital Signage|Toggle|Whether the toggle is enabled or editable will be determined by the Digital Signage tenant level settings. When enabled, it will determine whether digital signage will be displayed in the room.|
 |Reset Digital Signage|Checkbox|Resetting digital signage will revert the digital signage settings of this room to system defaults, including disabling digital signage and unregistering the room from trusted third-party signage sources where the room is enrolled in, if applicable. This action is irreversible.|
 |Show Teams Rooms banner|Toggle|Enable to display date, time, room name, and calendar preview while digital signage is active. Disable to hide room information.|
