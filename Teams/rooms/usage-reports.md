@@ -174,3 +174,7 @@ The Detail pane allows you to input a custom hourly rate and corresponding curre
 
 This section provides the average call rating by end-users on a scale of 1 to 5 (5 being the best).
 
+## Related articles
+
+- [Health report in Teams Rooms Management portal](/microsoftteams/rooms/health-reports)
+- [Device Health Status](/microsoftteams/alerts/device-health-status)

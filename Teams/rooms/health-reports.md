@@ -128,3 +128,8 @@ The meeting impact view shows scheduled meetings during which a ticket with a se
 <!--![A screenshot of a Reports meeting impact](../media/health-and-usage-015.png)-->
 
 The Settings tab displays the metadata of the room such as the hardware information, device settings, BIOS information, app settings, and location.
+
+## Related articles
+
+- [Usage report in Teams Rooms Management portal](/microsoftteams/rooms/usage-reports)
+- [Device Health Status](/microsoftteams/alerts/device-health-status)
