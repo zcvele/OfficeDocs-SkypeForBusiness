@@ -31,9 +31,7 @@ Before reading this article, make sure you've read [Plan for SMS in Teams](sms-o
 SMS in Teams is only available in the United States, Puerto Rico, and Canada.
 
 > [!NOTE] 
-> United States and Puerto Rican customers must have an approved Brand and Campaign before enabling SMS for Teams Calling Plan numbers. 
-> 
-> Canadian customers can enable SMS for Canadian Teams Calling Plan numbers without applying for Brand and Campaign, but if a Canadian customer wants to support its users sending SMS messages to US numbers, then the Canadian customer must get an approved Brand and Campaign to access the US-based, 10DLC network.
+> United States, Puerto Rican, and Canadian customers must have an approved Brand and Campaign before enabling SMS for Teams Calling Plan numbers.
 
 ## Prerequisites
 

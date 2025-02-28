@@ -75,7 +75,7 @@ Registration with TCR involves the following two parts:
 To receive approval with TCR, Teams administrators use the Teams admin center to pass their company's Brand and Campaign information to TCR. TCR then reviews your Brand and Campaign, which helps ensure SMS messaging integrity, compliance, and accountability with industry standards.
 
 > [!NOTE]
-> US and PR customers must receive Brand *and* Campaign approval before any number can be enabled for SMS in Teams. Mobile operators don't accept A2P SMS traffic from senders that don't go through TCR registration. Teams phone numbers can't be enabled for SMS until TCR approves the brand and campaign.
+> Microsoft Teams customers in US, PR, and CA must receive Brand *and* Campaign approval before any number can be enabled for SMS in Teams. Teams phone numbers can't be enabled for SMS until TCR approves the brand and campaign.
 
 Registration and enabling SMS for Teams Calling Plan numbers can be summarized in the following diagram:
 
