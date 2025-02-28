@@ -164,11 +164,23 @@ Microsoft 365 Teams Phone with Calling Plan is a great solution for businesses w
 
 For more information on Teams Phone with Calling Plan for small and medium businesses, see [Teams Phone guidance for small and medium businesses](/microsoftteams/business-voice/whats-business-voice). If you need more assistance with understanding or deploying Teams Phone, contact us here: `ContactTeamsPhoneSMB@microsoft.com`.
 
+## Scheduling through Bookings
 
+The Microsoft Bookings functionality helps you schedule and manage appointments with your customers, clients, or colleagues. Bookings includes a web-based bookings page, which is integrated with Microsoft Outlook to optimize your calendar and give your customers the flexibility to book a time that works best for them.
 
+[Learn more](/microsoft-365/bookings/bookings-overview) about how Bookings can help your business streamline scheduling.
 
+[Learn more](bookings-app-admin.md) about how you can make the Bookings app for Teams available to users in your business.
 
-## Deploy clients
+## Schedule Teams meetings from Google Calendar
+
+You can schedule Teams meetings directly from your Google Calendar using the Teams Meeting add-on for Google Calendar. [Learn more](https://support.microsoft.com/office/install-the-microsoft-teams-meeting-add-on-for-google-workspace-bba2dfbe-0b2b-4ee7-be10-261ad80ddb60) about installing the add-on. IT admins can also install the add-on from their Google Workplace Admin Console.
+
+## Connect with customers on your website using Live chat
+
+Live chat allows your website’s visitors to chat with your business through a chat widget on your customer-facing website. Visitors can ask questions via your website’s chat, connecting them directly to your support team in Teams. [Learn more](set-up-live-chat.md) about setting up and managing Live chat.
+
+## Installing Teams
 
 When you're ready for your users to start using Teams, they can install the Teams client on their Windows, Mac, or on their Android or iOS device. Users can download the Teams client directly from <https://teams.microsoft.com/downloads>.
 
@@ -181,6 +193,18 @@ If your organization uses Microsoft Endpoint Configuration Manager, Group Policy
 
 If you want detailed information about deploying Teams clients, see [Get clients for Microsoft Teams](get-clients.md).
 
-## Training
+## Accessing support and sharing feedback 
 
-For information on how to train your users to use Teams, see [Microsoft Teams training](training-microsoft-teams-landing-page.md).
+If you need additional help setting up your Teams environment for your small business, you can reach out to our live support agents. Request support through the Teams Admin app by:
+
+XXX I NEED THE APP LINK, IT'S NOT SELECTABLE HERE.
+1. Launching the Teams Admin app within the Teams client.
+1. Selecting **Support** in the left navigation.
+1. Searching for the issue you need help with.
+1. If the articles provided don't meet your needs, select **Contact Support**.
+1. Select a method of support and a support agent will contact you.
+
+If you have feedback on how we can improve the Teams experience for your small or medium business, you can share your thoughts in our [Microsoft Teams – Small Business Community](https://techcommunity.microsoft.com/category/microsoftteams/discussions/teamssmallbusiness).
+
+If you need more assistance with understanding or deploying Teams Phone, contact us here: `ContactTeamsPhoneSMB@microsoft.com`.
+XXX Teams phone specifically?
