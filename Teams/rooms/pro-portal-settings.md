@@ -121,7 +121,7 @@ Teams Rooms devices have settings that can either be applied on the device and s
 |:------|:------|:------|:------|
 |Exchange sign in address|Text| Device's resource account sign-in address.|Information only|
 |Supported meeting mode|Text|Teams only are displayed.|Information only|
-|Public Preview|Teext| Enrolls the device into Teams Ring 3.6 Public Preview. |Enabling this setting enables Public Preview features on your Teams Rooms device. Use caution as devices in early preview rings aren't supported by Microsoft Support.|
+|Public Preview|Text| Enrolls the device into Teams Ring 3.6 Public Preview. |Enabling this setting enables Public Preview features on your Teams Rooms device. Use caution as devices in early preview rings aren't supported by Microsoft Support.|
 
 ### Meetings
 
@@ -194,15 +194,15 @@ Extended Front of Room scaling|Slider|Input numeric value of scaling.|Valid valu
 |Conference audio speaker default volume|Slider||Adjusts the conference audio speaker volume.|
 |Default Speaker|Dropdown||Set the device to be used to play the audio from an HDMI ingest source.|
 |Default Speaker volume|Slider||Adjusts the default speaker volume.|
-|Ultrasound Speaker|Toggle||This field won't appear unless there is a supported ultrasonic device discovered.|
+|Ultrasound Speaker|Toggle||This field won't appear unless there's a supported ultrasonic device discovered.|
 |Default Camera|Dropdown||Set the default camera.|
 |Enable Cloud intelliframe|Toggle|Disabled by default.|Allows Teams Rooms to break up the single video feed of the room into a composite view made up of focused and framed video tiles that feature in-room attendees.|
-|Multiple Camera view|Toggle|Disabled by default.|Enable to setup multiple cameras. See[Learn more on Multi Camera](/microsoftteams/rooms/multicamera-view).|
+|Multiple Camera views|Toggle|Disabled by default.|Enable to set up multiple cameras. For more information, see [Multi Camera](/microsoftteams/rooms/multicamera-view).|
 |Additional Camera(s)|Dropdown||Add up to three cameras.|
 |Content camera|Dropdown||Select the camera configured in room to share analog whiteboard content in a meeting.|
 |Allow content enhancement|Checkbox||When set to true (the default), the content camera image is digitally enhanced: the whiteboard edge is detected and an appropriate zoom is selected, ink lines are enhanced, and the person writing on the whiteboard is made transparent. Set to false if you intend to send a raw video feed to meeting participants for spaces where a whiteboard isn't drawn on with a pen and instead the camera is used to show sticky notes, posters, or other media.|
 |Content camera inverted|Checkbox||Specify if the content camera is physically installed upside down. For content cameras that support automatic rotation, specify false.|
-|Enable noise suppression|Toggle|Disabled by default.|Controls noise suppression levels in Teams. **Off** Use OEM-provided noise suppression only. **On** Suppresses all background noises (stationary and non-stationary) that aren't speech.|
+|Enable noise suppression|Toggle|Disabled by default.|Controls noise suppression levels in Teams. **Off** Use OEM-provided noise suppression only. **On** Suppresses all background noises (stationary and nonstationary) that aren't speech.|
 
 ### Theming
 
@@ -220,12 +220,12 @@ The ability to change specific digital settings is permission based.  If you don
 |**Field**|**Input**|**Description**|
 |:------|:------|:------|
 |Digital Signage|Toggle|Whether the toggle is enabled or editable will be determined by the Digital Signage tenant level settings. When enabled, it will determine whether digital signage will be displayed in the room.|
-|Reset Digital Signage|Checkbox|Resetting digital signage will revert the digital signage settings of this room to system defaults, including disabling digital signage and unregistering the room from trusted third-party signage sources where the room is enrolled in, if applicable. This action is irreversible.|
+|Reset Digital Signage|Checkbox|Resetting digital signage reverts the digital signage settings of this room to system defaults, including disabling digital signage and unregistering the room from trusted third-party signage sources where the room is enrolled in, if applicable. This action is irreversible.|
 |Show Teams Rooms banner|Toggle|Enable to display date, time, room name, and calendar preview while digital signage is active. Disable to hide room information.|
 |Display Period|Header||
 |Activate signage when device has been idle for X minutes|Number|Set the activation time in range of 1 to 100 minutes.|
 |Deactivate signage with meeting is starting in X minutes|Number|Set the deactivation time in range of 1 to 100 minutes.|
-|Allow screen timeout when device is idle|Toggle|Enable to respect OS screen timeout settings. Disable to keep signage active on idle devices.|
+|Allow screen time-out when device is idle|Toggle|Enable to respect OS screen time-out settings. Disable to keep signage active on idle devices.|
 |Signage source|Selection|Reflects the trusted third-party signage sources where the room is enrolled in.|
 
 ## Related articles
