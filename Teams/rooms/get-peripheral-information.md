@@ -5,7 +5,7 @@ ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: eviegrimshaw
 ms.date: 05/02/2024  
-ms.topic: article
+ms.topic: how-to
 audience: Admin
 appliesto: 
   - Microsoft Teams

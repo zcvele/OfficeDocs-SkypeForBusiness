@@ -6,7 +6,7 @@ ms.reviewer: tjaved
 ms.date: 07/23/2024
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.service: msteams
 ms.subservice: itpro-rooms
 ms.collection:

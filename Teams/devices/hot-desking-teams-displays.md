@@ -5,7 +5,7 @@ ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: eviegrimshaw
 ms.date: 05/15/2024
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.service: msteams
 ms.subservice: itpro-devices
 audience: Admin

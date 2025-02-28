@@ -58,7 +58,7 @@ The following table shows the main features that are different between meetings,
 
 <sup>1</sup> Breakout rooms can be used if a webinar has fewer than 300 participants. However, if the number of participants increases to above 300, breakout rooms aren't supported.<br>
 
-<sup>2</sup>The usual maximum is increased to 20,000 through June 30, 2024. The maximum total participants for meetings is the sum of the interactive participants plus view-only participants.
+<sup>2</sup>The usual maximum is increased to 20,000 until further notice. The maximum total participants for meetings is the sum of the interactive participants plus view-only participants.
 
 For more information on limits and specifications for Teams webinars, meetings, and town halls, see [Limits and specifications for Microsoft Teams.](limits-specifications-teams.md)
 
@@ -122,6 +122,8 @@ For detailed information on how to plan for Teams town halls, see [Plan for Team
 ## Teams Premium
 
 With a Teams Premium add-on license, you have access to enhanced administrative and telemetry support, as well as enhanced experiences, security, and protection for your users' meetings and events. To learn more, see [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md).
+
+To learn how to manage Teams Premium licenses and features for your organization from a one place, see [Manage Teams Premium for your organization](teams-premium-dashboard.md).
 
 ## Best practices for large meetings and events
 
