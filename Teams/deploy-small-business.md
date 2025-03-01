@@ -33,7 +33,7 @@ Microsoft Teams is a digital hub that brings conversations, meetings, files, and
 Microsoft Teams can help you grow your business by empowering you to:
 
 - Meet online with customers, partners, vendors, and colleagues. Attendees do not need Teams to join a Teams meeting.
-- Easily share availability and schedule meetups through Bookings.
+- Share availability and schedule meetups through Bookings.
 - Answer customer inquiries from your website via chat.
 - Make phone calls with a Teams Phone license.
 - Host high-quality webinars.
@@ -67,7 +67,7 @@ If you've already set up set up a global or user admin account with an active Te
 
 1. Install and launch the Admin app within Teams.
 1. Select the Add a user option on the Admin app Home page or within the Users page.
-1. Add a single or multiple users by entering the requredrequired information.
+1. Add a single or multiple users by entering the required information.
 1. Follow the prompts to buy and assign a license to the user.
 
 You can change a user’s license at any time by selecting a user from the Users page. You can manage the license available in your environment using the Subscriptions page in the [Admin app in Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20).
@@ -82,14 +82,21 @@ When you purchase Microsoft 365 you get a default domain (For example: `contoso.
 
 This may create confusion if your business has an existing domain (For example: contoso.com). Connecting your domain allows your users to sign in with their existing usernames and ensures that your partners and customers see a consistent identity when they interact with you over Teams. Connecting your domain to Teams doesn't impact how your domain is used for email, your website, or other products outside of Microsoft 365.
 
-XXX The first THESE STEPS have no steps.
-Follow these steps to connect your domain using the [Admin app within Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20) or [these steps](/microsoft-365/admin/setup/add-domain) to connect your domain in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+XXX The first THESE STEPS have no steps. 
+
+XXX from Angela: The "Learn more" for the first steps should point to the article you are working with Mastan on once it's published https://review.learn.microsoft.com/en-
+us/MicrosoftTeams/integrating-business-email-teams?branch=heidip-business-email-teams-integration-feb-2025 
+
+Learn more about the steps you need to take to connect your domain using the [Admin app within Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20) or follow [these steps](/microsoft-365/admin/setup/add-domain) to connect your domain in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 ## Synching your existing calendar with Teams
 
 Teams is already connected to Exchange for calendaring by default. If you use a provider other than Exchange for email and calendaring, you can set up calendar syncing with Teams by connecting your domain. This allows you and your users to see all your Teams and other meetings in both calendars. It also makes sure that incoming and outgoing Teams meetings aren't missed.
 
-XXX connect your business' domain needs a valid link, no link for Follow these steps either
+XXX connect your business' domain needs a valid link, no link for Follow these steps either 
+
+XXX from Angela: We want to point to the same pending article here once it's published https://review.learn.microsoft.com/en-us/MicrosoftTeams/integrating-business-email-teams?branch=heidip-business-email-teams-integration-feb-2025 .
+
 For the best experience, you should connect your business’ domain before you setup calendar syncing. Follow these steps to set up calendar syncing using the [Admin app within Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20).
 
 ## Setting up Teams capabilities for your small or medium business
@@ -100,11 +107,11 @@ Jump to the section you're interested in:
 
 - [Chat, teams, and channels](#chat-teams-and-channels)
 - [Meetings and conferencing](#meetings-and-conferencing)
-- Webinars
+- [Webinars](#webinars)
 - [Teams Phone with Calling Plan](#teams-phone-with-calling-plan)
-- Easy scheduling through Bookings
-- Schedule Teams meetings from Google Calendar
-- Connect with customers on your website using Live chat
+- [Scheduling through Bookings](#scheduling-through-bookings)
+- [Schedule Teams meetings from Google Calendar](#schedule-teams-meetings-from-google-calendar)
+- [Connect with customers on your website using Live chat](#connect-with-customers-on-your-website-using-live-chat)
 
 ## Chat, teams, and channels
 
@@ -124,11 +131,13 @@ You don't need to do anything else for your users to start using chat, teams, an
 
 XXX I AM CONCERNED THIS IS OBFUSCATING GUEST AND EXTERNAL ACCESS. WE HAVE THIS: [Use guest access and external access to collaborate with people outside your organization](communicate-with-users-from-other-organizations.md).
 
+XXX from Angela: We get feedback from SMBs that our current set of external collab articles are scattered and tough to understand.  Trying to consolidate high level information in one place for them.  I agree that the article you linked is a key guide.  Maybe we add a mention of it as a tip at the top of this section or before the shared channels paragraph?
+
 Collaboration over chat, teams, and channels can happen with people inside and outside of your organization. Enabling external collaboration may require you to adjust your Teams policies and settings.
 
 With the proper setup, you can chat with Teams users outside of your business who are part of trusted M365 organizations (For example, a customer or partner with an M365 work or school account) or Teams and Skype users not managed by an organization (for example, a customer with an M365 or Skype personal account). Enabling external chat does not open up other parts of your Teams environment to the Teams users you're chatting with, like meetings or files. [Learn more](trusted-organizations-external-meetings-chat.md?tabs=organization-settings) about the Teams settings and policies updates needed to allow for external chats.
 
-If you want to give an external contact expanded access to your Teams environment, you can give them [guest access](guest-access.md). Guest access allows you to give access to teams, documents in channels, chats, and applications to people outside of your organization, while maintaining control over your business’s data. Anyone with a M365 work, school, or personal account can be added as a guest. [Learn more](/microsoft-365/solutions/collaborate-as-team) about turning on guest access for your environment. Once guesst access is enabled, [follow this guide](/microsoft-365/solutions/collaborate-as-team) to learn more about inviting guests to join you in Teams.
+If you want to give an external contact expanded access to your Teams environment, you can give them [guest access](guest-access.md). Guest access allows you to give access to teams, documents in channels, chats, and applications to people outside of your organization, while maintaining control over your business’s data. Anyone with a M365 work, school, or personal account can be added as a guest. [Learn more](/microsoft-365/solutions/collaborate-as-team) about turning on guest access for your environment. Once guest access is enabled, [follow this guide](/microsoft-365/solutions/collaborate-as-team) to learn more about inviting guests to join you in Teams.
 
 [Shared channels in Teams](shared-channels.md) create collaboration spaces where you can invite people who aren’t in the team hosting the channel. Only users who are owners or members of the shared channel can access the channel. Guests can’t be added to a shared channel, but you can invite people outside of your organization to participate if they have a Teams work or school account. [Learn more](/microsoft-365/solutions/collaborate-teams-direct-connect) about setting up collaboration with external participants in a shared channel.
 
@@ -138,7 +147,9 @@ Meetings and conferencing let people in your organization meet online with one o
 
 The participants can join in the conversation without the need for a phone by using the microphone, camera, and the screen of their device. Participants can chat, make voice calls, and share video and apps with other participants using a PC or mobile device.
 
-**Audio conferencing** lets participants join to meetings using a regular phone by calling a conference phone number and entering a meeting ID. Audio conferencing is useful when a participant doesn't have a good Internet connection, the meeting is voice-only, or some other circumstance doesn't allow them to join via the Teams desktop or mobile app.
+XXX from Angela: I realized there are special license requirements for audio conferencing we should probably mention and provide info about so added a learn more link to the section below.  Can you help me link it in the correct way?  I just grabbed the link I see in the browser for it. 
+
+**Audio conferencing** lets participants join to meetings using a regular phone by calling a conference phone number and entering a meeting ID. Audio conferencing is useful when a participant doesn't have a good Internet connection, the meeting is voice-only, or some other circumstance doesn't allow them to join via the Teams desktop or mobile app.  [Learn more](https://learn.microsoft.com/en-us/microsoftteams/set-up-audio-conferencing-in-teams) about audio conferencing setup and licensing requirements. 
 
 > [!TIP]
 > Get more familiar with meetings and events by completing the [Manage meetings, conferences, and events with Microsoft Teams](/training/modules/m365-teams-collab-manage-meetings) module on Microsoft Learn.
@@ -155,8 +166,10 @@ Teams webinars allow you to run interactive presentations for your customers. Wh
 - Publish speaker bios.
 - Gain insight about your webinar attendance through webinar reports.
 
-Webinars are enabled by default in your Teams environment. Learn more about managing who can schedule webinars for your business. 
+Webinars are enabled by default in your Teams environment. [Learn more](https://learn.microsoft.com/en-us/microsoftteams/set-up-webinars) about managing who can schedule webinars for your business. 
 XXX THERE IS NO LINK FOR THE LEARN MORE HERE
+
+XXX from Angela: Added the link, but I think the format isn't correct. 
 
 ## Teams Phone with Calling Plan
 
@@ -197,8 +210,8 @@ If you want detailed information about deploying Teams clients, see [Get clients
 
 If you need additional help setting up your Teams environment for your small business, you can reach out to our live support agents. Request support through the Teams Admin app by:
 
-XXX I NEED THE APP LINK, IT'S NOT SELECTABLE HERE.
-1. Launching the Teams Admin app within the Teams client.
+XXX I NEED THE APP LINK, IT'S NOT SELECTABLE HERE. Angela: Added
+1. Launching the [Teams Admin app](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20) within the Teams client.
 1. Selecting **Support** in the left navigation.
 1. Searching for the issue you need help with.
 1. If the articles provided don't meet your needs, select **Contact Support**.
@@ -207,4 +220,4 @@ XXX I NEED THE APP LINK, IT'S NOT SELECTABLE HERE.
 If you have feedback on how we can improve the Teams experience for your small or medium business, you can share your thoughts in our [Microsoft Teams – Small Business Community](https://techcommunity.microsoft.com/category/microsoftteams/discussions/teamssmallbusiness).
 
 If you need more assistance with understanding or deploying Teams Phone, contact us here: `ContactTeamsPhoneSMB@microsoft.com`.
-XXX Teams phone specifically?
+XXX Teams phone specifically? Angela: Yes, this is a special email for Phone setup support. SMBs have trouble with this so we setup a special support program just for that.
