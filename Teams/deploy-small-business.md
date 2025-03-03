@@ -149,7 +149,7 @@ The participants can join in the conversation without the need for a phone by us
 
 XXX from Angela: I realized there are special license requirements for audio conferencing we should probably mention and provide info about so added a learn more link to the section below.  Can you help me link it in the correct way?  I just grabbed the link I see in the browser for it. 
 
-**Audio conferencing** lets participants join to meetings using a regular phone by calling a conference phone number and entering a meeting ID. Audio conferencing is useful when a participant doesn't have a good Internet connection, the meeting is voice-only, or some other circumstance doesn't allow them to join via the Teams desktop or mobile app.  [Learn more](https://learn.microsoft.com/en-us/microsoftteams/set-up-audio-conferencing-in-teams) about audio conferencing setup and licensing requirements. 
+**Audio conferencing** lets participants join to meetings using a regular phone by calling a conference phone number and entering a meeting ID. Audio conferencing is useful when a participant doesn't have a good Internet connection, the meeting is voice-only, or some other circumstance doesn't allow them to join via the Teams desktop or mobile app.  [Learn more](set-up-audio-conferencing-in-teams.md) about audio conferencing setup and licensing requirements. 
 
 > [!TIP]
 > Get more familiar with meetings and events by completing the [Manage meetings, conferences, and events with Microsoft Teams](/training/modules/m365-teams-collab-manage-meetings) module on Microsoft Learn.
@@ -166,7 +166,7 @@ Teams webinars allow you to run interactive presentations for your customers. Wh
 - Publish speaker bios.
 - Gain insight about your webinar attendance through webinar reports.
 
-Webinars are enabled by default in your Teams environment. [Learn more](https://learn.microsoft.com/en-us/microsoftteams/set-up-webinars) about managing who can schedule webinars for your business. 
+Webinars are enabled by default in your Teams environment. [Learn more](set-up-webinars.md) about managing who can schedule webinars for your business. 
 XXX THERE IS NO LINK FOR THE LEARN MORE HERE
 
 XXX from Angela: Added the link, but I think the format isn't correct. 
