@@ -82,10 +82,8 @@ When you purchase Microsoft 365 you get a default domain (For example: `contoso.
 
 This may create confusion if your business has an existing domain (For example: contoso.com). Connecting your domain allows your users to sign in with their existing usernames and ensures that your partners and customers see a consistent identity when they interact with you over Teams. Connecting your domain to Teams doesn't impact how your domain is used for email, your website, or other products outside of Microsoft 365.
 
-XXX The first THESE STEPS have no steps. 
-
 XXX from Angela: The "Learn more" for the first steps should point to the article you are working with Mastan on once it's published https://review.learn.microsoft.com/en-
-us/MicrosoftTeams/integrating-business-email-teams?branch=heidip-business-email-teams-integration-feb-2025 
+us/MicrosoftTeams/integrating-business-email-teams?branch=heidip-business-email-teams-integration-feb-2025.
 
 Learn more about the steps you need to take to connect your domain using the [Admin app within Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20) or follow [these steps](/microsoft-365/admin/setup/add-domain) to connect your domain in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
@@ -93,9 +91,7 @@ Learn more about the steps you need to take to connect your domain using the [Ad
 
 Teams is already connected to Exchange for calendaring by default. If you use a provider other than Exchange for email and calendaring, you can set up calendar syncing with Teams by connecting your domain. This allows you and your users to see all your Teams and other meetings in both calendars. It also makes sure that incoming and outgoing Teams meetings aren't missed.
 
-XXX connect your business' domain needs a valid link, no link for Follow these steps either 
-
-XXX from Angela: We want to point to the same pending article here once it's published https://review.learn.microsoft.com/en-us/MicrosoftTeams/integrating-business-email-teams?branch=heidip-business-email-teams-integration-feb-2025 .
+XXX from Angela: We want to point to the same pending article here once it's published https://review.learn.microsoft.com/en-us/MicrosoftTeams/integrating-business-email-teams?branch=heidip-business-email-teams-integration-feb-2025.
 
 For the best experience, you should connect your business’ domain before you setup calendar syncing. Follow these steps to set up calendar syncing using the [Admin app within Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20).
 
