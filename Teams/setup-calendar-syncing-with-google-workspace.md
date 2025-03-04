@@ -42,8 +42,8 @@ If your small or medium business relies on Google Workspace for email and calend
 
 ## Use your existing email and custom domain with Teams
 
-1. Choose Google Workspace on the email selection screen.
-1. Review the overview page and select continue.  
+1. Choose **Google Workspace** on the email selection screen.
+1. Review the overview page and select **Continue**.  
 1. Enter your business domain and select **Verify**.
 
 Teams attempts to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes. There are two methods to verify ownership.
@@ -51,7 +51,7 @@ Teams attempts to detect your domain host provider and prompt you to sign into y
 **If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you have the option to sign in to that registrar and give Microsoft permission to set up your domain for you.**
 1. Select **Verify**.
 1. Sign in to your registrar if prompted, and then select **Authorize Microsoft to conduct verification**.
-1. Return to Microsoft Teams and the setup task.
+1. Return to Microsoft Teams and the custom domain setup task.
 
 **To manually verify ownership and configure DNS records, follow the instructions in Add DNS records to connect your domain.**
 
@@ -59,9 +59,7 @@ Teams attempts to detect your domain host provider and prompt you to sign into y
 
     Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
 
-1. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the setup task, to update email addresses for other users.
-1. Next, you'll move to the calendar synchronization steps.
-
-    Follow the steps outlined in "Setup calendar synchronization."
+1. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the custom domain setup task, to update email addresses for other users.
+1. Next, you'll move to the calendar synchronization process. Follow the steps outlined in "Set up calendar synchronization."
 
 ## Set up calendar synchronization
