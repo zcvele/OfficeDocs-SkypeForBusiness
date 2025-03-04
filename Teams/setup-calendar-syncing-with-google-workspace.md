@@ -116,5 +116,5 @@ There are two methods to verify ownership:
 
 **How can I get additional support for this setup process?**
 
-- For support for small to medium businesses, see [Help and learning for small business](https://support.microsoft.com/smallbusiness). You can also get support by using the [Support page in the Admin app in Teams](https://teams.microsoft.com/dl/launcher/launcher.html).
+- For support for small to medium businesses, see [Help and learning for small business](https://support.microsoft.com/smallbusiness). You can also get support by using the support page in the [Admin app in Teams](https://teams.microsoft.com/dl/launcher/launcher.html).
 - For more help with connecting your domain, see [Add a custom domain name](https://support.microsoft.com/office/add-a-custom-domain-name-071780ac-46bb-4758-b30d-39ad0aeccf42).
