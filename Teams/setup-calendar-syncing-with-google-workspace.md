@@ -48,12 +48,12 @@ If your small or medium business relies on Google Workspace for email and calend
 
 Teams attempts to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes. There are two methods to verify ownership.
 
-**If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you have the option to sign in to that registrar and give Microsoft permission to set up your domain for you.**
+**Method 1: If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you have the option to sign in to that registrar and give Microsoft permission to set up your domain for you.**
 1. Select **Verify**.
 1. Sign in to your registrar if prompted, and then select **Authorize Microsoft to conduct verification**.
 1. Return to Microsoft Teams and the custom domain setup task.
 
-**To manually verify ownership and configure DNS records, follow the instructions in Add DNS records to connect your domain.**
+**Method 2: To manually verify ownership and configure DNS records, follow the instructions in Add DNS records to connect your domain.**
 
 1. Sign out of Teams and sign back in with your updated email.
 
@@ -73,5 +73,28 @@ Teams attempts to detect your domain host provider and prompt you to sign into y
 
 1. Next, you'll see two tables. The first table shows you all the Google user accounts that could be auto-matched with existing Microsoft user accounts based on user’s first name, last name, and email address. The second table contains a list of Google user accounts that could not be auto-matched. For unmatched users, select the existing Microsoft user account you would like to sync the Google account with from the provided drop-down.
 1. Once you're satisfied with all user account matching, be sure you've selected the checkboxes for the users for whom you want you to enable bi-directional calendar synchronization, and select **Next**.  
-1. Review all Google user accounts matched with their corresponding Microsoft user accounts. Carefully check each match. An incorrect pairing could result in users gaining access to each other’s calendar events. Also, mismatches can lead to data privacy issues and unintended calendar access. Once you've thoroughly reviewed and confirmed the matches, to initiate calendar synchronization, select **Start Sync**.
-1. The calendar-synchronization process might take up to 30 minutes to begin. After reviewing the information on the final page, select **Finish & View Users page** to navigate to the **Users** page. Form there, you can monitor and manage the sync status for each user.
+1. Review all Google user accounts matched with their corresponding Microsoft user accounts. Carefully check each match.
+
+    An incorrect pairing could result in users gaining access to each other’s calendar events. Also, mismatches can lead to data privacy issues and unintended calendar access.
+
+1. Once you've thoroughly reviewed and confirmed the matches, to initiate calendar synchronization, select **Start Sync**. The calendar-synchronization process might take up to 30 minutes to begin.
+1. After reviewing the information on the final page, select **Finish & View Users page**. From the **Users** page you can monitor and manage the sync status for each user.
+
+## Maintaining calendar synchronization
+
+- To rematch users between Google and Microsoft, disable sync for the current Microsoft users using the **More Actions** menu on the Users page in the admin app.
+- When new users are added to Google Workspace or Microsoft 365, set up their sync from the admin app home page using the Setup Calendar Synchronization Wizard.
+- Be sure newly added users have a license assigned to them.  
+- To turn off calendar sync for a specific user, go into the overflow menu for that user and swelect **Turn off Google sync**.
+
+## Frequently asked questions
+
+**How do I schedule Teams meetings from my Google Calendar?**
+
+You can easily create Teams meetings directly from the Google calendar by using the [Teams Meeting add-on in Google Marketplace](https://workspace.google.com/marketplace/app/microsoft_teams_meeting).  
+
+**What does the User edits detected Google calendar sync status mean?**
+
+This means critical user identifiable information, such as the first name, has been modified in either the Microsoft or Google user directory, which results in termination of the calendar sync. You can resume the calendar sync for this user by either selecting the **Manage Google calendar sync** link on the **Users** page or by using the Set Up Calendar Synchronization Wizard on the Admin app home page.
+
+
