@@ -103,7 +103,6 @@ There are two methods to verify ownership:
 **Can I sync my Google calendar for personal use with Teams?**
 
 - No, it’s currently not possible to sync your consumer (Gmail) Google calendar with Teams. However, you can import your Gmail calendar into Microsoft Outlook.
-
 - You can also use the [Teams Meeting add-on](https://workspace.google.com/marketplace/app/microsoft_teams_meeting) to schedule Teams meetings directly from your Google calendar for personal use.
 
 **I previously set up calendar forwarding using this wizard. Why should I switch to the sync experience, and how do I do it?**
