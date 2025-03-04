@@ -112,7 +112,7 @@ There are two methods to verify ownership:
 
 **How can I share feedback about this experience?**
 
-- You can provide feedback within the Admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our [online portal](https://feedbackportal.microsoft.com/feedback/).
+- You can provide feedback within the Admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our [online portal](https://feedbackportal.microsoft.com/feedback/post/ad198462-1c1c-ec11-b6e7-0022481f8472?c=22456a25-28f9-ef11-be20-6045bda9c2a9).
 
 **How can I get additional support for this setup process?**
 
