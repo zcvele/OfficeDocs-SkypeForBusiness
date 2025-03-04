@@ -46,7 +46,7 @@ If your small or medium business relies on Google Workspace for email and calend
 1. Review the overview page and select **Continue**.  
 1. Enter your business domain and select **Verify**.
 
-Teams attempts to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes.
+Teams attempts to detect your domain host provider and prompts you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes.
 
 There are two methods to verify ownership:
 
@@ -73,7 +73,7 @@ There are two methods to verify ownership:
 
     Once you're successfully signed in, you may get a loading screen as the system imports the Google user-account details and performs matching with the corresponding Microsoft user accounts.  
 
-1. Next, you see two tables. The first table shows you all the Google user accounts that could be auto-matched with existing Microsoft user accounts based on user’s first name, last name, and email address. The second table contains a list of Google user accounts that could not be auto-matched. For unmatched users, select the existing Microsoft user account you would like to sync the Google account with from the provided drop-down menu.
+1. Next, you see two tables. The first table shows you all the Google user accounts that could be automatched with existing Microsoft user accounts based on user’s first name, last name, and email address. The second table contains a list of Google user accounts that couldn't be automatched. For unmatched users, select the existing Microsoft user account you would like to sync the Google account with from the provided drop-down menu.
 1. Once you're satisfied with all user account matching, be sure you selected the checkboxes for the users for whom you want you to enable bi-directional calendar synchronization, and select **Next**.  
 1. Review all Google user accounts matched with their corresponding Microsoft user accounts. Carefully check each match.
 
