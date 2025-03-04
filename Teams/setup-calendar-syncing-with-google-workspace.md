@@ -82,8 +82,8 @@ Teams attempts to detect your domain host provider and prompt you to sign into y
 
 ## Maintaining calendar synchronization
 
-- To rematch users between Google and Microsoft, disable sync for the current Microsoft users using the **More Actions** menu on the Users page in the admin app.
-- When new users are added to Google Workspace or Microsoft 365, set up their sync from the admin app home page using the Setup Calendar Synchronization Wizard.
+- To rematch users between Google and Microsoft, disable sync for the current Microsoft users using the **More Actions** menu on the Users page in the Admin app.
+- When new users are added to Google Workspace or Microsoft 365, set up their sync from the Admin app home page using the Setup Calendar Synchronization Wizard.
 - Be sure newly added users have a license assigned to them.  
 - To turn off calendar sync for a specific user, go into the overflow menu for that user and swelect **Turn off Google sync**.
 
@@ -99,7 +99,7 @@ This means critical user identifiable information, such as the first name, has b
 
 Can I sync my Google calendar for personal use with Teams?  
 
-No, it’s currently not possible to sync your consumer (Gmail) Google calendar with Teams. However, you can import your Gmail calendar into Microsoft Outlook. 
+No, it’s currently not possible to sync your consumer (Gmail) Google calendar with Teams. However, you can import your Gmail calendar into Microsoft Outlook.
 
 You can use Teams Meetings Add on to schedule Teams meetings directly from your Google calendar for personal use.
 
@@ -109,9 +109,9 @@ The previous email and calendar Setup Wizard primarily enabled email forwarding 
 
 **How can I share feedback about this experience?**
 
-You can provide feedback within the admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our online portal.
+You can provide feedback within the Admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our online portal.
 
 **How can I get additional support for this setup?**
 
-- For support for small to medium businesses, see [Help and learning for small business](https://support.microsoft.com/smallbusiness). You can also get support by using the [Support page in the admin app in Teams](https://teams.microsoft.com/dl/launcher/launcher.html).
+- For support for small to medium businesses, see [Help and learning for small business](https://support.microsoft.com/smallbusiness). You can also get support by using the [Support page in the Admin app in Teams](https://teams.microsoft.com/dl/launcher/launcher.html).
 - For additional help with connecting your domain, see [Add a custom domain name](https://support.microsoft.com/office/add-a-custom-domain-name-071780ac-46bb-4758-b30d-39ad0aeccf42).
