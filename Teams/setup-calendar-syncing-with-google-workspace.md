@@ -30,7 +30,7 @@ If your small or medium business relies on Google Workspace for email and calend
 - Be assigned [Microsoft Global Admin role](/microsoft-365/admin/add-users/about-admin-roles) with a Teams Essentials license.
 - Be sure all of your users added in Microsoft directory for whom you want to enable calendar sync for have licenses assigned.  
 - Be sure that all users in the Microsoft directory for whom you want to enable calendar synchronization have a Microsoft subscription license assigned.
-- Have the login credentials for your Google Workspace admin account ([admin.google.com](https://accounts.google.com/v3/signin)).
+- Have the login credentials for your Google Workspace admin account ([admin.google.com](https://accounts.google.com)).
 - Have the login credentials for your custom business domain host website (for example, GoDaddy).
 
 ## Choose the appropriate Setup Wizard
