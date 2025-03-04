@@ -28,7 +28,7 @@ If your small or medium business relies on Google Workspace for email and calend
 ## Prerequisites
 
 - Be assigned Microsoft Global Admin role with a Teams Essentials license.
-- Be sure all of your users added in Microsoft directory you want to enable calendar sync for have licenses assigned.  
+- Be sure all of your users added in Microsoft directory for whom you want to enable calendar sync for have licenses assigned.  
 - Be sure that all users in the Microsoft directory for whom you want to enable calendar synchronization have a Microsoft subscription license assigned.
 - Have the login credentials for your Google Workspace admin account (admin.google.com).
 - Have the login credentials for your custom business domain host website (for example, GoDaddy).
@@ -38,5 +38,30 @@ If your small or medium business relies on Google Workspace for email and calend
 1. Sign into [Teams](https://teams.microsoft.com) using your Global Admin account.
 1. Go to the [Admin app in Teams](https://teams.microsoft.com/dl/launcher/launcher.html).
 1. If you've not already connected your custom business domain with Microsoft 365, select the **Use your existing email and custom domain with Teams** option on the Admin app home page.
-1. If you've already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page (and proceed to "Set up calendar synchronization" below).
+1. If you've already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page (and proceed to "Set up calendar synchronization").
 
+## Use your existing email and custom domain with Teams
+
+1. Choose Google Workspace on the email selection screen.
+1. Review the overview page and select continue.  
+1. Enter your business domain and select **Verify**.
+
+Teams attempts to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes. There are two methods to verify ownership.
+
+**If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you have the option to sign in to that registrar and give Microsoft permission to set up your domain for you.**
+1. Select **Verify**.
+1. Sign in to your registrar if prompted, and then select **Authorize Microsoft to conduct verification**.
+1. Return to Microsoft Teams and the setup task.
+
+**To manually verify ownership and configure DNS records, follow the instructions in Add DNS records to connect your domain.**
+
+1. Sign out of Teams and sign back in with your updated email.
+
+    Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
+
+1. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the setup task, to update email addresses for other users.
+1. Next, you'll move to the calendar synchronization steps.
+
+    Follow the steps outlined in "Setup calendar synchronization."
+
+## Set up calendar synchronization
