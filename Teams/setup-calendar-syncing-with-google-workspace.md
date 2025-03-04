@@ -12,7 +12,7 @@ ms.reviewer:
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: How to enable bidirectional calendar syncing between Google Workspace and Microsoft Teams.
+description: Learn how to enable bidirectional calendar syncing between Google Workspace and Microsoft Teams.
 appliesto: 
 - Microsoft Teams
 ms.localizationpriority: medium
