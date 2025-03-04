@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 If your small or medium business relies on Google Workspace for email and calendaring, you can enable bidirectional syncing with Microsoft Teams. Enabling sync reduces missed meetings and simplifies meeting management by ensuring events created in either platform are seamlessly reflected in both.
 
 > [!NOTE]
-> Currently, this set up is only available to small and medium business administrators with a Teams Essentials license.
+> Currently, this set up is only available to small and medium business administrators with a Teams Essentials license and using Google Workspace for email and calendaring.
 
 ## Prerequisites
 
@@ -112,7 +112,7 @@ There are two methods to verify ownership:
 
 **How can I share feedback about this experience?**
 
-- You can provide feedback within the Admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our [online portal](https://feedbackportal.microsoft.com/feedback/).
+- You can provide feedback within the Admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our [online portal](https://feedbackportal.microsoft.com/feedback/).
 
 **How can I get additional support for this setup process?**
 
