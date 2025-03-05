@@ -20,16 +20,15 @@ ms.localizationpriority: medium
 
 # Set up calendar syncing between Google Workspace and Microsoft Teams for your small or medium business
 
-If your small or medium business relies on Google Workspace for email and calendaring, you can enable bidirectional syncing with Microsoft Teams. Enabling sync reduces missed meetings and simplifies meeting management by ensuring events created in either platform are seamlessly reflected in both.
+If your small or medium business relies on Google Workspace for email and calendaring, you can enable bidirectional syncing with Microsoft Teams. Enabling sync reduces missed meetings and simplifies meeting management by ensuring events and meeting responses created in either platform are seamlessly reflected in both.
 
 > [!NOTE]
-> Currently, this set up is only available to small and medium business administrators with a Teams Essentials license and using Google Workspace for email and calendaring.
+> Currently, this set up is only available to small and medium business administrators with a Teams Essentials license and using Google Workspace with a custom domain for email and calendaring.
 
 ## Prerequisites
 
 - Be assigned [Microsoft Global Admin role](/microsoft-365/admin/add-users/about-admin-roles) with a Teams Essentials license.
-- Be sure all of your users added in Microsoft directory for whom you want to enable calendar sync for have licenses assigned.  
-- Be sure that all users in the Microsoft directory for whom you want to enable calendar synchronization have a Microsoft subscription license assigned.
+- Be sure all of your users added in Microsoft directory for whom you want to enable calendar sync for have licenses assigned.
 - Have the login credentials for your Google Workspace admin account ([admin.google.com](https://accounts.google.com)).
 - Have the login credentials for your custom business domain host website (for example, GoDaddy).
 
@@ -37,8 +36,8 @@ If your small or medium business relies on Google Workspace for email and calend
 
 1. Sign into [Teams](https://teams.microsoft.com) using your Global Admin account.
 1. Go to the [Admin app in Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20?source=share-app-dialog).
-1. If you have not already connected your custom business domain with Microsoft 365, select the **Use your existing email and custom domain with Teams** option on the Admin app home page.
-1. If you are already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page (and proceed to "Set up calendar synchronization").
+1. If you haven't already connected your custom business domain with Microsoft 365, select the **Use your existing email and custom domain with Teams option on the Admin app home page and proceed to "[Use your existing email and custom domain with Teams](#use-your-existing-email-and-custom-domain-with-teams)."
+1. If you are already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page (and proceed to "[Set up calendar synchronization](#set-up-calendar-synchronization)").
 
 ## Use your existing email and custom domain with Teams
 
@@ -74,20 +73,19 @@ There are two methods to verify ownership:
     Once you're successfully signed in, you may get a loading screen as the system imports the Google user-account details and performs matching with the corresponding Microsoft user accounts.  
 
 1. Next, you see two tables. The first table shows you all the Google user accounts that could be automatched with existing Microsoft user accounts based on user’s first name, last name, and email address. The second table contains a list of Google user accounts that couldn't be automatched. For unmatched users, select the existing Microsoft user account you would like to sync the Google account with from the provided drop-down menu.
-1. Once you're satisfied with all user account matching, be sure you selected the checkboxes for the users for whom you want you to enable bi-directional calendar synchronization, and select **Next**.  
+1. Once you're satisfied with all user account matching, be sure you selected the checkboxes for the users for whom you want you to enable bi-directional calendar synchronization, and select **Next**.
 1. Review all Google user accounts matched with their corresponding Microsoft user accounts. Carefully check each match.
-
-    An incorrect pairing might result in users gaining access to each other’s calendar events. Also, mismatches can lead to data privacy issues and unintended calendar access.
-
+   > [!CAUTION]
+   > An incorrect pairing might result in users gaining access to each others's calendar events. Also, mismatches can lead to data privacy issues and unintended calendar access.
 1. Once you've thoroughly reviewed and confirmed the matches, to initiate calendar synchronization, select **Start Sync**. The calendar-synchronization process might take up to 30 minutes to begin.
 1. After reviewing the information on the final page, select **Finish & View Users page**. From the **Users** page, you can monitor and manage the sync status for each user.
 
 ## Maintaining calendar synchronization
 
 - To rematch users between Google and Microsoft, disable sync for the current Microsoft users using the **More Actions** menu on the **Users** page in the Admin app.
-- When new users are added to Google Workspace or Microsoft 365, set up their syncing from the Admin app home page by using the Setup Calendar Synchronization Wizard.
-- Be sure newly added users have a license assigned to them.  
-- To turn off calendar syncing for a specific user, go into the overflow menu for that user and select **Turn off Google sync**.
+- When new users are added to Google Workspace or Microsoft 365, you must set up their syncing from the Admin app home page by using the Setup Calendar Synchronization Wizard.
+- Be sure newly added users have a Teams license assigned to them.  
+- To turn off calendar syncing for a specific user, go into the overflow menu in the **Users** view of the Admin app for that user and select **Turn off Google sync**.
 
 ## Frequently asked questions
 
@@ -102,7 +100,7 @@ There are two methods to verify ownership:
 
 **Can I sync my Google calendar for personal use with Teams?**
 
-- No, it’s currently not possible to sync your consumer (Gmail) Google calendar with Teams. However, you can import your Gmail calendar into Microsoft Outlook.
+- No, it’s currently not possible to sync your consumer Gmail or Gmail Google eCalendar for personal use with Teams. However, you can import your Gmail calendar into Microsoft Outlook.
 - You can also use the [Teams Meeting add-on](https://workspace.google.com/marketplace/app/microsoft_teams_meeting) to schedule Teams meetings directly from your Google calendar for personal use.
 
 **I previously set up calendar forwarding using this wizard. Why should I switch to the sync experience, and how do I do it?**
