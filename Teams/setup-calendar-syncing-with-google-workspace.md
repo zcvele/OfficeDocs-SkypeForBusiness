@@ -28,7 +28,7 @@ If your small or medium business relies on Google Workspace for email and calend
 ## Prerequisites
 
 - Be assigned [Microsoft Global Admin role](/microsoft-365/admin/add-users/about-admin-roles) with a Teams Essentials license.
-- Be sure all of your users added in Microsoft directory for whom you want to enable calendar sync for have licenses assigned.
+- Be sure all of your users added in the Microsoft directory for whom you want to enable calendar sync for have Teams licenses assigned.
 - Have the login credentials for your Google Workspace admin account ([admin.google.com](https://accounts.google.com)).
 - Have the login credentials for your custom business domain host website (for example, GoDaddy).
 
@@ -36,8 +36,8 @@ If your small or medium business relies on Google Workspace for email and calend
 
 1. Sign into [Teams](https://teams.microsoft.com) using your Global Admin account.
 1. Go to the [Admin app in Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20?source=share-app-dialog).
-1. If you haven't already connected your custom business domain with Microsoft 365, select the **Use your existing email and custom domain with Teams option on the Admin app home page and proceed to "[Use your existing email and custom domain with Teams](#use-your-existing-email-and-custom-domain-with-teams)."
-1. If you are already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page (and proceed to "[Set up calendar synchronization](#set-up-calendar-synchronization)").
+1. If you haven't already connected your custom business domain with Microsoft 365, select the **Use your existing email and custom domain with Teams** option on the Admin app home page and proceed to "[Use your existing email and custom domain with Teams](#use-your-existing-email-and-custom-domain-with-teams)."
+1. If you're already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page (and proceed to "[Set up calendar synchronization](#set-up-calendar-synchronization)").
 
 ## Use your existing email and custom domain with Teams
 
