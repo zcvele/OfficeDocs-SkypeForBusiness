@@ -46,7 +46,7 @@ If your small or medium business relies on Google Workspace for email and calend
 1. Review the overview page and select **Continue**.  
 1. Enter your business domain and select **Verify**.
 
-Teams attempts to detect your domain host provider and prompts you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes.
+Teams attempts to detect your domain host provider and prompts you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any Domain Name System (DNS) changes.
 
 There are two methods to verify ownership:
 
