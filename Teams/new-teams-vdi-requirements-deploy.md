@@ -3,7 +3,7 @@ title:  New Microsoft Teams for Virtualized Desktop Infrastructure (VDI)
 author: MicrosoftHeidi
 ms.author: heidip
 manager: jtremper
-ms.topic: article
+ms.topic: upgrade-and-migration-article
 ms.date: 01/14/2025
 ms.service: msteams
 audience: admin
