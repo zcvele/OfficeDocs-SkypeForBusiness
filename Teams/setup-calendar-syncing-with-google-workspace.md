@@ -76,7 +76,7 @@ There are two methods to verify ownership:
 1. Once you're satisfied with all user account matching, be sure you selected the checkboxes for the users for whom you want you to enable bi-directional calendar synchronization, and select **Next**.
 1. Review all Google user accounts matched with their corresponding Microsoft user accounts. Carefully check each match.
    > [!CAUTION]
-   > An incorrect pairing might result in users gaining access to each others's calendar events. Also, mismatches can lead to data privacy issues and unintended calendar access.
+   > An incorrect pairing might result in users gaining access to each other's calendar events. Also, mismatches can lead to data privacy issues and unintended calendar access.
 1. Once you've thoroughly reviewed and confirmed the matches, to initiate calendar synchronization, select **Start Sync**. The calendar-synchronization process might take up to 30 minutes to begin.
 1. After reviewing the information on the final page, select **Finish & View Users page**. From the **Users** page, you can monitor and manage the sync status for each user.
 
@@ -98,7 +98,7 @@ There are two methods to verify ownership:
 - This means critical user-identifiable information, such as a first name, has been modified in either the Microsoft or Google user directory, which results in termination of the calendar sync.
 - You can resume the calendar sync for this user by either selecting the **Manage Google calendar sync** link on the **Users** page or by using the Set Up Calendar Synchronization Wizard on the Admin app home page.
 
-**Can I sync my Google calendar for personal use with Teams?**
+**Can I sync my Google eCalendar for personal use with Teams?**
 
 - No, it’s currently not possible to sync your consumer Gmail or Gmail Google eCalendar for personal use with Teams. However, you can import your Gmail calendar into Microsoft Outlook.
 - You can also use the [Teams Meeting add-on](https://workspace.google.com/marketplace/app/microsoft_teams_meeting) to schedule Teams meetings directly from your Google calendar for personal use.
