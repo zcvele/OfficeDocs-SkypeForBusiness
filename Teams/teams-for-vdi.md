@@ -90,7 +90,7 @@ Windows 365 uses AV optimization provided by Azure Virtual Desktop to ensure opt
 ### Citrix Virtual Apps and Desktops requirements
 
 > [!IMPORTANT]
-> SingleWindow UI mode is deprecated as of January 31st 2024 (see MC Post 674419). Citrix customers must upgrade the CWA/VDA to minimum versions that support MultiWindow, otherwise users will not be optimized.
+> SingleWindow UI mode is deprecated as of January 31, 2024 (see MC Post 674419). Citrix customers must upgrade the CWA/VDA to minimum versions that support MultiWindow, otherwise users will not be optimized.
 > Minimum versions:
 >
 > - VDA LTSR 1912 CU6, VDA LTSR 2203, VDA CR 2212
@@ -98,7 +98,7 @@ Windows 365 uses AV optimization provided by Azure Virtual Desktop to ensure opt
 
 Citrix Virtual Apps and Desktops (formerly known as XenApp and XenDesktop) provides AV optimization for Teams on VDI. With Citrix Virtual Apps and Desktops, Teams on VDI supports calling and meeting functionality in addition to chat and collaboration.
 
-You can download the latest version of Citrix Virtual Apps and Desktops at the [Citrix downloads site](https://www.citrix.com/downloads/citrix-virtual-apps-and-desktops/). (You'll need to sign in first.) The necessary components are bundled into the [Citrix Workspace app (CWA)](https://www.citrix.com/downloads/workspace-app/) and Virtual Delivery Agent (VDA) by default. You don't need to install any additional components or plugins on CWA or the VDA.
+You can download the latest version of Citrix Virtual Apps and Desktops at the [Citrix downloads site](https://www.citrix.com/downloads/citrix-virtual-apps-and-desktops/). (You need to sign in first.) The necessary components are bundled into the [Citrix Workspace app (CWA)](https://www.citrix.com/downloads/workspace-app/) and Virtual Delivery Agent (VDA) by default. You don't need to install any extra components or plugins on CWA or the VDA.
 
 For the latest server and client requirements, see the [Optimization for Microsoft Teams](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html) article on the Citrix website.
 
@@ -108,7 +108,7 @@ For RemotePC scenarios, check the Known issues and limitations section.
 
 VMware Horizon is a modern platform for secure delivery of virtual desktops and apps across the hybrid cloud. To offer a great end-user experience, VMware Horizon provides media optimization for Teams. This optimization improves overall productivity across virtual desktops and apps, and enhances user experience when calling and meeting using Teams.
 
-You can download the latest version of VMware Horizon from the [VMware Downloads](https://customerconnect.vmware.com/downloads/#all_products) page. The required media optimization components are part of the Horizon Agent and Horizon Client by default and there's no need to install any additional plug-in to use the optimization feature for Teams.
+You can download the latest version of VMware Horizon from the [VMware Downloads](https://customerconnect.vmware.com/downloads/#all_products) page. The required media optimization components are part of the Horizon Agent and Horizon Client by default and there's no need to install any other plug-in to use the optimization feature for Teams.
 
 To get the latest requirements and instructions on how to configure media optimization for Teams, see the [Configuring Media Optimization for Microsoft Teams](https://docs.vmware.com/en/VMware-Horizon/2006/horizon-remote-desktop-features/GUID-F68FA7BB-B08F-4EFF-9BB1-1F9FC71F8214.html) article on the VMware website.
 
@@ -125,7 +125,7 @@ With per-machine installation, automatic updates are disabled. To update the Tea
 
 For most VDI deployments, we recommend you deploy Teams using per-machine installation. To update to the latest Teams version, start with the uninstall procedure followed by latest Teams version deployment.
 
-For Teams AV optimization in VDI environments to work properly, the thin-client device must have access to the internet. If internet access isn't available at the thin-client device, optimization startup won't be successful. This means that the user is in a non-optimized media state.
+For Teams AV optimization in VDI environments to work properly, the thin-client device must have access to the internet. If internet access isn't available at the thin-client device, optimization startup won't be successful. This means that the user is in a nonoptimized media state.
 
 ### Dedicated persistent setup
 
@@ -249,7 +249,7 @@ There are various virtualized setup configurations, each with a different focus 
 - **Dependencies**: These include dependencies on infrastructure, workload, and other environmental considerations outside the Teams desktop app.
 - **Disabled features on VDI**: Teams disables GPU-intensive features for VDI, which can help improve transient CPU utilization. The following features are disabled:
   - Teams CSS animation
-  - Giphy auto-start
+  - Giphy autostart
 
 ## Teams on VDI with calling and meetings
 
@@ -274,7 +274,7 @@ These real-time metrics (network, audio, screen sharing, and outgoing video qual
 
 To view stats during a call or meeting, users need to select **More actions** ...  icon at the top of the call window, and then select **Call health** near the top of the menu.
 
-For more information about network, audio and video metrics, see [Monitor call and meeting quality in Teams](https://support.microsoft.com/office/7bb1747c-d91a-4fbb-84f6-ad3f48e73511).
+For more information about network, audio, and video metrics, see [Monitor call and meeting quality in Teams](https://support.microsoft.com/office/7bb1747c-d91a-4fbb-84f6-ad3f48e73511).
 
 This feature requires Teams Desktop client 1.6.00.11166 or higher.
 
@@ -534,13 +534,13 @@ The following calling and meeting features are not supported:
 - Shared system audio/computer sound (Citrix and VMware only)
 - Media bypass for Direct Routing
 - Zoom +/- control
-- Cross cloud anonymous join in Government Clouds (GCC, GCC High and DoD)
+- Cross cloud anonymous join in Government Clouds (GCC, GCC High, and DoD)
 - QoS
 - Gallery View 3x3
 - Users can't upload their own image and video backgrounds
 
 > [!NOTE]
-> We're working on adding calling and meeting features that are currently only available in non-VDI environments. These might include more admin control over quality, additional screen sharing scenarios, and advanced features recently added to Teams. Contact your Teams representative to learn more about upcoming features.
+> We're working on adding calling and meeting features that are currently only available in non-VDI environments. These might include more admin control over quality, other screen sharing scenarios, and advanced features recently added to Teams. Contact your Teams representative to learn more about upcoming features.
 
 The following are known issues and limitations for calling and meetings:
 
