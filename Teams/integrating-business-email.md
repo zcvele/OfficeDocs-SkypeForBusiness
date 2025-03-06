@@ -75,7 +75,7 @@ While Google Admin Console is used as an example, the process applies to other e
 
 1. To forward calendar events from Google Workspace to Teams, create a route in the Google Admin Console.
 
-    - Go to the Google Admin Console and manage **Hosts** by following [this link](https://admin.google.com/ac/apps/gmail/hosts).
+    - Go to the [Google Admin Console and manage Hosts](https://admin.google.com/ac/apps/gmail/hosts).
     - Select **Add Route**.
     - In the **Add mail route** box:
         - Enter the route name: **Microsoft Teams**.
@@ -103,8 +103,8 @@ While Google Admin Console is used as an example, the process applies to other e
 
     - To manage **domains**, go to the [Google Admin Console](https://admin.google.com/ac/domains/manage).
     - Select **Add a domain**.
-    - Under Enter domain name, enter: **teams.[CUSTOM DOMAIN NAME]** (replace CUSTOM DOMAIN NAME with your domain name).
-    - Under Select a domain type, select the second choice: **User alias domain**.
+    - Under **Enter domain name**, enter: **teams.[CUSTOM DOMAIN NAME]** (replace CUSTOM DOMAIN NAME with your domain name).
+    - Under **Select a domain type**, select the second choice: **User alias domain**.
     - Select **Add Domain & Start Verification**.
     - Refresh the Manage domains page to confirm the new domain you added is now listed.
     - For your new domain teams.coylo.info, under **Status**, select **Activate Gmail**.
@@ -127,7 +127,7 @@ While Google Admin Console is used as an example, the process applies to other e
         - Points to address or value: **aspmx.l.google.com**.
         - TTL: **3600**.
     - After the MX record is added, select **Add record**.
-1. The remainder of the steps are automated. Follow the prompts in the wizard to finish.
+1. The remainder of the steps are automated. Follow the prompts in the Wizard to finish.
 
 ## For further assistance
 
