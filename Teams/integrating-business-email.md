@@ -39,15 +39,15 @@ Whether you want to use Microsoft email for your business email needs or you're 
 
 - **Desktop computer**: You need to complete this setup on your desktop computer. This setup can't be completed on a mobile device.
 - **Admin app/Microsoft Admin Center**: If you own Microsoft Teams Essentials, you can complete this setup in the [Admin app](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20) installed in Teams. For customers with other small business licenses, [learn](https://support.microsoft.com/office/add-a-custom-domain-name-071780ac-46bb-4758-b30d-39ad0aeccf42) how you can complete these steps in the Microsoft Admin Center.
-- **Global Admin**: [Global admin](/microsoft-365/admin/add-users/about-admin-roles) permissions for your Microsoft 365 environment, which allow you to buy or verify your business domain.
+- **Global Admin**: [Global Admin](/microsoft-365/admin/add-users/about-admin-roles) permissions for your Microsoft 365 environment, which allow you to buy or verify your business domain.
 - **Business domain account**: You need to be able to sign in to your business domain host (for example, GoDaddy).
   1. You need to know [how to find](/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar) your domain host.
-  1. If you want to buy a new domain, go to the [setup page in the admin center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer), and then select **Get your custom domain set up**.
-- **Admin console**: You need to be able to sign in to the admin console for your current email provider (such as Google Workspace).
+  1. If you want to buy a new domain, go to the [setup page in the Admin Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer), and then select **Get your custom domain set up**.
+- **Admin console**: You need to be able to sign in to the Admin console for your current email provider (such as Google Workspace).
 
 ## Connect your business domain for simplified login
 
-1. In the admin app in Teams, go to the **Admin** tab in the left-hand navigation, and on the **Home** tab of the admin dashboard, select the **Use your existing email and custom domain with Teams** task.
+1. In the Admin app in Teams, go to the **Admin** tab in the left-hand navigation, and on the **Home** tab of the Admin dashboard, select the **Use your existing email and custom domain with Teams** task.
 1. You need to choose your email service provider. The options are Microsoft, Google Workspace, or another service provider. Select the **Next** button to continue when ready, or the **Back** button to return to the previous screen.
 1. Now you must verify ownership of your custom business domain.
 
@@ -67,7 +67,7 @@ Whether you want to use Microsoft email for your business email needs or you're 
 1. To integrate your business email with your Teams calendar the steps vary if you want to use Microsoft email or another email service provider.
 
     - **Option 1**: Be modified at your domain host. Select **Connect** to automatically add the DNS records required to connect your domain to email. Once completed, use your new email to sign in to Teams and all Office apps.
-    - **Option 2**: To connect your business email from another provider, for example, Google, follow the steps provided in the wizard. You're prompted to sign in to your email provider's admin console. Use the provided links and copy and paste buttons to transfer values into the required fields. Follow the steps in the next section carefully to make sure the calendar synchronization is successful.
+    - **Option 2**: To connect your business email from another provider, for example, Google, follow the steps provided in the wizard. You're prompted to sign in to your email provider's Admin console. Use the provided links and copy and paste buttons to transfer values into the required fields. Follow the steps in the next section carefully to make sure the calendar synchronization is successful.
 
 ### Integrate your existing email and calendar with Teams
 
