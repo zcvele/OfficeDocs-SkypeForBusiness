@@ -115,7 +115,7 @@ To create or manage meeting themes, follow these steps:
 
 ## Add multiple meeting themes to a policy (Public Preview)
 
-Adding multiple themes to each policy gives your organizers more options, allowing them to select the appropriate branding for different meetings.
+Adding multiple themes to each policy gives your organizers more options, allowing them to select the appropriate branding for different meetings. You can upload a maximum of 5 themes to each policy.
 
 To add multiple meeting themes to a policy, follow these steps:
 
@@ -135,22 +135,6 @@ To add multiple meeting themes to a policy, follow these steps:
 10. In the **Custom meeting visuals** table, on your theme's row, toggle the **Currently Active** setting to **Yes**.
 11. Repeat steps 6-10 to add more themes to the policy.
 12. Select **Save**.
-
-## Assign a default theme to a meeting template (Public Preview)
-
-If you added multiple themes to each customization policy, you can use meeting templates to assign a default meeting theme to each template. When organizers select a meeting template while creating meetings, your chosen default theme automatically appears on the meeting invite, pre-join screen, and lobby. If you chose to lock the theme, organizers must use the default when they select the meeting template. If you leave the theme unlocked, organizers can select any available theme instead of the default one. To learn more about meeting templates, see [Overview of custom meeting templates in Microsoft Teams](custom-meeting-templates-overview.md).
-
-To assign a default meeting theme to your meeting templates, follow these steps:
-
-1. Open the Teams admin center.
-2. Expand **Meetings** from the navigation pane.
-3. Under **Meetings**, select **Meeting templates**.
-4. Either select an existing template or select **Add** to create a new one.
-5. Within your chosen policy, navigate to the **Meeting Customization** section.
-6. In the drop-down for **Meeting themes**, select a theme to create a default. To lock the theme, select **Lock** in the table's first row.
-7. Select **Save**.
-
-To learn more about how organizers use meeting templates, see [Use custom templates in Microsoft Teams meetings](https://support.microsoft.com/office/use-custom-templates-in-microsoft-teams-meetings-78279be9-3283-4999-b24e-96fb0da2fb4f).
 
 ## Allow organizers to turn off meeting themes for a meeting
 
