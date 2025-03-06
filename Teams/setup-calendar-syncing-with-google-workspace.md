@@ -96,7 +96,7 @@ If your small or medium business relies on Google Workspace for email and calend
 
 **What does the "User edits detected" Google Calendar sync status mean?**
 
-- This means critical user-identifiable information, such as a first name, has been modified in either the Microsoft or Google Workspace directory, which results in termination of the calendar sync.
+- This means critical user-identifiable information, such as a first name, has been modified in either the Microsoft or Google Workspace Directory, which results in termination of the calendar sync.
 - You can resume the calendar sync for this user by either selecting the **Manage Google Calendar sync** link on the **Users** page or by using the Set Up Calendar Synchronization Wizard on the Admin app home page.
 
 **Can I sync my Google Calendar for personal use with Teams?**
@@ -106,7 +106,7 @@ If your small or medium business relies on Google Workspace for email and calend
 
 **I previously set up calendar forwarding using this wizard. Can I switch to the sync experience?**
 
-- If you've set up calendar forwarding using this wizard in the past you can't set up bidirectional syncing at this time. We're working to improve this experience. For updates, check your Microsoft Admin Center Message Center posts or this article.
+- If you have set up calendar forwarding using this wizard in the past you can't set up bidirectional syncing at this time. We're working to improve this experience. For updates, check your Microsoft Admin Center Message Center posts or this article.
 
 **How can I share feedback about this experience?**
 
