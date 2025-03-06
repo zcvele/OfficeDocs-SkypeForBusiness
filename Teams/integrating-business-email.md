@@ -110,7 +110,7 @@ While Google Admin Console is used as an example, the process applies to other e
     - For your new domain teams.coylo.info, under **Status**, select **Activate Gmail**.
     - In the pop-up dialog box, choose **Skip MX record setup**.
     - Select **Next**.
-    - On the Route mail to another server dialog box, select **I use another mail server**.
+    - On the **Route mail to another server** dialog box, select **I use another mail server**.
 
    > [!NOTE]
    > The next step is adding the Google mail server to your domain provider. You don't need to copy that name because it's provided when you need it.
