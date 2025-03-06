@@ -37,7 +37,7 @@ If your small or medium business relies on Google Workspace for email and calend
 1. Sign into [Teams](https://teams.microsoft.com) using your Global Admin account.
 1. Go to the [Admin app in Teams](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20?source=share-app-dialog).
 1. If you haven't already connected your custom business domain with Microsoft 365, select the **Use your existing email and custom domain with Teams** option on the Admin app home page and proceed to "[Use your existing email and custom domain with Teams](#use-your-existing-email-and-custom-domain-with-teams)."
-1. If you're already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page and proceed to "[Set up calendar synchronization](#set-up-calendar-synchronization)."
+1. If you have already connected your domain, select the **Set up calendar synchronization** option on the Admin app home page and proceed to "[Set up calendar synchronization](#set-up-calendar-synchronization)."
 
 ## Use your existing email and custom domain with Teams
 
@@ -49,19 +49,20 @@ Teams attempts to detect your domain host provider and prompts you to sign into 
 
 There are two methods to verify ownership:
 
-**Method 1: If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you have the option to sign in to that registrar and give Microsoft permission to set up your domain for you.**
-1. Select **Verify**.
-1. Sign in to your registrar if prompted, and then select **Authorize Microsoft to conduct verification**.
-1. Return to Microsoft Teams and the custom domain setup task.
+    **Method 1: If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you have the option to sign in to that registrar and give Microsoft permission to set up your domain for you.**
 
-**Method 2: To manually verify ownership and configure DNS records, follow the instructions in Add DNS records to connect your domain.**
+    1. Select **Verify**.
+    2. Sign in to your registrar if prompted, and then select **Authorize Microsoft to conduct verification**.
+    3. Return to Microsoft Teams and the custom domain setup task.
 
-1. Sign out of Teams and sign back in with your updated email.
+    **Method 2: To manually verify ownership and configure DNS records, follow the instructions in Add DNS records to connect your domain.**
+
+4. Sign out of Teams and sign back in with your updated email.
 
     Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
 
-1. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the custom domain setup task, to update email addresses for other users.
-1. Next, move to the calendar synchronization process. Follow the steps outlined in "Set up calendar synchronization."
+5. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the custom domain setup task, to update email addresses for other users.
+6. Next, move to the calendar synchronization process. Follow the steps outlined in "Set up calendar synchronization."
 
 ## Set up calendar synchronization
 
