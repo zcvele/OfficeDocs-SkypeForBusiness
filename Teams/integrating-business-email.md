@@ -50,14 +50,20 @@ Whether you want to use Microsoft email for your business email needs or you're 
 1. In the admin app in Teams, go to the **Admin** tab in the left-hand navigation, and on the **Home** tab of the admin dashboard, select the **Use your existing email and custom domain with Teams** task.
 1. You need to choose your email service provider. The options are Microsoft, Google Workspace, or another service provider. Select the **Next** button to continue when ready, or the **Back** button to return to the previous screen.
 1. Now you must verify ownership of your custom business domain.
-    1. Enter your business domain and select **Verify**. We attempt to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes. There are two methods to verify ownership:
-        1. If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you can also sign in to that registrar and give Microsoft permission to set up your domain for you.
-            1. Select **Verify**.
-            1. Sign in to your registrar if prompted, and then select **Authorize Microsoft to conduct verification**.
-            1. Return to Microsoft Teams and the setup task.
-        1. To manually verify ownership and configure DNS records, follow the instructions in [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
-    1. Sign out of Teams and sign back in with your updated email. Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
-    1. After you sign back into Teams with your business email, return to the Admin app in Teams and to this setup task to update email addresses for other users.
+
+    Enter your business domain and select **Verify**. We attempt to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes.
+
+    There are two methods to verify ownership:
+
+    **Method 1: If your domain is hosted at a common registrar, such as GoDaddy, WordPress, or 1&1 IONOS, you can also sign in to that registrar and give Microsoft permission to set up your domain for you.**
+
+    - Select **Verify**.
+    - Sign in to your registrar if prompted, and then select **Authorize Microsoft to conduct verification**.
+    - Return to Microsoft Teams and the setup task.
+
+    **Method 2: To manually verify ownership and configure DNS records, follow the instructions in [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).**
+    - Sign out of Teams and sign back in with your updated email. Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
+    - After you sign back into Teams with your business email, return to the Admin app in Teams and to this setup task to update email addresses for other users.
 1. To integrate your business email with your Teams calendar the steps vary if you want to use Microsoft email or another email service provider.
     1. **Option 1**: Be modified at your domain host. Select **Connect** to automatically add the DNS records required to connect your domain to email. Once completed, use your new email to sign in to Teams and all Office apps.
     1. **Option 2**: To connect your business email from another provider, for example, Google, follow the steps provided in the wizard. You're prompted to sign in to your email provider's admin console. Use the provided links and copy and paste buttons to transfer values into the required fields. Follow the steps in the next section carefully to make sure the calendar synchronization is successful.
