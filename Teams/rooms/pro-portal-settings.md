@@ -48,7 +48,7 @@ After changing a setting and pressing the **Apply** button, a dialog box will pr
 
 ## Settings job history
 
-Since setting changes from the Teams Rooms Pro management portal to the Teams Rooms device aren't in real-time, there will be a delay. An indicator is visible next to any setting that is pending a change as a visual cue that a job has started to make the change to the device.
+Since setting changes from the Teams Rooms Pro management portal to the Teams Rooms device aren't in real-time, there will be a delay. An indicator is visible next to any setting that is pending a change or pending verification of a change as a visual cue that a job is in progress for that device.
 
 To provide visibility to the Teams Rooms Pro management technician, there's a **Settings Job History** activity under the **Activity** tab on the Rooms detail panel. This indicates the stage of settings change.
 
@@ -58,19 +58,19 @@ An entry is made for every setting change initiated by a user or by the Teams Ro
 |:------|:------|
 |Status|Indicates the stat of the settings job.|
 |Submitted on|Indicates the timestamp of the status of the job.|
-|Submitted by|Indicates the individual who initiated the settings change or the Teams Rooms Pro systems’ Managed Rooms Service|
+|Submitted by|Indicates the individual who initiated the settings change or the Teams Rooms Pro Managed Rooms Service|
 |Completed on|Indicates that timestamp when the job completed.|
 
 ### Device settings job history detail
 
-By selecting the **Settings Job history** row  in the table, a **Device settings** job panel is displayed with details about the specific device setting changes.
+By selecting the **Settings Job history** row in the table, a **Device settings** job panel is displayed with details about the specific device setting changes.
 
 |**Field name**|**Description** |
 |:------|:------|
 |Job ID|A unique ID assigned to the settings job.|
 |Status|Contains one of the following values: Submitted, Running, Completed, Completed with errors, Canceled, or Failed.|
 |Submitted on|Date and Time when the job was submitted.|
-|Submitted by|Indicates the individual who initiated the settings change or the Teams Rooms Pro systems Managed Rooms Service.|
+|Submitted by|Indicates the individual who initiated the settings change or the Teams Rooms Pro Managed Rooms Service.|
 |Settings|Shows the name of the settings that was changed.|
 |Reason| See the table below for details.|
 
@@ -83,10 +83,10 @@ Use this table to understand the **Settings Job** reasons.
 |Submitted|PENDING CONNECTION|Device is disconnected, will execute the job after the device reconnects. | Ensure that the device is connected.|
 |Submitted|SCHEDULED|Job was successfully created.| None. The job is scheduled and will run when the device is available or in the nightly maintenance window.|
 |Running|IN PROGRESS|Job was sent down to the agent, and is pending a response back.||
-|Completed |SUCCESS|Job successfully completed on the agent, and verification of settings application was done. | Settings validation can take up to 10 minutes to reflect in the Teams Rooms Pro management portal.|
-|Canceled |CANCELLED  | User canceled the Job |  |
- Completed With Errors| APP RESTART FAILED|XML with new settings has been written to the correct location, but an issue occurred in the app restart process. To complete the process, the device was rebooted. | Reapply the settings. |
-|Completed With Errors | VERIFICATION FAILED | XML with new settings has been written, and the app was successfully restarted, but the settings weren't applied correctly. | The settings change couldn't be verified. Check that the settings changed. A retry will be scheduled by the Managed room service for the nightly maintenance window. |
+|Completed |SUCCESS|Job successfully completed on the agent, and verification of settings application was done. | Settings validation can take up to 15 minutes to reflect in the Teams Rooms Pro management portal.|
+|Canceled |CANCELLED  | User cancelled the Job. |  |
+Completed With Errors| APP RESTART FAILED|XML with new settings has been written to the correct location, but an issue occurred in the app restart process. To complete the process, the device was rebooted. | Reapply the settings. |
+|Completed With Errors | VERIFICATION FAILED | XML with new settings has been written, and the app was successfully restarted, but the settings weren't applied correctly | or the settings change couldn't be verified. Check that the settings changed. A retry will be scheduled by the Managed room service for the nightly maintenance window. |
 |Failed |EXISTING XML FOUND| An existing XML was found on the device and the agent was unable to create a new XML due to conflicts.|Restart the device to apply the existing SkypeSettings.XML on the device or remove it. See [Manage a Microsoft Teams Rooms console settings remotely with an XML configuration file](/microsoftteams/rooms/xml-config-file). |
 |Failed|FAILED TO WRITE XML|The agent failed to write an XML to the correct location.| Reapply the settings change.|
 |Failed|FAILED|General failures outside of the specified error codes.|Reapply the settings change.|
