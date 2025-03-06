@@ -101,7 +101,7 @@ While Google Admin Console is used as an example, the process applies to other e
     - At the bottom of the **Routing Add setting** dialog box, select **Save**.
 1. Add a subdomain in the Google Admin Console to receive calendar events sent from Teams.
 
-    - To manage **domains**, go to the [Google Admin Console](https://admin.google.com/ac/domains/manage).
+    - Go to the [Google Admin Console and manage Domains](https://admin.google.com/ac/domains/manage).
     - Select **Add a domain**.
     - Under **Enter domain name**, enter: **teams.[CUSTOM DOMAIN NAME]** (replace CUSTOM DOMAIN NAME with your domain name).
     - Under **Select a domain type**, select the second choice: **User alias domain**.
