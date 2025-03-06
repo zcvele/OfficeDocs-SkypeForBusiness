@@ -57,12 +57,12 @@ If your small or medium business relies on Google Workspace for email and calend
 
     **Method 2: To manually verify ownership and configure DNS records, follow the instructions in Add DNS records to connect your domain.**
 
-4. Sign out of Teams and sign back in with your updated email.
+1. Sign out of Teams and sign back in with your updated email.
 
     Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
 
-5. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the custom domain setup task, to update email addresses for other users.
-6. Next, move to the calendar synchronization process. Follow the steps outlined in "[Set up calendar synchronization](#set-up-calendar-synchronization)."
+1. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the custom domain setup task, to update email addresses for other users.
+1. Next, move to the calendar synchronization process. Follow the steps outlined in "[Set up calendar synchronization](#set-up-calendar-synchronization)."
 
 ## Set up calendar synchronization
 
