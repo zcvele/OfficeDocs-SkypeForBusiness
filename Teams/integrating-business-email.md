@@ -23,7 +23,7 @@ ms.localizationpriority: medium
 > [!NOTE]
 > This article is intended for Global Administrators with a Microsoft 365 subscription for work or school that includes Microsoft Teams.
 
-If you're signing into Microsoft Teams using the default domain that Microsoft provided when you purchased Microsoft 365, for example, "yourcompany.onmicrosoft.com", then your small business’s existing domain and email aren't connected to Teams. This lack of connection creates challenges for your small business:
+If you're signing into Microsoft Teams using the default domain that Microsoft provided when you purchased Microsoft 365, for example, "yourcompany.onmicrosoft.com," then your small business’s existing domain and email aren't connected to Teams. This lack of connection creates challenges for your small business:
 
 - You and your users need to remember multiple logins.
 - You and your users need to maintain two separate calendars. Without extra setup, your Teams and existing calendar can't sync.
@@ -51,7 +51,7 @@ Whether you want to use Microsoft email for your business email needs or you're 
 1. You need to choose your email service provider. The options are Microsoft, Google Workspace, or another service provider. Select the **Next** button to continue when ready, or the **Back** button to return to the previous screen.
 1. Now you must verify ownership of your custom business domain.
 
-    Enter your business domain and select **Verify**. We attempt to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any DNS changes.
+    Enter your business domain and select **Verify**. We attempt to detect your domain host provider and prompt you to sign into your account. This authorization is solely for verifying domain ownership and doesn't involve any Domain Name System (DNS) changes.
 
     There are two methods to verify ownership:
 
@@ -65,8 +65,9 @@ Whether you want to use Microsoft email for your business email needs or you're 
     - Sign out of Teams and sign back in with your updated email. Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
     - After you sign back into Teams with your business email, return to the Admin app in Teams and to this setup task to update email addresses for other users.
 1. To integrate your business email with your Teams calendar the steps vary if you want to use Microsoft email or another email service provider.
-    1. **Option 1**: Be modified at your domain host. Select **Connect** to automatically add the DNS records required to connect your domain to email. Once completed, use your new email to sign in to Teams and all Office apps.
-    1. **Option 2**: To connect your business email from another provider, for example, Google, follow the steps provided in the wizard. You're prompted to sign in to your email provider's admin console. Use the provided links and copy and paste buttons to transfer values into the required fields. Follow the steps in the next section carefully to make sure the calendar synchronization is successful.
+
+    - **Option 1**: Be modified at your domain host. Select **Connect** to automatically add the DNS records required to connect your domain to email. Once completed, use your new email to sign in to Teams and all Office apps.
+    - **Option 2**: To connect your business email from another provider, for example, Google, follow the steps provided in the wizard. You're prompted to sign in to your email provider's admin console. Use the provided links and copy and paste buttons to transfer values into the required fields. Follow the steps in the next section carefully to make sure the calendar synchronization is successful.
 
 ### Integrate your existing email and calendar with Teams
 
