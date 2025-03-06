@@ -3,7 +3,7 @@ title:  Uninstallation script for the classic Teams client
 ms.author: heidip
 author: MicrosoftHeidi
 manager: jtremper
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 11/12/2024
 ms.service: msteams
 audience: admin
