@@ -62,7 +62,7 @@ If your small or medium business relies on Google Workspace for email and calend
     Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
 
 5. After you sign back into Teams using your business email, return to the Admin app in Teams, and to the custom domain setup task, to update email addresses for other users.
-6. Next, move to the calendar synchronization process. Follow the steps outlined in "Set up calendar synchronization."
+6. Next, move to the calendar synchronization process. Follow the steps outlined in "[Set up calendar synchronization](#set-up-calendar-synchronization)."
 
 ## Set up calendar synchronization
 
