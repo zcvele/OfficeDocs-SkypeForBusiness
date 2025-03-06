@@ -84,7 +84,7 @@ While Google Admin Console is used as an example, the process applies to other e
         - At the bottom of the page, select **Save**.
 1. Next, configure the route in the Google Admin Console to forward calendar events from Google Workspace to Teams.
 
-    - To manage **routing**, go to the [Google Admin Console](https://admin.google.com/ac/apps/gmail/routing).
+    - Go to the [Google Admin Console and manage Routing](https://admin.google.com/ac/apps/gmail/routing).
     - Under **Routing**, select **Configure**.
     - In the **Add setting** dialog box:
         - Enter this short description: **Google to Microsoft**.
