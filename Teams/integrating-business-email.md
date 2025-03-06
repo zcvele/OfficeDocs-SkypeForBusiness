@@ -74,61 +74,65 @@ Whether you want to use Microsoft email for your business email needs or you're 
 While Google Admin Console is used as an example, the process applies to other email providers as well.
 
 1. To forward calendar events from Google Workspace to Teams, create a route in the Google Admin Console.
-    1. Go to the Google Admin Console and manage **Hosts** by following [this link](https://admin.google.com/ac/apps/gmail/hosts).
-    1. Select **Add Route**.
-    1. In the **Add mail route** box:
-        1. Enter the route name: **Microsoft Teams**.
-        1. Under 1, **Specify email server**, choose **Single host**, and enter the host name **[HOST NAME].protection.outlook.com** (replace [HOST NAME] with your custom business domain).
-        1. Enter port number **25**.
-        1. At the bottom of the page, select **Save**.
+
+    - Go to the Google Admin Console and manage **Hosts** by following [this link](https://admin.google.com/ac/apps/gmail/hosts).
+    - Select **Add Route**.
+    - In the **Add mail route** box:
+        - Enter the route name: **Microsoft Teams**.
+        - Under 1, **Specify email server**, choose **Single host**, and enter the host name **[HOST NAME].protection.outlook.com** (replace [HOST NAME] with your custom business domain).
+        - Enter port number **25**.
+        - At the bottom of the page, select **Save**.
 1. Next, configure the route in the Google Admin Console to forward calendar events from Google Workspace to Teams.
-    1. To manage **routing**, go to the [Google Admin Console](https://admin.google.com/ac/apps/gmail/routing).
-    1. Under **Routing**, select **Configure**.
-    1. In the **Add setting** dialog box:
-        1. Enter this short description: **Google to Microsoft**.
-        1. Under 1, **Email messages to affect**, select both **Inbound** and **Internal-receiving**.
-        1. Under 2, **For the above type of messages**, select **Modify message**.
-        1. Under **Spam**, select **Bypass spam filter for this message**.
-        1. Under **Also deliver to**, select **Add more recipients**.
+
+    - To manage **routing**, go to the [Google Admin Console](https://admin.google.com/ac/apps/gmail/routing).
+    - Under **Routing**, select **Configure**.
+    - In the **Add setting** dialog box:
+        - Enter this short description: **Google to Microsoft**.
+        - Under 1, **Email messages to affect**, select both **Inbound** and **Internal-receiving**.
+        - Under 2, **For the above type of messages**, select **Modify message**.
+        - Under **Spam**, select **Bypass spam filter for this message**.
+        - Under **Also deliver to**, select **Add more recipients**.
             1. Under **Recipients**, select **Add**.
             1. In the **New** box, select the down arrow, and select **Advanced**.
             1. Under **Route**, select **Change route**.
             1. Select the down arrow, and then select **Microsoft Teams** (the mail route you created earlier).
             1. Under **Attachments**, select **Remove attachments from this message**.
             1. At the bottom of the **Add setting** dialog box, select **Save**.
-        1. At the bottom of the **Routing Add setting** dialog box, select **Save**.
+    - At the bottom of the **Routing Add setting** dialog box, select **Save**.
 1. Add a subdomain in the Google Admin Console to receive calendar events sent from Teams.
-    1. To manage **domains**, go to the [Google Admin Console](https://admin.google.com/ac/domains/manage).
-    1. Select **Add a domain**.
-    1. Under Enter domain name, enter: **teams.[CUSTOM DOMAIN NAME]** (replace CUSTOM DOMAIN NAME with your domain name).
-    1. Under Select a domain type, select the second choice: **User alias domain**.
-    1. Select **Add Domain & Start Verification**.
-    1. Refresh the Manage domains page to confirm the new domain you added is now listed.
-    1. For your new domain teams.coylo.info, under **Status**, select **Activate Gmail**.
-    1. In the pop-up dialog box, choose **Skip MX record setup**.
-    1. Select **Next**.
-    1. On the Route mail to another server dialog box, select **I use another mail server**.
 
-> [!NOTE]
-> The next step is adding the Google mail server to your domain provider. You don't need to copy that name because it's provided when you need it.
+    - To manage **domains**, go to the [Google Admin Console](https://admin.google.com/ac/domains/manage).
+    - Select **Add a domain**.
+    - Under Enter domain name, enter: **teams.[CUSTOM DOMAIN NAME]** (replace CUSTOM DOMAIN NAME with your domain name).
+    - Under Select a domain type, select the second choice: **User alias domain**.
+    - Select **Add Domain & Start Verification**.
+    - Refresh the Manage domains page to confirm the new domain you added is now listed.
+    - For your new domain teams.coylo.info, under **Status**, select **Activate Gmail**.
+    - In the pop-up dialog box, choose **Skip MX record setup**.
+    - Select **Next**.
+    - On the Route mail to another server dialog box, select **I use another mail server**.
 
-4. Add an MX record in your domain provider to forward calendar events from Teams to Google Workspace.
-    1. Open a new browser tab and sign in to the website of your domain host.
-    1. Select your domain (for example, fourthcoffee.com).
-    1. Go to the **DNS Management** page.
-    1. Select **Add**, and enter the following:
-        1. Type: **MX**.
-        1. Host Name: **teams**.
-        1. Priority: **0** (if this isn't a separate field, then add it to the above address as **0 aspmx.l.google.com**).
-        1. Points to address or value: **aspmx.l.google.com**.
-        1. TTL: **3600**.
-    1. After the MX record is added, select **Add record**.
-5. The remainder of the steps are automated. Follow the prompts in the wizard to finish.
+   > [!NOTE]
+   > The next step is adding the Google mail server to your domain provider. You don't need to copy that name because it's provided when you need it.
+
+1. Add an MX record in your domain provider to forward calendar events from Teams to Google Workspace.
+
+    - Open a new browser tab and sign in to the website of your domain host.
+    - Select your domain (for example, fourthcoffee.com).
+    - Go to the **DNS Management** page.
+    - Select **Add**, and enter the following:
+        - Type: **MX**.
+        - Host Name: **teams**.
+        - Priority: **0** (if this isn't a separate field, then add it to the above address as **0 aspmx.l.google.com**).
+        - Points to address or value: **aspmx.l.google.com**.
+        - TTL: **3600**.
+    - After the MX record is added, select **Add record**.
+1. The remainder of the steps are automated. Follow the prompts in the wizard to finish.
 
 ## For further assistance
 
-- Small to medium businesses can get support [on the web](https://support.microsoft.com/en-us/smallbusiness) or by using the **Support page** in the Teams Admin app.
-- For more help, you can also review this related [support article](https://support.microsoft.com/office/add-a-custom-domain-name-071780ac-46bb-4758-b30d-39ad0aeccf42).
+- Small to medium size businesses can get support [on the web](https://support.microsoft.com/en-us/smallbusiness) or by using the **Support page** in the Teams Admin app.
+- For more help with connecting your domain, see [Add a custom domain name](https://support.microsoft.com/office/add-a-custom-domain-name-071780ac-46bb-4758-b30d-39ad0aeccf42).
 
 ## Customer Feedback
 
@@ -138,8 +142,8 @@ You can provide feedback within the Admin app in Teams using the **Give Feedback
 
 **How do I find my domain host provider?**
 
-For guidance and links on finding your domain host provider, see [Find your domain registrar](/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).
+- For guidance and links on finding your domain host provider, see [Find your domain registrar](/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar).
 
 **What is a custom business domain?**
 
-This is commonly the web address for your business presence on the internet, such as contoso.com.
+- This is commonly the web address for your business presence on the internet, for example, contoso.com.
