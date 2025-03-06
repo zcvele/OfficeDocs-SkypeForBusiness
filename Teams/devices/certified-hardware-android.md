@@ -114,6 +114,7 @@ The following devices are certified under the Microsoft Teams Rooms on Android C
 | Yealink MeetingBar A40 | `289.320.0.11` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13 |
 | Yealink MeetingBoard 65"/86" with MB-Camera-6X | `155.15.0.37 ` | September 3, 2025 | Medium size room (4.5 m x 6 m) | 10|
 | Yealink MeetingBoard 75 Pro | `300.320.0.7 ` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13|
+| Yealink MeetingBoard 75 Pro V2 | `331.320.0.27` | August 15, 2027 | Medium size room (4.5 m x 6 m) | 13|
 
 ## [Firmware](#tab/firmware)
 
@@ -127,7 +128,10 @@ For information about the latest Teams app releases, see [What's new in Microsof
 
 | Device model | Latest Firmware version | Minimum Firmware version required | Teams client | Company Portal | Microsoft Intune | Authenticator | Admin Agent | Release date |
 |:-------------------|:----------------------------|:--------------------------------------------|:-------------------------------|:-------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|:--------------------------------|
-| Audiocodes RXV81 | `2.6.293 (AOSP)` | N/A| `1449/1.0.96.2024091202` | `N/A`| `24.09.1` | `6.2410.7268` |  `1.0.0.202407050618.product (733)` | December 19, 2024|
+| Audiocodes RXV81 | `2.8.208 (AOSP)` | N/A| `1449/1.0.96.2025010301` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product (733)` | February 27, 2025|
+| Audiocodes RX-Pad | `2.8.208 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product (733)` | February 27, 2025|
+| Audiocodes RXV200 | `2.8.208 (AOSP)` | N/A | `1449/1.0.96.2025010301` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product (733)` | February 27, 2025|
+| Audiocodes RXV81 | `2.6.293 (AOSP)` | N/A| `1449/1.0.96.2024091202` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product (733)` | December 19, 2024|
 | Audiocodes RX-Pad | `2.6.293 (AOSP)` | N/A | `1449/1.0.96.2024091202` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product (733)` | December 19, 2024|
 | Audiocodes RXV200 | `2.6.293 (AOSP)` | N/A | `1449/1.0.96.2024091202` | `N/A`| `24.09.1` | `6.2410.7268` | `1.0.0.202407050618.product (733)` | December 19, 2024|
 | Audiocodes RXV81 | `2.6.280` | N/A| `1449/1.0.96.2024080804` | `5.0.6152.0`|`N/A`|`N/A`|  `1.0.0.202407050618.product` | October 18, 2024|
