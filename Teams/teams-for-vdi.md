@@ -40,9 +40,9 @@ Virtual Desktop Infrastructure (VDI) is virtualization technology that hosts a d
 
 Teams in a virtualized environment supports chat and collaboration. And with the Azure Virtual Desktop, Citrix, and VMware platforms, calling and meeting functionality is also supported.
 
-Teams also supports multiple configurations in virtual environments. These include VDI, dedicated, shared, persistent, and non-persistent modes. Features are in continuous development and are added on a regular basis, and functionality will expand over time.
+Teams also supports multiple configurations in virtual environments. These include VDI, dedicated, shared, persistent, and non-persistent modes. Features are in continuous development and are added regularly, and functionality will expand over time.
 
-Using Teams in a virtualized environment might be somewhat different from using Teams in a non-virtualized environment. For example, some advanced features might not be available in a virtualized environment, and video resolution might differ.
+Using Teams in a virtualized environment might be different from using Teams in a non-virtualized environment. For example, some advanced features might not be available in a virtualized environment, and video resolution might differ.
 
 To ensure an optimal user experience, follow the guidance in this article.
 
@@ -102,7 +102,7 @@ You can download the latest version of Citrix Virtual Apps and Desktops at the [
 
 For the latest server and client requirements, see the [Optimization for Microsoft Teams](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html) article on the Citrix website.
 
-For RemotePC scenarios, please check the Known issues and limitations section.
+For RemotePC scenarios, check the Known issues and limitations section.
 
 ### VMware Horizon Workspace and Desktop requirements
 
@@ -156,7 +156,7 @@ Using Teams in a non-persistent setup also requires a profile-caching manager fo
 > [!NOTE]
 > A roaming folder (or, if you are using folder redirection, a caching manager) is required to ensure that the Teams app has the runtime data and files required to run the application. This folder is necessary to mitigate network latency issues or network glitches, which would otherwise cause application errors and a slow experience due to unavailable data and files.
 
-There are a variety of caching manager solutions available, such as [FSLogix](/fslogix/overview). Consult your caching manager provider for specific configuration instructions.
+There are various caching manager solutions available, such as [FSLogix](/fslogix/overview). Consult your caching manager provider for specific configuration instructions.
 
 ##### Teams cached content exclusion list for non-persistent setup
 
@@ -243,7 +243,7 @@ This process uninstalls Teams from the `%ProgramFiles(x86)%` folder or `%Program
 
 ## Teams on VDI performance considerations
 
-There are a variety of virtualized setup configurations, each with a different focus for optimization. For example, a configuration might focus on user density. When planning, consider the following to help optimize your setup based on your organization's workload needs.
+There are various virtualized setup configurations, each with a different focus for optimization. For example, a configuration might focus on user density. When planning, consider the following to help optimize your setup based on your organization's workload needs.
 
 - **Minimum requirement**: Some workloads might require a setup using resources that are above the minimum requirements. For example, workloads for developers who use applications that demand more computing resources.
 - **Dependencies**: These include dependencies on infrastructure, workload, and other environmental considerations outside the Teams desktop app.
@@ -312,7 +312,7 @@ To assign the **DisallowCalling** calling policy and the **AllOff** meeting poli
 
 1. In the left navigation of the Teams admin center, go to **Users**.
 2. Select the user by clicking to the left of the user name, and then click **Edit settings**.
-3. Do the following:
+3. Do the following steps:
     1. Under **Calling policy**, click **DisallowCalling**.
     2. Under **Meeting policy**, click **AllOff**.
 4. Click **Apply**.
@@ -323,7 +323,7 @@ To assign a policy to multiple users at a time:
 2. In the **&#x2713;** (check mark) column, select the users. To select all users, click the **&#x2713;** (check mark) at the top of the table.
 3. Click **Edit settings**, make the changes that you want, and then click **Apply**.
 
-Or, you can also do the following:
+Or, you can also do the following steps:
 
 1. In the left navigation of the Teams admin center, go to the policy you want to assign. For example:
     - Go to **Voice** > **Calling policies**, and then click **DisallowCalling**.
@@ -368,7 +368,7 @@ To assign the **AllowCalling** calling policy and the **AllOn** meeting policy t
 
 1. In the left navigation of the Teams admin center, go to **Users**.
 2. Select the user by clicking to the left of the user name, and then click **Edit settings**.
-3. Do the following:
+3. Do the following steps:
     1. Under **Calling policy**, click **AllowCalling**.
     2. Under **Meeting policy**, click **AllOn**.
 4. Click **Apply**.
@@ -379,7 +379,7 @@ To assign a policy to multiple users at a time:
 2. In the **&#x2713;** (check mark) column, select the users. To select all users, click the **&#x2713;** (check mark) at the top of the table.
 3. Click **Edit settings**, make the changes that you want, and then click **Apply**.
 
-Or, you can also do the following:
+Or, you can also do the following steps:
 
 1. In the left navigation of the Teams admin center, go to the policy you want to assign. For example:
     - Go to **Voice** > **Calling policies**, and then click **AllowCalling**.
