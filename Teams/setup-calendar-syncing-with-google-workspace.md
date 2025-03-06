@@ -92,22 +92,21 @@ If your small or medium business relies on Google Workspace for email and calend
 
 **How do I schedule Teams meetings from my Google Calendar?**
 
-- You can easily create Teams meetings directly from the Google calendar by using the [Teams Meeting add-on in Google Marketplace](https://workspace.google.com/marketplace/app/microsoft_teams_meeting/961264221134).
+- You can easily create Teams meetings directly from the Google Calendar by using the [Teams Meeting add-on in Google Marketplace](https://workspace.google.com/marketplace/app/microsoft_teams_meeting/961264221134).
 
-**What does the "User edits detected" Google calendar sync status mean?**
+**What does the "User edits detected" Google Calendar sync status mean?**
 
-- This means critical user-identifiable information, such as a first name, has been modified in either the Microsoft or Google WorkspacD directory, which results in termination of the calendar sync.
-- You can resume the calendar sync for this user by either selecting the **Manage Google calendar sync** link on the **Users** page or by using the Set Up Calendar Synchronization Wizard on the Admin app home page.
+- This means critical user-identifiable information, such as a first name, has been modified in either the Microsoft or Google Workspace directory, which results in termination of the calendar sync.
+- You can resume the calendar sync for this user by either selecting the **Manage Google Calendar sync** link on the **Users** page or by using the Set Up Calendar Synchronization Wizard on the Admin app home page.
 
 **Can I sync my Google Calendar for personal use with Teams?**
 
 - No, it’s currently not possible to sync your Gmail or Google Calendar for personal use with Teams. However, you can import your Google Calendar into Microsoft Outlook.
-- You can also use the [Teams Meeting add-on](https://workspace.google.com/marketplace/app/microsoft_teams_meeting) to schedule Teams meetings directly from your Google calendar for personal use.
+- You can also use the [Teams Meeting add-on](https://workspace.google.com/marketplace/app/microsoft_teams_meeting) to schedule Teams meetings directly from your Google Calendar for personal use.
 
-**I previously set up calendar forwarding using this wizard. Why should I switch to the sync experience, and how do I do it?**
+**I previously set up calendar forwarding using this wizard. Can I switch to the sync experience?**
 
-- The previous email and calendar Setup Wizard primarily enabled email forwarding of new incoming invites with one-way sync. It didn't support syncing of existing or outgoing invites bidirectionally.
-- To enable bi-directional sync, use the Setup Calendar Synchronization Wizard as described earlier in this article.
+- If you've set up calendar forwarding using this wizard in the past you can't set up bidirectional syncing at this time. We're working to improve this experience. For updates, check your Microsoft Admin Center Message Center posts or this article.
 
 **How can I share feedback about this experience?**
 
