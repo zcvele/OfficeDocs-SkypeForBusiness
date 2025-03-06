@@ -27,6 +27,9 @@ appliesto:
 > The classic Team client is no longer supported. This client is not receiving further updates, including security updates. The classic Teams client will not work after June 30, 2025. You must upgrade to the new Teams client before that time. See [The new Microsoft Teams](new-teams-desktop-admin.md) for more information.
 
 >[!Important]
+>Please note that Operating Systems that reached End of Support, like Windows Server 2012, are no longer able to run Classic Teams, even before the June 30th 2025 deadline. Same applies to Classic Teams if it is installed on a supported OS -like Windows Server 2016- but running in Windows 8/7 compatibility mode (check by right clicking on teams.exe, Properties, Compatibility).
+
+>[!Important]
 >This article describes the requirements and limitations of using classic Microsoft Teams in a virtualized environment.
 >
 >To learn about new Teams for VDI, see: [Upgrade to new Teams for Virtualized Desktop Infrastructure (VDI)](new-teams-vdi-requirements-deploy.md)
