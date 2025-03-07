@@ -67,7 +67,7 @@ Whether you want to use Microsoft email for your business email needs or you're 
 1. To integrate your business email with your Teams calendar the steps vary if you want to use Microsoft email or another email service provider.
 
     - **Option 1**: Be modified at your domain host. Select **Connect** to automatically add the DNS records required to connect your domain to email. Once completed, use your new email to sign in to Teams and all Office apps.
-    - **Option 2**: To connect your business email from another provider, for example, Google, follow the steps provided in the wizard. You're prompted to sign in to your email provider's Admin console. Use the provided links and copy and paste buttons to transfer values into the required fields. Follow the steps in the next section carefully to make sure the calendar synchronization is successful.
+    - **Option 2**: To connect your business email from another provider, for example, Google, follow the steps provided in the Wizard. You're prompted to sign in to your email provider's Admin console. Use the provided links and copy and paste buttons to transfer values into the required fields. Follow the steps in the next section carefully to make sure the calendar synchronization is successful.
 
 ## Integrate your existing email and calendar with Teams
 
