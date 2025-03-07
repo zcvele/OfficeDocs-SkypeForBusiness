@@ -27,7 +27,7 @@ description: "Analyze Microsoft Teams Direct Routing calls with SIP call flow fe
 
 This article introduces a **SIP call flow** feature and is intended for Teams telephony admins and IT Pros who are diagnosing call flow issues between your organization's Session Border Controller (SBC) and Microsoft's Session Initiation Protocol (SIP) Proxy in Direct Routing deployments.
 
-Using the Teams admin center's **SIP call flow** tool, a visual, chronological sequence of the SIP signaling messages exchanged between SBC and SIP Proxy can be used to audit protocol actions.
+By using the Teams admin center's **SIP call flow** tool, you can see a visual, chronological sequence of the SIP signaling messages exchanged between SBC and SIP Proxy.
 
 ### Prerequisites
 
@@ -36,13 +36,13 @@ Access to the Teams admin center is required, using one of the following [Teams 
 - Teams Administrator
 - Teams Telephony Administrator
 
-Your [Direct Routing](direct-routing-plan) environment must be correctly configured, with a properly connected and functioning SBC.
+Your [Direct Routing](direct-routing-plan.md) environment must be correctly configured, with a properly connected and functioning SBC.
 
 For more information, see [Configure Direct Routing](direct-routing-configure.md).
 
 ### Access
 
-To access the SIP call flow feature, log into the Microsoft Teams admin center https://admin.teams.microsoft.com.
+To access the SIP call flow feature, log in to the Microsoft Teams admin center https://admin.teams.microsoft.com.
 
 - Navigate to the left side rail, select **Analytics & reports**
 - Select **Usage reports**
@@ -52,11 +52,11 @@ To access the SIP call flow feature, log into the Microsoft Teams admin center h
 - In the displayed records of Direct Routing calls, identify the desired call to audit, and select it.
 - From the list heading select **SIP call flow**.
 
-Alternatively, after selecting your call, you can select the link below the 'Final SIP Code'.
+Alternatively, after selecting your call, you can select the link below the 'Final SIP Code.'
 
 > [!NOTE] 
-> Please allow up to 30 minutes for the SIP call data to be processed and uploaded to the Teams Admin Center for reporting.
-> Call records older than 30 days will not have SIP Ladder information available.  
+> Allow up to 30 minutes for the SIP call data to be processed and uploaded to the Teams Admin Center for reporting.
+> Call records older than 30 days aren't available for SIP call flow.  
 
 ### Understanding the SIP call flow view
 
@@ -66,7 +66,7 @@ Each "rung" of the ladder represents a SIP message.
 
 The direction of the arrow indicates the sender and receiver of the message. Messages are displayed in chronological order from top to bottom, allowing you to follow the sequence of protocol events during the call.
 
-To view additional detail about a SIP event, select the event and view the protocol details that pop out in the right-hand view.
+To view more details about a SIP event, select the event and view the protocol details that pop out in the right-hand view.
 
 For more information on SIP messages, see [Direct Routing protocols](direct-routing-protocols-sip.md).
 
