@@ -24,7 +24,7 @@ ms.custom:
 description: "Learn about emergency calling considerations for Microsoft Calling Plans."
 ---
 
-# Considerations for Calling Plans
+# Emergency calling considerations for Microsoft Calling Plans
 
 This article describes emergency calling considerations for Microsoft Calling Plan users. Before reading this article, see emergency calling concepts and definitions in [Plan and manage emergency calling](what-are-emergency-locations-addresses-and-call-routing.md).
 
