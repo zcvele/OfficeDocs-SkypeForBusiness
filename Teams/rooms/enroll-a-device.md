@@ -89,7 +89,7 @@ To return to the Microsoft Teams Rooms app after performing the necessary admini
 ## URLs Required for Communication
 
  > [!NOTE]
- > All network traffic between the MTR devices agent and the Microsoft Teams Rooms Pro Management portal is SSL over port 443*.*  See [Teams Rooms - Security](microsoftteams/rooms/security?tabs=Windows#network-security) for the full list of required connectivity endpoints for functionality.
+ > All network traffic between the MTR devices agent and the Microsoft Teams Rooms Pro Management portal is SSL over port 443*.*  See [Teams Rooms - Security](security.md?tabs=Windows#network-security) for the full list of required connectivity endpoints for functionality.
 
 The following hosts must be allowed if you have **traffic allowlist** enabled within your enterprise environment:
 
