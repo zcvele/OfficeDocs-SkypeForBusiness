@@ -23,7 +23,9 @@ description: "Analyze Microsoft Teams Direct Routing calls with SIP call flow fe
 
 # View Microsoft Teams Direct Routing calls with SIP Call Flow 
 
-This article introduces the Teams admin center's **SIP call flow** tool and is intended for Teams telephony admins and IT Pros who are diagnosing call flow issues between your organization's Session Border Controller (SBC) and Microsoft's Session Initiation Protocol (SIP) Proxy in Direct Routing deployments.
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Direct Routing
+
+This article introduces a **SIP call flow** feature and is intended for Teams telephony admins and IT Pros who are diagnosing call flow issues between your organization's Session Border Controller (SBC) and Microsoft's Session Initiation Protocol (SIP) Proxy in Direct Routing deployments.
 
 Using the Teams admin center's **SIP call flow** tool, a visual, chronological sequence of the SIP signaling messages exchanged between SBC and SIP Proxy can be used to audit protocol actions.
 
@@ -34,7 +36,9 @@ Access to the Teams admin center is required, using one of the following [Teams 
 - Teams Administrator
 - Teams Telephony Administrator
 
-Your [Direct Routing](direct-routing-plan) environment must be correctly configured, with a properly connected and functioning SBC. For more information, see [Configure Direct Routing](direct-routing-configure.md).
+Your [Direct Routing](direct-routing-plan) environment must be correctly configured, with a properly connected and functioning SBC.
+
+For more information, see [Configure Direct Routing](direct-routing-configure.md).
 
 ### Access
 
@@ -45,7 +49,7 @@ To access the SIP call flow feature, log into the Microsoft Teams admin center h
 - Generate a **PSTN usage** report
     - From the report drop-down, select **PSTN Usage** report, select a desired date range, and select **Run Report**.  
 - In the generated report, select the **Direct Routing** tab.
-- In the displayed records of Direct Routing calls, identify the desired call to audit, and select it.'
+- In the displayed records of Direct Routing calls, identify the desired call to audit, and select it.
 - From the list heading select **SIP call flow**.
 
 Alternatively, after selecting your call, you can select the link below the 'Final SIP Code'.
