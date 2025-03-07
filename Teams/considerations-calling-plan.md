@@ -26,6 +26,8 @@ description: "Learn about emergency calling considerations for Microsoft Calling
 
 # Emergency calling considerations for Microsoft Calling Plans
 
+**APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Microsoft Calling Plans
+
 This article describes emergency calling considerations for Microsoft Calling Plan users. Before reading this article, see emergency calling concepts and definitions in [Plan and manage emergency calling](what-are-emergency-locations-addresses-and-call-routing.md).
 
 To find out if Microsoft Calling Plans are the right solution for your business, see [Public Switched Telephone Network (PSTN) connectivity options](pstn-connectivity.md) and [Microsoft Calling Plans for Teams](calling-plans-for-office-365.md).
