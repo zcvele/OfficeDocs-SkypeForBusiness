@@ -60,9 +60,9 @@ The device store includes all devices that are certified for Teams, including he
 
 When you purchase devices from the device store, the payment and fulfillment, including shipping and delivery, are handled by UnifiedCommunications.com (a Microsoft third-party fulfillment partner), under their [terms of service](https://unifiedcommunications.com/docs/teams-marketplace/en-US/terms-of-service) and [privacy policy](https://unifiedcommunications.com/docs/teams-marketplace/en-US/privacy-policy).
 
-You can pay with a credit card or a purchase order. Purchase order payment requires one-time setup with the fulfillment provider.
+You can pay with a credit card or a purchase order. Purchase order payment requires one-time setup with the fulfillment provider. All orders can be returned up to 30 days after they're delivered.
 
-All orders can be returned up to 30 days after they're delivered.
+The checkout expereince for the device store in Teams admin center can be enabled or disabled by configuring the **Allow the use of additional optional connected experiences in Office** policy setting. Learn more here: [Overview of optional connected experiences in Microsoft Teams](https://learn.microsoft.com/microsoftteams/privacy/teams-privacy-oce-overview)
 
 ### Order tracking and history
 
