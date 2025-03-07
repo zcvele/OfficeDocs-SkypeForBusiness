@@ -18,63 +18,64 @@ appliesto:
   - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: "Analyze Microsoft Teams Direct Routing call flows with SIP ladder feature"
+description: "Analyze Microsoft Teams Direct Routing calls with SIP call flow feature"
 ---
 
-# Troubleshoot Microsoft Teams Direct Routing with SIP Call Flow 
+# View Microsoft Teams Direct Routing calls with SIP Call Flow 
 
-The SIP Ladder, accessible within the Microsoft Teams Admin Center, provides a visual, chronological representation of the SIP signaling messages exchanged during Direct Routing calls. This tool aids administrators in diagnosing and resolving call flow issues by presenting a clear sequence of interactions between your organization's Session Border Controller (SBC) and the Microsoft SIP Proxy. 
+This article introduces the Teams admin center's **SIP call flow** tool and is intended for Teams telephony admins and IT Pros who are diagnosing call flow issues between your organization's Session Border Controller (SBC) and Microsoft's Session Initiation Protocol (SIP) Proxy in Direct Routing deployments.
 
-https://learn.microsoft.com/en-us/microsoftteams/direct-routing-protocols-sip 
-
-
+Using the Teams admin center's **SIP call flow** tool, a visual, chronological sequence of the SIP signaling messages exchanged between SBC and SIP Proxy can be used to audit protocol actions.
 
 ### Prerequisites
 
-Permissions: You must have the appropriate administrative roles (e.g., Teams Administrator) to access the Teams Admin Center and view Direct Routing reports.
+Access to the Teams admin center is required, using one of the following [Teams administrator roles](using-admin-roles.md):
 
-Direct Routing Configuration: Your Direct Routing environment must be correctly configured, with a properly connected and functioning SBC. 
+- Teams Administrator
+- Teams Telephony Administrator
+
+Your [Direct Routing](direct-routing-plan) environment must be correctly configured, with a properly connected and functioning SBC. For more information, see [Configure Direct Routing](direct-routing-configure.md).
 
 ### Access
 
-Accessing SIP Ladder in Teams Admin Center
+To access the SIP call flow feature, log into the Microsoft Teams admin center https://admin.teams.microsoft.com.
 
-Sign In: Log in to the Microsoft Teams Admin Center (https://admin.teams.microsoft.com). 
+- Navigate to the left side rail, select **Analytics & reports**
+- Select **Usage reports**
+- Generate a **PSTN usage** report
+    - From the report drop-down, select **PSTN Usage** report, select a desired date range, and select **Run Report**.  
+- In the generated report, select the **Direct Routing** tab.
+- In the displayed records of Direct Routing calls, identify the desired call to audit, and select it.'
+- From the list heading select **SIP call flow**.
 
-Navigate to Usage Reports: In the left-hand navigation menu, go to Analytics & reports > Usage reports. 
-
-Generate PSTN Report: Select 'PSTN Usage' report and select a desired timeframe and click on “Run Report”.  In the generated report, select “Direct Routing” tab. This report will list call records. 
-
-View SIP Ladder: You can either select the desired call and click on the 'SIP Call Flow' button at the top left of the report or you can Click on the link below the 'Final SIP Code'. 
+Alternatively, after selecting your call, you can select the link below the 'Final SIP Code'.
 
 > [!NOTE] 
 > Please allow up to 30 minutes for the SIP call data to be processed and uploaded to the Teams Admin Center for reporting.
 > Call records older than 30 days will not have SIP Ladder information available.  
 
-### Understanding the SIP Ladder Diagram 
+### Understanding the SIP call flow view
 
-The SIP Ladder visually represents the call flow as a series of interactions between your organization’s SBC and Microsoft SIP Proxy. Each "rung" of the ladder represents a SIP message (e.g., INVITE, 100 Trying, 180 Ringing, 200 OK, ACK, BYE) with the direction of the arrow indicating the sender and receiver of the message. Messages are displayed in chronological order from top to bottom, allowing you to follow the sequence of events during the call. 
+The SIP call flow visually represents the call as a series of interactions between your organization’s SBC and Microsoft SIP Proxy. The visual representation is known as a ladder diagram.
 
-For a comprehensive understanding of SIP messages and the SIP protocol used in Teams Phone Direct Routing, refer to the Direct Routing Protocols (SIP) documentation. 
+Each "rung" of the ladder represents a SIP message.
 
-Troubleshooting with the SIP Call Flow 
+The direction of the arrow indicates the sender and receiver of the message. Messages are displayed in chronological order from top to bottom, allowing you to follow the sequence of protocol events during the call.
 
-The SIP Ladder is invaluable for diagnosing a variety of Direct Routing issues. Here are a couple of common scenarios: 
+To view additional detail about a SIP event, select the event and view the protocol details that pop out in the right-hand view.
 
-Reference to this article will help -> SBC connectivity issues - Microsoft Teams | Microsoft Learn 
+For more information on SIP messages, see [Direct Routing protocols](direct-routing-protocols-sip.md).
 
-Call Setup Failures: If a call fails to connect, the SIP Ladder can quickly reveal the point of failure. For example: 
+### Troubleshooting with the SIP call flow
 
-If an INVITE message is sent from the SBC but no response (e.g., 100 Trying, 180 Ringing, or 200 OK) is received, this indicates a problem between the SBC and the Microsoft SIP Proxy. Possible causes include network connectivity issues, SBC misconfiguration, or firewall problems. 
+For guidance in diagnosing issues, see [Diagnose issues with Direct Routing](https://learn.microsoft.com/microsoftteams/troubleshoot/phone-system/direct-routing/diagnose-direct-routing-issues).
 
-If a 200 OK is sent from the SIP Proxy to the SBC, but is not shown on the SIP Ladder, then this points to an issue where the SBC is not processing the 200 OK. 
-
-If error responses like 4xx, 5xx, and 6xx are displayed, then more investigation will need to be done by clicking on the specific message to learn more. 
-
-One-Way Audio: If users experience audio only in one direction, the SIP Ladder can help determine if the Session Description Protocol (SDP) information, which contains media details, was exchanged correctly. Examine the INVITE and 200 OK messages to verify that the SDP offer and answer was properly negotiated. Mismatched codecs or incorrect IP addresses in the SDP can lead to one-way audio. 
+For referencing SIP response codes, see [Microsoft and SIP response codes](https://learn.microsoft.com/microsoftteams/troubleshoot/phone-system/direct-routing/microsoft-sip-response-codes).
 
 ## See also
 
 [Plan Direct Routing](direct-routing-plan.md)
 
 [Configure Direct Routing](direct-routing-configure.md)
+
+[Direct Routing - SIP protocol](direct-routing-protocols-sip.md)
