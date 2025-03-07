@@ -29,7 +29,7 @@ If you're signing into Microsoft Teams using the default domain that Microsoft p
 - You and your users need to maintain two separate calendars. Without extra setup, your Teams and existing calendar can't sync.
 - Meetings created in Teams aren't sent from your *.onmicrosoft.com email address and aren't visible outside of Teams. Likewise, meetings sent or received from your existing calendar provider aren't visible in Teams, even if a Teams add-on or extension in your calendar is used.
 
-Whether you want to use Microsoft email for your business email needs or you're already using another email service provider, for eamaple Google Workspace, you can connect your business to Teams to manage Teams meetings. When you set up this connection, your users can:
+Whether you want to use Microsoft email for your business email needs or you're already using another email service provider (for example, Google Workspace), you can connect your business to Teams to manage Teams meetings. When you set up this connection, your users can:
 
 - Sign in to Teams and other Microsoft 365 experiences with a business email.
 - Sync a Teams calendar with the calendar associated with the same business email address.
@@ -146,4 +146,4 @@ You can provide feedback within the Admin app in Teams using the **Give Feedback
 
 **What is a custom business domain?**
 
-- A custom businss domain is a unique web address for your business presence on the internet, for example, contoso.com.
+- A custom business domain is a unique web address for your business presence on the internet, for example, contoso.com.
