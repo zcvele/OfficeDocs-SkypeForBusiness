@@ -103,7 +103,7 @@ While Google Admin Console is used as an example, the process applies to other e
 
     - Go to the [Google Admin Console and manage Domains](https://admin.google.com/ac/domains/manage).
     - Select **Add a domain**.
-    - Under **Enter domain name**, enter: **teams.[CUSTOM DOMAIN NAME]** (replace CUSTOM DOMAIN NAME with your domain name).
+    - Under **Enter domain name**, enter: **teams.[CUSTOM DOMAIN NAME]** (replace [CUSTOM DOMAIN NAME] with your domain name).
     - Under **Select a domain type**, select the second choice: **User alias domain**.
     - Select **Add Domain & Start Verification**.
     - Refresh the Manage domains page to confirm the new domain you added is now listed.
