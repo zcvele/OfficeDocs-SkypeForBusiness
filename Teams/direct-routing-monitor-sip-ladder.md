@@ -8,6 +8,7 @@ manager: pamgreen
 audience: ITPro
 ms.topic: how-to
 ms.service: msteams
+ms.subservice: teams-calling
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -25,42 +26,39 @@ description: "Analyze Microsoft Teams Direct Routing calls with SIP call flow fe
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png)Direct Routing
 
-This article introduces a **SIP call flow** feature and is intended for Teams telephony admins and IT Pros who are diagnosing call flow issues between your organization's Session Border Controller (SBC) and Microsoft's Session Initiation Protocol (SIP) Proxy in Direct Routing deployments.
+This article describes the **SIP call flow** feature and is intended for Teams telephony admins and IT Pros who are diagnosing call flow issues between your organization's Session Border Controller (SBC) and Microsoft's Session Initiation Protocol (SIP) Proxy in Direct Routing deployments.
 
-By using the Teams admin center's **SIP call flow** tool, you can see a visual, chronological sequence of the SIP signaling messages exchanged between SBC and SIP Proxy.
+By using the SIP call flow in the Teams admin center, you can see a visual, chronological sequence of the SIP signaling messages exchanged between SBC and SIP Proxy.
 
-### Prerequisites
+## Prerequisites
 
-Access to the Teams admin center is required, using one of the following [Teams administrator roles](using-admin-roles.md):
+Access to the Teams admin center is required using one of the following [Teams administrator roles](using-admin-roles.md):
 
 - Teams Administrator
 - Teams Telephony Administrator
 
-Your [Direct Routing](direct-routing-plan.md) environment must be correctly configured, with a properly connected and functioning SBC.
+Your [Direct Routing](direct-routing-plan.md) environment must be correctly configured, with a properly connected and functioning SBC. For more information, see [Configure Direct Routing](direct-routing-configure.md).
 
-For more information, see [Configure Direct Routing](direct-routing-configure.md).
+## Access SIP call flow
 
-### Access
+To access the SIP call flow, do the following steps:
 
-To access the SIP call flow feature, log in to the Microsoft Teams admin center https://admin.teams.microsoft.com.
+1. In the Teams admin center, go to the left side rail and select **Analytics & reports**.
+1. Select **Usage reports**.
+1. Generate a **PSTN usage** report.
+1. From the report drop-down, select **PSTN Usage** report, select a desired date range, and select **Run Report**.  
+1. In the generated report, select the **Direct Routing** tab.
+1. In the displayed records of Direct Routing calls, identify and select the desired call to audit.
+1. From the list heading, select **SIP call flow**.
 
-- Navigate to the left side rail, select **Analytics & reports**
-- Select **Usage reports**
-- Generate a **PSTN usage** report
-    - From the report drop-down, select **PSTN Usage** report, select a desired date range, and select **Run Report**.  
-- In the generated report, select the **Direct Routing** tab.
-- In the displayed records of Direct Routing calls, identify the desired call to audit, and select it.
-- From the list heading select **SIP call flow**.
-
-Alternatively, after selecting your call, you can select the link below the 'Final SIP Code.'
+Alternatively, after selecting your call, you can select the link below the **Final SIP Code**.
 
 > [!NOTE] 
-> Allow up to 30 minutes for the SIP call data to be processed and uploaded to the Teams Admin Center for reporting.
-> Call records older than 30 days aren't available for SIP call flow.  
+> Allow up to 30 minutes for the SIP call data to be processed and uploaded to the Teams admin center for reporting. Call records older than 30 days aren't available for SIP call flow.  
 
-### Understanding the SIP call flow view
+## Understanding the SIP call flow view
 
-The SIP call flow visually represents the call as a series of interactions between your organization’s SBC and Microsoft SIP Proxy. The visual representation is known as a ladder diagram.
+The SIP call flow visually represents the call as a series of interactions between your organization’s SBC and Microsoft SIP Proxy. The visual representation is known as a *ladder diagram*.
 
 Each "rung" of the ladder represents a SIP message.
 
@@ -70,13 +68,13 @@ To view more details about a SIP event, select the event and view the protocol d
 
 For more information on SIP messages, see [Direct Routing protocols](direct-routing-protocols-sip.md).
 
-### Troubleshooting with the SIP call flow
+## Troubleshooting with the SIP call flow
 
-For guidance in diagnosing issues, see [Diagnose issues with Direct Routing](https://learn.microsoft.com/microsoftteams/troubleshoot/phone-system/direct-routing/diagnose-direct-routing-issues).
+For guidance in diagnosing issues, see [Diagnose issues with Direct Routing](/troubleshoot/phone-system/direct-routing/diagnose-direct-routing-issues).
 
-For referencing SIP response codes, see [Microsoft and SIP response codes](https://learn.microsoft.com/microsoftteams/troubleshoot/phone-system/direct-routing/microsoft-sip-response-codes).
+For referencing SIP response codes, see [Microsoft and SIP response codes](/troubleshoot/phone-system/direct-routing/microsoft-sip-response-codes).
 
-## See also
+## Related articles
 
 [Plan Direct Routing](direct-routing-plan.md)
 
