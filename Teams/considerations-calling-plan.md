@@ -64,9 +64,9 @@ When a Calling Plan user dials an emergency number, how the call is routed to th
 
 - The emergency calling network of that country/region
 
-# Emergency call routing for different countries/regions 
+## Emergency call routing for different countries/regions
 
-This article describes how emergency call routing is supported for Microsoft Calling Plans in different countries/regions.
+This section describes how emergency call routing is supported for Microsoft Calling Plans in different countries/regions.
 
 CLI - Calling Line Identifier<br>
 DID - Direct Inward Dialing<br>
