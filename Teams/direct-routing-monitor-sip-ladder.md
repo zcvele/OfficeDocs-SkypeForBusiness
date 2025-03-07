@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Teams Direct Routing SIP ladder"
+title: "SIP call flow for Direct Routing in Microsoft Teams"
 ms.reviewer: teddygyabaah
 ms.date: 03/06/2025
 ms.author: scottfrancis
@@ -70,9 +70,9 @@ For more information on SIP messages, see [Direct Routing protocols](direct-rout
 
 ## Troubleshooting with the SIP call flow
 
-For guidance in diagnosing issues, see [Diagnose issues with Direct Routing](/troubleshoot/phone-system/direct-routing/diagnose-direct-routing-issues).
+For guidance in diagnosing issues, see [Diagnose issues with Direct Routing](/microsoftteams/troubleshoot/phone-system/direct-routing/diagnose-direct-routing-issues).
 
-For referencing SIP response codes, see [Microsoft and SIP response codes](/troubleshoot/phone-system/direct-routing/microsoft-sip-response-codes).
+For referencing SIP response codes, see [Microsoft and SIP response codes](/microsoftteams/troubleshoot/phone-system/direct-routing/microsoft-sip-response-codes).
 
 ## Related articles
 
