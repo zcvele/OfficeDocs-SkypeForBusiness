@@ -21,9 +21,9 @@ search.appverid: MET150
 description: This article provides guidance on how to manage your Teams Rooms on Windows devices. It outlines the application settings that can be applied directly on the device and synchronized with the Teams Rooms Pro management portal, or alternatively, configured from the Teams Rooms Pro management portal to the device.
 ---
 
-# Managing Microsoft Teams Rooms on Windows Devices Using Teams Rooms Pro Management Portal
+# Managing Microsoft Teams Rooms on Windows devices
 
-In the Teams Rooms Pro management portal, you can configure application settings for individual Teams Rooms on Windows devices, provided you have the necessary role-based access control permissions for Rooms Management. For more information, see [role-based access control in the Microsoft Teams Rooms Pro Management portal](/microsoftteams/rooms/rooms-pro-rbac).
+In the Microsoft Teams Rooms Pro management portal, you can configure application settings for individual Teams Rooms on Windows devices, provided you have the necessary role-based access control permissions for Rooms Management. For more information, see [role-based access control in the Microsoft Teams Rooms Pro Management portal](/microsoftteams/rooms/rooms-pro-rbac).
 
 ## How it works
 
