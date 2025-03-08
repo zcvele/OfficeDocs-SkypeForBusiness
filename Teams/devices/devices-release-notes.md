@@ -213,7 +213,17 @@ To add a mobile system OS scanner:
 
 ## February 26, 2025
 
-**Applies to:** *Teams app version: 1449/1.0.94.*
+**Applies to:** *Teams app version: 1449/1.0.94.2024121004 (Poly, Audiocodes)* 
+
+
+
+- App is available for government clouds (GCCH and DoD) 
+
+- Speed dial on line keys: You should now be able to configure custom contacts and speed dial on-the-line key buttons on non-touch phones certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on line keys
+
+- Lightweight calling experience on non-touch phones
+
+- Bug fixes and other improvements 
 
 ## February 25, 2025
 
