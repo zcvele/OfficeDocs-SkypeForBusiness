@@ -215,7 +215,8 @@ To add a mobile system OS scanner:
 
 **Applies to:** *Teams app version: 1449/1.0.94.2024121004 (Poly, Audiocodes)* 
 
-
+> [!IMPORTANT]
+> Starting June 2025, Teams applications older than 5 months will no longer work. Please refer to the Message Center Post, MC969451 for more details.
 
 - App is available for government clouds (GCCH and DoD) 
 
@@ -232,7 +233,6 @@ To add a mobile system OS scanner:
 
 
 Back-end telemetry fixes and improvements  
-
 ## February 11, 2025
 
 **Applies to:** *Teams app version: 1449/1.0.94.2025020301 (Poly, Yealink, AudioCodes)*
