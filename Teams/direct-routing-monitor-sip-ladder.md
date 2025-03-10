@@ -51,8 +51,6 @@ To access the SIP call flow, do the following steps:
 1. In the displayed records of Direct Routing calls, identify and select the desired call to audit.
 1. From the list heading, select **SIP call flow**.
 
-Alternatively, after selecting your call, you can select the link below the **Final SIP Code**.
-
 > [!NOTE] 
 > Allow up to 30 minutes for the SIP call data to be processed and uploaded to the Teams admin center for reporting. Call records older than 30 days aren't available for SIP call flow.  
 
