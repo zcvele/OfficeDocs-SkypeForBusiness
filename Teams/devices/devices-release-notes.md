@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: eviegrimshaw
-ms.date: 03/04/2025
+ms.date: 03/10/2025
 ms.topic: release-notes
 ms.service: msteams
 ms.subservice: itpro-devices
@@ -216,15 +216,15 @@ To add a mobile system OS scanner:
 **Applies to:** *Teams app version: 1449/1.0.94.2024121004 (Poly, Audiocodes)* 
 
 > [!IMPORTANT]
-> Starting June 2025, Teams applications older than 5 months will no longer work. Please refer to the Message Center Post, MC969451 for more details.
+> Starting in June 2025, Teams applications that are older than five (5) months will no longer work be able to connect to the service. Please refer to the Message Center Post, MC969451 for more details.
 
-- App is available for government clouds (GCCH and DoD) 
+- App is available for government clouds (GCCH and DoD).
 
-- Speed dial on line keys: You should now be able to configure custom contacts and speed dial on-the-line key buttons on non-touch phones certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on line keys
+- **Speed dial on line keys** With this update, you will be able to configure custom contacts and speed dial using the line key buttons on non-touch phones certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on line keys.
 
-- Lightweight calling experience on non-touch phones
+- Lightweight calling experience on non-touch phones.
 
-- Bug fixes and other improvements 
+- Bug fixes and other improvements. 
 
 ## February 25, 2025
 
