@@ -84,7 +84,7 @@ Use this table to understand the **Settings Job** reasons.
 |Submitted|SCHEDULED|Job was successfully created.| None. The job is scheduled and will run when the device is available or in the nightly maintenance window.|
 |Running|IN PROGRESS|Job was sent down to the agent, and is pending a response back.||
 |Completed |SUCCESS|Job successfully completed on the agent, and verification of settings application was done. | Settings validation can take up to 15 minutes to reflect in the Teams Rooms Pro management portal.|
-|Canceled |CANCELLED  | User cancelled the Job. |  |
+|Canceled |CANCELED  | User canceled the Job. |  |
 Completed With Errors| APP RESTART FAILED|XML with new settings has been written to the correct location, but an issue occurred in the app restart process. To complete the process, the device was rebooted. | Reapply the settings. |
 |Completed With Errors | VERIFICATION FAILED | XML with new settings has been written, and the app was successfully restarted, but the settings weren't applied correctly | or the settings change couldn't be verified. Check that the settings changed. A retry will be scheduled by the Managed room service for the nightly maintenance window. |
 |Failed |EXISTING XML FOUND| An existing XML was found on the device and the agent was unable to create a new XML due to conflicts.|Restart the device to apply the existing SkypeSettings.XML on the device or remove it. See [Manage a Microsoft Teams Rooms console settings remotely with an XML configuration file](/microsoftteams/rooms/xml-config-file). |
@@ -219,7 +219,7 @@ The ability to change specific digital settings is permission based.  If you don
 
 |**Field**|**Input**|**Description**|
 |:------|:------|:------|
-|Digital Signage|Toggle|Whether the toggle is enabled or editable will be determined by the Digital Signage tenant level settings. When enabled, it will determine whether digital signage will be displayed in the room.|
+|Digital Signage|Toggle|Whether the toggle is enabled or editable will be determined by the Digital Signage tenant level settings. When enabled, it determines whether digital signage will be displayed in the room.|
 |Reset Digital Signage|Checkbox|Resetting digital signage reverts the digital signage settings of this room to system defaults, including disabling digital signage and unregistering the room from trusted third-party signage sources where the room is enrolled in, if applicable. This action is irreversible.|
 |Show Teams Rooms banner|Toggle|Enable to display date, time, room name, and calendar preview while digital signage is active. Disable to hide room information.|
 |Display Period|Header||
