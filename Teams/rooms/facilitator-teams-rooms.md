@@ -71,9 +71,9 @@ In a scheduled meeting with Teams Rooms on Windows or Teams Rooms on Android inv
 
 To enable the facilitator feature for meetings, follow these steps:
 
-- Turn on Facilitator for meetings: [Set up Facilitator in Microsoft Teams](/microsoft-teams/set-up-facilitator-in-microsoft-teams)
-- Enable Loop experiences in Teams for AI-generated notes: [Manage Loop components in your organization](/microsoft-teams/manage-loop-components)
-- Enable public preview of Microsoft Teams Rooms in the Pro Management portal: [Pro Management Portal](/microsoft-teams/pro-management-portal)
+- Turn on Facilitator for meetings: [Set up Facilitator in Microsoft Teams](/microsoftteams/facilitator-teamsM)
+- Enable Loop experiences in Teams for AI-generated notes: [Manage Loop components in your organization](/microsoft-365/loop/loop-components-configuration)
+- Enable public preview of Microsoft Teams Rooms in the Pro Management portal: [Pro Management Portal](/microsoftteams/rooms/rooms-pro-management)
 
 ## Frequently Asked Questions
 - **Question** How do I turn on/off the facilitator agent feature in Rooms?  
