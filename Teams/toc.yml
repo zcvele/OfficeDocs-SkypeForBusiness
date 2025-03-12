@@ -1567,6 +1567,8 @@ items:
                       href: rooms/multicamera-view.md
                     - name: Coordinated meetings                    
                       href: rooms/coordinated-meetings.md
+                    - name: Faciliator in Teams Rooms
+                      href: rooms/facilitator-teams-rooms.md                      
                     - name: Whiteboard in Teams Rooms
                       href: rooms/whiteboard-rooms.md
                     - name: Intelligent speaker
