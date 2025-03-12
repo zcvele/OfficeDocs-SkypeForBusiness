@@ -62,8 +62,8 @@ Whether you want to use Microsoft email for your business email needs or you're 
     - Return to Microsoft Teams and the setup task.
 
     **Method 2: To manually verify ownership and configure DNS records, follow the instructions in [Add DNS records to connect your domain](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).**
-    - Sign out of Teams and sign back in with your updated email. Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
-    - After you sign back into Teams with your business email, return to the Admin app in Teams and to this setup task to update email addresses for other users.
+1. Sign out of Teams and sign back in with your updated email. Your work remains intact and your Microsoft 365 password stays the same. If you encounter issues, allow time for the process to complete and try again.
+1. After you sign back into Teams with your business email, return to the Admin app in Teams and to this setup task to update email addresses for other users.
 1. To integrate your business email with your Teams calendar the steps vary if you want to use Microsoft email or another email service provider.
    - **Option 1**: Use the **Add DNS records** button to add a few DNS records to your custom business domain with your domain host provider. You'll be asked to sign in to your domain host provider. After successful login, you can select the **Connect** button in the Wizard to complete the process. Once completed, email sent to and from your custom business domain will be delivered through Microsoft 365.
    - **Option 2**: To connect your business email from another provider, such as Google, follow the Wizard's steps outlined in the next section. You'll need to sign in to your email provider's Admin console and use the provided links and copy and paste buttons to transfer values as needed. Carefully follow the next instructions in the next section to ensure successful calendar synchronization.
