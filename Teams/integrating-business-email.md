@@ -135,7 +135,7 @@ While Google Admin Console is used as an example, the process applies to other e
 
 ## Customer Feedback
 
-You can provide feedback within the Admin app in Teams using the **Give Feedback** button. You can also provide feedback in our [online portal](https://feedbackportal.microsoft.com/feedback/).
+You can provide feedback within the Admin app in Teams using the **Give Feedback** button. You can also provide feedback in our [online portal](https://aka.ms/CalendarSyncFeedback).
 
 ## Frequently asked questions
 
