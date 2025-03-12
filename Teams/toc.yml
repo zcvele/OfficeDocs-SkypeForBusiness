@@ -1730,7 +1730,7 @@ items:
                 - name: RBAC using administrative units
                   href: administrative-unit.md
                 - name: Teams device health
-                  href: teams-device-health.md
+                  href: devices/teams-device-health.md
                 - name: Teams device health monitoring
                   href: alerts/device-health-status.md
             - name: Teams Rooms Pro Management
@@ -1749,20 +1749,25 @@ items:
                   items: 
                     - name: Managing your inventory
                       href: rooms/inventory.md
-                    - name: Standards and Rooms Planner 
-                      href: rooms/standards-and-room-planner.md
-                    - name: Remotely access a Teams Room console
-                      href: rooms/remotely-access-teams-rooms.md
+                    - name: Manage Teams Rooms on Windows
+                      href: rooms/pro-portal-settings.md
                     - name: Managed updates
                       href: rooms/update-management.md
+                    - name: Remotely access a Teams Room console
+                      href: rooms/remotely-access-teams-rooms.md
+
                     - name: Role-based access control
                       href: rooms/rooms-pro-rbac.md
                     - name: Multi-tenant management for partners
                       href: rooms/multi-tenant-management-partner.md
                     - name: Multi-tenant management for customers
                       href: rooms/multi-tenant-management-customer.md
+                    - name: Standards and Rooms Planner 
+                      href: rooms/standards-and-room-planner.md
                 - name: Monitoring
                   items:
+                    - name: Teams Rooms on Windows settings
+                      href: rooms/pro-portal-settings.md
                     - name: Signal settings
                       href: rooms/signal-settings.md  
                     - name: Configure ServiceNow
