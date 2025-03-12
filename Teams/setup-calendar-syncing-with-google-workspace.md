@@ -92,7 +92,7 @@ If your small or medium business relies on Google Workspace for email and calend
 
 **How do I schedule Teams meetings from my Google Calendar?**
 
-- You can easily create Teams meetings directly from the Google Calendar by using the [Teams Meeting add-on in Google Marketplace](https://workspace.google.com/marketplace/app/microsoft_teams_meeting/961264221134).
+- You can create Teams meetings directly from the Google Calendar by using the [Teams Meeting add-on in Google Marketplace](https://workspace.google.com/marketplace/app/microsoft_teams_meeting/961264221134).
 
 **What does the "User edits detected" Google Calendar sync status mean?**
 
@@ -110,7 +110,7 @@ If your small or medium business relies on Google Workspace for email and calend
 
 **How can I share feedback about this experience?**
 
-- You can provide feedback within the Admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our [online portal](https://feedbackportal.microsoft.com/feedback/post/ad198462-1c1c-ec11-b6e7-0022481f8472?c=22456a25-28f9-ef11-be20-6045bda9c2a9).
+- You can provide feedback within the Admin app in Teams by using the **Give Feedback** button. You can also provide feedback in our [online portal](https://aka.ms/CalendarSyncFeedback).
 
 **How can I get additional support for this setup process?**
 
