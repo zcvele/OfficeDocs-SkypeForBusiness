@@ -4,7 +4,7 @@ author: MicrosoftHeidi
 ms.author: heidip
 manager: jtremper
 ms.topic: article
-ms.date: 03/03/2025
+ms.date: 03/0/2025
 ms.service: msteams
 audience: admin
 ms.collection: 
@@ -146,3 +146,4 @@ You can provide feedback within the Admin app in Teams using the **Give Feedback
 **What is a custom business domain?**
 
 - A custom business domain is a unique web address for your business presence on the internet, for example, contoso.com.
+2
