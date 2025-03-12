@@ -4,9 +4,7 @@ items:
 - name: Get started
   items:
     - name: Deployment overview
-      href: deploy-overview.md
-    - name: Small business setup
-      href: deploy-small-business.md     
+      href: deploy-overview.md     
     - name: Enterprise setup
       items:
         - name: Enterprise setup overview
@@ -137,6 +135,12 @@ items:
                       href: hardware-decoders-and-encoders.md
                     - name: Classic Teams firewall PowerShell script
                       href: client-firewall-script.md
+    - name: Small business setup
+      items: 
+        - name: Small business setup overview
+          href: deploy-small-business.md
+        - name: Integrating your business email with Teams 
+          href: integrating-business-email.md
     - name: Upgrade from Skype for Business
       items: 
         - name: Get started
