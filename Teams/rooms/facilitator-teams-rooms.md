@@ -22,7 +22,7 @@ description: This user guide provides comprehensive instructions on utilizing Fa
 
 # Using Facilitator in Microsoft Teams Rooms
 
-
+[!INCLUDE [Preview feature](../includes/preview-feature.md)]
 
 The facilitator feature in Microsoft Teams Rooms enhances collaborative communication during in-person and hybrid meetings by using large language models (LLMs) to capture notes and improve productivity. This article provides a comprehensive guide on utilizing the facilitator feature.
 
