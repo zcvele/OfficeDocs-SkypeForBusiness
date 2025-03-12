@@ -498,7 +498,7 @@ BinaryVersion
 msiexec.exe /i "C:\Program Files\WindowsApps\MSTeams_23320.3021.2567.4799_x64__8wekyb3d8bbwe\MicrosoftTeamsMeetingAddinInstaller.msi" ALLUSERS=1 /qn /norestart TARGETDIR="C:\Program Files (x86)\Microsoft\TeamsMeetingAdd-in\1.24.2203.0\"
 ```
 
-The powershell script below can be used as a reference for deployment. Customers should validate in their QA/TEST environments:
+The following powershell script can be used as a reference for deployment. Customers should validate in their QA/TEST environments:
 
 ```powershell
 If (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] 'Administrator') ){
