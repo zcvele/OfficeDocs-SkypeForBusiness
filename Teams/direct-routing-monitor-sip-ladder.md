@@ -49,7 +49,10 @@ To access the SIP call flow, do the following steps:
 1. From the report drop-down, select **PSTN Usage** report, select a desired date range, and select **Run Report**.  
 1. In the generated report, select the **Direct Routing** tab.
 1. In the displayed records of Direct Routing calls, identify and select the desired call to audit.
-1. From the list heading, select **SIP call flow**.
+  1. From the list heading, select **SIP call flow**, or
+  1. From the available columns, find the **Final SIP code** column header and select the Final SIP Code of the selected call.
+1. From the SIP call flow in the displayed SIP events, identify and select the SIP event to review.
+1. View the protocol details that pop out in the right-hand view.
 
 > [!NOTE] 
 > Allow up to 30 minutes for the SIP call data to be processed and uploaded to the Teams admin center for reporting. Call records older than 30 days aren't available for SIP call flow.  
@@ -62,7 +65,7 @@ Each "rung" of the ladder represents a SIP message.
 
 The direction of the arrow indicates the sender and receiver of the message. Messages are displayed in chronological order from top to bottom, allowing you to follow the sequence of protocol events during the call.
 
-To view more details about a SIP event, select the event and view the protocol details that pop out in the right-hand view.
+Each SIP message in the call flow has corresponding details, indicating what was contained in the SIP message.
 
 For more information on SIP messages, see [Direct Routing protocols](direct-routing-protocols-sip.md).
 
