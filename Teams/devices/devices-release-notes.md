@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit
 manager: pamgreen
 ms.reviewer: eviegrimshaw
-ms.date: 03/10/2025
+ms.date: 03/12/2025
 ms.topic: release-notes
 ms.service: msteams
 ms.subservice: itpro-devices
@@ -222,10 +222,10 @@ To add a mobile system OS scanner:
 
 - Speed dial on line keys: With this update, you will be able to configure custom contacts and speed dial using the line key buttons on non-touch phones certified for Microsoft Teams. You can quickly access frequently dialed numbers and contacts, using one-touch dialing, as well as easy management of contact lists on line keys.
 
-- Queues app: With this update, you will be able to use Queues app on phone devices. This is a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on certified Teams Phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
+- **Queues app**: With this update, you will be able to use Queues app on phone devices. This is a Teams solution that empowers organizations to efficiently manage customer engagements, starting with calls on certified Teams Phones. The experience is primarily for agents and includes a dedicated Queues app on the home screen. This app allows agents to view and opt in or out of all the call queues an agent is part of. Agents can also view others on the line along with call history of the call queue.
 
 > [!NOTE]
-> The Queues app is enabled by default for all Teams users in your organization who are assigned both a Teams Premium and Teams Phone license and who are voice enabled. To learn more about managing the Queues app, see **[Manage Queues app for Microsoft Teams](/editor/MicrosoftDocs/OfficeDocs-SkypeForBusiness-pr/Teams%2Fdevices%2Fdevices-release-notes.md/main/manage-queues-app.md)**.
+> The Queues app is enabled by default for all Teams users in your organization who are assigned both a Teams Premium and Teams Phone license and who are voice enabled. To learn more about managing the Queues app, see [Manage Queues app for Microsoft Teams](/microsoftteams/manage-queues-app.md).
 
 - Lightweight calling experience on non-touch phones.
 
