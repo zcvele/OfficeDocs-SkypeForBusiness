@@ -146,4 +146,4 @@ You can provide feedback within the Admin app in Teams using the **Give Feedback
 **What is a custom business domain?**
 
 - A custom business domain is a unique web address for your business presence on the internet, for example, contoso.com.
-2
+
