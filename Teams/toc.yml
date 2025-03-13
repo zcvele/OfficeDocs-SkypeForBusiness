@@ -1308,7 +1308,9 @@ items:
               items: 
                 - name: Overview
                   href: direct-routing-monitor-and-troubleshoot.md
-                - name: Health Dashboard
+                - name: View SIP call flow
+                  href: direct-routing-monitor-sip-ladder.md
+                - name: SBC Health Dashboard
                   href: direct-routing-health-dashboard.md
             - name: Technical reference for Direct Routing
               items: 
