@@ -18,15 +18,15 @@ f1.keywords:
 description: Learn about updating to the new Teams for Education (EDU)
 appliesto: 
 - Microsoft Teams
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ---
 # Update to the new Microsoft Teams for Education
 
-As announced on October 5, 2023 ([New Microsoft Teams for Education is now available for Windows and Mac](https://techcommunity.microsoft.com/t5/education-blog/new-microsoft-teams-for-education-is-now-available-for-windows/ba-p/3945610)), new Teams for Education is ready for users in our Education community.  
+As announced on October 5, 2023 ([New Microsoft Teams for Education is now available for Windows and Mac](https://techcommunity.microsoft.com/t5/education-blog/new-microsoft-teams-for-education-is-now-available-for-windows/ba-p/3945610)), new Teams for Education is ready for users in our Education community.
 
 Along with our latest innovations in speed, performance, flexibility, and intelligence, this update to new Teams allows us to deliver features and capabilities to our education customers more quickly. All new features and capabilities, including enhancements to existing features, will be available exclusively in the new Teams.
 
-The new Teams update is seamless for our Education users. Updating is quick and easy and users will be able to pick up exactly where they left off after updating to new Teams.  
+The new Teams update is seamless for our Education users. Updating is quick and easy and users will be able to pick up exactly where they left off after updating to new Teams.
 
 > [!TIP]
 > As a companion to this article, we recommend using the [Microsoft Teams for Education Setup Guide](https://go.microsoft.com/fwlink/?linkid=2270300) to review best practices without signing in and activating automated setup features. This guide will customize your experience based on your environment.
