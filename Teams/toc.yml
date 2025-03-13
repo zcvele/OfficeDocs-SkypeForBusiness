@@ -4,7 +4,7 @@ items:
 - name: Get started
   items:
     - name: Deployment overview
-      href: deploy-overview.md     
+      href: deploy-overview.md    
     - name: Enterprise setup
       items:
         - name: Enterprise setup overview
@@ -139,8 +139,8 @@ items:
       items: 
         - name: Small business setup overview
           href: deploy-small-business.md
-        - name: Integrating your business email with Teams 
-          href: integrating-business-email.md
+        - name: Set up Teams calendar syncing with Google Workspace
+          href: setup-calendar-syncing-with-google-workspace.md
     - name: Upgrade from Skype for Business
       items: 
         - name: Get started
