@@ -67,6 +67,8 @@ The direction of the arrow indicates the sender and receiver of the message. Mes
 
 Each SIP message in the call flow has corresponding details, indicating what was contained in the SIP message.
 
+Selecting the SIP event for any SIP message will bring more details for that event into view in the right-hand side bar.
+
 For more information on SIP messages, see [Direct Routing protocols](direct-routing-protocols-sip.md).
 
 ## Troubleshooting with the SIP call flow
