@@ -141,6 +141,8 @@ items:
           href: deploy-small-business.md
         - name: Set up Teams calendar syncing with Google Workspace
           href: setup-calendar-syncing-with-google-workspace.md
+        - name: Integrating your business email with Teams 
+          href: integrating-business-email.md
     - name: Upgrade from Skype for Business
       items: 
         - name: Get started
