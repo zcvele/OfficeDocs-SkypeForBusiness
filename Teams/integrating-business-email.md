@@ -26,7 +26,6 @@ ms.localizationpriority: medium
 > [!NOTE]
 > If your primary email service provider is Google Workspace, you can enable bidirectional syncing with Microsoft Teams by following the process in [Set up calendar syncing between Google Workspace and Microsoft Teams](/microsoftteams/setup-calendar-syncing-with-google-workspace?branch=main).
 
-
 If you're signing into Microsoft Teams using the default domain that Microsoft provided when you purchased Microsoft 365, for example, "yourcompany.onmicrosoft.com," then your small business’s existing domain and email aren't connected to Teams. This lack of connection creates challenges for your small business:
 
 - You and your users need to remember multiple logins.
