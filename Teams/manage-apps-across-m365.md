@@ -36,7 +36,7 @@ App developers can create apps that work  not only in Microsoft Teams but also i
 
 * Manage apps page in Teams Admin Center. It manages apps for Teams client. The changes you make in the Teams admin center, impact apps in only Teams.
 
-Unified app management consolidates app catalog management into a single platform. You can manage apps on the **Integrated apps** page in the Microsoft 365 admin center or in the Teams admin center. Changes made in either admin center synchronize.
+Unified app management consolidates app catalog management into a single platform. You can manage apps on the Integrated apps page in the Microsoft 365 admin center or in the Teams admin center. Changes made in either admin center synchronize.
 
 > [!NOTE]
 > Until your tenant is migrated to unified app management, ensure that the settings in both admin centers remain synchronized. This measure prevents unexpected disruptions or issues with app functionality.
@@ -53,7 +53,7 @@ Unified app management consolidates app catalog management into a single platfor
 
 * App block or unblock: Blocking or unblocking apps applies to all the applicable hosts.
 
-* Consolidation of the existing app settings: All existing settings are unified between Integrated apps and Manage apps pages across both the admin centers. To know the merge rules that decide the impact, see [outcomes of settings across admin centers](#outcomes-of-admin-actions-across-admin-centers). In the admin centers, we provide an on-demand report for you to understand the impact of these changes in your org.
+* Consolidation of the existing app settings: All existing settings are unified between Integrated apps and Manage apps pages across both the admin centers. To know the merge rules that decide the impact, see [outcomes of settings across admin centers](#outcomes-of-admin-actions-across-admin-centers). In the admin centers, we'll provide an on-demand report for you to understand the impact of these changes in your org.
 
 * Existing app settings: The unification of settings happens automatically. The changes can't be undone.
 
