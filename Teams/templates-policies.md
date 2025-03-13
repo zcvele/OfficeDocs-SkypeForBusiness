@@ -9,7 +9,6 @@ ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
-ms.custom:
 ms.custom: 
   - chat-teams-channels-revamp
   - admindeeplinkTEAMS
