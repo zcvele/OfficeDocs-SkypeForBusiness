@@ -124,25 +124,25 @@ To access the notes after the meeting, navigate to the **Recap** section in your
 
 ## Frequently Asked Questions
 
-- **Question Is this feature available in both Teams Rooms on Windows and Android?**
+**Question Is this feature available in both Teams Rooms on Windows and Android?**
   
-**Answer** *Currently Faciliator is available only as Public Preview on Teams Rooms on Windows and it is projected to release to Teams Rooms on Android at a later date.*
+- **Answer** *Currently Faciliator is available only as Public Preview on Teams Rooms on Windows and it is projected to release to Teams Rooms on Android at a later date.*
 
-- **Question** **Where do I access the notes after the meeting?**  
+**Question** **Where do I access the notes after the meeting?**  
 
-**Answer** *On your Teams calendar, navigate to the meeting > **Recap** > **Notes**.*
+- **Answer** *On your Teams calendar, navigate to the meeting > **Recap** > **Notes**.*
 
-- **Question Can I turn off Facilitator during the discussion?**  
+**Question Can I turn off Facilitator during the discussion?**  
 
-**Answer** *You can mute the microphone in the room to ensure Facilitator or transcription doesn't capture any content. You can also remove Facilitator from the console by tapping it on the roster.*
+- **Answer** *You can mute the microphone in the room to ensure Facilitator or transcription doesn't capture any content. You can also remove Facilitator from the console by tapping it on the roster.*
 
-- **Question Is Facilitator agent recording the meeting?**
+**Question Is Facilitator agent recording the meeting?**
 
-**Answer**  *The Facilitator agent only turns on transcription during the meeting. The meeting won't be recorded.*
+- **Answer**  *The Facilitator agent only turns on transcription during the meeting. The meeting won't be recorded.*
 
-- **Question How are the meeting room participants identified and attributed in AI notes and transcription?**
+**Question How are the meeting room participants identified and attributed in AI notes and transcription?**
   
-**Answer** *Currently, only the person who scans the QR code to invite Facilitator is identified and attributed if they've enrolled their profile. Identity and attribution support for other room participants is coming at a later date.*
+- **Answer** *Currently, only the person who scans the QR code to invite Facilitator is identified and attributed if they've enrolled their profile. Identity and attribution support for other room participants is coming at a later date.*
 
 ## Related Articles
 
