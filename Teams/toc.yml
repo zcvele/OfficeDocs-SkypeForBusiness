@@ -99,8 +99,6 @@ items:
                   href: /microsoftteams/troubleshoot/teams-administration/fix-new-teams-installation-issues
                 - name: Troubleshooting launch issues
                   href: /microsoftteams/troubleshoot/teams-administration/resolve-new-teams-launch-issues
-                - name: Known issues in new Teams
-                  href: new-teams-known-issues.md
                 - name: New VDI solution for Teams
                   href: vdi-2.md
                 - name: Classic Teams client end of availability
@@ -1310,7 +1308,9 @@ items:
               items: 
                 - name: Overview
                   href: direct-routing-monitor-and-troubleshoot.md
-                - name: Health Dashboard
+                - name: View SIP call flow
+                  href: direct-routing-monitor-sip-ladder.md
+                - name: SBC Health Dashboard
                   href: direct-routing-health-dashboard.md
             - name: Technical reference for Direct Routing
               items: 
