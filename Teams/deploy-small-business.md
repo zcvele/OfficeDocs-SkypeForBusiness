@@ -169,9 +169,8 @@ For more information on Teams Phone with Calling Plan for small and medium busin
 
 The Microsoft Bookings functionality helps you schedule and manage appointments with your customers, clients, or colleagues. Bookings includes a web-based bookings page, which is integrated with Microsoft Outlook to optimize your calendar and give your customers the flexibility to book a time that works best for them.
 
-[Learn more](/microsoft-365/bookings/bookings-overview) about how Bookings can help your business streamline scheduling.
-
-[Learn more](bookings-app-admin.md) about how you can make the Bookings app for Teams available to users in your business.
+- [Learn more](/microsoft-365/bookings/bookings-overview) about how Bookings can help your business streamline scheduling.
+- [Learn more](bookings-app-admin.md) about how you can make the Bookings app for Teams available to users in your business.
 
 ## Schedule Teams meetings from Google Calendar
 
