@@ -30,7 +30,9 @@ description: This user guide provides comprehensive instructions on utilizing Fa
 
 [!INCLUDE [Preview feature](../includes/preview-feature.md)]
 
-Facilitator is feature in Microsoft Teams that enhances collaborative communication during in-person and hybrid meetings by using large language models (LLMs) to capture notes, generate action items and summaries using Facilitator in scheduled meetings, even when a Teams Rooms device is added to the meeting's roster. For more information and the requirements, see [Set up Facilitator in Microsoft Teams for collaborative AI-generated notes](/microsoftteams/facilitator-teams).
+Facilitator is feature in Microsoft Teams that enhances collaborative communication during chat and meeting using large language models (LLMs) to capture notes, generate action items and summaries. For more information and the requirements, see [Set up Facilitator in Microsoft Teams for collaborative AI-generated notes](/microsoftteams/facilitator-teams).
+
+You can use the AI-powered Facilitator agent in Teams Rooms for real-time notes and action items during both scheduled, hybrid, and impromptu or ad hoc in-person meetings. In hybrid meetings, the agent appears in the notes panel. For in-person meetings, scan the QR code on the display to activate the agent as the group's assistant.
 
 > [!IMPORTANT]
 > To use Facilitator, the Teams Rooms device and all meeting participants must belong to the same organization. Facilitator isn't available to Federated or external users.
