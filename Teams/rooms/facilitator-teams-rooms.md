@@ -3,14 +3,20 @@ title: "Facilitator in Teams Rooms"
 author: mstonysmith
 ms.author: tonysmit  
 manager: pamgreen
-ms.reviewer:   
-ms.date: 03/11/2025  
+ms.reviewer: kramachandra
+ms.date: 03/13/2025  
 ms.topic: article
+appliesto: 
+  - Microsoft Teams
 audience: admin  
 ms.service: msteams  
 ms.subservice: itpro-rooms  
 ms.localizationpriority: Medium
-ms.collection:
+ms.collection: 
+  - M365-collaboration
+  - teams-rooms-consoles
+  - Tier1
+  - magic-ai-copilot
 ms.custom: QuickDraft  
 search.appverid: MET150  
 f1.keywords:
