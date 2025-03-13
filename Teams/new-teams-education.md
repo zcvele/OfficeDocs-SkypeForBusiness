@@ -33,7 +33,7 @@ The new Teams update is seamless for our Education users. Updating is quick and 
 
 ## Update schedule
 
-At this point in time, the classic Teams client is no longer supported. For more information, see [End of availability for classic Teams client](teams-classic-client-end-of-availability.md).
+The classic Teams client is no longer supported. For more information, see [End of availability for classic Teams client](teams-classic-client-end-of-availability.md).
 
 ## Blocked downloads or installations
 
@@ -46,4 +46,4 @@ IT administrators who have blocked software downloads or installations for users
 
 ### Known issues and latest updates
 
-Check back here for the latest details, as Microsoft continues to provide the most current information on updating to new Teams for Education.  Or, if you have any feedback you’d like to provide, do so on our [Education Support page](https://edusupport.microsoft.com/support).
+Check back here for the latest details, as Microsoft continues to provide the most current information on updating to new Teams for Education. Or, if you have any feedback you’d like to provide, do so on our [Education Support page](https://edusupport.microsoft.com/support).
