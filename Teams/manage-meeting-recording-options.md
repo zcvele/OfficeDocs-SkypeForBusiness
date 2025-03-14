@@ -36,11 +36,13 @@ The following table shows the features available to help you manage meeting reco
 |Microsoft 365 Copilot in Teams meetings and events|Yes|No|Yes|Yes|
 |Meeting recording overall|Yes|No|No|No|
 |Privacy and Security URL|Yes|No|No|No|
-|Record and transcribe automatically|No|Yes|Yes|Yes|
+|Record and transcribe automatically|No<sup>1</sup>|Yes|Yes|Yes|
 |Recordings and transcripts expiration|Yes|No|No|No|
 |Transcription|Yes|No|No|Yes|
 |Require participant agreement for recording|Yes|No|No|No|
 |Who can record and transcribe **(Teams Premium)**|No|Yes|Yes|Yes|
+
+<sup>1</sup> - There isn't an admin policy for **Record and transcribe automatically**. However, to control whether organizers have the **Record and transcribe automatically** setting in their **Meeting options**, you can use the **Auto recording** policy in PowerShell . To learn more, see [Manage Teams recording policies for meetings and events](meeting-recording.md#auto-recording).
 
 You control whether the ability to record meetings is available in your organization. Through sensitivity labels, meeting templates, and meeting organizer settings, both you and your meeting organizers can manage who can record and transcribe and whether meetings are automatically recorded and transcribed.
 
