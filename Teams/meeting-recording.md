@@ -155,7 +155,7 @@ The consent choice for each participant is included in the attendance report. Pa
 
 ### Manage recording consent
 
-You can use the Teams admin center or the **`-ExplicitRecordingConsent`** parameter in the [**CsTeamsMeetingPolicy**](/powershell/module/teams/set-csteamsmeetingpolicy) cmdlet to manage explicit consent. This parameter also manages explicit recording consent for Audio Conferencing. To learn about explicit consent for Audio Conferencing, see [Explicit recording consent for Audio Conferencing](conferencing-recording-consent.md). To manage this feature using PowerShell, see the [PowerShell section](#powershell) in this article.
+You can use the Teams admin center or the **`-ExplicitRecordingConsent`** parameter in the [**CsTeamsMeetingPolicy**](/powershell/module/teams/set-csteamsmeetingpolicy) cmdlet to manage recording consent. This parameter also manages recording consent for Audio Conferencing. To learn about recording consent for Audio Conferencing, see [Explicit recording consent for Audio Conferencing](conferencing-recording-consent.md). To manage this feature using PowerShell, see the [PowerShell section](#powershell) in this article.
 
 The following table shows the behaviors of the settings for explicit consent:
 
@@ -249,6 +249,17 @@ Migrated recordings from Stream (Classic) don't come with an expiration set on t
 ## Permissions and storage
 
 Teams meeting recordings are stored in the organizer's OneDrive and SharePoint storage. The location and permissions depend on the type of meeting and the role of the user in the meeting. Users that have full edit rights on the video recording file can change the permissions and share it later with others as needed. To understand permissions and storage in OneDrive and SharePoint, see [Use OneDrive and SharePoint for meeting recordings](tmr-meeting-recording-change.md).
+
+## eDiscovery search for recordings and transcripts
+
+To use eDiscovery to find your users' recording and transcript files, follow these steps:
+
+1. Navigate to the [Microsoft Purview portal](https://purview.microsoft.com/).
+1. In the search box, enter 'eDiscovery'.
+1. Follow the steps in the linked article to create an eDiscovery case: [Create and manage an eDiscovery (Premium) case](/purview/ediscovery-create-and-manage-cases).
+1. Open the case and on the **Collections** tab, select **New collection**.
+1. Commit the new collection to commit it to **Review set**.
+1. Open review set, and use the filter to find the recordings and transcripts you're looking for.
 
 ## Troubleshooting
 
