@@ -82,7 +82,9 @@ To manage meeting recording using PowerShell, use the **`-AllowCloudRecording`**
 
 ## Auto recording
 
-You can control whether organizers have access to the **Record and transcribe automatically** setting for meetings. By default, when you turn on auto recording for an organizer, the **Record and transcribe automatically** setting in their **Meeting options** for meetings is **Off** by default. When organizers want their meetings to be recorded and transcribed automatically, they must turn on the setting for each meeting. For webinars and town halls, the setting is on by default. If you turn of auto recording, organizers don't see the setting and can’t set meetings to record automatically.
+You can control whether organizers have access to the **Record and transcribe automatically** setting for meetings. You can only apply this policy setting to users and groups.
+
+When you turn on the auto recording policy for an organizer, the **Record and transcribe automatically** setting in their **Meeting options** for meetings is **Off** by default. Organizers must manually turn on this setting for each meeting they want recorded and transcribed. For webinars and town halls, the setting is **On** by default. If you turn of auto recording, organizers don't see the setting and can’t set meetings to record automatically.
 
 > [!NOTE]
 > This setting doesn't apply to transcripts.
@@ -145,11 +147,11 @@ Once you add your privacy policy URL, your URL replaces the default Teams meetin
 
 ## Require participant agreement for recording and transcription
 
-You can use the Teams admin center or PowerShell to manage whether meetings created by organizers with this assigned policy can require participants to provide explicit consent to be recorded and transcribed.
+You can use the Teams admin center or PowerShell to manage whether meetings created by organizers with this assigned policy can require participants to provide explicit consent to be recorded and transcribed. This policy also applies to channel meetings.
 
-When the explicit consent policy is enabled, once a user either starts the meeting recording, transcription, or both, all participants are muted, with their cameras and content-share off. When a participant decides to unmute, turn on their camera, or share content, they’re prompted to respond 'Yes' or 'No' to consent to be included in the meeting recording and transcription. If an attendee responds 'No' to the prompt, they have a view-only meeting experience. View-only attendees can't start recording or transcription for any meetings that require explicit consent.
+When the recording agreement policy is turned on, once a user either starts the meeting recording, transcription, or both, all participants are muted, with their cameras and content-share off. When a participant decides to un-mute, turn on their camera, or share content, they’re prompted to respond **'Yes'** or **'No'** to consent to be included in the meeting recording and transcription. If a participant responds **'No'** to the prompt, they have a view-only meeting experience. View-only participants can't start recording or transcription for any meetings that require explicit consent.
 
-The consent choice for each attendee is included in the attendance report. Attendees not in the attendance report—due to the admin policy or opting out— are required to provide consent. When the attendance report is disabled or attendees aren't in the attendance report, organizers and co-organizers don't see consent data, but as an admin, you can still see consent data in the audit logs.
+The consent choice for each participant is included in the attendance report. Participants who aren't in the attendance report—due to the admin policy or opting out— are required to provide consent. When the attendance report is disabled or participants aren't in the attendance report, organizers and co-organizers don't see consent data, but as an admin, you can still see consent data in the audit logs.
 
 ### Manage recording consent
 
