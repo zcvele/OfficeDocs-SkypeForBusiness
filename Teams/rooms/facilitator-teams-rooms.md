@@ -22,8 +22,7 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH 
 ai-usage: ai-assisted
-description: This user guide provides comprehensive instructions on utilizing Facilitator within Teams Rooms, highlighting its role as a collaborative communication tool during meetings conducted through Teams Rooms.
-
+description: This user guide provides comprehensive set up instructions and information on using the Facilitator agent within Teams Rooms. The AI-powered Facilitator agent or app lets meeting participants hold unscheduled meetings and use Facilitator to  transcibe the entire meeting conversation and create rich AI notes with summaries, action items, and speaker attribution.
 ---  
 
 # Facilitator in Microsoft Teams Rooms
@@ -32,7 +31,7 @@ description: This user guide provides comprehensive instructions on utilizing Fa
 
 You can use the AI-powered Facilitator agent in Teams Rooms for real-time notes and action items during both scheduled, hybrid, and impromptu or ad hoc in-person meetings. In hybrid meetings, the agent appears in the notes panel. For in-person meetings, scan the QR code on the display to activate the agent as the group's assistant.
 
-## Overview of Facilitator in Teams
+## Facilitator in Teams
 
 Facilitator is feature in Microsoft Teams that enhances collaborative communication during chat and meetings using large language models (LLMs) to capture notes, generate action items and summaries.
 
@@ -96,7 +95,7 @@ For more information, see [Set up Facilitator in Microsoft Teams](/microsoftteam
 
 For more information, see [Pro Management Portal](/microsoftteams/rooms/rooms-pro-management)
 
-### Discovery experience
+## Discovery experience
 
 After you perform all of the required steps and the prerequisites have been met, meeting participants will see an icon for Facilator added to their Teams app and the QR code for Facilitator will be available on the Teams Rooms console.
 
@@ -104,7 +103,7 @@ When one or more users see that a meeting room is available, and they want to st
 
 :::image type="content" source="./media/facilitator/facilitator-1-low-res.png" alt-text="Screenshot of the discovery experience." lightbox="./media/facilitator/facilitator-1-hi-res.png":::
 
-### Inviting Facilitator for note taking
+## Inviting Facilitator for note taking
 
 To invite the Facilitator agent to take notes:
 
@@ -117,7 +116,7 @@ After scanning the QR code on your mobile device, the Teams app will show an opt
 
 :::image type="content" source="./media/facilitator/facilitator-3-low-res.png" alt-text="Screenshot of the QR code experience." lightbox="./media/facilitator/facilitator-3-hi-res.png":::
 
-### Meeting experience
+## Meeting experience
 
 The meeting starts with the Teams Rooms invited and transcription is turned on. The display for the Teams Rooms indicates that Facilitator is listening to the conversation and taking notes. After a few minutes, the screen will display notes and start summarizing the discussion. These notes continue to automatically update based on the ongoing conversation with the meeting participants.
 
@@ -129,7 +128,7 @@ To end the meeting, use the **End** button on the Teams Room.
 
 :::image type="content" source="./media/facilitator/facilitator-6-low-res.png" alt-text="Screenshot of the meeting notes experience." lightbox="./media/facilitator/facilitator-6-hi-res.png":::
 
-### Accessing notes
+## Accessing notes
 
 To access the notes after the meeting, navigate to the **Recap** section in your Teams calendar or chat. The meeting is titled **Discussion with AI-generated notes in**.
 
