@@ -1,5 +1,5 @@
 ---
-title: Block the download of Teams meeting recording and transcript files from SharePoint or OneDrive 
+title: Prevent users from downloading Teams channel and meeting recordings or transcripts in OneDrive and SharePoint
 ms.reviewer: samust
 ms.author: wlibebe
 author: wlibebe
@@ -10,7 +10,7 @@ f1.keywords: NOCSH
 ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
-ms.date: 9/18/2024
+ms.date: 3/14/2025
 ms.collection:
 - Tier1
 - Highpri
@@ -23,13 +23,11 @@ search.appverid:
 description: Learn how administrators can block the download of Teams meeting recording and transcript files from SharePoint and OneDrive.
 ---
 
-# Block the download of Teams meeting recording files from SharePoint or OneDrive
+# Prevent users from downloading Teams channel and meeting recordings or transcripts in OneDrive and SharePoint
 
 [!INCLUDE[Advanced Management](includes/advanced-management.md)]
 
-As an admin, you can block the download of Teams meeting recording and transcript files from SharePoint or OneDrive. Blocking the download of Teams meeting recording and transcript files allows users to remain productive while addressing the risk of accidental data loss. Users have browser-only access to play the meeting recordings or view transcripts with no ability to download or sync files or access them through apps.
-
-This org-wide policy applies to new meeting recordings and transcripts across your entire organization. When the policy is on, any new Teams meeting recording and transcript files saved in SharePoint and OneDrive are blocked from download. You can exempt people who are members of specified security groups from the policy. Exempting specific security group members allows you to specify governance or compliance specialists who should have download access to meeting recordings and transcripts.
+As an admin, you can prevent users from downloading Teams channel and meeting recordings or transcript files stored in SharePoint or OneDrive. Blocking the download of Teams meeting recording and transcript files allows users to remain productive while addressing the risk of accidental data loss. Users have browser-only access to play the meeting recordings or view transcripts with no ability to download or sync files or access them through apps.
 
 Because this policy affects meeting recordings stored in OneDrive and SharePoint, you must be a SharePoint Administrator to configure it. To learn more about meeting recording in OneDrive and SharePoint, see [Teams meeting recording storage and permissions in OneDrive and SharePoint](tmr-meeting-recording-change.md). To learn more about how your users use transcripts, see [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b).
 
@@ -42,7 +40,11 @@ This policy doesn't apply to manually uploaded meeting recording and transcript 
 
 - You must have a Microsoft Syntex - SharePoint Advanced Management license.
 
-## Turn on the policy for your organization
+## Meeting recordings and transcripts
+
+**`-BlockDownloadFileTypeIds`** is an org-wide policy that applies to new meeting recordings and transcripts across your entire organization. When the policy is on, any new Teams meeting recording and transcript files saved in SharePoint and OneDrive are blocked from download. You can exempt people who are members of specified security groups from the policy. Exempting specific security group members allows you to specify governance or compliance specialists who should have download access to meeting recordings and transcripts.
+
+### Turn on the policy for your organization
 
 Open the SharePoint Online Management Shell and connect to SharePoint as a SharePoint Administrator. To learn how, see [Get started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
@@ -58,13 +60,31 @@ To block the download of Teams meeting recording files from SharePoint or OneDri
 Set-SPOTenant -BlockDownloadFileTypePolicy $true  -BlockDownloadFileTypeIds TeamsMeetingRecording
 ```
 
-## Exempt users in specified security groups from the policy
+### Exempt users in specified security groups from the policy
 
 The **`-ExcludedBlockDownloadGroupIds`** parameter exempts users in the specified security groups from this policy so that they can download meeting recording and transcript files.
 
 To allow users in specified security groups to download meeting and recording files, use the following script:
 
 `-ExcludedBlockDownloadGroupIds <comma separated security group IDs>`
+
+## Channel recordings and transcripts
+
+**`-ChannelRecordingDownload`** is an org-wide policy parameter that controls whether your users can download channel meeting recordings and transcripts. When this policy is turned on, channel meeting recordings and transcripts are saved to a **Recordings** folder in the channel's SharePoint site. The recording and transcript file permissions follow the Channel SharePoint permissions. When this policy is turned off, channel meeting recordings and transcripts are saved to a **Recordings\View only** folder in the channel's SharePoint site. Channel owners have full access to the recordings and transcripts in this folder, while channel members can only view them without the option to download.
+
+### Manage the channel recording download policy for your organization
+
+To prevent users in your organization from downloading channel meeting recordings and transcripts from OneDrive and SharePoint, use the following script:
+
+```PowerShell
+Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Block
+```
+
+To allow users in your organization to download channel meeting recordings and transcripts from OneDrive and SharePoint, use the following script:
+
+```PowerShell
+Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Allow
+```
 
 ## App effect
 
