@@ -22,6 +22,7 @@ ms.localizationpriority: medium
 
 > [!NOTE]
 > This article is intended for Global Administrators with a Microsoft 365 subscription for work or school that includes Microsoft Teams.
+
 > [!NOTE]
 > If your primary email service provider is Google Workspace, you can enable bidirectional syncing with Microsoft Teams by following the process in [Set up calendar syncing between Google Workspace and Microsoft Teams](/microsoftteams/setup-calendar-syncing-with-google-workspace?branch=main).
 
