@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: snigdha.chaturvedi
-ms.date: 1/28/2024
+ms.date: 1/28/2025
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium

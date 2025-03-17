@@ -78,6 +78,9 @@ With a Teams meeting policy, you can require participants to agree to being reco
 
 ## Record and transcribe automatically
 
+> [!NOTE]
+> Customers with a Microsoft 365 Education A1 subscription don't have the option to record and transcribe meetings automatically.
+
 Meetings can be set to record automatically when they start. Normally, the meeting organizer makes this choice when they create the meeting.
 
 If there are certain types of meetings that should always be recorded, you can enforce this option by using a meeting template or a sensitivity label.

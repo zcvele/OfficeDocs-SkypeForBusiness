@@ -1,5 +1,5 @@
 ---
-title: Teams meeting recording and transcript storage and permissions in OneDrive and SharePoint
+title: Teams meeting recording and transcript storage and permissions in OneDrive for Business and SharePoint
 ms.author: wlibebe
 author: wlibebe
 ms.reviewer: yudma, yujin1, lisma, ritikag
@@ -21,14 +21,14 @@ appliesto:
   - Microsoft Teams
 ---
 
-# Teams meeting recording and transcript storage and permissions in OneDrive and SharePoint
+# Teams meeting recording and transcript storage and permissions in OneDrive for Business and SharePoint
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Calls
 
 > [!NOTE]
 > When organizers turn off Microsoft 365 Copilot in Teams meetings and events, recording and transcription are also turned off. To learn more about Copilot, see [Manage Microsoft 365 Copilot in Teams meetings and events](copilot-teams-transcription.md).
 
-When users in your organization record and transcribe Teams meetings, the recordings and transcripts are stored in either OneDrive and SharePoint. Depending on where your users access the file, the recording plays on the video player in OneDrive or SharePoint. This article helps you, as an admin, understand recording and transcript storage and permissions for OneDrive and SharePoint.
+When users in your organization record and transcribe Teams meetings, the recordings and transcripts are stored in either OneDrive for Business and SharePoint. Depending on where your users access the file, the recording plays on the video player in OneDrive or SharePoint. This article helps you, as an admin, understand recording and transcript storage and permissions for OneDrive for Business and SharePoint.
 
 To learn about your recording policies, see [Teams meeting recording](meeting-recording.md). To learn how to block the download of Teams meeting recording files from SharePoint or OneDrive, see [Block the download of Teams meeting recording files from SharePoint or OneDrive](block-download-meeting-recording.md).
 
@@ -73,13 +73,31 @@ For details on shared mailboxes, see [About shared mailboxes - Microsoft 365 a
 > [!NOTE]
 > When shared mailboxes don't have a Teams license, they follow the global identity's meeting policy. If a shared mailbox without a Teams license organizes a meeting and you set **`-allowCloudRecording`** to false in the global policy, your users can't record. If you want to set a custom meeting policy for a shared mailbox, you must assign a Teams license first.
 
+### Video on Demand (VOD)
+
+When organizers record webinars and town halls, the recordings are stored in OneDrive. Once an organizer uses VOD to publish event recordings, the recordings are stored in Sharepoint Embedded File Storage Containers. Only the event organizers can manage the recordings of past town halls in their calendar.
+
+> [!NOTE]
+> As an admin, although you can find the event recording in the Sharepoint Embedded Container, you can only delete the recording in the Teams admin center.
+
+To learn more about Sharepoint Embedded File Storage Containers, see [Overview of SharePoint Embedded](/sharepoint/dev/embedded/overview).
+
+#### Delete a VOD event recording
+
+1. Open the Teams admin center.
+2. Expand **Analytics and reports** from the navigation pane.
+3. Under **Analytics and reports**, select **Usage reports**.
+4. On the **View reports** tab, under Report, either select **Town hall usage reports** or **Webinar usage reports**.
+5. In the table, find the event that you want to delete the recording for and select the row. The names of recordings follow this pattern of *'Teams Virtual Event VOD Container evt_{EventId}_rec_{RecordingId}'*.
+6. Select **Delete event data**.
+
+To learn more about VOD, see [Manage VOD publishing for webinars and town halls](manage-vod-publishing.md).
+
 ### Microsoft Teams Rooms meetings
 
-For **Microsoft Teams Rooms (MTR) meetings**, when an organizer creates a meeting using the meet-now button in MTR, the room itself becomes the meeting organizer, and the recording is stored in the MTR’s OneDrive account. However, none of the meeting participants have full permissions to the file. If you want meeting participants to have full permissions to the recording file, avoid assigning OneDrive storage to an MTR.
+For **Microsoft Teams Rooms meetings**, when a user creates a meeting using the **Meet now** button in a Teams Room, the Teams Room itself becomes the meeting organizer, and by default, the recording is stored in the Teams Room's OneDrive account, if available. However, none of the meeting participants have full permissions to the file. If you want meeting participants to have full permissions to the recording file, avoid assigning a OneDrive license to your Teams Room's resource account.
 
-When the MTR doesn't have a OneDrive account, the recording gets saved to the co-organizer's or recording initiator's OneDrive. For details on what happens if an organizer doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
-
-When an MTR attends a meeting that another user organizes, the MTR can't initiate the recording, but other meeting participants can.
+When a Teams Room's resource account doesn't have a OneDrive license and storage, the recording gets saved to the co-organizer's or recording initiator's OneDrive. For details on what happens if a co-organizer or recording doesn't have a OneDrive account, see the **Recording storage for organizers without OneDrive accounts** section in this article.
 
 To learn more about Microsoft Teams Rooms meetings, see [Microsoft Teams Rooms (Windows)](https://support.microsoft.com/office/microsoft-teams-rooms-windows-e667f40e-5aab-40c1-bd68-611fe0002ba2).
 

@@ -5,7 +5,7 @@ author: sfrancis206
 manager: pamgreen
 ms.date: 11/11/2024
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: msteams
 ms.reviewer: kkodali
 ms.localizationpriority: medium
@@ -115,6 +115,15 @@ Please contact your recording partner for more information.
 
 Inbound call queue calls are recorded where users have an assigned compliance recording policy. Some routing methods might involve usability concerns with multiple announcements.
 
+**Licensing**
+
+To be eligible for compliance recording, a user account must be equipped with any one of the following licenses:
+
+- Microsoft 365 A3/A5/E3/E5/Business Premium
+- Office 365 A3/A5/E3/E5
+- Microsoft Teams Room (Pro or Basic) license
+- Teams Shared Device license
+
 ## Supported notification methods
 
 Users with an assigned compliance recording policy know that their digital interactions with Teams are being recorded. Depending on the third-party recording solution and how it's configured, users may not be able to disable the recording and may not have access to the recording.
@@ -184,6 +193,7 @@ The following partners are in the process of certifying their solution for Micro
 |CreaLog |[https://www.crealog.com/en/products-solutions/recording/](https://www.crealog.com/en/products-solutions/recording/) |
 |Landis Technologies |[https://landistechnologies.com/](https://landistechnologies.com/) |
 |Redwood Technologies |[https://www.contentguru.com/en-us/solutions/needs/compliance-recording-ms-teams/](https://www.contentguru.com/en-us/solutions/needs/compliance-recording-ms-teams/) |
+|TollRing |[https://www.analytics-365.com/call-recording/](https://www.analytics-365.com/call-recording/) |
 
 This list gets updated as more partners join and meet the certification criteria.
 

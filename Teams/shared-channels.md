@@ -3,20 +3,20 @@ title: Shared channels in Microsoft Teams
 author: DaniEASmith
 ms.author: danismith
 manager: jtremper
-ms.reviewer: jasonlewis
-ms.date: 08/15/2023
-ms.topic: article
+ms.reviewer: aditisarangi
+ms.date: 02/09/2025
+ms.topic: how-to
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.custom: chat-teams-channels-revamp
 ms.collection: 
-  - M365-collaboration
-  - m365initiative-securecollab
+- M365-collaboration
+- m365initiative-securecollab
 f1.keywords: 
-  - NOCSH
+- NOCSH
 appliesto: 
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Learn how to use and manage shared channels in Microsoft Teams.
@@ -221,6 +221,7 @@ The following apps are supported for use in shared channels.
 - Monday.com
 - MURAL
 - Nearpod
+- OneNote
 - PDF
 - Pear Deck
 - PowerPoint

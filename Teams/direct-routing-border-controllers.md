@@ -19,7 +19,7 @@ appliesto:
 hideEdit: true
 f1.keywords:
 - NOCSH
-description: Learn about which Session Border Controllers (SBCs) have been certified for Microsoft Direct Routing.
+description: Learn about which Session Border Controllers (SBCs) are certified for Microsoft Direct Routing.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -31,11 +31,11 @@ Microsoft works with each vendor to:
 
 - Jointly work on the SIP interconnection protocols.
 - Perform intense tests using a third-party lab. Only devices that pass the tests are certified.
-- Run daily tests with all certified devices in production and pre-production environments. Validating the devices in pre-production environments guarantees that new versions of Direct Routing code in the cloud works with certified SBCs.
+- Run daily tests with all certified devices in production and preproduction environments. Validating the devices in preproduction environments guarantees that new versions of Direct Routing code in the cloud work with certified SBCs.
 - Establish a joint support process with the SBC vendors.
 
   > [!NOTE]
-  > Microsoft only supports Phone System with Direct Routing when used with certified devices. In case of issues, you must contact your SBC vendor's customer support first. If needed, the SBC vendor will escalate the issue to Microsoft via internal channels. Microsoft reserves the right to reject support cases where a non-certified device is connected to Phone System through Direct Routing. If Microsoft determines that a customer's Direct Routing issue is with a vendor's SBC device, the customer will need to re-engage the SBC vendor for support.
+  > Microsoft only supports Phone System with Direct Routing when used with certified devices. If you encounter an issue, you must contact your SBC vendor's customer support first. If needed, the SBC vendor escalates the issue to Microsoft via internal channels. Microsoft reserves the right to reject support cases where a non-certified device is connected to Phone System through Direct Routing. If Microsoft determines that a customer's Direct Routing issue is with a vendor's SBC device, the customer needs to re-engage the SBC vendor for support.
   >
   > The certification is granted to specific SBC firmware versions. Any SBC firmware version documented in this article is both certified and supported. Firmware versions that are higher than what is documented are supported as long as the major.minor version is the same.
   >
@@ -49,13 +49,12 @@ The tables that follow list devices certified for Direct Routing. (For informati
 
 For more information about Direct Routing, see [Plan Direct Routing](direct-routing-plan.md).  
 
-Note that we're not accepting new nominations for certification until further notice.
+We're not accepting new nominations for certification until further notice.
 
 ## Certified SBC vendors
 
 |Vendor|Product|Non-media bypass|Media bypass|Software version|911 Service Provider Capable*|ELIN capable|
 |---|---|---|---|---|---|---|
-|[Microsoft](https://azure.microsoft.com/products/communications-gateway/)|Azure Communications Gateway |&#10004;|&#10004;|2023-01-31|&#10004;|&#10004;|
 |[AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams)|Mediant 500 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
 ||Mediant 500 Li SBC|&#10004;|&#10004;|Supported 7.2x.xxx (Recommended 7.40A.400)|&#10004;|&#10004;|
 ||Mediant 800 SBC|&#10004;|&#10004;|Supported 7.20A.258 (Recommended 7.40A.500)|&#10004;|&#10004;|
@@ -87,11 +86,11 @@ Note that we're not accepting new nominations for certification until further no
 |[Metaswitch](https://www.metaswitch.com/products/core-network/perimeta-sbc)|Perimeta SBC|&#10004;|&#10004;|4.7 (4.9 for Media Bypass)|&#10004;|&#10004;|
 |[Cisco](https://www.cisco.com/c/en/us/solutions/enterprise/interoperability-portal/networking_solutions_products_genericcontent0900aecd805bd13d.html)|Cisco Unified Border Element (CUBE) for 1000 Series Integrated Services Routers|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.6.1a)|&#10004;||
 ||Cisco Unified Border Element (CUBE) for 4000 Series Integrated Services Routers|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.6.1a)|&#10004;||
-||Cisco Unified Border Element (CUBE) for 1000V Series Cloud Services Router|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.3.3)|&#10004;||
+||Cisco Unified Border Element (CUBE) for 1000 V Series Cloud Services Router|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.3.3)|&#10004;||
 ||Cisco Unified Border Element (CUBE) for 1000 Series Aggregation Services Routers|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.2.1r (Recommended 17.6.1a)|&#10004;||
 ||Cisco Unified Border Element (CUBE) for Catalyst 8000 Edge Platforms|&#10004;|&#10004;|Supported IOS XE Amsterdam 17.3.2 (Recommended 17.6.1a)|&#10004;||
 |[Avaya](https://support.avaya.com/products/P0997/avaya-session-border-controller-for-enterprise/8.1.x)|Avaya Session Border Controller for Enterprise (ASBCE)|&#10004;|&#10004;|Release 8.1.1 or higher (8.1.2 or higher for Media Bypass)|||
-|[Nokia](https://documentation.nokia.com/aces/cgi-bin/chk_access.cgi/3TB30222GBAAACZZA.zip)|Nokia Session Border Controller|&#10004;|&#10004;|23.8|&#10004;||
+|[Nokia](https://documentation.nokia.com/aces/cgi-bin/chk_access.cgi/3TB30222GBAAACZZA.zip)|Nokia Session Border Controller|&#10004;|&#10004;|24.7|&#10004;||
 |[Italtel](https://www.italtel.com/italtels-sbc-obtains-microsoft-teams-direct-routing-certification/)|NetMatch-S CI|&#10004;|&#10004;|Supported 5.8 (Recommended the latest version)|&#10004;|&#10004;|
 |[Ericsson](https://www.ericsson.com/en/portfolio/cloud-software-and-services/cloud-communication/enterprise-communication/business-communication-applications-and-enablers/sip-trunking)|vSBC 2.16|&#10004;|||||
 |[Cataleya](https://cataleya.com/cataleya-launches-orchid-cloud-revolutionary-cloud-based-wholesale-voice-business-platform/)|Orchid Link|&#10004;||3.1|||
@@ -120,7 +119,7 @@ Note that we're not accepting new nominations for certification until further no
 
 \* **911 service providers**
 
-The following emergency services providers are certified and supported by Microsoft.  Microsoft reserves the right to reject support cases where a non-certified provider is used.
+Microsoft certifies and supports the following emergency services providers. If a non-certified provider is used, Microsoft may reject support cases.
 
 - [Bandwidth Dynamic Location Routing](https://www.bandwidth.com/partners/microsoft-teams-direct-routing/)
 - [Intrado Emergency Routing Service (ERS)](https://www.intrado.com/enterprise-solutions/e911/microsoft-teams)
@@ -194,7 +193,7 @@ Note the certification granted to a major version. That means that firmware with
 To provide feedback about Teams, such as ideas for new features, see the [Microsoft feedback portal](https://feedbackportal.microsoft.com/).
 
 > [!NOTE]
-> Media re-targeting is not supported. During a Direct Routing call, if the SBC sends a new media IP to Teams Direct Routing, although it's negotiated in the SIP signaling, the media is never sent to the new IP address from Teams Direct Routing.
+> Media re-targeting isn't supported. During a Direct Routing call, if the SBC sends a new media IP to Teams Direct Routing, although it's negotiated in the SIP signaling, the media is never sent to the new IP address from Teams Direct Routing.
 
 ## See also
 

@@ -5,7 +5,7 @@ ms.author: wlibebe
 manager: pamgreen
 ms.reviewer: spraveen, margidesai
 ms.date: 7/11/2024
-ms.topic: conceptual
+ms.topic: overview
 ms.service: msteams
 ms.subservice: teams-premium
 search.appverid: MET150
@@ -73,7 +73,7 @@ Teams Premium provides more ways to safeguard and monitor users' Teams experienc
 
 - **Screen sharing quality alerts** - Set up alerts for in-progress meeting screen sharing issues and get notified immediately when your specified users experience issues.
 
-- **Sensitivity labels** - Extended capabilities for sensitivity labels to control meeting and event settings normally controlled by the organizer. These capabilities include new settings to control lobby, chat, chat copy, presentation, and recording functions.
+- **Sensitivity labels** - Extended capabilities for sensitivity labels to control meeting and event settings normally controlled by the organizer. These capabilities include new settings to control lobby, chat, chat copy, presentation, and recording functions. You can also automatically apply or recommend that the meeting is labeled with the highest priority sensitivity label from files shared for the meeting.
 
 - **Real time telemetry and retention** - Real-time telemetry is gathered automatically for all users who have a Teams Premium license and retained for seven days.
 
@@ -145,8 +145,8 @@ The following sections describe Teams Premium feature enhancements for town hall
 
 Teams Premium provides more ways to elevate Teams town halls in your org with the following key features:
 
+- **Chat for town hall attendees** - Organizers can allow attendees to use chat during town halls.
 - **Custom emails for town halls** - Organizers and co-organizers can customize the town hall email templates sent to attendees.
-- **Event chat** - Organizers can allow attendees to use chat during town halls.
 - **Increased broadcast and Q&A capacity** - Organizers can broadcast their town halls to 20,000 attendees. All attendees can use Q&A to interact with presenters, organizers, and co-organizers.
 - **Live translated captions**- Organizers can choose up to 10 languages for attendees to use when translating captions during the town hall.
 - **Microsoft eCDN** - Optimize network performance for video streaming within an enterprise network. Microsoft eCDN allows millions of enterprise users around the world to communicate face-to-face efficiently and reliably. You can use the Microsoft eCDN or select one of our partner providers for Premium town halls.
@@ -156,8 +156,8 @@ Teams Premium provides more ways to elevate Teams town halls in your org with th
 
   | Feature/Task | Can admins turn this feature on/off? |Documentation for admins| Documentation for your end users |
   | -------------------- |  ----------- | ----------- | ----------- |
+  | Chat for town hall attendees| Yes | [Manage event chat for Microsoft Teams town halls](town-hall-chat.md) |[Chat in a town hall in Microsoft Teams](https://support.microsoft.com/office/chat-in-a-town-hall-in-microsoft-teams-a4a0e102-ca45-4605-a0a8-83a884547338) |
   | Custom emails for town halls | Yes | [Manage email communications](manage-email-communications.md) |[Schedule a town hall in Microsoft Teams](https://support.microsoft.com/office/schedule-a-town-hall-in-microsoft-teams-d493b5cc-9f61-4dac-8027-d837dafb7a4c#bkmk_town_hall_invites) |
-  | Event chat| Yes | [Manage event chat for Microsoft Teams town halls](town-hall-chat.md) |[Chat in a town hall in Microsoft Teams](https://support.microsoft.com/office/chat-in-a-town-hall-in-microsoft-teams-a4a0e102-ca45-4605-a0a8-83a884547338) |
   | Live translated captions | Yes |[Configure transcription and captions for Teams meetings](meeting-transcription-captions.md)|[Use live captions in Microsoft Teams meetings](https://support.microsoft.com/office/use-live-captions-in-microsoft-teams-meetings-4be2d304-f675-4b57-8347-cbd000a21260) |
   | Manage which eCDN provider Premium town halls use |Yes |[Enterprise content delivery networks for streaming Microsoft Teams events](streaming-ecdn-enterprise-content-delivery-network.md#manage-the-ecdn-solution-for-premium-town-halls-and-view-only-meetings)|No end user control |
   | Microsoft eCDN |Yes |[How to enable Microsoft eCDN](/ecdn/how-to/enable-microsoft-ecdn-for-your-tenant)|No end user control |
@@ -189,6 +189,8 @@ Teams Premium provides more ways to elevate Teams webinars in your org with the 
   | RTMP-In | Yes| [Manage RTMP-In for Teams meetings](meetings-rtmp-in.md)|[Use RTMP-In in a Teams meeting](https://support.microsoft.com/office/use-rtmp-in-in-a-teams-meeting-789d6090-8511-4e2e-add6-52a9f551be7f) |
 
 ## Advanced Virtual Appointments
+
+[!INCLUDE [va-app-retirement](includes/va-app-retirement.md)]
 
 With any Microsoft 365 license, your end users can use basic Virtual Appointments capabilities to schedule and join business-to-customer meetings. For example, users can schedule appointments in the Bookings calendar and external attendees can join through a browser without having to download Teams.
 

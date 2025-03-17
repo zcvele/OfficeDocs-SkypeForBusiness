@@ -68,7 +68,7 @@ If you're a manufacturer and want to join the certification program, see [How to
 
 ## [Certified USB devices](#tab/usb)
 
-*Table Updated January 2025*
+*Table Updated February 2025*
 
 > [!NOTE]
 > The date format is MM/DD/YYYY.
@@ -255,6 +255,7 @@ If you're a manufacturer and want to join the certification program, see [How to
 |EPOS/Sennheiser      |Impact SC 660 with USB-ED CC 01 MS connector               |8/20/2020       |Skype for Business with upgrade to Microsoft Teams      |
 |EPOS/Sennheiser      |Impact SC 630 with USB-ED CC 01 MS connector               |8/20/2020       |Skype for Business with upgrade to Microsoft Teams      |
 |EPOS/Sennheiser      |Impact SC 260 with USB-ED CC 01 MS connector               |8/20/2020       |Skype for Business with upgrade to Microsoft Teams      |
+|EPOS/Sennheiser      |IMPACT SC 230 with USB-ED CC 01 MS connector               |8/20/2020       |Skype for Business with upgrade to Microsoft Teams      |
 |Jabra                |Evolve 75 / SE Headset                                     |7/31/2020       |Skype for Business with upgrade to Microsoft Teams      |
 |Jabra                |Evolve 65 / SE Headset                                     |7/31/2020       |Skype for Business with upgrade to Microsoft Teams      |
 |Jabra                |Engage 50 Headset                                          |7/31/2020       |Skype for Business with upgrade to Microsoft Teams      |
