@@ -33,7 +33,7 @@ For information about personal voicemail, see [Set up Cloud Voicemail](set-up-ph
 
 ## Overview
 
-Shared Voicemail is a specialized type of voicemail. While personal voicemail is sent to a single user, allowing only that individual to access the message automatically, shared voicemail is delivered to a group, enabling any member of that group to access the message.
+Shared Voicemail is a specialized type of voicemail. While personal voicemail is sent to a single user, allowing only that individual to access the message automatically, **Shared Voicemail** is delivered to a group, enabling any member of that group to access the message.
 
 Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Outlook or through the Calls section in a Microsoft Teams channel associated with the group. Although it can also connect to a distribution list or a mail-enabled security group, we recommend using a Microsoft 365 Group. For a comparison of the available options, refer to the following table:
 
@@ -45,7 +45,7 @@ Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Out
 
 <sup>1</sup> Only if Microsoft 365 group is connected to a Call Queue via a Microsoft 365 group associated channel.
   
-With an Microsoft 365 group, Shared Voicemails are delivered to the group's associated folder. In contrast, when using a distribution list or a mail-enabled security group, each user receives a copy of the voicemail in their individual Outlook Inbox.
+With a Microsoft 365 group, Shared Voicemails are delivered to the group's associated folder. In contrast, when using a distribution list or a mail-enabled security group, each user receives a copy of the voicemail in their individual Outlook Inbox.
 
 Your users can receive Shared Voicemail only through the redirection logic from Auto Attendants or Call Queues. For more information about Auto Attendants and Call Queues, see [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md).
 
@@ -69,7 +69,7 @@ If your organization plans to view and manage Shared Voicemails in Microsoft Tea
   Set-UnifiedGroup -Identity <GUID> -HiddenFromExchangeClientsEnabled:$false
   ```
 
-If you select a Microsoft 365 group that isn't supported by Teams, then your organization can only manage voicemails addressed to this group only in Outlook.
+If you select a non-Teams supported Microsoft 365 group, then your organization can only manage voicemails addressed to this group only in Outlook.
 
 For more information about creating a group in Teams, see [Microsoft 365 Groups and Microsoft Teams](/microsoftteams/office-365-groups). For information about creating a group in Outlook, see [Create a group in Outlook](https://support.microsoft.com/office/04d0c9cf-6864-423c-a380-4fa858f27102).
 
@@ -127,7 +127,7 @@ For more information about organizing emails, setting rules, categories, flags, 
 
 ### Microsoft Teams
 
-In Microsoft Teams, Shared Voicemails are located under the **Calls** section of the Microsoft 365 group's associated Teams channel, while personal voicemails appear in your personal **Calls** tab. Note that you can only view Shared Voicemails that have been forwarded by a Call Queue connected to the Microsoft 365 Group channel, and the Call Queue's Microsoft 365 group must match the Shared Voicemail's Microsoft 365 group.
+In Microsoft Teams, Shared Voicemails are located under the **Calls** section of the Microsoft 365 group's associated Teams channel, while personal voicemails appear in your personal **Calls** tab. You can only view Shared Voicemails that are forwarded by a Call Queue connected to the Microsoft 365 Group channel, and the Call Queue's Microsoft 365 group must match the Shared Voicemail's Microsoft 365 group.
 
 ## Related articles
 
