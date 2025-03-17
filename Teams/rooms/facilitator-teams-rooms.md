@@ -33,28 +33,25 @@ You can use the AI-powered Facilitator agent in Teams Rooms for real-time notes 
 
 The Facilitator agent can be used in:
 
-- **Facilitator in Teams** Used for Teams chat and meetings that are scheduled on a calendar. This can include a Teams Rooms console.
-- **Facilitator in Teams Rooms** Used for unsceduled, impromptu or ad hoc in-person meetings with a Teams Room console available in the meeting room.
+- **Facilitator in Teams** Used for Teams chat and meetings that are scheduled on a calendar. This can include a Teams Rooms device, where facilitator chat interactions and AI notes can be viewed by in-room participants.
+- **Facilitator in Teams Rooms** Used for unscheduled, impromptu or ad hoc in-person discussions with a Teams Room device available in the meeting room. Facilitator can serve as the meeting note taker and generate AI notes for these discussions.
 
 ## Facilitator in Teams
 
-Facilitator is feature in Microsoft Teams that enhances collaborative communication during chat and scheduled and unscheduled meetings using large language models (LLMs) to capture notes, generate action items and summaries.
-
-Facilator is an AI-powered agent that is available in Microsoft Teams that is used to automatically take notes of the conversations that happen during a meeting. Facilitator in Teams is used in both chat (peer to peer) and in meetings that are scheduled by a user. In both of these cases, a Teams Room console can also be added to the meeting invite as a participant if there is a one available in the meeting room.
+Facilator is an AI-powered agent that is available in Microsoft Teams that is used to automatically take notes of the conversations that happen during a meeting. Facilitator in Teams is used in both chat (peer to peer) and in meetings that are scheduled by a user. In both of these cases, a Teams Room console can also be added to the meeting invite as a participant if there is a one available in the meeting room. The meeting participants in the room can view facilitator interactions in chat and navigate to notes to view AI notes taken during the meeting.
 
 > [!IMPORTANT]
-> To use Facilitator, the Teams Rooms device and all meeting participants must belong to the same organization. Facilitator isn't available to Federated or external users.
 
 For more information and the requirements, see [Set up Facilitator in Microsoft Teams for collaborative AI-generated notes](/microsoftteams/facilitator-teams).
 
 ## Facilitator in Teams Rooms
 
-When a Teams Room console is available in a room and a user want to hold an unscheduled meeting, such as adhoc, 1:1 (peer to peer), or group in-person, the meeting participants can use Facilitator in Teams Rooms and create rich AI notes with summaries, action items, and can contain speaker attribution.
+When a Teams Room console is available in a room and a user wants to have an unscheduled meeting, such as adhoc, 1:1 (peer to peer), or group in-person, the meeting participants can use Facilitator in Teams Rooms and create rich AI notes with summaries, action items, containing speaker attribution.
 
 > [!NOTE]
-> Facilitator in Teams Rooms can be started by anyone that is participating in the meeting.
+> Facilitator in Teams Rooms must be started by one of the persons in the room who's signed into Teams on their mobile phone within the same organization. Facilitator based offline note taking isn't available for federated or external users.
 
-Even though Facilitator can be used by all in-person meeting participants in the same room, other remote users can added to the meeting once it's started. You can invite remote participants by looking them up on the Teams Room console.
+Once facilitator has been invited to the in person meeting, remote users can be added to the meeting once it's started. You can invite remote participants by looking them up on the Teams Room console.
 
 The Facilitator agent in Teams and in Teams Rooms lets meeting participants get more out of meetings, by collaborating better, and stay more productive in both unscheduled and scheduled meetings.
 
