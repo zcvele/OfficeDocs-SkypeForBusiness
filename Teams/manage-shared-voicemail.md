@@ -35,7 +35,7 @@ For information about personal voicemail, see [Set up Cloud Voicemail](set-up-ph
 
 Shared Voicemail is a specialized type of voicemail. While personal voicemail is sent to a single user, allowing only that individual to access the message automatically, shared voicemail is delivered to a group, enabling any member of that group to access the message.
 
-Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Outlook or through the Calls section in a Microsoft Teams channel associated with the group. Although it can also connect to a distribution list or a mail-enabled security group, we recommend using a Microsoft 365 Group. Please refer to the table below for a comparison of the available options.
+Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Outlook or through the Calls section in a Microsoft Teams channel associated with the group. Although it can also connect to a distribution list or a mail-enabled security group, we recommend using a Microsoft 365 Group. For a comparison of the available options, refer to the following table:
 
 ||Microsoft 365 Groups|Distribution groups|Mail-enabled security groups|
 |:----|:----|:----|:----|
