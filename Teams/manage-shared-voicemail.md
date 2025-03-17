@@ -28,15 +28,9 @@ description: "Learn how to configure and manage Shared Voicemail for Auto Attend
 
 # Manage Shared Voicemail for Auto Attendants and Call Queues
 
-This article describes how to configure and manage Shared Voicemail for Auto Attendants and Call Queues. Shared Voicemail allows multiple users to access a single voicemail inbox.
+This article describes how to configure and manage Shared Voicemail for Auto Attendants and Call Queues. Shared Voicemail allows multiple users to access a single voicemail inbox. While personal voicemail is sent to a single user, allowing only that individual to access the message automatically, **Shared Voicemail** is a specialized type of voicemail that's delivered to a group, enabling any member of that group to access the message.
 
-For information about personal voicemail, see [Set up Cloud Voicemail](set-up-phone-system-voicemail.md).
-
-## Overview
-
-Shared Voicemail is a specialized type of voicemail. While personal voicemail is sent to a single user, allowing only that individual to access the message automatically, **Shared Voicemail** is delivered to a group, enabling any member of that group to access the message.
-
-Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Outlook or through the Calls section in a Microsoft Teams channel associated with the group. Although it can also connect to a distribution list or a mail-enabled security group, we recommend using a Microsoft 365 Group. For a comparison of the available options, refer to the following table:
+Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Outlook or through the Calls section in a Microsoft Teams channel associated with a group. Although Shared Voicemail can also connect to a distribution list or a mail-enabled security group, we recommend using a Microsoft 365 Group. For a comparison of the available options, refer to the following table:
 
 |Shared Voicemail|Microsoft 365 Groups|Distribution groups|Mail-enabled security groups|
 |:----|:----|:----|:----|
@@ -49,29 +43,30 @@ With a Microsoft 365 group, Shared Voicemails are delivered to the group's assoc
 
 Your users can receive Shared Voicemail only through the redirection logic from Auto Attendants or Call Queues. For more information about Auto Attendants and Call Queues, see [Plan for Teams Auto attendants and Call queues](plan-auto-attendant-call-queue.md).
 
+For information about personal voicemail, see [Set up Cloud Voicemail](set-up-phone-system-voicemail.md).
+
 ## Prerequisites
 
 To manage Shared Voicemail, you must configure either a Microsoft 365 group, a distribution list, or a mail-enabled security group. We recommend using a Microsoft 365 group. This article focuses on this option.
+
+If your organization plans to view and manage Shared Voicemails in Microsoft Teams chats or other applications, make sure the Microsoft 365 group you're using has Teams support. Shared Voicemails that are stored in Teams-supported groups are accessible via Microsoft Teams.
 
 Both private and public groups can be used with Shared Voicemail. However, if a group is public, anyone in your organization can get access the group and its associated information, including voicemails. 
 
 There are several ways to create Microsoft 365 groups. We recommend one of the following methods:
 
-**Create a Microsoft 365 group in the Microsoft 365 admin center** - Ensure that the group has both a mailbox and Teams support enabled.
+- **Create a Microsoft 365 group in the Microsoft 365 admin center** - Ensure that the group has both a mailbox and Teams support enabled.
 
-**Create a Microsoft 365 group in Outlook** - Outlook groups have a mailbox enabled by default, but they might lack Teams support. For more information, see [Create a group in Outlook](https://support.microsoft.com/office/04d0c9cf-6864-423c-a380-4fa858f27102).
+- **Create a Microsoft 365 group in Outlook** - Outlook groups have a mailbox enabled by default, but they might lack Teams support. For more information, see [Create a group in Outlook](https://support.microsoft.com/office/04d0c9cf-6864-423c-a380-4fa858f27102).
 
-If your organization plans to view and manage Shared Voicemails in Microsoft Teams chats or other applications, make sure the Microsoft 365 group you're using has Teams support. Shared Voicemails that are stored in Teams-supported groups are accessible via Microsoft Teams.
-
-**Create a Microsoft 365 group in Microsoft Teams** - Teams-based groups might have their mailbox hidden by default. To make the mailbox visible, use the [Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup) cmdlet with the `-HiddenFromExchangeClientsEnabled` parameter to make a mailbox visible.
+- **Create a Microsoft 365 group in Microsoft Teams** - Teams-based groups might have their mailbox hidden by default. To make the mailbox visible, use the [Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup) cmdlet with the `-HiddenFromExchangeClientsEnabled` parameter to make a mailbox visible.
 
   ```powershell
   Set-UnifiedGroup -Identity <GUID> -HiddenFromExchangeClientsEnabled:$false
   ```
+  For more information about creating a group in Teams, see [Microsoft 365 Groups and Microsoft Teams](/microsoftteams/office-365-groups). 
 
 If you select a non-Teams supported Microsoft 365 group, then your organization can only manage voicemails addressed to this group only in Outlook.
-
-For more information about creating a group in Teams, see [Microsoft 365 Groups and Microsoft Teams](/microsoftteams/office-365-groups). For information about creating a group in Outlook, see [Create a group in Outlook](https://support.microsoft.com/office/04d0c9cf-6864-423c-a380-4fa858f27102).
 
 For more information about Microsoft 365 groups, see [Overview of Microsoft 365 Groups for administrators](/microsoft-365/admin/create-groups/office-365-groups)
 
