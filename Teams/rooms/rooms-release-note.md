@@ -67,7 +67,7 @@ Features with the :::image type="icon" source="../media/mtr-pro-icon.png"::: ico
 
 ### 5.3.69.0 (3/17/2025)
  >[!NOTE]
- >This update is intended to enable new devices to run the Teams Rooms on Windows application. It is a available as a manual update only. [Learn more](/MicrosoftTeams/rooms/manual-update). 
+ >This update is intended to enable new devices to run the Teams Rooms on Windows application. It is available as a manual update only. [Learn more](/MicrosoftTeams/rooms/manual-update). 
 
 ### 5.2.115.0 (9/26/2024)
  >[!NOTE]
