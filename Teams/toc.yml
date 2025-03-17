@@ -1536,7 +1536,7 @@ items:
                 - name: Certified personal peripherals
                   href: devices/usb-devices.md
                 - name: Certified Native Bluetooth devices
-                  href: devices/bluetooth-devices.md
+                  href: devices/bluetooth-devices.md               
                 - name: Troubleshooting and known issues
                   href: /microsoftteams/troubleshoot/meetings/known-issues-teams-certified-peripherals
     - name: Teams Rooms and panels
@@ -1786,8 +1786,10 @@ items:
                       href: rooms/managed-meeting-rooms-portal.md
                     - name: Audit logs for activities
                       href: rooms/multi-tenant-auditing.md
-                    - name: Health and usage reports
-                      href: rooms/health-and-usage-reports.md
+                    - name: Health reports
+                      href: rooms/health-reports.md
+                    - name: Usage reports
+                      href: rooms/usage-reports.md
                 - name: Troubleshooting and known issues
                   href: /microsoftteams/troubleshoot/teams-rooms-and-devices/get-support-teams-rooms-pro-management
     - name: Teams phones
