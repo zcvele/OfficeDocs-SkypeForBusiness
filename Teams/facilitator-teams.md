@@ -1,6 +1,6 @@
 ---
 title: Set up Facilitator in Microsoft Teams for collaborative AI notes
-author: DaniESmith
+author: DaniEASmith
 ms.author: danismith
 manager: jtremper
 ms.reviewer: solomon.alex, grace.culver
