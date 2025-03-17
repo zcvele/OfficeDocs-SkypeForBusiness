@@ -37,11 +37,10 @@ Shared Voicemail is a specialized type of voicemail. While personal voicemail is
 
 Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Outlook or through the Calls section in a Microsoft Teams channel associated with the group. Although it can also connect to a distribution list or a mail-enabled security group, we recommend using a Microsoft 365 Group. For a comparison of the available options, refer to the following table:
 
-||Microsoft 365 Groups|Distribution groups|Mail-enabled security groups|
+|Shared Voicemail|Microsoft 365 Groups|Distribution groups|Mail-enabled security groups|
 |:----|:----|:----|:----|
-|**Shared Voicemails are visible in Outlook/Exchange**|Yes|Yes|Yes|
-|**Shared Voicemail are visible in Teams**|Yes<sup>1</sup>|No|No|
-|**Dynamic membership in Microsoft Entra ID**|Yes|No|No|
+|**Visible in Outlook/Exchange**|Yes|Yes|Yes|
+|**Visible in Teams**|Yes<sup>1</sup>|No|No|
 
 <sup>1</sup> Only if Microsoft 365 group is connected to a Call Queue via a Microsoft 365 group associated channel.
   
