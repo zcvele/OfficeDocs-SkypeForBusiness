@@ -28,7 +28,7 @@ description: "Learn how to configure and manage Shared Voicemail for Auto Attend
 
 # Manage Shared Voicemail for Auto Attendants and Call Queues
 
-This article describes how to configure and manage Shared Voicemail for Auto Attendants and Call Queues. Shared Voicemail allows multiple users to access a single voicemail inbox. While personal voicemail is sent to a single user, allowing only that individual to access the message automatically, **Shared Voicemail** is a specialized type of voicemail that's delivered to a group, enabling any member of that group to access the message.
+This article describes how to configure and manage Shared Voicemail for Auto Attendants and Call Queues. **Shared Voicemail** is a specialized type of voicemail that allows multiple users to access a single voicemail inbox. Shared Voicemail is delivered to a group, enabling any member of that group to access the message, whereas personal voicemail is sent to a single user, allowing only that individual to access the message automatically.
 
 Shared Voicemail integrates with Microsoft 365 Groups and can be accessed in Outlook or through the Calls section in a Microsoft Teams channel associated with a group. Although Shared Voicemail can also connect to a distribution list or a mail-enabled security group, we recommend using a Microsoft 365 Group. For a comparison of the available options, refer to the following table:
 
@@ -78,7 +78,7 @@ Only members of the designated Microsoft 365 group can access its associated Sha
 
 To prevent the oversharing of information, each specific Call Queue or Auto Attendant should have its own Microsoft 365 group for Shared Voicemail. If you configure call redirection so that multiple Call Queues with different agents share a common Shared Voicemail group, every user in that group has permission to manage voicemails. This configuration can inadvertently lead to oversharing sensitive information. For this reason, we recommend creating a separate Shared Voicemail group for each individual Call Queue or Auto Attendant.
 
-For more information, see [manage-your-call-queue-and-auto-attendant-settings-in-microsoft-teams](https://support.microsoft.com/office/52c741c6-8577-4faf-aa5a-c7853e0ab8f8).
+For more information, see [Manage your call queue and auto attendant settings in Microsoft Teams](https://support.microsoft.com/office/52c741c6-8577-4faf-aa5a-c7853e0ab8f8).
 
 ### Auto Attendants
 
