@@ -16,7 +16,7 @@ ms.collection:
   - Tier1
 audience: Admin
 appliesto:
-  - Microsoft Teams
+  - Microsoft Outlook
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
