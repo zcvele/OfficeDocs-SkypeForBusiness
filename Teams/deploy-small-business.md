@@ -103,9 +103,9 @@ Jump to the section you're interested in:
 - [Scheduling through Bookings](#scheduling-through-bookings)
 - [Schedule Teams meetings from Google Calendar](#schedule-teams-meetings-from-google-calendar)
 - [Connect with customers on your website using Live chat](#connect-with-customers-on-your-website-using-live-chat)
-- AI powered collaboration through Copilot
-- File sharing
-- Apps in Teams
+- [AI powered collaboration through Copilot](#ai-powered-collaboration-through-copilot)
+- [File sharing](#file-sharing)
+- [Apps in Teams](#apps-in-teams)
 
 ## Chat, teams, and channels
 
