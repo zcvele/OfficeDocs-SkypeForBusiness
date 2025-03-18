@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit  
 manager: pamgreen
 ms.reviewer: kramachandra
-ms.date: 03/13/2025  
+ms.date: 03/18/2025  
 ms.topic: article
 appliesto: 
   - Microsoft Teams
@@ -22,7 +22,7 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH 
 ai-usage: ai-assisted
-description: This user guide provides comprehensive set up instructions and information on using the Facilitator agent within Teams Rooms. The AI-powered Facilitator agent or app lets meeting participants hold unscheduled meetings and use Facilitator to  transcibe the entire meeting conversation and create rich AI notes with summaries, action items, and speaker attribution.
+description: This user guide provides comprehensive set up instructions and information on using the Facilitator agent within Teams Rooms. The AI-powered Facilitator agent or app lets meeting participants hold unscheduled meetings and use Facilitator to  transcribe the entire meeting conversation and create rich AI notes with summaries, action items, and speaker attribution.
 ---  
 
 # Facilitator in Microsoft Teams Rooms
@@ -33,28 +33,25 @@ You can use the AI-powered Facilitator agent in Teams Rooms for real-time notes 
 
 The Facilitator agent can be used in:
 
-- **Facilitator in Teams** Used for Teams chat and meetings that are scheduled on a calendar. This can include a Teams Rooms console.
-- **Facilitator in Teams Rooms** Used for unsceduled, impromptu or ad hoc in-person meetings with a Teams Room console available in the meeting room.
+- **Facilitator in Teams** Used for Teams chat and meetings that are scheduled on a calendar. This can include a Teams Rooms device, where facilitator chat interactions and AI notes can be viewed by in-room participants.
+- **Facilitator in Teams Rooms** Used for unscheduled, impromptu or ad hoc in-person discussions with a Teams Room device available in the meeting room. Facilitator can serve as the meeting note taker and generate AI notes for these discussions.
 
 ## Facilitator in Teams
 
-Facilitator is feature in Microsoft Teams that enhances collaborative communication during chat and scheduled and unscheduled meetings using large language models (LLMs) to capture notes, generate action items and summaries.
-
-Facilator is an AI-powered agent that is available in Microsoft Teams that is used to automatically take notes of the conversations that happen during a meeting. Facilitator in Teams is used in both chat (peer to peer) and in meetings that are scheduled by a user. In both of these cases, a Teams Room console can also be added to the meeting invite as a participant if there is a one available in the meeting room.
+Facilitator is an AI-powered agent that is available in Microsoft Teams that is used to automatically take notes of the conversations that happen during a meeting. Facilitator in Teams is used in both chat (peer to peer) and in meetings that are scheduled by a user. In both of these cases, a Teams Room console can also be added to the meeting invite as a participant if there is a one available in the meeting room. The meeting participants in the room can view Facilitator interactions in chat and navigate to notes to view AI notes taken during the meeting.
 
 > [!IMPORTANT]
-> To use Facilitator, the Teams Rooms device and all meeting participants must belong to the same organization. Facilitator isn't available to Federated or external users.
 
 For more information and the requirements, see [Set up Facilitator in Microsoft Teams for collaborative AI-generated notes](/microsoftteams/facilitator-teams).
 
 ## Facilitator in Teams Rooms
 
-When a Teams Room console is available in a room and a user want to hold an unscheduled meeting, such as adhoc, 1:1 (peer to peer), or group in-person, the meeting participants can use Facilitator in Teams Rooms and create rich AI notes with summaries, action items, and can contain speaker attribution.
+When a Teams Room console is available in a room and a user wants to have an unscheduled meeting, such as adhoc, 1:1 (peer to peer), or group in-person, the meeting participants can use Facilitator in Teams Rooms and create rich AI notes with summaries, action items, containing speaker attribution.
 
 > [!NOTE]
-> Facilitator in Teams Rooms can be started by anyone that is participating in the meeting.
+> Facilitator in Teams Rooms must be started by one of the persons in the room who's signed into Teams on their mobile phone within the same organization. Facilitator based offline note taking isn't available for federated or external users.
 
-Even though Facilitator can be used by all in-person meeting participants in the same room, other remote users can added to the meeting once it's started. You can invite remote participants by looking them up on the Teams Room console.
+Once facilitator has been invited to the in person meeting, remote users can be added to the meeting once it's started. You can invite remote participants by looking them up on the Teams Room console.
 
 The Facilitator agent in Teams and in Teams Rooms lets meeting participants get more out of meetings, by collaborating better, and stay more productive in both unscheduled and scheduled meetings.
 
@@ -71,7 +68,7 @@ To enable AI-generated notes using Facilitator for Teams meetings:
 
 **Step 1: Turn on Facilitator for meetings** See, [Set up Facilitator in Microsoft Teams](/microsoftteams/facilitator-teams).
 
-This includes the steps to assign licenses to users that want to use Facilitor in Teams for AI notes, summaries, and action items for scheduled meetings. Users must have the correct licenses and Loop components enabled.
+This includes the steps to assign licenses to users that want to use Facilitator in Teams for AI notes, summaries, and action items for scheduled meetings. Users must have the correct licenses and Loop components enabled.
 
 Make sure they have these licenses assigned to them.
 
@@ -109,7 +106,7 @@ For more information, see [Pro Management Portal](/microsoftteams/rooms/rooms-pr
 
 ## Discovery experience
 
-After you perform all of the required steps and the prerequisites have been met, meeting participants will see an icon for Facilator added to their Teams app and the QR code for Facilitator will be available on the Teams Rooms console.
+After you perform all of the required steps and the prerequisites have been met, meeting participants will see an icon for Facilitator added to their Teams app and the QR code for Facilitator will be available on the Teams Rooms console.
 
 When one or more users see that a meeting room is available, and they want to start an unscheduled meeting with Teams Rooms, the presence detector on Teams Rooms will wake up, a banner is displayed on the room display,  and it will inform users that they can invite Facilitator to take notes for their meeting. This banner appears when there's no scheduled meeting and the room is available for the next 10 minutes.
 
