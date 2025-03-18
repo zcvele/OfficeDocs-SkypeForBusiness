@@ -67,7 +67,8 @@ Features with the :::image type="icon" source="../media/mtr-pro-icon.png"::: ico
 
 ### 5.3.69.0 (3/17/2025)
  >[!NOTE]
- >This update is intended to enable new devices to run the Teams Rooms on Windows application. It is available as a manual update only. [Learn more](/MicrosoftTeams/rooms/manual-update). 
+ >This update does not contain any new features. 
+ >This update contains driver packages that is intended to enable Teams Rooms on Windows application to run on yet to be released devices. The update is optional, available as a manual update only. It is not required if your device is running app version 5.2.115.0 [Learn more](/MicrosoftTeams/rooms/manual-update). 
 
 ### 5.2.115.0 (9/26/2024)
  >[!NOTE]
