@@ -28,7 +28,9 @@ description: Learn how to require verification checks for Microsoft Teams meetin
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a x for no](/office/media/icons/cancel-teams.png)Town halls
 
-For a seamless experience, it's important to manage how anonymous participants join meetings and webinars in your org. Anonymous participants include users who join a Teams meeting without signing in, via the Teams web app, or through external meeting platforms.
+To ensure a seamless meeting experience, it's essential to manage how anonymous and unfederated external participants join meetings and webinars within your organisation. Anonymous participants include users who join a Teams meeting without signing in, via the Teams web app, or through external meeting platforms.
+
+Allowing anonymous and unfederated external users to bypass the lobby can result in web bots joining and disrupting meetings and webinars. As an admin, you can enforce human verification checks for these users to join meetings in your organisation. Implementing a CAPTCHA challenge helps prevent unwanted web-based bots from joining, recording, and causing disturbances in meetings and webinars. Users will have the option to choose between a text CAPTCHA with Latin characters and an audio CAPTCHA in English.
 
 If your organizers allow anonymous users to bypass the lobby, web bots might join and disrupt their meetings and webinars. As an admin, you can require human verification checks for anonymous users to join meetings in your org. Requiring a CAPTCHA challenge can prevent unwanted web-based bots from joining, recording, and causing disturbances in meetings and webinars.
 
