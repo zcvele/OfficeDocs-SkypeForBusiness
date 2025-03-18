@@ -7,7 +7,7 @@ ms.topic: install-set-up-deploy
 audience: admin
 ms.service: msteams
 ms.reviewer: angch
-ms.date: 03/21/2025
+ms.date: 03/18/2025
 description: Set up Teams in your small or medium business to enable your users to collaborate using chat and file sharing, set up and attend small and large meetings, and talk via video and voice.
 ms.localizationpriority: high
 search.appverid: MET150
