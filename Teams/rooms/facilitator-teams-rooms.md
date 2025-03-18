@@ -4,7 +4,7 @@ author: mstonysmith
 ms.author: tonysmit  
 manager: pamgreen
 ms.reviewer: kramachandra
-ms.date: 03/13/2025  
+ms.date: 03/18/2025  
 ms.topic: article
 appliesto: 
   - Microsoft Teams
@@ -38,7 +38,7 @@ The Facilitator agent can be used in:
 
 ## Facilitator in Teams
 
-Facilator is an AI-powered agent that is available in Microsoft Teams that is used to automatically take notes of the conversations that happen during a meeting. Facilitator in Teams is used in both chat (peer to peer) and in meetings that are scheduled by a user. In both of these cases, a Teams Room console can also be added to the meeting invite as a participant if there is a one available in the meeting room. The meeting participants in the room can view facilitator interactions in chat and navigate to notes to view AI notes taken during the meeting.
+Facilator is an AI-powered agent that is available in Microsoft Teams that is used to automatically take notes of the conversations that happen during a meeting. Facilitator in Teams is used in both chat (peer to peer) and in meetings that are scheduled by a user. In both of these cases, a Teams Room console can also be added to the meeting invite as a participant if there is a one available in the meeting room. The meeting participants in the room can view Facilitator interactions in chat and navigate to notes to view AI notes taken during the meeting.
 
 > [!IMPORTANT]
 
