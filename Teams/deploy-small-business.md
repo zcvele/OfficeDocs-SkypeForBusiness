@@ -32,7 +32,7 @@ Microsoft Teams is a digital hub that brings conversations, meetings, files, and
 
 Microsoft Teams can help you grow your business by empowering you to:
 
-- Meet online with customers, partners, vendors, and colleagues. Attendees do not need Teams to join a Teams meeting.
+- Meet online with customers, partners, vendors, and colleagues. Attendees don't need Teams to join a Teams meeting.
 - Share availability and schedule meetups through Bookings.
 - Answer customer inquiries from your website via chat.
 - Make phone calls with a Teams Phone license.
@@ -128,7 +128,7 @@ You don't need to do anything else for your users to start using chat, teams, an
 
 Collaboration over chat, teams, and channels can happen with people inside and outside of your organization. Enabling external collaboration may require you to adjust your Teams policies and settings.
 
-With the proper setup, you can chat with Teams users outside of your business who are part of trusted Microsoft 365 organizations (For example, a customer or partner with a Microsoft 365 work or school account) or Teams and Skype users not managed by an organization (for example, a customer with a Microsoft 365 or Skype personal account). Enabling external chat does not open up other parts of your Teams environment to the Teams users you're chatting with, like meetings or files. [Learn more](trusted-organizations-external-meetings-chat.md?tabs=organization-settings) about the Teams settings and policies updates needed to allow for external chats.
+With the proper setup, you can chat with Teams users outside of your business who are part of trusted Microsoft 365 organizations (For example, a customer or partner with a Microsoft 365 work or school account) or Teams and Skype users not managed by an organization (for example, a customer with a Microsoft 365 or Skype personal account). Enabling external chat doesn't open up other parts of your Teams environment to the Teams users you're chatting with, like meetings or files. [Learn more](trusted-organizations-external-meetings-chat.md?tabs=organization-settings) about the Teams settings and policies updates needed to allow for external chats.
 
 If you want to give an external contact expanded access to your Teams environment, you can give them [guest access](guest-access.md). Guest access allows you to give access to teams, documents in channels, chats, and applications to people outside of your organization, while maintaining control over your business’s data. Anyone with a Microsoft 365 work, school, or personal account can be added as a guest. [Learn more](/microsoft-365/solutions/collaborate-as-team) about turning on guest access for your environment. Once guest access is enabled, [follow this guide](/microsoft-365/solutions/collaborate-as-team) to learn more about inviting guests to join you in Teams.
 
