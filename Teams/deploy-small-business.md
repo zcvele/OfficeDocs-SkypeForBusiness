@@ -7,7 +7,7 @@ ms.topic: install-set-up-deploy
 audience: admin
 ms.service: msteams
 ms.reviewer: angch
-ms.date: 03/14/2025
+ms.date: 03/21/2025
 description: Set up Teams in your small or medium business to enable your users to collaborate using chat and file sharing, set up and attend small and large meetings, and talk via video and voice.
 ms.localizationpriority: high
 search.appverid: MET150
@@ -54,7 +54,7 @@ If you're looking for information on how to use Teams or train others to use Tea
 > If you haven't done so already, we strongly suggest that you begin your Teams deployment with a pilot rollout. A pilot rollout allows you and a few early adopters to get familiar with Teams and its features before your planning and eventual complete rollout.
 
 > [!IMPORTANT]
-> Before you roll out Teams broadly, make sure your organization is ready by reviewing the items in [Make sure you're ready](deploy-overview.md).
+> Before you roll out Teams broadly, make sure your organization is ready by reviewing the items in: [Make sure you're ready](deploy-overview.md).
 
 ## Adding users and giving them access to Teams
 
@@ -86,9 +86,9 @@ Learn more about the steps you need to take to connect your domain using the [In
 
 ## Synching your existing calendar with Teams
 
-Teams is already connected to Exchange for calendaring by default. If you use a provider other than Exchange for email and calendaring, you can set up calendar syncing with Teams by connecting your domain. This allows you and your users to see all your Teams and other meetings in both calendars. It also makes sure that incoming and outgoing Teams meetings aren't missed.
+Teams is already connected to Exchange for calendaring by default. If you use a provider other than Exchange for email and calendaring, you can set up calendar syncing with Teams by connecting your domain. This allows you and your users to see all your Teams and other meetings in both calendars. It also makes sure that incoming and outgoing Teams meetings aren't missed and meeting responses like accepts and declines are received.
 
-For the best experience, you should connect your business’ domain before you setup calendar syncing. Follow these steps to set up calendar syncing using the [Integrating your business email with Microsoft Teams](integrating-business-email.md) article.
+For the best experience, you should connect your business’ domain before you set up calendar syncing. Follow these steps to set up calendar syncing using the [Integrating your business email with Microsoft Teams](integrating-business-email.md) article. Follow these steps to set up syncing between Google Calendar and Teams [Set up calendar syncing with Google Workspace](setup-calendar-syncing-with-google-workspace.md).
 
 ## Setting up Teams capabilities for your small or medium business
 
@@ -103,6 +103,9 @@ Jump to the section you're interested in:
 - [Scheduling through Bookings](#scheduling-through-bookings)
 - [Schedule Teams meetings from Google Calendar](#schedule-teams-meetings-from-google-calendar)
 - [Connect with customers on your website using Live chat](#connect-with-customers-on-your-website-using-live-chat)
+- AI powered collaboration through Copilot
+- File sharing
+- Apps in Teams
 
 ## Chat, teams, and channels
 
@@ -133,9 +136,13 @@ If you want to give an external contact expanded access to your Teams environmen
 
 ## Meetings and conferencing
 
-Meetings and conferencing let people in your organization meet online with one other and with people outside your organization. Anyone with a Teams client can join **meetings** to which they've been invited. If an attendee doesn't have Teams they can also join [using the web client](https://www.microsoft.com/microsoft-teams/join-a-meeting?). [Learn more](plan-meetings-external-participants.md) about Teams meetings with external participants.
+Meetings and conferencing let people in your organization meet online with partners, vendors, customers, and colleagues. Anyone with a Teams client can join **meetings** to which they've been invited. If an attendee doesn't have Teams they can also join [using the web client](https://www.microsoft.com/microsoft-teams/join-a-meeting?) on a desktop or from the Teams mobile app from their mobile app store. [Learn more](plan-meetings-external-participants.md) about Teams meetings with external participants.
 
 The participants can join in the conversation without the need for a phone by using the microphone, camera, and the screen of their device. Participants can chat, make voice calls, and share video and apps with other participants using a PC or mobile device.
+
+There are several meetings capabilities you can use to reinforce your business's brand. **Meeting themes** are included with Teams Premium. They allow admins to customize the visual appearance of the prejoin and lobby screens by applying a specific theme. Meeting themes consist of your business's brand colors, a custom image to represent your branding, and your business's logo. To learn more about meeting themes in Microsoft Temas, see [Meeting themes](meeting-themes.md).
+
+**Custom meeting backgrounds** allow Teams Premium admins to upload custom organizational images for their users to use as virtual backgrounds during meetings. This feature helps users maintain privacy, reduce distractions, or add a touch of business brand unity to their meetings. You can use a user or group policy to assign unique backgrounds to specific individuals or departments. If you don't have Teams Premium, individual users can upload and use their own meeting backgrounds on Teams desktop. To learn more about managing custom meeting backgrounds, see [Meeting backgrounds](custom-meeting-backgrounds.md).
 
 **Audio conferencing** lets participants join to meetings using a regular phone by calling a conference phone number and entering a meeting ID. Audio conferencing is useful when a participant doesn't have a good Internet connection, the meeting is voice-only, or some other circumstance doesn't allow them to join via the Teams desktop or mobile app.
 
@@ -167,7 +174,7 @@ For more information on Teams Phone with Calling Plan for small and medium busin
 
 ## Scheduling through Bookings
 
-The Microsoft Bookings functionality helps you schedule and manage appointments with your customers, clients, or colleagues. Bookings includes a web-based bookings page, which is integrated with Microsoft Outlook to optimize your calendar and give your customers the flexibility to book a time that works best for them.
+The Microsoft Bookings functionality helps you schedule and manage appointments with your customers, clients, or colleagues. Bookings includes a web-based bookings page, which is integrated with Microsoft Outlook and Teams to optimize your calendar and give your customers the flexibility to book a time that works best for them.
 
 - [Learn more](/microsoft-365/bookings/bookings-overview) about how Bookings can help your business streamline scheduling.
 - [Learn more](bookings-app-admin.md) about how you can make the Bookings app for Teams available to users in your business.
@@ -180,11 +187,45 @@ You can schedule Teams meetings directly from your Google Calendar using the Tea
 
 Live chat allows your website’s visitors to chat with your business through a chat widget on your customer-facing website. Visitors can ask questions via your website’s chat, connecting them directly to your support team in Teams. [Learn more](set-up-live-chat.md) about setting up and managing Live chat.
 
+## AI powered collaboration through Copilot
+
+Copilot in Teams can:
+
+- Help your business perform tasks faster and enhance collaboration through the power of AI.
+- Help you automate tasks so that you can focus on giving your customers and partners your full attention during meetings, calls, and chat conversations.
+- Summarize key discussion points in meetings and calls, including who was speaking, what they said, and where people are aligned or disagreeing.
+- Suggest action items and answer any questions you have, all in real-time during or after a meeting.
+- Help you rewrite and edit chat and channel messages to improve tone, length, and clarity.
+- Help you find and use information that’s buried in documents or lost in conversations by bringing together data from your documents, presentations, email, calendar, notes, and contacts.
+- Use information in Teams to help you catch up or identify tasks quickly.
+
+Learn more about how you can enable Copilot in your Teams environment from the [small business-focused Copilot adoption site](https://adoption.microsoft.com/copilot/smb/) or [Microsoft 365 Copilot documentation](/copilot/microsoft-365/).
+
+## File sharing
+
+When you enable file sharing through Teams it allows your business to collaborate with partners, vendors, customers, and colleagues while protecting your business’s intellectual property and sensitive information. Files shared through Teams are owned and managed by your business rather than individuals. Users can share files from Teams channels, chats, meetings, and the OneDrive app in Teams.
+
+By default, sharing with people outside your organization using external access, guest access, or anonymous access is enabled, but shared channels and cross-cloud scenarios require additional configuration. [Learn more](/microsoft-365/solutions/setup-secure-collaboration-with-teams) about how you can enable secure sharing for vendors, partners, and customers outside your organization.
+
+## Apps in Teams
+
+Apps in Teams help users bring together their business tools and services in one place where they can be used to collaborate with others. Teams apps have been published by Microsoft and other companies. You can also create Teams apps specifically for your business. A few examples of apps are:
+
+- An app to share and assign tasks to various users in a channel.
+- An app that integrates with your customer management system and tracks customer leads and progress.
+- An app that helps you schedule employee shifts and schedules.
+
+As an admin, you control which apps are permitted. You can also help automatically install apps for your users. [Learn more](apps-in-teams.md) about Teams apps and how to manage them.
+
 ## Installing Teams
 
 When you're ready for your users to start using Teams, they can install the Teams client on their Windows, Mac, or on their Android or iOS device. Users can download the Teams client directly from <https://teams.microsoft.com/downloads>.
 
-Ensure everyone has a Teams license before they can use Teams. For more information about assigning a Teams license, see [Manage user access to Teams](user-access.md#using-the-microsoft-365-admin-center).
+Users can use Teams without an app installed on their desktop using the web. Access Teams on the web from [this site](https://teams.microsoft.com/).
+
+Make sure each user in your organization has a Teams license before they can use Teams. For more information about assigning a Teams license, see [Manage user access to Teams](user-access.md#using-the-microsoft-365-admin-center).
+
+Users will have the best experience joining meetings with a Teams license and application, but they aren't required. Customers or partners don't need a Teams license to join Teams meetings. [Learn more](anonymous-users-in-meetings.md) about how you can enable anonymous meeting join for your Teams environment.
 
 > [!TIP]
 > Get recommendations on how to plan your Teams client deployment by completing the [Deploy Microsoft Teams clients](/training/modules/m365-teams-collab-deploy-clients/) module on Microsoft Learn.
