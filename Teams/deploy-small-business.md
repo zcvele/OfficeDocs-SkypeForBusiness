@@ -23,7 +23,7 @@ ms.custom: seo-marvel-mar2020
 
 # Set up Microsoft Teams in your small or medium business
 
-This guide is to help IT administrators in small and medium businesses learn about and setup Teams. By default, the person who signs up for and buys a Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
+This guide is to help IT administrators in small and medium businesses learn about and set up Teams. By default, the person who signs up for and buys a Microsoft 365 for business subscription gets admin permissions. That person can assign admin permissions to other people to help them manage Microsoft 365 for their organization.
 
 > [!NOTE]
 > If you don't know who to contact at your work or school for help, try asking the person who gave you your Microsoft 365 user account and password.
@@ -60,7 +60,7 @@ If you're looking for information on how to use Teams or train others to use Tea
 
 Each user needs a user account and license before they can sign in and access Teams. You can add new users using the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) by following [these instructions](/microsoft-365/admin/add-users/add-users).
 
-If you've already set up set up a global or user admin account with an active Teams license, you can also use the Admin app within Teams to add users.
+If you've already set up a global or user admin account with an active Teams license, you can also use the Admin app within Teams to add users.
 
 > [!CAUTION]
 > Using a global admin account can be a security risk. When possible, we recommend using a non-global admin account.
@@ -78,15 +78,15 @@ If you want to give your users the opportunity to try Teams before they have a T
 
 ## Connecting your business' domains to Teams
 
-When you purchase Microsoft 365 you get a default domain (For example: `contoso.onmicrosoft.com`). Without additional setup, your M365 users have this default domain in their M365 usernames (For example: `jane@contoso.onmicrosoft.com`).
+When you purchase Microsoft 365, you get a default domain (For example: `contoso.onmicrosoft.com`). Without additional setup, your Microsoft 365 users have this default domain in their Microsoft 365 usernames (For example: `jane@contoso.onmicrosoft.com`).
 
-This may create confusion if your business has an existing domain (For example: contoso.com). Connecting your domain allows your users to sign in with their existing usernames and ensures that your partners and customers see a consistent identity when they interact with you over Teams. Connecting your domain to Teams doesn't impact how your domain is used for email, your website, or other products outside of Microsoft 365.
+This default domain may create confusion if your business has an existing domain (For example: contoso.com). Connecting your domain allows your users to sign in with their existing usernames and ensures that your partners and customers see a consistent identity when they interact with you over Teams. Connecting your domain to Teams doesn't impact how your domain is used for email, your website, or other products outside of Microsoft 365.
 
 Learn more about the steps you need to take to connect your domain using the [Integrating your business email with Microsoft Teams](integrating-business-email.md) article. You can also follow [these steps](/microsoft-365/admin/setup/add-domain) to connect your domain in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
 ## Synching your existing calendar with Teams
 
-Teams is already connected to Exchange for calendaring by default. If you use a provider other than Exchange for email and calendaring, you can set up calendar syncing with Teams by connecting your domain. This allows you and your users to see all your Teams and other meetings in both calendars. It also makes sure that incoming and outgoing Teams meetings aren't missed and meeting responses like accepts and declines are received.
+Teams is already connected to Exchange for calendaring by default. If you use a provider other than Exchange for email and calendaring, you can set up calendar syncing with Teams by connecting your domain. This syncing allows you and your users to see all your Teams and other meetings in both calendars. It also makes sure that incoming and outgoing Teams meetings aren't missed and meeting responses like accepts and declines are received.
 
 For the best experience, you should connect your business’ domain before you set up calendar syncing. Follow these steps to set up calendar syncing using the [Integrating your business email with Microsoft Teams](integrating-business-email.md) article. Follow these steps to set up syncing between Google Calendar and Teams [Set up calendar syncing with Google Workspace](setup-calendar-syncing-with-google-workspace.md).
 
@@ -109,7 +109,7 @@ Jump to the section you're interested in:
 
 ## Chat, teams, and channels
 
-Chat, teams, and channels are the cornerstone of Teams. **Chat** lets one or more users talk to each other, share files, and meet privately. **Teams**, which can be visible to everyone in your organization or only to a specific audience, let the right people collaborate whatever the task or occasion, whether it's a long-running project or organizing employee onboarding materials. **Channels** within teams can give a focussed discussion space for specific topics, projects, departments, or any other categorization that makes sense for your team.
+Chat, teams, and channels are the cornerstone of Teams. **Chat** lets one or more users talk to each other, share files, and meet privately. **Teams**, which can be visible to everyone in your organization or only to a specific audience, let the right people collaborate whatever the task or occasion, whether it's a long-running project or organizing employee onboarding materials. **Channels** within teams can give a focused discussion space for specific topics, projects, departments, or any other categorization that makes sense for your team.
 
 For details about what you should consider before rolling out chat, teams, and channels, check out [Overview of teams and channels](teams-channels-overview.md).
 
@@ -124,23 +124,23 @@ You don't need to do anything else for your users to start using chat, teams, an
 ### Using chats, teams, and channels to collaborate externally
 
 > [!TIP]
-> For more information about guest and external access, please see: [Use guest access and external access to collaborate with people outside your organization](communicate-with-users-from-other-organizations.md).
+> For more information about guest and external access, see: [Use guest access and external access to collaborate with people outside your organization](communicate-with-users-from-other-organizations.md).
 
 Collaboration over chat, teams, and channels can happen with people inside and outside of your organization. Enabling external collaboration may require you to adjust your Teams policies and settings.
 
-With the proper setup, you can chat with Teams users outside of your business who are part of trusted M365 organizations (For example, a customer or partner with an M365 work or school account) or Teams and Skype users not managed by an organization (for example, a customer with an M365 or Skype personal account). Enabling external chat does not open up other parts of your Teams environment to the Teams users you're chatting with, like meetings or files. [Learn more](trusted-organizations-external-meetings-chat.md?tabs=organization-settings) about the Teams settings and policies updates needed to allow for external chats.
+With the proper setup, you can chat with Teams users outside of your business who are part of trusted Microsoft 365 organizations (For example, a customer or partner with a Microsoft 365 work or school account) or Teams and Skype users not managed by an organization (for example, a customer with a Microsoft 365 or Skype personal account). Enabling external chat does not open up other parts of your Teams environment to the Teams users you're chatting with, like meetings or files. [Learn more](trusted-organizations-external-meetings-chat.md?tabs=organization-settings) about the Teams settings and policies updates needed to allow for external chats.
 
-If you want to give an external contact expanded access to your Teams environment, you can give them [guest access](guest-access.md). Guest access allows you to give access to teams, documents in channels, chats, and applications to people outside of your organization, while maintaining control over your business’s data. Anyone with a M365 work, school, or personal account can be added as a guest. [Learn more](/microsoft-365/solutions/collaborate-as-team) about turning on guest access for your environment. Once guest access is enabled, [follow this guide](/microsoft-365/solutions/collaborate-as-team) to learn more about inviting guests to join you in Teams.
+If you want to give an external contact expanded access to your Teams environment, you can give them [guest access](guest-access.md). Guest access allows you to give access to teams, documents in channels, chats, and applications to people outside of your organization, while maintaining control over your business’s data. Anyone with a Microsoft 365 work, school, or personal account can be added as a guest. [Learn more](/microsoft-365/solutions/collaborate-as-team) about turning on guest access for your environment. Once guest access is enabled, [follow this guide](/microsoft-365/solutions/collaborate-as-team) to learn more about inviting guests to join you in Teams.
 
 [Shared channels in Teams](shared-channels.md) create collaboration spaces where you can invite people who aren’t in the team hosting the channel. Only users who are owners or members of the shared channel can access the channel. Guests can’t be added to a shared channel, but you can invite people outside of your organization to participate if they have a Teams work or school account. [Learn more](/microsoft-365/solutions/collaborate-teams-direct-connect) about setting up collaboration with external participants in a shared channel.
 
 ## Meetings and conferencing
 
-Meetings and conferencing let people in your organization meet online with partners, vendors, customers, and colleagues. Anyone with a Teams client can join **meetings** to which they've been invited. If an attendee doesn't have Teams they can also join [using the web client](https://www.microsoft.com/microsoft-teams/join-a-meeting?) on a desktop or from the Teams mobile app from their mobile app store. [Learn more](plan-meetings-external-participants.md) about Teams meetings with external participants.
+Meetings and conferencing let people in your organization meet online with partners, vendors, customers, and colleagues. Anyone with a Teams client can join **meetings** they're invited to. If an attendee doesn't have Teams, they can also join [using the web client](https://www.microsoft.com/microsoft-teams/join-a-meeting?) on a desktop or from the Teams mobile app from their mobile app store. [Learn more](plan-meetings-external-participants.md) about Teams meetings with external participants.
 
 The participants can join in the conversation without the need for a phone by using the microphone, camera, and the screen of their device. Participants can chat, make voice calls, and share video and apps with other participants using a PC or mobile device.
 
-There are several meetings capabilities you can use to reinforce your business's brand. **Meeting themes** are included with Teams Premium. They allow admins to customize the visual appearance of the prejoin and lobby screens by applying a specific theme. Meeting themes consist of your business's brand colors, a custom image to represent your branding, and your business's logo. To learn more about meeting themes in Microsoft Temas, see [Meeting themes](meeting-themes.md).
+There are several meetings capabilities you can use to reinforce your business's brand. **Meeting themes** are included with Teams Premium. They allow admins to customize the visual appearance of the prejoin and lobby screens by applying a specific theme. Meeting themes consist of your business's brand colors, a custom image to represent your branding, and your business's logo. To learn more about meeting themes in Microsoft Teams, see [Meeting themes](meeting-themes.md).
 
 **Custom meeting backgrounds** allow Teams Premium admins to upload custom organizational images for their users to use as virtual backgrounds during meetings. This feature helps users maintain privacy, reduce distractions, or add a touch of business brand unity to their meetings. You can use a user or group policy to assign unique backgrounds to specific individuals or departments. If you don't have Teams Premium, individual users can upload and use their own meeting backgrounds on Teams desktop. To learn more about managing custom meeting backgrounds, see [Meeting backgrounds](custom-meeting-backgrounds.md).
 
@@ -158,7 +158,7 @@ Meetings are enabled by default in Teams, however, you can control the meeting e
 
 ## Webinars
 
-Teams webinars allow you to run interactive presentations for your customers. When you set up a webinar in Teams you can:
+Teams webinars allow you to run interactive presentations for your customers. When you set up a webinar in Teams, you can:
 
 - Set up event registration.
 - Publish speaker bios.
@@ -196,7 +196,7 @@ Copilot in Teams can:
 - Summarize key discussion points in meetings and calls, including who was speaking, what they said, and where people are aligned or disagreeing.
 - Suggest action items and answer any questions you have, all in real-time during or after a meeting.
 - Help you rewrite and edit chat and channel messages to improve tone, length, and clarity.
-- Help you find and use information that’s buried in documents or lost in conversations by bringing together data from your documents, presentations, email, calendar, notes, and contacts.
+- Help you find and use information buried in documents or lost in conversations by bringing together data from your documents, presentations, email, calendar, notes, and contacts.
 - Use information in Teams to help you catch up or identify tasks quickly.
 
 Learn more about how you can enable Copilot in your Teams environment from the [small business-focused Copilot adoption site](https://adoption.microsoft.com/copilot/smb/) or [Microsoft 365 Copilot documentation](/copilot/microsoft-365/).
@@ -209,7 +209,7 @@ By default, sharing with people outside your organization using external access,
 
 ## Apps in Teams
 
-Apps in Teams help users bring together their business tools and services in one place where they can be used to collaborate with others. Teams apps have been published by Microsoft and other companies. You can also create Teams apps specifically for your business. A few examples of apps are:
+Apps in Teams help users bring together their business tools and services in one place where they can be used to collaborate with others. Teams apps are published by Microsoft and other companies. You can also create Teams apps specifically for your business. A few examples of apps are:
 
 - An app to share and assign tasks to various users in a channel.
 - An app that integrates with your customer management system and tracks customer leads and progress.
@@ -236,7 +236,7 @@ If you want detailed information about deploying Teams clients, see [Get clients
 
 ## Accessing support and sharing feedback 
 
-If you need additional help setting up your Teams environment for your small business, you can reach out to our live support agents. Request support through the Teams Admin app by:
+If you need more help setting up your Teams environment for your small business, you can reach out to our live support agents. Request support through the Teams Admin app by:
 
 1. Launching the [Teams Admin app](https://teams.microsoft.com/l/app/b47c7387-2807-440c-9fc2-7c8f46147a20) within the Teams client.
 1. Selecting **Support** in the left navigation.
