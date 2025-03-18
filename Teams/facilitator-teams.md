@@ -36,7 +36,7 @@ Use Facilitator in peer-to-peer:
 
 - Chats
 - Meetings
-- [Teams Rooms](./rooms/facilitator-teams-rooms)
+- [Teams Rooms](../rooms/facilitator-teams-rooms)
 
 Unlike an individual user's queries to Copilot in Teams, Facilitator displays Copilot's notes within the group's conversation. Users can focus on the conversation and let Facilitator take care of the note-taking for everyone.
 
