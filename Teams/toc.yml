@@ -384,6 +384,8 @@ items:
       items:
         - name: Set up Facilitator for AI notes
           href: facilitator-teams.md
+        - name: Facilitator in Teams Rooms
+          href: rooms/facilitator-teams-rooms.md
 
 - name: Teams Premium
   items:
@@ -1573,6 +1575,8 @@ items:
                       href: rooms/multicamera-view.md
                     - name: Coordinated meetings                    
                       href: rooms/coordinated-meetings.md
+                    - name: Faciliator in Teams Rooms
+                      href: rooms/facilitator-teams-rooms.md                      
                     - name: Whiteboard in Teams Rooms
                       href: rooms/whiteboard-rooms.md
                     - name: Intelligent speaker
