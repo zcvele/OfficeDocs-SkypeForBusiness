@@ -91,19 +91,20 @@ When you turn on the auto recording policy for an organizer, the **Record and tr
 
 You must use PowerShell or a meeting template to manage this setting for organizers.
 
-To manage this setting with meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md). Only organizers with a Teams Premium license can use assigned meeting templates.If you prefer to prevent the organizers from changing your settings, you can lock the value you selected.
+To manage this setting with meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md). Only organizers with a Teams Premium license can use assigned meeting templates.If you prefer to prevent the organizers from changing your settings, you can lock the value you selected. Once the template is activated, users will see it when scheduling meetings. If they opt to use this template, recording and transcription will commence automatically without any user interaction.
 
 To manage this setting using PowerShell, use the **`-AutoRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#powershell) in this article.
-Once the template is activated, users will see it when scheduling meetings. If they opt to use this template, recording and transcription will commence automatically without any user interaction.
 
 ## Block or allow download of channel meeting recordings
 
-In PowerShell, the **`-ChannelRecordingDownload`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy) controls whether channel members can download meeting recordings. This is done by controlling which folder recordings are stored in.
+**`-ChannelRecordingDownload`** is an org-wide policy parameter that controls the folder where recordings and transcripts are stored to determine whether users can download channel meeting recordings and transcripts.
 
 The two values for this setting are:
 
-- **Allow** - Saves channel meeting recordings to a 'Recordings' folder in the channel. The permissions on the recording files are based off the channel's SharePoint permissions. This is the same as any other file uploaded for the channel. This is the default setting.
-- **Block** - Saves channel meeting recordings to a 'RecordingsOnly' folder in the channel. Channel owners have full rights on the recordings in this folder, but channel members have read access without ability to download.
+- **Allow** (default value) - Channel meeting recordings and transcripts are saved to a **Recordings** folder in the channel's SharePoint site. The recording and transcript file permissions follow the Channel SharePoint permissions.  This is the same as any other file uploaded for the channel.
+- **Block** -  Channel meeting recordings and transcripts are saved to a **Recordings\View only** folder in the channel's SharePoint site. Channel owners have full access and rights to the recordings and transcripts in this folder, while channel members can only view them without the option to download or edit.
+
+To manage this setting using PowerShell, use the **`-ChannelRecordingDownload`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#manage-download-of-channel-meeting-recordings-in-powershell) in this article.
 
 ## Expiration policy
 
@@ -318,7 +319,7 @@ To require participants to give their explicit consent to be recorded or transcr
 Set-CsTeamsMeetingPolicy -Identity <policy name> -ExplicitRecordingConsent Enabled
 ```
 
-### Manage auto recording
+### Block the download of channel recordings in powerShell
 
 To give organizers with this policy the option to record their meetings automatically, follow this script:
 
@@ -330,6 +331,20 @@ To prevent organizers with this policy from recording their meetings automatical
 
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity <policy name> -AutoRecording Disabled
+```
+
+### Manage download of channel meeting recordings in PowerShell
+
+To prevent users in your organization from downloading channel meeting recordings and transcripts from OneDrive and SharePoint, use the following script:
+
+```PowerShell
+Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Block
+```
+
+To allow users in your organization to download channel meeting recordings and transcripts from OneDrive and SharePoint, use the following script:
+
+```PowerShell
+Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Allow
 ```
 
 ## Related topics
