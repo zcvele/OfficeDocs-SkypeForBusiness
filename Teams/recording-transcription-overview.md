@@ -83,11 +83,11 @@ If you or your users are having any issues or errors with recordings and transcr
 
 - If your users are having issues with recording meetings, see [I can't record a meeting in Microsoft Teams](https://support.microsoft.com/office/i-can-t-record-a-meeting-in-microsoft-teams-f35329c2-57b1-487f-b5e3-70a7efb0945b).
 - To understand issues that affect meeting recordings, see [Issues that affect meeting recordings](/troubleshoot/meetings/troubleshoot-meeting-recording-issues).
-- If your users are having issues with transcribing meetings, see [I can't transcribe a meeting in Microsoft Teams](https://support.microsoft.com/office/i-can-t-transcribe-a-meeting-in-microsoft-teams-61f4c8e4-f2d1-4aeb-9b20-244c20fc3faa)
-
+- If your users are having issues with transcribing meetings, see [I can't transcribe a meeting in Microsoft Teams](https://support.microsoft.com/office/i-can-t-transcribe-a-meeting-in-microsoft-teams-61f4c8e4-f2d1-4aeb-9b20-244c20fc3faa).
 
 ## Related articles
 
 - [Calling policies in Teams](teams-calling-policy.md)
 - [Plan for Teams meetings](plan-meetings.md)
+- [Microsoft Teams Premium - Overview for admins](enhanced-teams-experience.md)
 - [Overview of meetings, webinars, and town halls](quick-start-meetings-live-events.md)
