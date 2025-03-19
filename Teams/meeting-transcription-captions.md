@@ -34,9 +34,7 @@ appliesto:
 
 In Microsoft Teams meetings and events, there's an option for recordings to have automatic transcription. Transcription allows users to play back meeting recordings with closed captions and review important discussion items in the transcript. Transcription and captions help create inclusive content for viewers.
 
-As an admin, you can manage transcription and captions for users in your organization.
-
-To learn about where transcripts are stored, see [Manage Microsoft Teams meeting recording and transcription options for sensitive meetings](tmr-meeting-recording-change.md#transcripts-and-captions) and [View, edit, and manage video transcripts and captions](https://support.microsoft.com/office/3cb9acb6-05b2-4f59-a50d-7df61123aa20#bkmk_how-captions-and-transcripts-are-stored).
+As an admin, you can manage transcription and captions for users in your org.
 
 ## Transcription
 
@@ -48,26 +46,24 @@ If recording is turned on, but transcription is turned off, the recording doesn'
 
 The transcription link remains for the lifetime of the file in most cases, but can be broken if the video file is copied within the same OneDrive or SharePoint site. This would result in captions not displaying on the copied video file.
 
-For information on how your users can use transcription, read [View live transcription in a Teams meeting](https://support.microsoft.com/office/dc1a8f23-2e20-4684-885e-2152e06a4a8b).
+The transcription is [stored together with the meeting recordings in OneDrive and SharePoint storage](https://support.microsoft.com/office/3cb9acb6-05b2-4f59-a50d-7df61123aa20#bkmk_how-captions-and-transcripts-are-stored).
 
 > [!NOTE]
 > Transcription for recorded meetings is currently only supported for English (US), English (Canada), English (India), English (UK), English (Australia), English (New Zealand), Arabic (United Arab Emirates), Arabic (Saudi Arabia), Chinese (Simplified, China), Chinese (Traditional, Hong Kong SAR), Chinese (Traditional, Taiwan), Czech (Czechia), Danish (Denmark), Dutch (Belgium), Dutch (Netherlands), French (Canada), French (France), Finnish (Finland), German (Germany), German (Switzerland), Greek (Greece), Hebrew (Israel), Hindi (India), Hungarian (Hungary), Italian (Italy), Japanese (Japan), Korean (Korea), Norwegian (Norway), Polish (Poland), Portuguese (Brazil), Portuguese (Portugal), Romanian (Romania), Russian (Russia), Slovak (Slovakia), Spanish (Mexico), Spanish (Spain), Swedish (Sweden), Thai (Thailand), Turkish (Türkiye), Ukrainian (Ukraine), Vietnamese (Vietnam), Welsh(United Kingdom).
 
-### Use the Teams admin center to manage transcription
+### Use the Teams admin center to enable or disable transcription
 
 In the Teams admin center, you can enable or disable the **Transcription** setting for your users within a meeting policy located under **Meetings** > **Meeting policies**. This setting is off by default.
 
-To allow or prevent meeting transcription, follow these steps:
+### Use PowerShell to enable or disable transcription
 
-1. In the Microsoft Teams admin center, expand **Meetings** > **Meeting policies**.
-1. Select the policy that you want to edit or create a new one. To apply changes to all users in your organization who don't have an existing policy assignment, use the **Global policy**. To exclude certain users from the global policy, create and assign a custom meeting policy.
-1. Toggle **Transcription** **On** or **Off**. This setting is on by default for new policies.
-1. Select **Save**.
-1. To assign the policy:
-    - **To specific users**- Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
-    - **To groups**: Select **Group policy assignment** > select **Add** > enter the group's name and enter the policy's name > select **Apply**.
+You can use the **`-AllowTranscription`** parameter in the[Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) cmdlet to manage transcription.
 
-To manage meeting transcription using PowerShell, use the **`-AllowTranscription`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#powershell) in this article.
+```powershell
+Set-CsTeamsMeetingPolicy -Identity <policy name> -AllowTranscription $True
+```
+
+For information on how your end users can use transcription, read [View live transcription in a Teams meeting](https://support.microsoft.com/office/dc1a8f23-2e20-4684-885e-2152e06a4a8b).
 
 ### Live translated transcription
 
@@ -78,8 +74,7 @@ By default, transcripts are shown in the language spoken during a meeting or eve
 
 To enable **Live translated transcription**, **Transcription** must be set to '**On**' in the corresponding meeting policy in the Teams admin center. To turn off **Live translated transcription**, set **Transcription** to **Off**.
 
-
-For information on how your end users can turn on live translated captions, see [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b).
+For information on how your end users can turn on live translated captions, read [View live transcription in Microsoft Teams meetings](https://support.microsoft.com/office/view-live-transcription-in-microsoft-teams-meetings-dc1a8f23-2e20-4684-885e-2152e06a4a8b).
 
 ## Live captions
 
@@ -159,15 +154,15 @@ For details on assigning policies to users and groups using PowerShell, see [Ass
 To allow everyone in your organization to transcribe meetings, events, and group calls, except users with an assigned custom meeting policy, run the following command:
 
 ```powershell
-Set-CsTeamsMeetingPolicy -Identity Global -AllowTranscription $true
+Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
 ```
 
-To allow specific users in your organization to transcribe, run the following commands:
+To allow specific users in your organization to record, run the following commands:
 
 1. Create a new policy
 
     ```powershell
-    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowTranscription $true
+    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
     ```
 
 2. Assign specific users the policy
@@ -176,12 +171,12 @@ To allow specific users in your organization to transcribe, run the following co
     Grant-CsTeamsMeetingPolicy -Identity "user@contoso.onmicrosoft.com" -PolicyName "Your Policy Name"
     ```
 
-To allow specific groups in your organization to transcribe, run the following commands:
+To allow specific groups in your organization to record, run the following commands:
 
 1. Create a new policy
 
     ```powershell
-    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowTranscription $true
+    Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
     ```
 
 2. Assign specific groups the policy
