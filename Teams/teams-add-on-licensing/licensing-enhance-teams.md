@@ -293,7 +293,7 @@ Microsoft Places allows you and your organization to build a smart workplace. Wi
 
 ### Queues app
 
-*Requires a [Teams Phone license](./teams-add-on-licensing/microsoft-teams-add-on-licensing#teams-phone-with-pstn-connectivity-licenses.md).*
+*Requires a [Teams Phone license](./teams-add-on-licensing/microsoft-teams-add-on-licensing#teams-phone-with-pstn-connectivity-licenses).*
 
 The Queues app is a Teams-native solution designed to empower organizations to manage customer engagements efficiently, unlocking a set of advanced call functionalities for Teams Phone Call queues and Auto attendants. To learn more about the Queues app, see [Use the Queues app for Microsoft Teams](https://support.microsoft.com/office/370ad83e-c2c1-4a9f-8a59-16c98be102e9) and [Manage the Queues app](/microsoftteams/manage-queues-app).
 
