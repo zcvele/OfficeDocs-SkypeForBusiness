@@ -191,7 +191,7 @@ Set-CsTeamsMeetingPolicy -Identity <policy name> -LiveCaptionsEnabledType Disabl
 
 ## Related topics
 
-- [Teams meeting recording](meeting-recording.md)
+- [Overview- Recording and transcription for Teams meetings, events, and calls](recording-transcription-overview.md)
 - [Block the download of Teams meeting recording and transcript files from SharePoint or OneDrive](block-download-meeting-recording.md)
 - [Teams meeting recording and transcript storage and permissions in OneDrive for Business and SharePoint](tmr-meeting-recording-change.md)
 - [Manage Teams recording policies for meetings and events](meeting-recording.md)
