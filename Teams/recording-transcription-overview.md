@@ -1,5 +1,5 @@
 ---
-title: Overview- Recording and transcription for Teams meetings and calls
+title: Overview- Recording and transcription for Teams meetings, events, and calls
 ms.reviewer: lisma, harinlee, wanqincao, yujin1
 ms.date: 3/19/2025
 ms.topic: article
@@ -27,7 +27,7 @@ appliesto:
 description: Understand recording and transcription policies available for meetings and calls in Microsoft Teams.
 ---
 
-# Overview: Recording and transcription for Teams meetings and calls
+# Overview- Recording and transcription for Teams meetings, events, and calls
 
 **APPLIES TO:** ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Meetings ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Webinars ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Town halls ![Image of a checkmark for yes](/office/media/icons/success-teams.png) Group and 1:1 calls
 
