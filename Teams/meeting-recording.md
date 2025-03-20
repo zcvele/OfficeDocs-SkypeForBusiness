@@ -108,11 +108,11 @@ To manage this setting using PowerShell, use the **`-ChannelRecordingDownload`**
 
 ## Expiration policy
 
-### Recordings automatically expire
+### Recordings and transcripts automatically expire
 
 This setting allows you to manage storage by reducing the space that older recordings and transcripts use. OneDrive and SharePoint automatically monitor the expiration settings for all recordings and transcripts, moving them to the recycle bin once they reach their expiration date.
 
-You can turn off the **Meetings automatically expire** setting in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851) under **Meetings** > **Meeting policies** > **Recording & transcription**.
+You can turn off the **Recordings and transcriptions automatically expire** setting in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851) under **Meetings** > **Meeting policies** > **Recording & transcription**.
 
 ### Default expiration time
 
