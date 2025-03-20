@@ -118,6 +118,7 @@ For details about enforcing settings by using meeting templates and sensitivity 
 
 ## Related topics
 
+- [Overview- Recording and transcription for Teams meetings, events, and calls](recording-transcription-overview.md)
 - [Introduction to Teams policy-based recording for callings & meetings](teams-recording-policy.md)
 - [Configure Teams meetings with three tiers of protection](configure-meetings-three-tiers-protection.md)
 - [Options for meeting organizers in Microsoft Teams](https://support.microsoft.com/office/53261366-dbd5-45f9-aae9-a70e6354f88e)
