@@ -63,19 +63,19 @@ The following sections outline the policy settings and features you can use to m
 |Block or allow download of channel recording and transcript files|Control whether your users can download channel meeting recordings and transcripts.|[Manage Teams recording policies for meetings and events](meeting-recording.md#block-or-allow-download-of-channel-meeting-recordings)|
 |Block download of meeting recording and transcript files from SharePoint or OneDrive| Prevent users from downloading meeting recording and transcript files saved in SharePoint and OneDrive.|[Block the download of Teams meeting recording files from SharePoint or OneDrive](block-download-meeting-recording.md)|
 |Verify transcription requirements|Verify if a user’s account meets the requirements to transcribe a Teams meeting.|Link|
-|Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcript|Control whether organizers can restrict participants from copying or forwarding meeting chat messages, live captions, transcripts, and AI-generated insights in the meeting recaps.|Link|
-|Intelligent recap for meetings|Licensing and the transcription policy control this feature. Users with a Teams Premium or Microsoft 365 Copilot license automatically have access to this feature.|Link|
-|eDiscovery Search for recordings and transcripts|View meeting recordings video and transcription text.|Link|
-|Recording and transcript storage|Manage where meeting recordings and transcripts are stored.|Link|
-|Who can record and transcribe **(Teams Premium)**|Use sensitivity labels or a meeting template to control who can record and transcribe meetings created by organizers with a Teams Premium license.|Link|
+|Organizer can restrict participants from copying or forwarding meeting chat messages, live captions, and transcript|Control whether organizers can restrict participants from copying or forwarding meeting chat messages, live captions, transcripts, and AI-generated insights in the meeting recaps.|[Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md)|
+|Intelligent recap for meetings|Licensing and the transcription policy control this feature. Users with a Teams Premium or Microsoft 365 Copilot license automatically have access to this feature.|[Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings.md)|
+|eDiscovery Search for recordings and transcripts|View meeting recordings video and transcription text.|[Manage Teams recording policies for meetings and events](meeting-recording.md#ediscovery-search-for-recordings-and-transcripts)|
+|Recording and transcript storage|Manage where meeting recordings and transcripts are stored.|[Teams meeting recording and transcript storage and permissions in OneDrive for Business and SharePoint](tmr-meeting-recording-change.md)|
+|Who can record and transcribe **(Teams Premium)**|Use sensitivity labels or a meeting template to control who can record and transcribe meetings created by organizers with a Teams Premium license.|[Manage Microsoft Teams meeting recording and transcription options for sensitive meetings](manage-meeting-recording-options.md)|
 
 ## Manage recording and transcription for 1:1 calls
 
 |Feature/setting|Admin controls|Documentation|
 |:------|:-----|:---------|
-|Recording|Allow or prevent 1:1 and PSTN call recording for users, groups, or your entire organization.|Link|
-|Transcription|Allow or prevent 1:1 and PSTN call transcription for users, groups, or your entire organization.|Link|
-|Intelligent recap for calls|Licensing and the transcription policy control this feature. Users with a Teams Premium or Microsoft 365 Copilot license automatically have access to this feature.|Link|
+|Recording|Allow or prevent 1:1 and PSTN call recording for users, groups, or your entire organization.|[Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions.md#enable-call-recording)|
+|Transcription|Allow or prevent 1:1 and PSTN call transcription for users, groups, or your entire organization.|[Configure call recording, transcription, and captions in Teams](call-recording-transcription-captions.md#enable-call-transcription)|
+|Intelligent recap for calls|Licensing and the transcription policy control this feature. Users with a Teams Premium or Microsoft 365 Copilot license automatically have access to this feature.|[Intelligent recap for Teams calls and meetings](intelligent-recap-calls-meetings.md)|
 
 ## Teams Premium
 
@@ -83,7 +83,7 @@ If you have a Teams Premium license, you can use meeting  sensitivity labels and
 
 ## Troubleshooting and diagnostics
 
-If you or your users are having any issues or errors with recordings and transcripts, check out the following articles:
+If you or your users are having any issues or errors with recordings and transcripts, check out the following articles in the troubleshooting and end end user libraries:
 
 - If your users are having issues with recording meetings, see [I can't record a meeting in Microsoft Teams](https://support.microsoft.com/office/i-can-t-record-a-meeting-in-microsoft-teams-f35329c2-57b1-487f-b5e3-70a7efb0945b).
 - To understand issues that affect meeting recordings, see [Issues that affect meeting recordings](/microsoftteams/troubleshoot/meetings/troubleshoot-meeting-recording-issues).
