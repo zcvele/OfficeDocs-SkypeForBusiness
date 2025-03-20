@@ -72,7 +72,7 @@ To allow or prevent meeting recordings, follow these steps:
     - **To specific users**- Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
     - **To groups**: Select **Group policy assignment** > select **Add** > enter the group's name and enter the policy's name > select **Apply**.
 
-To manage meeting recording using PowerShell, use the **`-AllowCloudRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#powershell) in this article.
+To manage meeting recording using PowerShell, use the **`-AllowCloudRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#manage-recording) in this article.
 
 ## Auto recording
 
@@ -85,7 +85,7 @@ When you turn on the auto recording policy for an organizer, the **Record and tr
 
 You must use PowerShell or a meeting template to manage this setting for organizers.
 
-To manage this setting with meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md). Only organizers with a Teams Premium license can use assigned meeting templates.If you prefer to prevent the organizers from changing your settings, you can lock the value you selected. Once the template is activated, users will see it when scheduling meetings. If they opt to use this template, recording and transcription will commence automatically without any user interaction.
+To manage this setting with meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md). Only organizers with a Teams Premium license can use assigned meeting templates. If you prefer to prevent the organizers from changing your settings, you can lock the value you selected. Once the template is activated, users will see it when scheduling meetings. If they opt to use this template, recording and transcription will commence automatically without any user interaction.
 
 To manage this setting using PowerShell, use the **`-AutoRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#manage-auto-recording-in-powershell) in this article.
 
@@ -106,11 +106,11 @@ To manage this setting using PowerShell, use the **`-ChannelRecordingDownload`**
 
 This setting allows you to manage storage by reducing the space that older recordings and transcripts use. OneDrive and SharePoint automatically monitor the expiration settings for all recordings and transcripts, moving them to the recycle bin once they reach their expiration date.
 
-You can turn off the **Recordings and transcriptions automatically expire** setting in the [Teams admin center](https://go.microsoft.com/fwlink/p/?linkid=2066851) under **Meetings** > **Meeting policies** > **Recording & transcription**.
+You can turn off the **Recordings and transcriptions automatically expire** setting in the Teams admin center under **Meetings** > **Meeting policies** > **Recording & transcription**.
 
 ### Default expiration time
 
-This setting controls whether recordings or transcripts automatically expire. After turning on **Recordings automatically expire**, you'll get the option to set the **Default expiration time**, measured in days. Meeting recordings and transcripts have a default expiration time of 120 days.
+This setting controls whether recordings and transcripts automatically expire. After turning on **Recordings automatically expire**, you'll get the option to set the **Default expiration time**, measured in days. Meeting recordings and transcripts have a default expiration time of 120 days.
 
 Any changes to this setting only affect newly created recordings and transcripts. You can't change the expiration time on existing meeting recordings and transcripts.
 
@@ -134,7 +134,7 @@ Set-CsTeamsMeetingPolicy -Identity <policy name> -NewMeetingRecordingExpirationD
 To update the Teams recording and transcription privacy policy URL with a custom link for users in and outside your org, you must use one of the following options:
 
 - The **`-LegalURL`** parameter within the [CsTeamsMeetingConfiguration](/powershell/module/skype/set-csteamsmeetingconfiguration) PowerShell cmdlet.
-- The Teams admin center through **Meeting settings** > **Email invitation** > **Privacy and Security URL**. For more information, see [Customize meeting invitations](customize-meeting-invitations.md).
+- The Teams admin center through **Meeting settings** > **Email invitation** > **Privacy and Security URL**. For detailed instructions, see [Customize meeting invitations (IT admins)](customize-meeting-invitations.md).
 
 If you don't enter a privacy and security URL in Teams meeting settings or PowerShell, we display Microsoft Entra ID's privacy policy. For more information on Microsoft Entra ID's privacy policy, see [Add your organization's privacy info using Microsoft Entra ID](/entra/fundamentals/properties-area). If there's no Microsoft Entra ID, we display the Microsoft Privacy policy.
 
@@ -150,7 +150,9 @@ The consent choice for each participant is included in the attendance report. Pa
 
 ### Manage recording consent
 
-You can use the Teams admin center or the **`-ExplicitRecordingConsent`** parameter in the [**CsTeamsMeetingPolicy**](/powershell/module/teams/set-csteamsmeetingpolicy) cmdlet to manage recording consent. This parameter also manages recording consent for Audio Conferencing. To learn about recording consent for Audio Conferencing, see [Explicit recording consent for Audio Conferencing](conferencing-recording-consent.md). To manage this feature using PowerShell, see the [PowerShell section](#powershell) in this article.
+You can use the Teams admin center or the **`-ExplicitRecordingConsent`** parameter in the [**CsTeamsMeetingPolicy**](/powershell/module/teams/set-csteamsmeetingpolicy) cmdlet to manage recording consent. This parameter also manages recording consent for Audio Conferencing. To learn about recording consent for Audio Conferencing, see [Explicit recording consent for Audio Conferencing](conferencing-recording-consent.md).
+
+To manage this feature using PowerShell, see the [PowerShell section](#manage-whether-meetings-require-participant-agreement-for-recording-and-transcription) in this article.
 
 The following table shows the behaviors of the settings for explicit consent:
 
@@ -159,7 +161,7 @@ The following table shows the behaviors of the settings for explicit consent:
 |On|Enabled| For organizers with this policy, all their meetings require participants to provide consent to be recorded and transcribed.|
 |Off|Disabled| **This setting is the default value.** For organizers with this policy, participants aren't asked for consent to be recorded and transcribed. All participants are included in recordings and transcripts from these organizers' meetings.|
 
-To manage recording consent for your organization, follow these steps:
+To manage recording consent for your organization in the Teams admin center, follow these steps:
 
 1. Open the Teams admin center.
 2. Expand **Meetings** from the navigation pane.
@@ -211,11 +213,11 @@ In meetings requiring explicit consent, users joining from unsupported endpoints
 - Old version native clients
 - Teams Displays
 
-### Compliance
+## Compliance
 
-You shouldn't rely on meeting expiration settings for legal protection since end users can modify the expiration date of any recordings they control.
+End users can modify the expiration date of any recordings they control, so you shouldn't rely on meeting expiration settings for legal protection.
 
-#### Recording expiration settings and Microsoft 365 retention policies in Microsoft Purview
+### Recording expiration settings and Microsoft 365 retention policies in Microsoft Purview
 
 #### File retention vs expiration policies
 
@@ -239,7 +241,7 @@ Usually, the recording is deleted within a day after the expiration date but in 
 
 ### Expiration of migrated recordings from Stream (Classic)
 
-Migrated recordings from Stream (Classic) don't come with an expiration set on them. Instead, we encourage admins to only migrate recordings that they want to retain.
+Migrated recordings from Stream (Classic) don't come with an expiration set on them. Instead, we encourage you to only migrate recordings that they want to retain.
 
 ## Permissions and storage
 
