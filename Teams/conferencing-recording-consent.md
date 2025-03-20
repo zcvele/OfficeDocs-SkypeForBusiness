@@ -50,7 +50,7 @@ For scripts to enable explicit recording consent for Audio Conferencing, see [Ma
 
 To select their recording preferences, your users can use the following selections on their dial pad:
 
-**1**– Give consent to being recorded in a call and un-mute their microphone.
+**1** - Give consent to being recorded in a call and un-mute their microphone.
 
 **2** – Deny recording and remain muted.
 
