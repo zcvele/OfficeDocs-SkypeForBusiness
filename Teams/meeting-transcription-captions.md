@@ -112,7 +112,7 @@ To turn on live translated captions, you must set **Live captions** to **Not ena
 
 As an admin, you can choose whether organizers in your organization can restrict participants from copying or forwarding meeting chat messages, live captions, transcripts, and AI-generated insights in the meeting recaps. This setting also restricts forwarding and sharing messages to Outlook. By default, this per-organizer setting is set **On**. To learn more, see [Manage chat for sensitive Teams meetings](manage-chat-sensitive-meetings.md).
 
-## Diagnostics for transcripts
+## Check user's transcription permissions
 
 You can run the Teams transcripts diagnostic tool in the Microsoft 365 admin center to verify if a user’s account meets the requirements to transcribe a Teams meeting.
 
@@ -130,6 +130,10 @@ To run the diagnostic tool for transcripts, follow these steps:
 3. In the Teams Meeting URL field, enter the meeting URL.
 4. Select **Run Tests**.
 5. After the diagnostic runs, select the provided links to resolve the issues that were found.
+
+## Manage whether transcripts automatically expire
+
+To manage whether transcripts automatically expire, see [Manage Teams recording policies for meetings and events](meeting-recording.md#expiration-policy).
 
 ## PowerShell
 
