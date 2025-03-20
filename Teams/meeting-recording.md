@@ -52,13 +52,7 @@ Town halls and webinars follow the same process for recording. However, there ar
 
 There's an option for recordings to have automatic transcription, so users can play back meeting recordings with closed captions and review important discussion items in the transcript. For more information about transcription and captions, see [Configure transcription and captions for Teams meetings](meeting-transcription-captions.md).
 
-This article covers following recording policies:
-
-- [Allow or prevent users from recording meetings](#allow-or-prevent-users-from-recording-meetings)
-- [Require participant agreement for recording and transcription](#require-participant-agreement-for-recording-and-transcription)
-- [Block or allow download of channel meeting recordings](#block-or-allow-download-of-channel-meeting-recordings)
-- [Expiration policy](#expiration-policy)
-- [Set a custom privacy policy URL](#set-a-custom-privacy-policy-url)
+For an overview of recording and transcription policies available for Teams meetings, events, and calls, see [Overview- Recording and transcription for Teams meetings, events, and calls](recording-transcription-overview.md).
 
 ## External participants
 
@@ -349,6 +343,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Allow
 
 ## Related topics
 
+- [Overview- Recording and transcription for Teams meetings, events, and calls](recording-transcription-overview.md)
 - [Live event recording policies in Teams](teams-live-events/live-events-recording-policies.md)
 - [Use OneDrive and SharePoint to store meeting recordings](tmr-meeting-recording-change.md)
 - [Introduction to Microsoft Teams third party compliance recording](teams-recording-policy.md)
