@@ -97,7 +97,7 @@ You have several avenues to get help with your Teams Phone deployment.
 - Regardless of size, we offer Microsoft FastTrack enablement services to all licensed customers.
   - To learn more, see [Microsoft Teams Phone adoption](https://enablement.microsoft.com/microsoft-teams/teams-phone/).
 
-- Microsoft also offers a rich ecosystem of Teams Phone partners who can help with your Teams Phone planning, enablement, optimizaztion, management, PSTN access, devices, solutions, services, and more.
+- Microsoft also offers a rich ecosystem of Teams Phone partners who can help with your Teams Phone planning, enablement, optimization, management, PSTN access, devices, solutions, services, and more.
   - If you don't have a Teams Phone partner, see [Find a Microsoft partner](https://partner.microsoft.com/partnership/find-a-partner), and filter for your location.
 
 ## Related topics
