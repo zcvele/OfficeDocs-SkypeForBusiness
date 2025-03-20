@@ -274,4 +274,4 @@ Microsoft only supports compliance recording solutions from the listed, certifie
 ### Related topics  
 
 - [Teams Recordings - Microsoft Teams | Microsoft Learn](./teams-recording-policy.md)
- 
+- [Overview- Recording and transcription for Teams meetings and calls](recording-transcription-overview.md)
