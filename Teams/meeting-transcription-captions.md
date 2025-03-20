@@ -64,7 +64,7 @@ To allow or prevent meeting transcription, follow these steps:
 1. Toggle **Transcription** **On** or **Off**. This setting is **On** by default for new policies.
 1. Select **Save**.
 1. To assign the policy:
-    - **To specific users**- Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
+    - **To specific users**: Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
     - **To groups**: Select **Group policy assignment** > select **Add** > enter the group's name and enter the policy's name > select **Apply**.
 
 To manage meeting transcription using PowerShell, use the **`-AllowTranscription`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#powershell) in this article.
@@ -97,7 +97,7 @@ To allow or prevent live captions in meetings, follow these steps:
 1. From the drop-down for **Live captions**, select **Not enabled, but users can enable**(default value) or **Off**.
 1. Select **Save**.
 1. To assign the policy:
-    - **To specific users**- Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
+    - **To specific users**: Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
     - **To groups**: Select **Group policy assignment** > select **Add** > enter the group's name and enter the policy's name > select **Apply**.
 
 To manage live captions using PowerShell, use the **`-LiveCaptionsEnabledType`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#powershell) in this article.
@@ -121,14 +121,14 @@ You can run the Teams transcripts diagnostic tool in the Microsoft 365 admin cen
 
 To run the diagnostic tool for transcripts, follow these steps:
 
-1. Select the Run Tests button to populate the diagnostic in the Microsoft 365 admin center:
+1. Select the **Run Tests** button to populate the diagnostic in the Microsoft 365 admin center:
 
    > [!div class="nextstepaction"]
    > [Run Tests](https://aka.ms/MeetingTranscribeDiag)
 
-2. In the Username or Email field, enter the email address of the affected user.
-3. In the Teams Meeting URL field, enter the meeting URL.
-4. Select **Run Tests**.
+2. In the **Username or Email** field, enter the email address of the affected user.
+3. In the **Teams Meeting URL** field, enter the meeting URL.
+4. Select **Run Tests**.
 5. After the diagnostic runs, select the provided links to resolve the issues that were found.
 
 ## Manage whether transcripts automatically expire
