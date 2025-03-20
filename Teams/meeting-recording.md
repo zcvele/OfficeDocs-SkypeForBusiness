@@ -69,7 +69,7 @@ To allow or prevent meeting recordings, follow these steps:
 1. Toggle **Meeting recording** **On** or **Off**.
 1. Select **Save**.
 1. To assign the policy:
-    - **To specific users**- Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
+    - **To specific users**: Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
     - **To groups**: Select **Group policy assignment** > select **Add** > enter the group's name and enter the policy's name > select **Apply**.
 
 To manage meeting recording using PowerShell, use the **`-AllowCloudRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#manage-recording) in this article.
@@ -95,7 +95,7 @@ To manage this setting using PowerShell, use the **`-AutoRecording`** parameter 
 
 The two values for this setting are:
 
-- **Allow** (default value) - Channel meeting recordings and transcripts are saved to a **Recordings** folder in the channel's SharePoint site. The recording and transcript file permissions follow the Channel SharePoint permissions.  This is the same as any other file uploaded for the channel.
+- **Allow** (default value) - Channel meeting recordings and transcripts are saved to a **Recordings** folder in the channel's SharePoint site. The recording and transcript file permissions follow the Channel SharePoint permissions. This is the same as any other file uploaded for the channel.
 - **Block** -  Channel meeting recordings and transcripts are saved to a **Recordings\View only** folder in the channel's SharePoint site. Channel owners have full access and rights to the recordings and transcripts in this folder, while channel members can only view them without the option to download or edit.
 
 To manage this setting using PowerShell, use the **`-ChannelRecordingDownload`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#manage-download-of-channel-meeting-recordings-in-powershell) in this article.
@@ -171,7 +171,7 @@ To manage recording consent for your organization in the Teams admin center, fol
 6. Toggle the **Require participant agreement for recording and transcription** setting **On** or **Off**.
 7. Select **Save**.
 8. To assign the policy:
-    - **To specific users**- Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
+    - **To specific users**: Select your policy > select **Manage users** > **Assign users** > enter in the search bar the names of specific users and select **Add** > select **Apply**.
     - **To groups**: Select **Group policy assignment** > select **Add** > enter the group's name and enter the policy's name > select **Apply**.
 
 ### View consent data
@@ -223,7 +223,7 @@ End users can modify the expiration date of any recordings they control, so you 
 
 File retention takes precedence over file deletion. A Teams meeting recording expiration policy can't delete a Teams meeting recording with a Purview retention policy until after the retention period is completed. For example, if you have a Purview retention policy that says a file will be kept for five years and a Teams meeting recording expiration policy set for 60 days, the Teams meeting recording expiration policy permanently deletes the recording after five years.
 
-Once the recording reaches the expiration date, it gets deleted from the user’s OneDrive, and is copied to the tenant's Preservation Hold library. Your users can't see the recording in OneDrive anymore, but as an admin, only you can find the recording in the Preservation Hold library. To learn more about the Preservation Hold library, see [Learn about retention for SharePoint and OneDrive](/purview/retention-policies-sharepoint#how-retention-works-for-sharepoint-and-onedrive).
+Once the recording reaches the expiration date, it gets deleted from the user's OneDrive, and is copied to the tenant's Preservation Hold library. Your users can't see the recording in OneDrive anymore, but as an admin, only you can find the recording in the Preservation Hold library. To learn more about the Preservation Hold library, see [Learn about retention for SharePoint and OneDrive](/purview/retention-policies-sharepoint#how-retention-works-for-sharepoint-and-onedrive).
 
 #### Expiration vs deletion policies
 
@@ -279,13 +279,13 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
 
 To allow specific users in your organization to record, run the following commands:
 
-1. Create a new policy
+1. Create a new policy.
 
     ```powershell
     Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
     ```
 
-2. Assign specific users the policy
+2. Assign specific users the policy.
 
     ```powershell
     Grant-CsTeamsMeetingPolicy -Identity "user@contoso.onmicrosoft.com" -PolicyName "Your Policy Name"
@@ -293,13 +293,13 @@ To allow specific users in your organization to record, run the following comman
 
 To allow specific groups in your organization to record, run the following commands:
 
-1. Create a new policy
+1. Create a new policy.
 
     ```powershell
     Set-CsTeamsMeetingPolicy -Identity "Your Policy Name" -AllowCloudRecording $true
     ```
 
-2. Assign specific groups the policy
+2. Assign specific groups the policy.
 
     ```powershell
     Grant-CsTeamsMeetingPolicy -Group "Group ID" -PolicyName "Your Policy Name"
