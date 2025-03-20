@@ -78,7 +78,7 @@ To manage meeting recording using PowerShell, use the **`-AllowCloudRecording`**
 
 You can control whether organizers have access to the **Record and transcribe automatically** setting for meetings. You can only apply this policy setting to users and groups.
 
-When you turn on the auto recording policy for an organizer, the **Record and transcribe automatically** setting in their **Meeting options** for meetings is **Off** by default. Organizers must manually turn on this setting for each meeting they want recorded and transcribed. For webinars and town halls, the setting is **On** by default. If you turn of auto recording, organizers don't see the setting and can’t set meetings to record automatically.
+When you turn on the auto recording policy for an organizer, the **Record and transcribe automatically** setting in their **Meeting options** for meetings is **Off** by default. Organizers must manually turn on this setting for each meeting they want recorded and transcribed. For webinars and town halls, the setting is **On** by default. If you turn off auto recording, organizers don't see the setting and can’t set meetings to record automatically.
 
 > [!NOTE]
 > This setting doesn't apply to transcripts.
@@ -87,7 +87,7 @@ You must use PowerShell or a meeting template to manage this setting for organiz
 
 To manage this setting with meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md). Only organizers with a Teams Premium license can use assigned meeting templates.If you prefer to prevent the organizers from changing your settings, you can lock the value you selected. Once the template is activated, users will see it when scheduling meetings. If they opt to use this template, recording and transcription will commence automatically without any user interaction.
 
-To manage this setting using PowerShell, use the **`-AutoRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#powershell) in this article.
+To manage this setting using PowerShell, use the **`-AutoRecording`** parameter in [Set-CsTeamsMeetingPolicy](/powershell/module/teams/set-csteamsmeetingpolicy). For details, see the [PowerShell section](#manage-auto-recording-in-powershell) in this article.
 
 ## Block or allow download of channel meeting recordings
 
@@ -313,7 +313,7 @@ To require participants to give their explicit consent to be recorded or transcr
 Set-CsTeamsMeetingPolicy -Identity <policy name> -ExplicitRecordingConsent Enabled
 ```
 
-### Block the download of channel recordings in powerShell
+### Manage auto recording in PowerShell
 
 To give organizers with this policy the option to record their meetings automatically, follow this script:
 
