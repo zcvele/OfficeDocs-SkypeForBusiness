@@ -91,6 +91,8 @@ If all of a particular type of meeting must be recorded (for example, all sensit
 
 For details on managing this option with meeting templates, see [IT admins - Create a custom meeting template in Microsoft Teams](create-custom-meeting-template.md#recording--transcription).
 
+For details on managing this option with sensitivity labels, see [Use sensitivity labels to protect calendar items, Teams meetings, and chat](/purview/sensitivity-labels-meetings).
+
 ## Recording and transcription lifecycle
 
 By default, meeting recordings and transcripts are deleted after 120 days. The following policies in the Teams admin center manage the recording lifecycle:
