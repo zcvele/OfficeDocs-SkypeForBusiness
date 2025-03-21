@@ -57,7 +57,7 @@ Microsoft Calling Plans, Operator Connect partners, and Teams Phone Mobile partn
 
 For Direct Routing, more prerequisites are required for routing emergency calls and possibly for partner connectivity. In Teams, you must ensure that the settings for the peer PSTN gateway configuration are configured to add location information to the outgoing emergency call's INVITE protocol.
 
-To modify the emergency call settings, the parameter for *PidfloSupported* must be True. The settings can be modified in PowerShell or in Teams amdin center (TAC).
+To modify the emergency call settings, the parameter for *PidfloSupported* must be True. The settings can be modified in PowerShell or in Teams admin center (TAC).
 
 ### Modifying PIDF/LO in Teams Admin Center
 
