@@ -12,7 +12,7 @@ ms.collection:
   - highpri
   - Tier1
 ms.reviewer: roykuntz
-ms.date: 10/16/2023
+ms.date: 03/21/2025
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -51,7 +51,14 @@ The ability to do automatic routing to the appropriate Public Safety Answering P
 
 Microsoft Calling Plans, Operator Connect partners, and Teams Phone Mobile partners include dynamic emergency routing services for users in the United States and Canada.
 
-For Direct Routing, however, additional configuration is required for routing emergency calls and possibly for partner connectivity. The administrator must ensure that the PSTN gateway routing the emergency call has been configured to add location information to the outgoing INVITE (by setting the parameter PidfloSupported to True on the online PSTN gateway object. In addition the administrator must configure connection to an Emergency Routing Service (ERS) provider (United States and Canada) **OR** configure the Session Border Controller (SBC) for an Emergency Location Identification Number (ELIN) application. For information about ERS providers, see [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
+For Direct Routing, dditional configuration is required for routing emergency calls and possibly for partner connectivity. In Teams, the administrator must ensure that the settings for the peer PSTN gateway configuration are configured to add location information to the outgoing emergency call's INVITE protocol.
+
+To modify the emergency call settings, the parameter for *PidfloSupported* must be True. This can be done in PowerShell or in TAC.
+
+- To modify the PidfloSupported value using TAC, expand **Voice**, select **Direct Routing**, select the Session Border Controller (SBC) that is supporting your emergency call routing, select **Edit**, ensure **SBC supports PIDF/LO for emergency calls** is turned on, and save the SBC profile.
+- To modify the PidflowSupported value using Powershell, see [Set-CsOnlinePSTNGateway](/powershell/module/teams/set-csonlinepstngateway), with *-PidflowSupportd* attribute set to *$true*.
+
+In addition the administrator must configure connection to an Emergency Routing Service (ERS) provider (United States and Canada) **OR** configure the Session Border Controller (SBC) for an Emergency Location Identification Number (ELIN) application. For information about ERS providers, see [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
 
 This article contains the following sections.
 
@@ -78,23 +85,23 @@ The following clients are currently supported.  Check back often to see updates 
 - Teams desktop client for Apple macOS
 - Teams mobile client for Apple iOS client version 1.0.92.2019121004 and App Store version 1.0.92 and greater
 - Teams mobile client for Android client and Google Play store version 1416/1.0.0.2019121201 and greater
-- Teams phone version 1449/1.0.94.2019110802 and greater
+- Teams phones with Teams app version 1449/1.0.94.2019110802 and greater
 - Teams Rooms on Windows
 - Teams Rooms on Android
 
 > [!NOTE]
-> Subnet locations are supported on all Teams clients.  WiFi-based locations are supported on all Teams clients except Teams phone.
+> Subnet locations are supported on all Teams clients.  WiFi-based locations are supported on all Teams clients except Teams phones.
 >
 > Ethernet/Switch (LLDP) is supported on:
 >
 > - Windows versions 10.0 and later at this time.
 > - Mac OS, which requires [LLDP enablement software](https://www.microsoft.com/download/details.aspx?id=103383).
-> - Teams phone with Teams app version 1449/1.0.94.2021110101 and later.
+> - Teams phones with Teams app version 1449/1.0.94.2021110101 and later.
 > - Teams Rooms on Windows
 > - Teams Rooms on Android (OEM specific configuration may be required)
 
 > [!NOTE]
-> Dynamic emergency calling, including security desk notification, isn't supported on the Teams web client. To prevent users from using the Teams web client to call PSTN numbers, you can set a Teams calling policy and turn off the **Web PSTN calling** setting. To learn more, see [Calling policies in Teams](teams-calling-policy.md) and [Set-CsTeamsCallingPolicy](/powershell/module/teams/set-csteamscallingpolicy).
+> Dynamic emergency calling, including security desk notification, isn't supported on the Teams web client. To prevent users from using the Teams web client to call PSTN numbers, you can create a Teams calling policy, turn off the **Web PSTN calling** setting, and assign to users of the web client. To learn more, see [Calling policies in Teams](teams-calling-policy.md) and [Set-CsTeamsCallingPolicy](/powershell/module/teams/set-csteamscallingpolicy).
 
 ## Assign emergency addresses
 
@@ -123,7 +130,7 @@ You add and assign emergency addresses in the Microsoft Teams admin center or by
 
 Network settings are used to determine the location of a Teams client, and to dynamically obtain emergency calling policies and an emergency location. You can configure network settings according to how your organization wants emergency calling to function.
 
-Network settings include sites that include a collection of subnets and these are used exclusively for dynamic policy assignment to users. For example, an emergency calling policy and an emergency call routing policy might be assigned to the "Redmond site" so that any user that roams from home or another Microsoft location is configured with emergency numbers, routing, and security desk specific to Redmond.  
+Network settings include sites that are made up of a collection of subnets and these are used exclusively for dynamic policy assignment to users. For example, an emergency calling policy and an emergency call routing policy might be assigned to the "Redmond site" so that any user that roams from home or another Microsoft location is configured with emergency numbers, routing, and security desk specific to Redmond.  
 
 Trusted IP addresses contain a collection of the internet external IP addresses of the enterprise network and are used to determine if the user's endpoint is inside the corporate network. An attempt to obtain a dynamic policy or location based on the endpoints IP address will only be made if the user's external IP address matches an IP address in the trusted IP addresses. 
 
@@ -203,7 +210,7 @@ Use the following policies to configure emergency calling. You can manage these 
 
    (Calling Plan, Operator Connect, and Teams Phone Mobile users are automatically enabled for emergency calling with the emergency numbers from the country/region based upon their Microsoft 365 or Office 365 usage location.)
 
-- **Emergency calling policy - Applies to Calling Plans, Operator Connect, Teams Phone Mobile, and Direct Routing.** This policy configures the security desk notification experience when an emergency call is made. You can set who to notify and how they are notified. For example, to automatically notify your organization's security desk and have them listen in on emergency calls.  This policy can either be assigned to users or network sites or both. To learn more, see [Manage emergency calling policies in Teams](manage-emergency-calling-policies.md).
+- **Emergency calling policy - Applies to Calling Plans, Operator Connect, Teams Phone Mobile, and Direct Routing.** This policy configures the security desk notification experience when an emergency call is made. You can set who to notify and how they are notified. For example, to automatically notify your organization's security desk and have them listen in on emergency calls. You can set unique experiences per emergency number, including not alerting the security desk for test calls to 933. This policy can either be assigned to users or network sites or both. To learn more, see [Manage emergency calling policies in Teams](manage-emergency-calling-policies.md).
 
 ## Enable users and sites
 

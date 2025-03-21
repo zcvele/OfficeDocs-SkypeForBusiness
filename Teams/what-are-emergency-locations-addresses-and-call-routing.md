@@ -4,7 +4,7 @@ author: sfrancis206
 ms.author: scottfrancis
 manager: pamgreen
 ms.reviewer: roykuntz
-ms.date: 01/22/2024
+ms.date: 03/21/2025
 ms.topic: article
 ms.assetid: 589bf5f5-490a-4215-8588-99bab7d33e31
 ms.tgt.pltfrm: cloud
@@ -53,9 +53,11 @@ The following table describes concepts and definitions for emergency calling:
 
 ### Emergency address validation
 
-To assign an emergency address to a user or to a network identifier, you must ensure that the emergency address is marked as "validated." Validation ensures that the address is legitimate, and that it can't be modified after it is assigned.
+To assign an emergency address to a user or to a network identifier, you must ensure that the emergency address is marked as "validated." Validation ensures that the address is legitimate.
 
-If you define an emergency address by using the address map search feature in the Teams admin center, the address is automatically marked as validated. If the format or representation of an address changes, you can't modify a validated emergency address. You must create a new address with the updated format.
+If you define an emergency address by using the address map search feature in the Teams admin center, the address is automatically marked as validated. If the format or representation of an address changes, you can only modify a validated emergency address in specific regions, otherwise you must create a new address with the updated format.
+
+To modify a validated address with PowerShell, see [Set-CsOnlineLisCivicAddress](/powershell/module/teams/set-csonlineliscivicaddress)
 
 ### Emergency address geo codes
 
