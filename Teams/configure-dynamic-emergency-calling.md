@@ -25,13 +25,13 @@ appliesto:
 
 # Plan dynamic emergency calling
 
-Dynamic emergency calling for Microsoft Calling Plans, Operator Connect, Teams Phone Mobile, and Direct Routing provides the capability to configure and route emergency calls and notify security personnel based on the current location of the Teams client.  
+Dynamic emergency calling for Microsoft Calling Plans, Operator Connect, Teams Phone Mobile, and Direct Routing supports routing emergency calls and notifying security personnel, based on the *connected location of the Teams client*.
 
-Based on the network topology (network elements associated with emergency addresses) that the tenant administrator defines, the Teams client provides network connectivity information in a request to the Location Information Service (LIS). If there's a match, the LIS returns a location to the client.
+Using the network topology (network elements associated with emergency addresses) that the tenant administrator defines, the Teams client provides network connectivity information in a request to the Location Information Service (LIS). If there's a match, the LIS returns a location to the client.
 
-The Teams client includes location data as part of an emergency call. This data is then used by the emergency service provider to determine the appropriate Public Safety Answering Point (PSAP) and to route the call to that PSAP, which allows the PSAP dispatcher to obtain the caller's location.  
+The Teams client includes location data as part of an emergency call. This data is then used by the emergency service provider to determine the appropriate Public Safety Answering Point (PSAP), route the call to that PSAP, and provide the PSAP dispatcher with the caller's location.  
 
-For dynamic emergency calling, the following must occur:
+For dynamic emergency calling to work, the following events must occur:
 
 1. The network administrator configures network settings and the LIS to create a network/emergency location map.
 
@@ -45,7 +45,7 @@ For dynamic emergency calling, the following must occur:
        - Ethernet switch
        - Subnet
 
-3. When the Teams client makes an emergency call, the emergency location is conveyed to the PSTN network.
+3. When the Teams client makes an emergency call, the emergency location is conveyed to the Public Switched Telephone Network (PSTN).
 
 The ability to do automatic routing to the appropriate Public Safety Answering Point (PSAP) varies depending on the country/region of usage of the Teams user.
 
@@ -53,9 +53,9 @@ Microsoft Calling Plans, Operator Connect partners, and Teams Phone Mobile partn
 
 ## Emergency calling prerequisites for Direct Routing
 
-For Direct Routing, additional prerequisites are required for routing emergency calls and possibly for partner connectivity. In Teams, the administrator must ensure that the settings for the peer PSTN gateway configuration are configured to add location information to the outgoing emergency call's INVITE protocol.
+For Direct Routing, more prerequisites are required for routing emergency calls and possibly for partner connectivity. In Teams, you must ensure that the settings for the peer PSTN gateway configuration are configured to add location information to the outgoing emergency call's INVITE protocol.
 
-To modify the emergency call settings, the parameter for *PidfloSupported* must be True. This can be done in PowerShell or in TAC.
+To modify the emergency call settings, the parameter for *PidfloSupported* must be True. The settings can be modified in PowerShell or in Teams amdin center (TAC).
 
 ### Modifying PIDF/LO in Teams Admin Center
 
@@ -142,10 +142,10 @@ Azure Maps is used for location-based services. When you enter an emergency addr
 
 - If a match is found, the geo codes are automatically included.
 
-- If a match isn't found, you will have the opportunity to manually create an emergency address. You can use the PIN drop feature to do this.
+- If a match isn't found, you'll have the opportunity to manually create an emergency address. You can use the PIN drop feature to do this.
 
 > [!NOTE]
-> Emergency addresses that are more than a couple of years old cannot be assigned to network identifiers. You will need to re-create older addresses.
+> Emergency addresses that are more than a couple of years old can't be assigned to network identifiers. Older addresses must be re-created.
 
 You add and assign emergency addresses in the Microsoft Teams admin center or by using PowerShell. For more information, see [Add an emergency location for your organization](add-change-remove-emergency-location-organization.md) and [Assign an emergency location for a user](assign-change-emergency-location-user.md).
 
@@ -164,13 +164,13 @@ For more information about IP addresses, network regions, sites, and subnet addr
 
 You configure network settings in the Microsoft Teams admin center or by using PowerShell. To learn more, see [Manage your network topology for cloud voice features](manage-your-network-topology.md).
 
-Note that it can take some time (up to four hours) for some changes to network settings (such as a new address, network identifier, and so on) to propagate and be available to Teams clients.  
+It can take some time (up to four hours) for some changes to network settings (such as a new address, network identifier, and so on) to propagate and be available to Teams clients.  
 
 > [!NOTE]
 > Subnets can also be defined in LIS and can be associated with an emergency location.  LIS subnets must be defined by the Network ID matching the subnet IP range assigned to clients. For example, the network ID for a client IP/mask of 10.10.10.150/25 is 10.10.10.128. For more information, see [Understand TCP/IP addressing and subnetting basics](/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting).
 
 > [!IMPORTANT]
-> Network configuration setting lookups are not supported with cloud proxy service deployments that modify the source IP addresses from Teams clients.
+> Network configuration setting lookups aren't supported with cloud proxy service deployments that modify the source IP addresses from Teams clients.
 
 **For Calling Plan, Operator Connect, and Teams Phone Mobile users:**
 
@@ -210,7 +210,7 @@ In the Teams admin center, you can add or upload subnet, Wi-Fi access point, swi
         1. Open the corresponding network identifier template file.
         1. Complete the fields within the file.
         1. Save the template file.
-        1. From the Teams admin center, choose **Select a file** and choose the file you just saved.
+        1. From the Teams admin center, choose **Select a file** and choose the file you saved.
         1. Click **Upload**.
 
 ### Using PowerShell
