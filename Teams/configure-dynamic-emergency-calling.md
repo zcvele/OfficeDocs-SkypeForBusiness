@@ -23,13 +23,15 @@ appliesto:
 - Microsoft Teams
 ---
 
-# Plan dynamic emergency calling
+# Plan and configure dynamic emergency calling
 
 Dynamic emergency calling for Microsoft Calling Plans, Operator Connect, Teams Phone Mobile, and Direct Routing supports routing emergency calls and notifying security personnel, based on the *connected location of the Teams client*.
 
 Using the network topology (network elements associated with emergency addresses) that the tenant administrator defines, the Teams client provides network connectivity information in a request to the Location Information Service (LIS). If there's a match, the LIS returns a location to the client.
 
 The Teams client includes location data as part of an emergency call. This data is then used by the emergency service provider to determine the appropriate Public Safety Answering Point (PSAP), route the call to that PSAP, and provide the PSAP dispatcher with the caller's location.  
+
+## Plan for emergency calling
 
 For dynamic emergency calling to work, the following events must occur:
 
