@@ -55,9 +55,7 @@ The following table describes concepts and definitions for emergency calling:
 
 To assign an emergency address to a user or to a network identifier, you must ensure that the emergency address is marked as "validated." Validation ensures that the address is legitimate.
 
-If you define an emergency address by using the address map search feature in the Teams admin center, the address is automatically marked as validated. If the format or representation of an address changes, you can only modify a validated emergency address in specific regions, otherwise you must create a new address with the updated format.
-
-To modify a validated address with PowerShell, see [Set-CsOnlineLisCivicAddress](/powershell/module/teams/set-csonlineliscivicaddress)
+If you define an emergency address by using the address map search feature in the Teams admin center, the address is automatically marked as validated.
 
 ### Emergency address geo codes
 
@@ -92,10 +90,33 @@ You can also configure extended notification settings per emergency number. For 
 
 For more information about configuring security desk notifications, see [Configure security desk notifications](emergency-calling-security-desk-notifications.md).
 
-
 ## Create a custom emergency service disclaimer
 
 You can add a custom banner in the tenant for your users to enable E911. Users can dismiss the banner when they confirm their address, and the banner will reappear when Teams is restarted. To enable this feature, you set the Emergency service disclaimer under the Teams emergency calling policy, and enter a string message to display to users. This field is optional when setting up a custom policy, and the string field is limited to 250 characters. For more information, see [Manage emergency calling policies](manage-emergency-calling-policies.md).
+
+### Changing an emergency address
+
+If the format or representation of an address changes, you can only modify a validated emergency address in specific regions, otherwise you must create a new address with the updated format.
+
+Where allowed, to modify a validated address with PowerShell, see [Set-CsOnlineLisCivicAddress](/powershell/module/teams/set-csonlineliscivicaddress).
+
+For example, one way to change an emergency address follows.
+
+- The location ID is represented by a alphanumeric value. Retrieve the location ID by navigating to Teams admin center (TAC), in **Locations**, **Emergency addresses**, and selecting profile of the address you'd like to change, and copying the Location ID.
+
+:::image type="content" source="media/teams-emergency-address-location-id.png" alt-text="Where to find the location ID for an emergency calling location in Teams admin center.":::
+
+In PowerShell, use the **Get-CsOnlineLisLocation** Cmdlet with the *-LocationId* parameter to validate that you have the correct address.
+
+```PowerShell
+Get-CsOnlineLisLocation -LocationId abec3dca-fe2f-4426-9068-bd741123456
+```
+
+From the output, copy the alphanumeric value defined in the *-CivicAddressId* attribute, and use that with the **Set-CsOnlineLisCivicAddress** cmdlet, along with the new coordinates.
+
+```PowerShell
+Set-CsOnlineLisCivicAddress -CivicAddressId ced7e600-8375-11eb-90a6-85f615654321 -Latitude 39.43210 -Longitude -122.56789
+``` 
 
 ## Considerations for PSTN connectivity options
 
