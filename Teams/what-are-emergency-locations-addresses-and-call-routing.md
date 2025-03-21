@@ -104,7 +104,7 @@ For example, one way to change an emergency address follows.
 
 - The location ID is represented by a alphanumeric value. Retrieve the location ID by navigating to Teams admin center (TAC), in **Locations**, **Emergency addresses**, and selecting profile of the address you'd like to change, and copying the Location ID.
 
-:::image type="content" source="media/teams-emergency-address-location-id.png" alt-text="Where to find the location ID for an emergency calling location in Teams admin center.":::
+:::image type="content" source="media/teams-emergency-address-location-id.png" alt-text="Screenshot showing where to find the location ID for an emergency calling location in the Teams admin center.":::
 
 In PowerShell, use the **Get-CsOnlineLisLocation** Cmdlet with the *-LocationId* parameter to validate that you have the correct address.
 
