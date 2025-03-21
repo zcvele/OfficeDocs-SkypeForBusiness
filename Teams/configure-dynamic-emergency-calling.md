@@ -23,7 +23,7 @@ appliesto:
 - Microsoft Teams
 ---
 
-# Plan and configure dynamic emergency calling
+# Plan dynamic emergency calling
 
 Dynamic emergency calling for Microsoft Calling Plans, Operator Connect, Teams Phone Mobile, and Direct Routing provides the capability to configure and route emergency calls and notify security personnel based on the current location of the Teams client.  
 
@@ -49,18 +49,41 @@ For dynamic emergency calling, the following must occur:
 
 The ability to do automatic routing to the appropriate Public Safety Answering Point (PSAP) varies depending on the country/region of usage of the Teams user.
 
-Microsoft Calling Plans, Operator Connect partners, and Teams Phone Mobile partners include dynamic emergency routing services for users in the United States and Canada.
+Microsoft Calling Plans, Operator Connect partners, and Teams Phone Mobile partners provide dynamic emergency routing services for users in the United States and Canada.
 
-For Direct Routing, dditional configuration is required for routing emergency calls and possibly for partner connectivity. In Teams, the administrator must ensure that the settings for the peer PSTN gateway configuration are configured to add location information to the outgoing emergency call's INVITE protocol.
+## Emergency calling prerequisites for Direct Routing
+
+For Direct Routing, additional prerequisites are required for routing emergency calls and possibly for partner connectivity. In Teams, the administrator must ensure that the settings for the peer PSTN gateway configuration are configured to add location information to the outgoing emergency call's INVITE protocol.
 
 To modify the emergency call settings, the parameter for *PidfloSupported* must be True. This can be done in PowerShell or in TAC.
 
-- To modify the PidfloSupported value using TAC, expand **Voice**, select **Direct Routing**, select the Session Border Controller (SBC) that is supporting your emergency call routing, select **Edit**, ensure **SBC supports PIDF/LO for emergency calls** is turned on, and save the SBC profile.
-- To modify the PidflowSupported value using Powershell, see [Set-CsOnlinePSTNGateway](/powershell/module/teams/set-csonlinepstngateway), with *-PidflowSupportd* attribute set to *$true*.
+### Modifying PIDF/LO in Teams Admin Center
 
-In addition the administrator must configure connection to an Emergency Routing Service (ERS) provider (United States and Canada) **OR** configure the Session Border Controller (SBC) for an Emergency Location Identification Number (ELIN) application. For information about ERS providers, see [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
+To modify the PidfloSupported value using TAC, expand **Voice**, select **Direct Routing**, select the Session Border Controller (SBC) that is supporting your emergency call routing, select **Edit**, ensure **SBC supports PIDF/LO for emergency calls** is turned on, and save the SBC profile.
 
-This article contains the following sections.
+### Modifying PIDF/LO in PowerShell
+
+To modify the PidflowSupported value using Powershell, see [Set-CsOnlinePSTNGateway](/powershell/module/teams/set-csonlinepstngateway), with *-PidflowSupportd* attribute set to *$true*.
+
+For example, in a remote PowerShell session in Teams, type:
+
+```PowerShell
+set-CsOnlinePSTNGateway -Identity sbc1.fabrikam.onmicrosoft.com -PidfLoSupported $true
+```
+
+Verify that the setting was applied by entering:
+
+```PowerShell
+Get-CsOnlinePSTNGateway -Identity sbc1.fabrikam.onmicrosoft.com
+``` 
+
+### Arranging for an Emergency Routing Service provider
+
+For Direct Routing, you must also configure a connection to an Emergency Routing Service (ERS) provider (United States and Canada) **OR** configure the Session Border Controller (SBC) for an Emergency Location Identification Number (ELIN) application. For information about SBCs that support ERS providers, see [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
+
+## Configure emergency calling
+
+Configuring emergency calling in Teams is outlined in the following sections.
 
 - [Assign emergency addresses](#assign-emergency-addresses)
 - [Configure network settings](#configure-network-settings)
