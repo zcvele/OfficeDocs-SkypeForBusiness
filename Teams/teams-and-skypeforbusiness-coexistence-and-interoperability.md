@@ -314,7 +314,7 @@ Once a conversation thread is created, its type never changes. Once created, an 
 
 ### Presence
 
-Presence for a given user is based on the user's activity in the service via the client. The presence is then published for other users to see.  Skype for Business and Teams are separate services with separate clients, so each service has its own presence state for a user.   There's also synchronization between the presence services in Teams and in Skype for Business Online.  This allows one service to potentially publish the presence of the user from the other service if needed.
+Presence for a given user is based on the user's activity in the service via the client. The presence is then published for other users to see.  Skype for Business and Teams are separate services with separate clients, so each service has its own presence state for a user.   There's also synchronization between the presence services in Teams and in Skype for Business.  This allows one service to potentially publish the presence of the user from the other service if needed.
 
 Presence publishing behavior is based on the user's mode. There are three basic cases:
 
@@ -322,9 +322,9 @@ Presence publishing behavior is based on the user's mode. There are three basic 
 
 - If a user is in any of the Skype for Business modes, all other users see Skype for Business presence for that user, regardless of which client they use.
 
-- If a user is in Islands mode, presence published in Skype for Business and Teams are independent, so the presence shown to users within the same organization will depend on the client of the other user. Users in federated organizations will see presence of that user based on their Skype for Business activity, since federated traffic to an Islands mode user lands in Skype for Business.
+- If a user is in Islands mode, presence published in Skype for Business and Teams are independent for respective clients, so the presence shown to users within the same organization will depend on the client of the other user. Users using Skype for Busienss will see state of Skype for Business Client. Users in Teams will see presence state of Teams client only, even is state of SfB client is different.  Users in federated organizations will see presence of that user based on their Teams activity, despite the state where federated traffic to an Islands mode user lands in Skype for Business.
 
-For example, Assume User A is in Islands mode. If User A is active in Teams but isn't signed in to Skype for Business, other users would see User A as active from their Teams client, but in their Skype for Business client they would see User A as offline. This is by design, since User A can't be reached if they aren't running the client.
+For example, Assume User A is in Islands mode. If User A is active in Teams but isn't signed in to Skype for Business, Teams Only Users and Teams Islands users would see User A as active from their Teams client, but Skype for Business Ony users in their Skype for Business client would see User A as offline. This is by design, since User A can't be reached from Skype for Business client.
 
 
 ### Federation
